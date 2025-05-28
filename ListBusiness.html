@@ -1,0 +1,731 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>List Your Business | Hitaishi Services</title>
+</head>
+<body style="font-family: Arial, sans-serif; background-color: #f4f4f4; margin: 0; padding: 0;">
+ <header style="position: sticky; top: 0; z-index: 1000; background: linear-gradient(135deg, #0066cc, #004080); padding: 15px 5%; box-shadow: 0 4px 12px rgba(0,0,0,0.1); font-family: 'Segoe UI', Roboto, sans-serif; backdrop-filter: blur(5px);">
+  <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 20px; max-width: 1400px; margin: 0 auto;">
+    
+    <!-- Logo Section -->
+    <a href="index.html" style="color: white; text-decoration: none; flex-shrink: 0; display: flex; align-items: center; gap: 10px;">
+      
+      <div style="background: #ffffff; border-radius: 10px; padding: 2px 2px; display: inline-flex; align-items: center; justify-content: center; box-shadow: 0 2px 6px rgba(0, 102, 204, 0.25);">
+        <img src="img/logo_hitaishiservices.png" alt="Hitaishi Logo" width="32" height="32" style="display: block;" />
+      </div>
+
+      <div>
+        <h1 style="margin: 0; font-size: 32px; font-weight: 800; letter-spacing: 1px; background: linear-gradient(to right, #ffffff, #e6f2ff); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">Hitaishi</h1>
+        <p style="font-size: 14px; margin: 2px 0 0 0; font-weight: 500; color: rgba(255,255,255,0.9);">Find trusted services and professionals</p>
+      </div>
+    </a>
+    
+    <!-- Search Form -->
+    <form action="search.html" method="GET" style="flex-grow: 1; max-width: 500px; min-width: 250px; display: flex; box-shadow: 0 2px 10px rgba(0,0,0,0.1); border-radius: 8px; overflow: hidden; background: rgba(255,255,255,0.9); transition: all 0.3s ease;" onfocusin="this.style.boxShadow='0 2px 15px rgba(0,80,200,0.2)'; this.style.background='white'" onfocusout="this.style.boxShadow='0 2px 10px rgba(0,0,0,0.1)'; this.style.background='rgba(255,255,255,0.9)'">
+      <input
+        type="text"
+        name="query"
+        placeholder="Search services, businesses..."
+        style="flex-grow: 1; border: none; padding: 12px 20px; font-size: 0.95rem; outline: none; color: #003366; background: transparent;"
+        required
+      />
+      <button
+        type="submit"
+        style="background: linear-gradient(to right, #0066cc, #004080); border: none; padding: 0 25px; cursor: pointer; color: white; font-weight: 600; font-size: 1rem; transition: all 0.3s ease; display: flex; align-items: center; justify-content: center;"
+        onmouseover="this.style.opacity='0.9'"
+        onmouseout="this.style.opacity='1'"
+        aria-label="Search"
+      >
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" style="margin-right: 5px;">
+          <path d="M11 19C15.4183 19 19 15.4183 19 11C19 6.58172 15.4183 3 11 3C6.58172 3 3 6.58172 3 11C3 15.4183 6.58172 19 11 19Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M21 21L16.65 16.65" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        Search
+      </button>
+    </form>
+
+    <!-- Navigation Links -->
+    <nav id="navLinks" style="display: flex; gap: 10px; flex-wrap: wrap; align-items: center; flex-shrink: 0;">
+      <a href="index.html" style="color: white; font-size: 0.95rem; padding: 8px 15px; text-decoration: none; transition: all 0.3s ease; font-weight: 500; border-radius: 6px; border: 1px solid rgba(255,255,255,0.3);" onmouseover="this.style.backgroundColor='rgba(255,255,255,0.15)'" onmouseout="this.style.backgroundColor='transparent'">Home</a>
+      <a href="Services.html" style="color: white; font-size: 0.95rem; padding: 8px 15px; text-decoration: none; transition: all 0.3s ease; font-weight: 500; border-radius: 6px; border: 1px solid rgba(255,255,255,0.3);" onmouseover="this.style.backgroundColor='rgba(255,255,255,0.15)'" onmouseout="this.style.backgroundColor='transparent'">Services</a>
+      <a href="ListBusiness.html" style="color: white; font-size: 0.95rem; padding: 8px 15px; text-decoration: none; transition: all 0.3s ease; font-weight: 500; border-radius: 6px; border: 1px solid rgba(255,255,255,0.3);" onmouseover="this.style.backgroundColor='rgba(255,255,255,0.15)'" onmouseout="this.style.backgroundColor='transparent'">List Business</a>
+      <a href="postadd.html" style="color: white; font-size: 0.95rem; padding: 8px 15px; background: rgba(255,255,255,0.2); text-decoration: none; transition: all 0.3s ease; font-weight: 600; border-radius: 6px; border: 1px solid rgba(255,255,255,0.4);" onmouseover="this.style.backgroundColor='rgba(255,255,255,0.3)'" onmouseout="this.style.backgroundColor='rgba(255,255,255,0.2)'">Post Free Ad</a>
+      <a href="SignIn.html" style="color: #0066cc; font-size: 0.95rem; padding: 8px 15px; background: white; text-decoration: none; transition: all 0.3s ease; font-weight: 600; border-radius: 6px;" onmouseover="this.style.backgroundColor='#f0f7ff'; this.style.color='#004080'" onmouseout="this.style.backgroundColor='white'; this.style.color='#0066cc'">Sign In</a>
+    </nav>
+
+    <!-- Menu Button for Mobile -->
+    <button onclick="toggleMenu()" style="display: none; background: rgba(255,255,255,0.2); border: 1px solid rgba(255,255,255,0.4); border-radius: 6px; padding: 8px 12px; font-size: 1.2rem; color: white; cursor: pointer; flex-shrink: 0;" id="menuToggle" aria-label="Toggle Menu">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M3 12H21" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M3 6H21" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M3 18H21" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+    </button>
+
+  </div>
+</header>
+
+<script>
+  function toggleMenu() {
+    var nav = document.getElementById("navLinks");
+    if (nav.style.display === "none" || nav.style.display === "") {
+      nav.style.display = "flex";
+      nav.style.flexDirection = "column";
+      nav.style.position = "absolute";
+      nav.style.top = "100%";
+      nav.style.left = "0";
+      nav.style.right = "0";
+      nav.style.background = "linear-gradient(135deg, #0066cc, #004080)";
+      nav.style.padding = "20px 5%";
+      nav.style.gap = "15px";
+      nav.style.boxShadow = "0 10px 20px rgba(0,0,0,0.1)";
+    } else {
+      nav.style.display = "none";
+    }
+  }
+
+  function handleResize() {
+    var width = window.innerWidth;
+    var menuToggle = document.getElementById("menuToggle");
+    var navLinks = document.getElementById("navLinks");
+
+    if (width <= 992) {
+      menuToggle.style.display = "flex";
+      menuToggle.style.alignItems = "center";
+      menuToggle.style.justifyContent = "center";
+      if (width > 768) {
+        navLinks.style.display = "none";
+      }
+    } else {
+      menuToggle.style.display = "none";
+      navLinks.style.display = "flex";
+      navLinks.style.flexDirection = "row";
+      navLinks.style.position = "static";
+      navLinks.style.padding = "0";
+      navLinks.style.background = "transparent";
+      navLinks.style.boxShadow = "none";
+    }
+  }
+
+  window.addEventListener("resize", handleResize);
+  window.addEventListener("load", handleResize);
+</script>
+<section style="display: flex; flex-wrap: wrap; justify-content: center; align-items: flex-start; gap: 40px; padding: 60px 20px; background-color: #f8faff; font-family: 'Inter', sans-serif; overflow: hidden; position: relative;">
+
+    <div style="position: absolute; top: 10%; left: 5%; width: 80px; height: 80px; background-color: rgba(0, 132, 255, 0.05); border-radius: 50%; z-index: 0;"></div>
+    <div style="position: absolute; bottom: 15%; right: 8%; width: 100px; height: 100px; background-color: rgba(79, 195, 247, 0.08); border-radius: 50%; z-index: 0;"></div>
+    <div style="position: absolute; top: 40%; left: 2%; width: 60px; height: 60px; background-color: rgba(0, 132, 255, 0.03); border-radius: 50%; z-index: 0;"></div>
+    <div style="position: absolute; bottom: 5%; left: 25%; width: 70px; height: 70px; background-color: rgba(79, 195, 247, 0.06); border-radius: 50%; z-index: 0;"></div>
+
+
+    <div style="flex: 1 1 45%; max-width: 550px; padding: 30px; text-align: left; position: relative; z-index: 1;">
+        <h2 style="font-size: 2.5rem; color: #0056b3; margin-bottom: 25px; /* Adjusted margin-bottom for better alignment */ font-weight: bold; line-height: 1.2;">
+            Unlock Growth for Your Business
+        </h2>
+        <p style="font-size: 1.1rem; color: #555; line-height: 1.7; margin-bottom: 40px;">
+            Join Hitaishi Services and connect with a vast network of customers actively seeking your expertise. Expand your reach and boost your revenue effortlessly.
+        </p>
+
+        <div style="display: flex; flex-direction: column; gap: 25px;">
+            <div style="display: flex; align-items: center;">
+                <div style="flex-shrink: 0; width: 50px; height: 50px; background-color: #e3f2fd; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 20px; box-shadow: 0 4px 10px rgba(0,132,255,0.1);">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#0084ff" width="30px" height="30px">
+                        <path d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93s3.05-7.44 7-7.93v15.86zm2 0V4.07c3.95.49 7 3.85 7 7.93s-3.05 7.44-7 7.93z"/>
+                    </svg>
+                </div>
+                <p style="margin: 0; font-size: 1.05rem; color: #333; font-weight: 500;">
+                    **Expand Your Customer Base:** Reach thousands of users actively searching for services like yours.
+                </p>
+            </div>
+
+            <div style="display: flex; align-items: center;">
+                <div style="flex-shrink: 0; width: 50px; height: 50px; background-color: #e8f5e9; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 20px; box-shadow: 0 4px 10px rgba(76,175,80,0.1);">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#4CAF50" width="30px" height="30px">
+                        <path d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M19.43 12.98c.04-.32.07-.64.07-.98s-.03-.66-.07-.98l2.11-1.65c.19-.15.24-.42.12-.64l-2-3.46c-.12-.22-.39-.3-.61-.22l-2.49 1c-.52-.4-1.09-.75-1.7-.98l-.36-2.54c-.05-.24-.24-.41-.48-.41h-4c-.24 0-.43.17-.47.41l-.36 2.54c-.61.23-1.18.58-1.7.98l-2.49-1c-.22-.09-.49 0-.61.22l-2 3.46c-.12.22-.07.49.12.64l2.11 1.65c-.04.32-.07.65-.07.98s.03.66.07.98l-2.11 1.65c-.19.15-.24.42-.12.64l2 3.46c.12.22.39.3.61.22l2.49-1c.52.4 1.09.75 1.7.98l.36 2.54c.05.24.24.41.48.41h4c.24 0 .43-.17.47-.41l.36-2.54c.61-.23 1.18-.58 1.7-.98l2.49 1c.22.09.49 0 .61-.22l2-3.46c.12-.22.07-.49-.12-.64l-2.11-1.65zM12 15.5c-1.93 0-3.5-1.57-3.5-3.5s1.57-3.5 3.5-3.5 3.5 1.57 3.5 3.5-1.57 3.5-3.5 3.5z"/>
+                    </svg>
+                </div>
+                <p style="margin: 0; font-size: 1.05rem; color: #333; font-weight: 500;">
+                    **Simple & Intuitive Platform:** Manage your business profile with ease, no technical skills required.
+                </p>
+            </div>
+
+            <div style="display: flex; align-items: center;">
+                <div style="flex-shrink: 0; width: 50px; height: 50px; background-color: #fbe9e7; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 20px; box-shadow: 0 4px 10px rgba(255,87,34,0.1);">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#FF5722" width="30px" height="30px">
+                        <path d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm0 10.99h7c-.53 4.12-3.28 7.79-7 8.94V12H5V6.3l7-3.11v8.8z"/>
+                    </svg>
+                </div>
+                <p style="margin: 0; font-size: 1.05rem; color: #333; font-weight: 500;">
+                    **Build Customer Trust:** Enhance your credibility with a verified business profile and customer reviews.
+                </p>
+            </div>
+
+            <div style="display: flex; align-items: center;">
+                <div style="flex-shrink: 0; width: 50px; height: 50px; background-color: #fffde7; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 20px; box-shadow: 0 4px 10px rgba(255,193,7,0.1);">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#FFC107" width="30px" height="30px">
+                        <path d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M20 2H4c-1.1 0-1.99.9-1.99 2L2 22l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm-2 12H6V6h12v8zm-2-7h-8v2h8V7zm-2 3H8v2h6v-2z"/>
+                    </svg>
+                </div>
+                <p style="margin: 0; font-size: 1.05rem; color: #333; font-weight: 500;">
+                    **Receive Direct Inquiries:** Get leads directly from interested customers through our platform.
+                </p>
+            </div>
+
+            <div style="display: flex; align-items: center;">
+                <div style="flex-shrink: 0; width: 50px; height: 50px; background-color: #e1f5fe; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 20px; box-shadow: 0 4px 10px rgba(3,169,244,0.1);">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#03A9F4" width="30px" height="30px">
+                        <path d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 17.93c-3.95-.49-7-3.85-7-7.93s3.05-7.44 7-7.93v15.86zm2 0V4.07c3.95.49 7 3.85 7 7.93s-3.05 7.44-7 7.93z"/>
+                        <path d="M12 12c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"/>
+                    </svg>
+                </div>
+                <p style="margin: 0; font-size: 1.05rem; color: #333; font-weight: 500;">
+                    **Dedicated Support:** Our team is here to assist you every step of the way, ensuring your success.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div style="flex: 1 1 45%; max-width: 550px; margin: 20px auto; padding: 40px; background-color: white; border-radius: 15px; box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1); position: relative; z-index: 1;">
+        <h2 style="text-align: center; color: #2C3E50; font-size: 2rem; margin-bottom: 30px; font-weight: bold;">Fill in Your Business Details</h2>
+
+        <form action="#" method="POST">
+            <div style="margin-bottom: 20px;">
+                <label for="businessName" style="display: block; font-size: 1rem; color: #333; font-weight: bold; margin-bottom: 8px;">Business Name:</label>
+                <input type="text" id="businessName" name="businessName" style="width: calc(100% - 22px); padding: 12px; font-size: 1rem; border: 1px solid #ddd; border-radius: 8px; transition: border-color 0.3s ease, box-shadow 0.3s ease;" 
+                       onfocus="this.style.borderColor='#0084ff'; this.style.boxShadow='0 0 0 3px rgba(0,132,255,0.2)'" 
+                       onblur="this.style.borderColor='#ddd'; this.style.boxShadow='none'" required>
+            </div>
+
+            <div style="margin-bottom: 20px;">
+                <label for="businessCategory" style="display: block; font-size: 1rem; color: #333; font-weight: bold; margin-bottom: 8px;">Business Category:</label>
+                <select id="businessCategory" name="businessCategory" style="width: 100%; padding: 12px; font-size: 1rem; border: 1px solid #ddd; border-radius: 8px; background-color: white; appearance: none; -webkit-appearance: none; -moz-appearance: none; cursor: pointer; transition: border-color 0.3s ease, box-shadow 0.3s ease;" 
+                        onfocus="this.style.borderColor='#0084ff'; this.style.boxShadow='0 0 0 3px rgba(0,132,255,0.2)'" 
+                        onblur="this.style.borderColor='#ddd'; this.style.boxShadow='none'" required>
+                    <option value="">Select Category</option>
+                    <option value="Plumber">Plumber</option>
+                    <option value="Electrician">Electrician</option>
+                    <option value="Painter">Painter</option>
+                    <option value="Carpenter">Carpenter</option>
+                    <option value="IT Industry">IT Industry</option>
+                    <option value="Hardware">Hardware</option>
+                    <option value="Agriculture">Agriculture</option>
+                    <option value="OnlineShopping">OnlineShopping</option>
+                    <option value="Accounting">Accounting</option>
+                    <option value="Education">Education</option>
+                    <option value="Health">Health</option>
+                    <option value="Insurance">Insurance</option>
+                </select>
+            </div>
+
+            <div style="margin-bottom: 20px;">
+                <label for="businessAddress" style="display: block; font-size: 1rem; color: #333; font-weight: bold; margin-bottom: 8px;">Business Address:</label>
+                <textarea id="businessAddress" name="businessAddress" rows="4" style="width: calc(100% - 22px); padding: 12px; font-size: 1rem; border: 1px solid #ddd; border-radius: 8px; resize: vertical; transition: border-color 0.3s ease, box-shadow 0.3s ease;" 
+                          onfocus="this.style.borderColor='#0084ff'; this.style.boxShadow='0 0 0 3px rgba(0,132,255,0.2)'" 
+                          onblur="this.style.borderColor='#ddd'; this.style.boxShadow='none'" required></textarea>
+            </div>
+
+            <div style="margin-bottom: 20px;">
+                <label for="contactNumber" style="display: block; font-size: 1rem; color: #333; font-weight: bold; margin-bottom: 8px;">Contact Number:</label>
+                <input type="tel" id="contactNumber" name="contactNumber" style="width: calc(100% - 22px); padding: 12px; font-size: 1rem; border: 1px solid #ddd; border-radius: 8px; transition: border-color 0.3s ease, box-shadow 0.3s ease;" 
+                       onfocus="this.style.borderColor='#0084ff'; this.style.boxShadow='0 0 0 3px rgba(0,132,255,0.2)'" 
+                       onblur="this.style.borderColor='#ddd'; this.style.boxShadow='none'" required>
+            </div>
+
+            <div style="margin-bottom: 30px;">
+                <label for="email" style="display: block; font-size: 1rem; color: #333; font-weight: bold; margin-bottom: 8px;">Email Address:</label>
+                <input type="email" id="email" name="email" style="width: calc(100% - 22px); padding: 12px; font-size: 1rem; border: 1px solid #ddd; border-radius: 8px; transition: border-color 0.3s ease, box-shadow 0.3s ease;" 
+                       onfocus="this.style.borderColor='#0084ff'; this.style.boxShadow='0 0 0 3px rgba(0,132,255,0.2)'" 
+                       onblur="this.style.borderColor='#ddd'; this.style.boxShadow='none'" required>
+            </div>
+
+            <div style="text-align: center;">
+                <button type="submit" style="background-color: #0084ff; color: white; padding: 15px 30px; font-size: 1.1rem; border: none; border-radius: 50px; cursor: pointer; transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease; font-weight: bold; box-shadow: 0 4px 10px rgba(0,132,255,0.3);"
+                        onmouseover="this.style.backgroundColor='#0066cc'; this.style.transform='translateY(-3px)'; this.style.boxShadow='0 6px 15px rgba(0,132,255,0.4)'"
+                        onmouseout="this.style.backgroundColor='#0084ff'; this.style.transform='translateY(0)'; this.style.boxShadow='0 4px 10px rgba(0,132,255,0.3)'">
+                    Submit Your Business
+                </button>
+            </div>
+        </form>
+    </div>
+</section>
+  <section style="padding: 20px 20px; background-color: #fcf7f2; font-family: 'Segoe UI', sans-serif; text-align: center;">
+    <div style="max-width: 1200px; margin: 0 auto;">
+      <h2 style="font-size: 2.5rem; color: #333; margin-bottom: 5px; font-weight: bold;">How Our Service Works?</h2>
+      <p style="font-size: 1.1rem; color: #555; margin-bottom: 60px;">Subscribe, get verified leads, and grow your business.</p>
+
+      <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 40px;">
+
+        <div style="flex: 1 1 300px; max-width: 350px; text-align: center;">
+          <div style="position: relative; width: 100%; height: 120px; display: flex; align-items: center; justify-content: center; margin-bottom: 25px;">
+            <svg style="position: absolute; top: 0; left: 50%; transform: translateX(-50%); z-index: 0;" width="180" height="120" viewBox="0 0 180 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M100.5 1.5C118.833 4.5 174.5 18.5 178.5 50.5C182.5 82.5 142.5 119.5 100.5 118.5C58.5 117.5 1.5 100.5 1.5 61.5C1.5 22.5 82.1667 -1.5 100.5 1.5Z" fill="#F8E5E1"/>
+            </svg>
+            <div style="position: relative; z-index: 1; width: 80px; height: 80px; background-color: #f7d247; border-radius: 50%; display: flex; align-items: center; justify-content: center;">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white" width="40px" height="40px">
+                <path d="M0 0h24v24H0z" fill="none"/>
+                <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/>
+              </svg>
+              <div style="position: absolute; bottom: -5px; right: -15px; background-color: #ef5350; color: white; padding: 4px 10px; border-radius: 15px; font-size: 0.7rem; font-weight: bold;">Verified</div>
+            </div>
+          </div>
+          <h3 style="font-size: 1.4rem; color: #333; margin-bottom: 10px; font-weight: bold;">Receive an enquiry from Sulekha</h3>
+          <p style="font-size: 0.95rem; color: #666; line-height: 1.6;">We match your business with suitable customers. Customers can approach you directly, too!</p>
+        </div>
+
+        <div style="flex: 1 1 300px; max-width: 350px; text-align: center;">
+          <div style="position: relative; width: 100%; height: 120px; display: flex; align-items: center; justify-content: center; margin-bottom: 25px;">
+            <svg style="position: absolute; top: 0; left: 50%; transform: translateX(-50%); z-index: 0;" width="180" height="120" viewBox="0 0 180 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M100.5 1.5C118.833 4.5 174.5 18.5 178.5 50.5C182.5 82.5 142.5 119.5 100.5 118.5C58.5 117.5 1.5 100.5 1.5 61.5C1.5 22.5 82.1667 -1.5 100.5 1.5Z" fill="#F8E5E1"/>
+            </svg>
+            <div style="position: relative; z-index: 1; width: 80px; height: 80px; background-color: #f7d247; border-radius: 50%; display: flex; align-items: center; justify-content: center;">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white" width="40px" height="40px">
+                <path d="M0 0h24v24H0z" fill="none"/>
+                <path d="M20 2H4c-1.1 0-1.99.9-1.99 2L2 22l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm-2 12H6V6h12v8zm-2-7h-8v2h8V7zm-2 3H8v2h6v-2z"/>
+                <path d="M16 11.01V13h-2v-2h2zm-4 0V13h-2v-2h2z"/>
+              </svg>
+            </div>
+          </div>
+          <h3 style="font-size: 1.4rem; color: #333; margin-bottom: 10px; font-weight: bold;">Connect with customers over call & chat</h3>
+          <p style="font-size: 0.95rem; color: #666; line-height: 1.6;">Get ahead of your competitors and connect with customers right away.</p>
+        </div>
+
+        <div style="flex: 1 1 300px; max-width: 350px; text-align: center;">
+          <div style="position: relative; width: 100%; height: 120px; display: flex; align-items: center; justify-content: center; margin-bottom: 25px;">
+            <svg style="position: absolute; top: 0; left: 50%; transform: translateX(-50%); z-index: 0;" width="180" height="120" viewBox="0 0 180 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M100.5 1.5C118.833 4.5 174.5 18.5 178.5 50.5C182.5 82.5 142.5 119.5 100.5 118.5C58.5 117.5 1.5 100.5 1.5 61.5C1.5 22.5 82.1667 -1.5 100.5 1.5Z" fill="#F8E5E1"/>
+            </svg>
+            <div style="position: relative; z-index: 1; width: 80px; height: 80px; background-color: #f7d247; border-radius: 50%; display: flex; align-items: center; justify-content: center;">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white" width="40px" height="40px">
+                <path d="M0 0h24v24H0z" fill="none"/>
+                <path d="M16 11V3H8v8H2v10h20V11h-6zm-6 8H4v-7h6v7zm8 0h-6v-7h6v7z"/>
+                <circle cx="12" cy="7" r="2"/>
+              </svg>
+            </div>
+          </div>
+          <h3 style="font-size: 1.4rem; color: #333; margin-bottom: 10px; font-weight: bold;">Convert and grow your business</h3>
+          <p style="font-size: 0.95rem; color: #666; line-height: 1.6;">Stay active on Sulekha and keep growing.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+<section style="background-color: #f9fcff; padding: 80px 20px; font-family: 'Inter', sans-serif; position: relative; overflow: hidden;">
+    <div style="max-width: 80%; margin: 0 auto;  padding: 50px; text-align: center; position: relative; z-index: 1;">
+      <h2 style="text-align: center; color: #0056b3; font-size: 2.5rem; margin-bottom: 30px; font-weight: bold;">About Hitaishi Services</h2>
+      <p style="font-size: 1.15rem; color: #333; line-height: 1.8; max-width: 750px; margin: 0 auto;">Hitaishi Services is dedicated to connecting local businesses with customers. We offer a platform that allows service providers to list their businesses and reach people who are looking for their services. Whether you are a plumber, electrician, carpenter, or any other service provider, Hitaishi Services is here to help you grow and expand your reach.</p>
+      <div style="position: absolute; bottom: -20px; right: -20px; width: 100px; height: 100px; background-color: rgba(0,132,255,0.1); border-radius: 50%; z-index: 0;"></div>
+      <div style="position: absolute; top: -20px; left: -20px; width: 160px; height: 160px; background-color: rgba(0,132,255,0.05); border-radius: 50%; z-index: 0;"></div>
+    </div>
+  </section>
+
+  <section style="padding: 20px 20px; background-color: #ffffff; font-family: 'Inter', sans-serif;">
+    <div style="max-width: 900px; margin: 0 auto; background-color: #fefefe; border-radius: 20px; box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08); padding: 50px;">
+      <h2 style="text-align: center; color: #2c3e50; font-size: 2.5rem; margin-bottom: 40px; font-weight: bold;">Why Choose Hitaishi Services?</h2>
+      <ul style="list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 25px;">
+        <li style="display: flex; align-items: flex-start; font-size: 1.15rem; color: #333; line-height: 1.6;">
+          <span style="flex-shrink: 0; margin-right: 20px; width: 40px; height: 40px; background-color: #e8f5e9; border-radius: 50%; display: flex; align-items: center; justify-content: center; box-shadow: 0 2px 5px rgba(0,0,0,0.1);">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#4CAF50" width="24px" height="24px">
+              <path d="M0 0h24v24H0z" fill="none"/>
+              <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93s3.05-7.44 7-7.93v15.86zm2 0V4.07c3.95.49 7 3.85 7 7.93s-3.05 7.44-7 7.93z"/>
+            </svg>
+          </span>
+          <p style="margin: 0;">**Reach a wider audience** for your services, connecting you with customers actively seeking what you offer.</p>
+        </li>
+        <li style="display: flex; align-items: flex-start; font-size: 1.15rem; color: #333; line-height: 1.6;">
+          <span style="flex-shrink: 0; margin-right: 20px; width: 40px; height: 40px; background-color: #e0f2f7; border-radius: 50%; display: flex; align-items: center; justify-content: center; box-shadow: 0 2px 5px rgba(0,0,0,0.1);">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#2196F3" width="24px" height="24px">
+              <path d="M0 0h24v24H0z" fill="none"/>
+              <path d="M19.43 12.98c.04-.32.07-.64.07-.98s-.03-.66-.07-.98l2.11-1.65c.19-.15.24-.42.12-.64l-2-3.46c-.12-.22-.39-.3-.61-.22l-2.49 1c-.52-.4-1.09-.75-1.7-.98l-.36-2.54c-.05-.24-.24-.41-.48-.41h-4c-.24 0-.43.17-.47.41l-.36 2.54c-.61.23-1.18.58-1.7.98l-2.49-1c-.22-.09-.49 0-.61.22l-2 3.46c-.12.22-.07.49.12.64l2.11 1.65c-.04.32-.07.65-.07.98s.03.66.07.98l-2.11 1.65c-.19.15-.24.42-.12.64l2 3.46c.12.22.39.3.61.22l2.49-1c.52.4 1.09.75 1.7.98l.36 2.54c.05.24.24.41.48.41h4c.24 0 .43-.17.47-.41l.36-2.54c.61-.23 1.18-.58 1.7-.98l2.49 1c.22.09.49 0 .61-.22l2-3.46c.12-.22.07-.49-.12-.64l-2.11-1.65zM12 15.5c-1.93 0-3.5-1.57-3.5-3.5s1.57-3.5 3.5-3.5 3.5 1.57 3.5 3.5-1.57 3.5-3.5 3.5z"/>
+            </svg>
+          </span>
+          <p style="margin: 0;">**Easy-to-use platform** to list your business, manage your profile, and update your services effortlessly.</p>
+        </li>
+        <li style="display: flex; align-items: flex-start; font-size: 1.15rem; color: #333; line-height: 1.6;">
+          <span style="flex-shrink: 0; margin-right: 20px; width: 40px; height: 40px; background-color: #fbe9e7; border-radius: 50%; display: flex; align-items: center; justify-content: center; box-shadow: 0 2px 5px rgba(0,0,0,0.1);">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#FF5722" width="24px" height="24px">
+              <path d="M0 0h24v24H0z" fill="none"/>
+              <path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm0 10.99h7c-.53 4.12-3.28 7.79-7 8.94V12H5V6.3l7-3.11v8.8z"/>
+            </svg>
+          </span>
+          <p style="margin: 0;">**Increase customer trust** with verified profiles and transparent reviews, building your reputation.</p>
+        </li>
+        <li style="display: flex; align-items: flex-start; font-size: 1.15rem; color: #333; line-height: 1.6;">
+          <span style="flex-shrink: 0; margin-right: 20px; width: 40px; height: 40px; background-color: #fffde7; border-radius: 50%; display: flex; align-items: center; justify-content: center; box-shadow: 0 2px 5px rgba(0,0,0,0.1);">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#FFC107" width="24px" height="24px">
+              <path d="M0 0h24v24H0z" fill="none"/>
+              <path d="M20 2H4c-1.1 0-1.99.9-1.99 2L2 22l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm-2 12H6V6h12v8zm-2-7h-8v2h8V7zm-2 3H8v2h6v-2z"/>
+            </svg>
+          </span>
+          <p style="margin: 0;">**Receive customer inquiries directly** through the portal, streamlining communication and lead generation.</p>
+        </li>
+        <li style="display: flex; align-items: flex-start; font-size: 1.15rem; color: #333; line-height: 1.6;">
+          <span style="flex-shrink: 0; margin-right: 20px; width: 40px; height: 40px; background-color: #e1f5fe; border-radius: 50%; display: flex; align-items: center; justify-content: center; box-shadow: 0 2px 5px rgba(0,0,0,0.1);">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#03A9F4" width="24px" height="24px">
+              <path d="M0 0h24v24H0z" fill="none"/>
+              <path d="M16 11V3H8v8H2v10h20V11h-6zm-6 8H4v-7h6v7zm8 0h-6v-7h6v7z"/>
+            </svg>
+          </span>
+          <p style="margin: 0;">**Expand your business** with affordable plans and packages designed to maximize your return on investment.</p>
+        </li>
+      </ul>
+    </div>
+  </section>
+<section style="background-color:#f0f8ff;padding:20px 20px;font-family:'Inter',sans-serif;">
+    <div style="max-width:1000px;margin:0 auto;">
+        <h2 style="text-align:center;color:#0056b3;font-size:2.8rem;margin-bottom:20px;font-weight:bold;">Our Comprehensive Services</h2>
+        <p style="font-size:1.15rem;color:#555;text-align:center;max-width:800px;margin:0 auto 60px;line-height:1.7;">
+            Discover the wide array of services Hitaishi offers to simplify your life and help your business thrive.
+            From essential home care to professional development, we've got you covered.
+        </p>
+
+        <div id="services-container" style="display:flex;flex-direction:row;overflow-x:scroll;scroll-snap-type:x mandatory;scroll-behavior:smooth;padding-bottom:20px;gap:30px;">
+            <style>
+                #services-container::-webkit-scrollbar {
+                    display: none;
+                }
+                /* Hide scrollbar for Firefox */
+                #services-container {
+                    scrollbar-width: none;
+                    -ms-overflow-style: none; /* IE and Edge */
+                }
+            </style>
+
+            <div style="flex-shrink:0;width:320px;scroll-snap-align:start;background-color:white;border-radius:12px;padding:30px;box-shadow:0 5px 15px rgba(0,0,0,0.05);transition:transform 0.3s ease,box-shadow 0.3s ease;"
+                 onmouseover="this.style.transform='translateY(-10px)';this.style.boxShadow='0 15px 35px rgba(0,0,0,0.15)'"
+                 onmouseout="this.style.transform='translateY(0)';this.style.boxShadow='0 5px 15px rgba(0,0,0,0.05)'">
+                <div style="flex-shrink:0;width:70px;height:70px;background-color:#e3f2fd;border-radius:50%;display:flex;align-items:center;justify-content:center;margin:0 auto 25px;box-shadow:0 4px 10px rgba(0,132,255,0.1);">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#0084ff" width="40px" height="40px"><path d="M0 0h24v24H0z" fill="none"/><path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/></svg>
+                </div>
+                <h3 style="font-size:1.6rem;color:#2c3e50;margin-bottom:8px;font-weight:bold;">Home Services</h3>
+                <p style="font-size:1rem;color:#666;line-height:1.6;margin-bottom:15px;">
+                    Cleaning, repairs, and maintenance for your home.
+                </p>
+                <a href="home_office.html" style="text-decoration:none;display:inline-block;padding:10px 25px;background-color:#0084ff;color:white;border-radius:50px;font-weight:bold;font-size:0.95rem;transition:background-color 0.3s ease;" onmouseover="this.style.backgroundColor='#0066cc'" onmouseout="this.style.backgroundColor='#0084ff'">
+                    Learn More
+                </a>
+            </div>
+
+            <div style="flex-shrink:0;width:320px;scroll-snap-align:start;background-color:white;border-radius:12px;padding:30px;box-shadow:0 5px 15px rgba(0,0,0,0.05);transition:transform 0.3s ease,box-shadow 0.3s ease;"
+                 onmouseover="this.style.transform='translateY(-10px)';this.style.boxShadow='0 15px 35px rgba(0,0,0,0.15)'"
+                 onmouseout="this.style.transform='translateY(0)';this.style.boxShadow='0 5px 15px rgba(0,0,0,0.05)'">
+                <div style="flex-shrink:0;width:70px;height:70px;background-color:#e8f5e9;border-radius:50%;display:flex;align-items:center;justify-content:center;margin:0 auto 25px;box-shadow:0 4px 10px rgba(76,175,80,0.1);">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#4CAF50" width="40px" height="40px"><path d="M0 0h24v24H0z" fill="none"/><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>
+                </div>
+                <h3 style="font-size:1.6rem;color:#2c3e50;margin-bottom:8px;font-weight:bold;">Health & Wellness</h3>
+                <p style="font-size:1rem;color:#666;line-height:1.6;margin-bottom:15px;">
+                    Comprehensive services covering nutrition, fitness, mental health, and preventive care for holistic wellbeing.
+                </p>
+                <a href="health_wellness.html" style="text-decoration:none;display:inline-block;padding:10px 25px;background-color:#4CAF50;color:white;border-radius:50px;font-weight:bold;font-size:0.95rem;transition:background-color 0.3s ease;" onmouseover="this.style.backgroundColor='#388E3C'" onmouseout="this.style.backgroundColor='#4CAF50'">
+                    Learn More
+                </a>
+            </div>
+
+            <div style="flex-shrink:0;width:320px;scroll-snap-align:start;background-color:white;border-radius:12px;padding:30px;box-shadow:0 5px 15px rgba(0,0,0,0.05);transition:transform 0.3s ease,box-shadow 0.3s ease;"
+                 onmouseover="this.style.transform='translateY(-10px)';this.style.boxShadow='0 15px 35px rgba(0,0,0,0.15)'"
+                 onmouseout="this.style.transform='translateY(0)';this.style.boxShadow='0 5px 15px rgba(0,0,0,0.05)'">
+                <div style="flex-shrink:0;width:70px;height:70px;background-color:#fbe9e7;border-radius:50%;display:flex;align-items:center;justify-content:center;margin:0 auto 25px;box-shadow:0 4px 10px rgba(255,87,34,0.1);">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#FF5722" width="40px" height="40px"><path d="M0 0h24v24H0z" fill="none"/><path d="M14.6 1L9 5.6 14.6 11l-5.6 4.6L14.6 20 20.2 15.4 14.6 11l5.6-4.6z"/><path d="M4 11h2v2H4zM4 15h2v2H4zM4 7h2v2H4z"/></svg>
+                </div>
+                <h3 style="font-size:1.6rem;color:#2c3e50;margin-bottom:8px;font-weight:bold;">IT Training & Recruitment</h3>
+                <p style="font-size:1rem;color:#666;line-height:1.6;margin-bottom:15px;">
+                    Comprehensive IT skills development and career placement services for tech professionals.
+                </p>
+                <a href="education_training.html" style="text-decoration:none;display:inline-block;padding:10px 25px;background-color:#FF5722;color:white;border-radius:50px;font-weight:bold;font-size:0.95rem;transition:background-color 0.3s ease;" onmouseover="this.style.backgroundColor='#E64A19'" onmouseout="this.style.backgroundColor='#FF5722'">
+                        Explore Programs
+                    </a>
+                </div>
+
+            <div style="flex-shrink:0;width:320px;scroll-snap-align:start;background-color:white;border-radius:12px;padding:30px;box-shadow:0 5px 15px rgba(0,0,0,0.05);transition:transform 0.3s ease,box-shadow 0.3s ease;"
+                 onmouseover="this.style.transform='translateY(-10px)';this.style.boxShadow='0 15px 35px rgba(0,0,0,0.15)'"
+                 onmouseout="this.style.transform='translateY(0)';this.style.boxShadow='0 5px 15px rgba(0,0,0,0.05)'">
+                <div style="flex-shrink:0;width:70px;height:70px;background-color:#fffde7;border-radius:50%;display:flex;align-items:center;justify-content:center;margin:0 auto 25px;box-shadow:0 4px 10px rgba(255,193,7,0.1);">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#FFC107" width="40px" height="40px"><path d="M0 0h24v24H0z" fill="none"/><path d="M20 6h-4V4c0-1.11-.89-2-2-2h-4c-1.11 0-2 .89-2 2v2H4c-1.11 0-1.99.89-1.99 2L2 19c0 1.11.89 2 2 2h16c1.11 0 2-.89 2-2V8c0-1.11-.89-2-2-2zm-6 0h-4V4h4v2z"/></svg>
+                </div>
+                <h3 style="font-size:1.6rem;color:#2c3e50;margin-bottom:8px;font-weight:bold;">Jobs</h3>
+                <p style="font-size:1rem;color:#666;line-height:1.6;margin-bottom:15px;">
+                    Browse available job opportunities in various sectors.
+                </p>
+                <a href="placements_jobs.html" style="text-decoration:none;display:inline-block;padding:10px 25px;background-color:#FFC107;color:white;border-radius:50px;font-weight:bold;font-size:0.95rem;transition:background-color 0.3s ease;" onmouseover="this.style.backgroundColor='#FFB300'" onmouseout="this.style.backgroundColor='#FFC107'">
+                        Learn More
+                    </a>
+                </div>
+
+            <div style="flex-shrink:0;width:320px;scroll-snap-align:start;background-color:white;border-radius:12px;padding:30px;box-shadow:0 5px 15px rgba(0,0,0,0.05);transition:transform 0.3s ease,box-shadow 0.3s ease;"
+                 onmouseover="this.style.transform='translateY(-10px)';this.style.boxShadow='0 15px 35px rgba(0,0,0,0.15)'"
+                 onmouseout="this.style.transform='translateY(0)';this.style.boxShadow='0 5px 15px rgba(0,0,0,0.05)'">
+                <div style="flex-shrink:0;width:70px;height:70px;background-color:#e1f5fe;border-radius:50%;display:flex;align-items:center;justify-content:center;margin:0 auto 25px;box-shadow:0 4px 10px rgba(3,169,244,0.1);">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#03A9F4" width="40px" height="40px"><path d="M0 0h24v24H0z" fill="none"/><path d="M7 18c-1.1 0-1.99.9-1.99 2S5.9 22 7 22s2-.9 2-2-.9-2-2-2zm10 0c-1.1 0-1.99.9-1.99 2s.89 2 1.99 2 2-.9 2-2-.9-2-2-2zm-1.8-17L6.2 3H2v2h2.2l3.72 7.53L9.33 15H17v-2H9.83L8.71 10.5l14.07-2.73L22 7.27z"/></svg>
+                </div>
+                <h3 style="font-size:1.6rem;color:#2c3e50;margin-bottom:8px;font-weight:bold;">Online Shopping</h3>
+                <p style="font-size:1rem;color:#666;line-height:1.6;margin-bottom:15px;">
+                    Find products and services online for all your needs.
+                </p>
+                <a href="shopping.html" style="text-decoration:none;display:inline-block;padding:10px 25px;background-color:#03A9F4;color:white;border-radius:50px;font-weight:bold;font-size:0.95rem;transition:background-color 0.3s ease;" onmouseover="this.style.backgroundColor='#0288D1'" onmouseout="this.style.backgroundColor='#03A9F4'">
+                        Learn More
+                    </a>
+                </div>
+
+            <div style="flex-shrink:0;width:320px;scroll-snap-align:start;background-color:white;border-radius:12px;padding:30px;box-shadow:0 5px 15px rgba(0,0,0,0.05);transition:transform 0.3s ease,box-shadow 0.3s ease;"
+                 onmouseover="this.style.transform='translateY(-10px)';this.style.boxShadow='0 15px 35px rgba(0,0,0,0.15)'"
+                 onmouseout="this.style.transform='translateY(0)';this.style.boxShadow='0 5px 15px rgba(0,0,0,0.05)'">
+                <div style="flex-shrink:0;width:70px;height:70px;background-color:#fce4ec;border-radius:50%;display:flex;align-items:center;justify-content:center;margin:0 auto 25px;box-shadow:0 4px 10px rgba(233,30,99,0.1);">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#E91E63" width="40px" height="40px"><path d="M0 0h24v24H0z" fill="none"/><path d="M19 12h-2V7h-4V3H9v4H5v5H3v6h18v-6h-2zM7 17H5v-2h2v2zm12 0h-2v-2h2v2z"/></svg>
+                </div>
+                <h3 style="font-size:1.6rem;color:#2c3e50;margin-bottom:8px;font-weight:bold;">Flat Selling & Buying</h3>
+                <p style="font-size:1rem;color:#666;line-height:1.6;margin-bottom:15px;">
+                    Buy or sell flats, apartments, and houses easily.
+                </p>
+                <a href="properties_rent.html" style="text-decoration:none;display:inline-block;padding:10px 25px;background-color:#E91E63;color:white;border-radius:50px;font-weight:bold;font-size:0.95rem;transition:background-color 0.3s ease;" onmouseover="this.style.backgroundColor='#C2185B'" onmouseout="this.style.backgroundColor='#E91E63'">
+                        Learn More
+                    </a>
+                </div>
+
+            <div style="flex-shrink:0;width:320px;scroll-snap-align:start;background-color:white;border-radius:12px;padding:30px;box-shadow:0 5px 15px rgba(0,0,0,0.05);transition:transform 0.3s ease,box-shadow 0.3s ease;"
+                 onmouseover="this.style.transform='translateY(-10px)';this.style.boxShadow='0 15px 35px rgba(0,0,0,0.15)'"
+                 onmouseout="this.style.transform='translateY(0)';this.style.boxShadow='0 5px 15px rgba(0,0,0,0.05)'">
+                <div style="flex-shrink:0;width:70px;height:70px;background-color:#e0f7fa;border-radius:50%;display:flex;align-items:center;justify-content:center;margin:0 auto 25px;box-shadow:0 4px 10px rgba(0,188,212,0.1);">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#00BCD4" width="40px" height="40px"><path d="M0 0h24v24H0z" fill="none"/><path d="M21 16v-2c-1.1 0-2-.9-2-2V8c0-1.1.9-2 2-2h-3V4c0-1.1-.9-2-2-2H8c-1.1 0-2 .9-2 2v2H3c-1.1 0-2 .9-2 2v4c0 1.1.9 2 2 2h3v2c0 1.1.9 2 2 2h4c1.1 0 2-.9 2-2v-2h3c1.1 0 2-.9 2-2zM8 4h8v2H8V4zm0 14v-2h8v2H8zm-3-4h-2v-2h2v2zm14 0h-2v-2h2v2z"/></svg>
+                </div>
+                <h3 style="font-size:1.6rem;color:#2c3e50;margin-bottom:8px;font-weight:bold;">Travel & Transport</h3>
+                <p style="font-size:1rem;color:#666;line-height:1.6;margin-bottom:15px;">
+                    Explore travel packages, transport services, and rentals.
+                </p>
+                <a href="travel_transport.html" style="text-decoration:none;display:inline-block;padding:10px 25px;background-color:#00BCD4;color:white;border-radius:50px;font-weight:bold;font-size:0.95rem;transition:background-color 0.3s ease;" onmouseover="this.style.backgroundColor='#0097A7'" onmouseout="this.style.backgroundColor='#00BCD4'">
+                        Learn More
+                    </a>
+                </div>
+
+            <div style="flex-shrink:0;width:320px;scroll-snap-align:start;background-color:white;border-radius:12px;padding:30px;box-shadow:0 5px 15px rgba(0,0,0,0.05);transition:transform 0.3s ease,box-shadow 0.3s ease;"
+                 onmouseover="this.style.transform='translateY(-10px)';this.style.boxShadow='0 15px 35px rgba(0,0,0,0.15)'"
+                 onmouseout="this.style.transform='translateY(0)';this.style.boxShadow='0 5px 15px rgba(0,0,0,0.05)'">
+                <div style="flex-shrink:0;width:70px;height:70px;background-color:#ede7f6;border-radius:50%;display:flex;align-items:center;justify-content:center;margin:0 auto 25px;box-shadow:0 4px 10px rgba(103,58,183,0.1);">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#673AB7" width="40px" height="40px"><path d="M0 0h24v24H0z" fill="none"/><path d="M5 13.18v4L12 21l7-3.82v-4L12 17l-7-3.82zM12 3L1 9l11 6 9-4.91V17h2V9L12 3z"/></svg>
+                </div>
+                <div style="flex-grow:1;text-align:left;">
+                    <h3 style="font-size:1.6rem;color:#2c3e50;margin-bottom:8px;font-weight:bold;">Education</h3>
+                    <p style="font-size:1rem;color:#666;line-height:1.6;margin-bottom:15px;">
+                        Courses, training, and educational programs for all ages.
+                    </p>
+                    <a href="education_training.html" style="text-decoration:none;display:inline-block;padding:10px 25px;background-color:#673AB7;color:white;border-radius:50px;font-weight:bold;font-size:0.95rem;transition:background-color 0.3s ease;" onmouseover="this.style.backgroundColor='#512DA8'" onmouseout="this.style.backgroundColor='#673AB7'">
+                        Learn More
+                    </a>
+                </div>
+            </div>
+            <div style="flex-shrink:0;width:320px;scroll-snap-align:start;background-color:white;border-radius:12px;padding:30px;box-shadow:0 5px 15px rgba(0,0,0,0.05);transition:transform 0.3s ease,box-shadow 0.3s ease;"
+                 onmouseover="this.style.transform='translateY(-10px)';this.style.boxShadow='0 15px 35px rgba(0,0,0,0.15)'"
+                 onmouseout="this.style.transform='translateY(0)';this.style.boxShadow='0 5px 15px rgba(0,0,0,0.05)'">
+                <div style="flex-shrink:0;width:70px;height:70px;background-color:#ffe0b2;border-radius:50%;display:flex;align-items:center;justify-content:center;margin:0 auto 25px;box-shadow:0 4px 10px rgba(255,165,0,0.1);">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#FF9800" width="40px" height="40px"><path d="M0 0h24v24H0z" fill="none"/><path d="M17 12h-5v5h5v-5zM16 1v2H8V1H6v2H5c-1.11 0-1.99.9-1.99 2L3 19c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2h-1V1h-2zm3 18H5V8h14v11z"/></svg>
+                </div>
+                <div style="flex-grow:1;text-align:left;">
+                    <h3 style="font-size:1.6rem;color:#2c3e50;margin-bottom:8px;font-weight:bold;">Events</h3>
+                    <p style="font-size:1rem;color:#666;line-height:1.6;margin-bottom:15px;">
+                        Browse and participate in local events, concerts, and more.
+                    </p>
+                    <a href="events.html" style="text-decoration:none;display:inline-block;padding:10px 25px;background-color:#FF9800;color:white;border-radius:50px;font-weight:bold;font-size:0.95rem;transition:background-color 0.3s ease;" onmouseover="this.style.backgroundColor='#FB8C00'" onmouseout="this.style.backgroundColor='#FF9800'">
+                        Learn More
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div id="dots-container" style="text-align:center;margin-top:40px;">
+            </div>
+    </div>
+</section>
+
+<script>
+    const servicesContainer = document.getElementById('services-container');
+    const dotsContainer = document.getElementById('dots-container');
+    const serviceItems = servicesContainer.querySelectorAll(':scope > div'); // Select direct children div elements
+
+    let currentScrollIndex = 0;
+
+    // Function to create dots
+    function createDots() {
+        dotsContainer.innerHTML = ''; // Clear existing dots
+        for (let i = 0; i < serviceItems.length; i++) {
+            const dot = document.createElement('span');
+            dot.style.display = 'inline-block';
+            dot.style.width = '12px';
+            dot.style.height = '12px';
+            dot.style.borderRadius = '50%';
+            dot.style.backgroundColor = '#ccc';
+            dot.style.margin = '0 8px';
+            dot.style.cursor = 'pointer';
+            dot.style.transition = 'background-color 0.3s ease, transform 0.3s ease';
+            dot.setAttribute('data-index', i);
+            dot.onclick = () => scrollToItem(i);
+            dotsContainer.appendChild(dot);
+        }
+        updateDots();
+    }
+
+    // Function to scroll to a specific item
+    function scrollToItem(index) {
+        if (index >= 0 && index < serviceItems.length) {
+            serviceItems[index].scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'start' });
+            currentScrollIndex = index;
+            updateDots();
+        }
+    }
+
+    // Function to update active dot
+    function updateDots() {
+        const dots = dotsContainer.querySelectorAll('span');
+        dots.forEach((dot, index) => {
+            if (index === currentScrollIndex) {
+                dot.style.backgroundColor = '#0084ff'; // Active color
+                dot.style.transform = 'scale(1.2)';
+            } else {
+                dot.style.backgroundColor = '#ccc'; // Inactive color
+                dot.style.transform = 'scale(1)';
+            }
+        });
+    }
+
+    // Update dots on scroll
+    servicesContainer.addEventListener('scroll', () => {
+        const containerScrollLeft = servicesContainer.scrollLeft;
+        let closestIndex = 0;
+        let minDistance = Infinity;
+
+        serviceItems.forEach((item, index) => {
+            const itemLeft = item.offsetLeft - servicesContainer.offsetLeft; // Position relative to container
+            const distance = Math.abs(containerScrollLeft - itemLeft);
+
+            if (distance < minDistance) {
+                minDistance = distance;
+                closestIndex = index;
+            }
+        });
+
+        if (closestIndex !== currentScrollIndex) {
+            currentScrollIndex = closestIndex;
+            updateDots();
+        }
+    });
+
+    // Initialize dots and set initial active dot
+    createDots();
+    updateDots(); // Call once more to ensure initial state is correct
+</script>
+
+    <!-- Footer Section -->
+    <footer style="background-color: #f1f1f1; padding: 40px 0;">
+    <div style="max-width: 1200px; margin: 0 auto; padding-left: -600px;">
+
+        <!-- Education & Training -->
+        <div style="text-align: left; margin: 10px;">
+            <a href="education_training.html" style="text-decoration: none;">
+                <p style="font-size: 16px; color: #333; font-weight: bold;">Education & Training</p>
+            </a>
+            <p style="font-size: 14px; color: #555; margin-top: 10px;">Explore a wide range of educational and training options across various fields to enhance your skills and career opportunities.</p>
+            <hr style="border: 1px solid #ddd; margin-top: 20px;"/>
+        </div>
+
+        <!-- Properties & Rents -->
+        <div style="text-align: left; margin: 10px;">
+            <a href="properties_rent.html" style="text-decoration: none;">
+                <p style="font-size: 16px; color: #333; font-weight: bold;">Properties & Rents</p>
+            </a>
+            <p style="font-size: 14px; color: #555; margin-top: 10px;">Find the perfect property for sale, rent, or investment in your desired location with comprehensive listings and details.</p>
+            <hr style="border: 1px solid #ddd; margin-top: 20px;"/>
+        </div>
+
+        <!-- Professional Services -->
+        <div style="text-align: left; margin: 10px;">
+            <a href="proffessional_services.html" style="text-decoration: none;">
+                <p style="font-size: 16px; color: #333; font-weight: bold;">Professional Services</p>
+            </a>
+            <p style="font-size: 14px; color: #555; margin-top: 10px;">Access top-notch professional services, including legal, financial, and consulting services, from trusted experts.</p>
+            <hr style="border: 1px solid #ddd; margin-top: 20px;"/>
+        </div>
+
+        <!-- Travel & Transport -->
+        <div style="text-align: left; margin: 10px;">
+            <a href="travel_transport.html" style="text-decoration: none;">
+                <p style="font-size: 16px; color: #333; font-weight: bold;">Travel & Transport</p>
+            </a>
+            <p style="font-size: 14px; color: #555; margin-top: 10px;">Book your travel needs, including flights, cabs, and buses, with ease and at the best prices.</p>
+            <hr style="border: 1px solid #ddd; margin-top: 20px;"/>
+        </div>
+
+        <!-- Health & Wellness -->
+        <div style="text-align: left; margin: 10px;">
+            <a href="health_wellness.html" style="text-decoration: none;">
+                <p style="font-size: 16px; color: #333; font-weight: bold;">Health & Wellness</p>
+            </a>
+            <p style="font-size: 14px; color: #555; margin-top: 10px;">Discover health and wellness services to maintain a balanced lifestyle, including fitness classes, clinics, and more.</p>
+            <hr style="border: 1px solid #ddd; margin-top: 20px;"/>
+        </div>
+
+        <!-- Events -->
+        <div style="text-align: left; margin: 10px;">
+            <a href="events.html" style="text-decoration: none;">
+                <p style="font-size: 16px; color: #333; font-weight: bold;">Events</p>
+            </a>
+            <p style="font-size: 14px; color: #555; margin-top: 10px;">Stay updated with upcoming events, conferences, exhibitions, and entertainment activities near you.</p>
+            <hr style="border: 1px solid #ddd; margin-top: 20px;"/>
+        </div>
+
+        <!-- Home & Office -->
+        <div style="text-align: left; margin: 10px;">
+            <a href="home_office.html" style="text-decoration: none;">
+                <p style="font-size: 16px; color: #333; font-weight: bold;">Home & Office</p>
+            </a>
+            <p style="font-size: 14px; color: #555; margin-top: 10px;">Explore furniture, appliances, and office supplies to furnish your home or workspace with the best products.</p>
+            <hr style="border: 1px solid #ddd; margin-top: 20px;"/>
+        </div>
+
+        <!-- Shopping -->
+        <div style="text-align: left; margin: 10px;">
+            <a href="shopping.html" style="text-decoration: none;">
+                <p style="font-size: 16px; color: #333; font-weight: bold;">Shopping</p>
+            </a>
+            <p style="font-size: 14px; color: #555; margin-top: 10px;">Shop online for a variety of products including electronics, clothing, accessories, and much more.</p>
+            <hr style="border: 1px solid #ddd; margin-top: 20px;"/>
+        </div>
+
+        <!-- Placement & Jobs -->
+        <div style="text-align: left; margin: 10px;">
+            <a href="placements_jobs.html" style="text-decoration: none;">
+                <p style="font-size: 16px; color: #333; font-weight: bold;">Placement & Jobs</p>
+            </a>
+            <p style="font-size: 14px; color: #555; margin-top: 10px;">Browse job listings and placement opportunities, and connect with top employers in various industries.</p>
+            <hr style="border: 1px solid #ddd; margin-top: 20px;"/>
+        </div>
+
+        <!-- Social Media Icons -->
+        <div style="text-align: center; margin-top: 20px;">
+            <p style="font-size: 16px; color: #333; font-weight: bold;">Follow Us</p>
+            <div style="margin-top:20px;">
+                <a href="https://www.facebook.com" target="_blank" style="margin: 0 15px; text-decoration: none;">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" alt="Facebook" style="width: 40px; height: 40px;"/>
+                </a>
+                <a href="https://www.twitter.com" target="_blank" style="margin: 0 15px; text-decoration: none;">
+                    <img src="https://cdn.iconscout.com/icon/free/png-256/free-twitter-logo-icon-download-in-svg-png-gif-file-formats--social-media-pack-logos-icons-83443.png?f=webp&w=128" alt="Twitter" style="width: 40px; height: 40px;"/>
+                </a>
+                <a href="https://www.instagram.com" target="_blank" style="margin: 0 15px; text-decoration: none;">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram" style="width: 40px; height: 40px;"/>
+                </a>
+                <a href="https://www.linkedin.com" target="_blank" style="margin: 0 15px; text-decoration: none;">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/e/e6/729101_linkedin_icon.png" alt="LinkedIn" style="width: 40px; height: 40px;"/>
+                </a>
+            </div>
+                <br>
+                  <p style="margin: 0; color: black;">&copy; 2025 Hitaishi Web Portal. All rights reserved.</p>
+        </div>
+    </div>
+  
+</footer>
+
+</body>
+</html>

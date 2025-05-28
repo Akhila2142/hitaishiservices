@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+ <!-- Meta Title and Description for Properties & Rent Page -->
+<title>Properties & Rent | Hithaishi Services</title>
+<meta name="description" content="Explore residential and commercial properties for rent with Hithaishi Services. Find affordable rental solutions tailored to your needs.">
+<meta name="keywords" content="properties for rent, rental properties, commercial rent, residential rent, rental services, Hithaishi Services, affordable rentals">
+<meta name="robots" content="index, follow">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+  <header style="position: sticky; top: 0; z-index: 1000; background: linear-gradient(135deg, #0066cc, #004080); padding: 15px 5%; box-shadow: 0 4px 12px rgba(0,0,0,0.1); font-family: 'Segoe UI', Roboto, sans-serif; backdrop-filter: blur(5px);">
+  <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 20px; max-width: 1400px; margin: 0 auto;">
+    
+    <!-- Logo Section -->
+    <a href="index.html" style="color: white; text-decoration: none; flex-shrink: 0; display: flex; align-items: center; gap: 10px;">
+      
+      <div style="background: #ffffff; border-radius: 10px; padding: 2px 2px; display: inline-flex; align-items: center; justify-content: center; box-shadow: 0 2px 6px rgba(0, 102, 204, 0.25);">
+        <img src="img/logo_hitaishiservices.png" alt="Hitaishi Logo" width="32" height="32" style="display: block;" />
+      </div>
+
+      <div>
+        <h1 style="margin: 0; font-size: 32px; font-weight: 800; letter-spacing: 1px; background: linear-gradient(to right, #ffffff, #e6f2ff); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">Hitaishi</h1>
+        <p style="font-size: 14px; margin: 2px 0 0 0; font-weight: 500; color: rgba(255,255,255,0.9);">Find trusted services and professionals</p>
+      </div>
+    </a>
+    
+    <!-- Search Form -->
+    <form action="search.html" method="GET" style="flex-grow: 1; max-width: 500px; min-width: 250px; display: flex; box-shadow: 0 2px 10px rgba(0,0,0,0.1); border-radius: 8px; overflow: hidden; background: rgba(255,255,255,0.9); transition: all 0.3s ease;" onfocusin="this.style.boxShadow='0 2px 15px rgba(0,80,200,0.2)'; this.style.background='white'" onfocusout="this.style.boxShadow='0 2px 10px rgba(0,0,0,0.1)'; this.style.background='rgba(255,255,255,0.9)'">
+      <input
+        type="text"
+        name="query"
+        placeholder="Search services, businesses..."
+        style="flex-grow: 1; border: none; padding: 12px 20px; font-size: 0.95rem; outline: none; color: #003366; background: transparent;"
+        required
+      />
+      <button
+        type="submit"
+        style="background: linear-gradient(to right, #0066cc, #004080); border: none; padding: 0 25px; cursor: pointer; color: white; font-weight: 600; font-size: 1rem; transition: all 0.3s ease; display: flex; align-items: center; justify-content: center;"
+        onmouseover="this.style.opacity='0.9'"
+        onmouseout="this.style.opacity='1'"
+        aria-label="Search"
+      >
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" style="margin-right: 5px;">
+          <path d="M11 19C15.4183 19 19 15.4183 19 11C19 6.58172 15.4183 3 11 3C6.58172 3 3 6.58172 3 11C3 15.4183 6.58172 19 11 19Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M21 21L16.65 16.65" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        Search
+      </button>
+    </form>
+
+    <!-- Navigation Links -->
+    <nav id="navLinks" style="display: flex; gap: 10px; flex-wrap: wrap; align-items: center; flex-shrink: 0;">
+      <a href="index.html" style="color: white; font-size: 0.95rem; padding: 8px 15px; text-decoration: none; transition: all 0.3s ease; font-weight: 500; border-radius: 6px; border: 1px solid rgba(255,255,255,0.3);" onmouseover="this.style.backgroundColor='rgba(255,255,255,0.15)'" onmouseout="this.style.backgroundColor='transparent'">Home</a>
+      <a href="Services.html" style="color: white; font-size: 0.95rem; padding: 8px 15px; text-decoration: none; transition: all 0.3s ease; font-weight: 500; border-radius: 6px; border: 1px solid rgba(255,255,255,0.3);" onmouseover="this.style.backgroundColor='rgba(255,255,255,0.15)'" onmouseout="this.style.backgroundColor='transparent'">Services</a>
+      <a href="ListBusiness.html" style="color: white; font-size: 0.95rem; padding: 8px 15px; text-decoration: none; transition: all 0.3s ease; font-weight: 500; border-radius: 6px; border: 1px solid rgba(255,255,255,0.3);" onmouseover="this.style.backgroundColor='rgba(255,255,255,0.15)'" onmouseout="this.style.backgroundColor='transparent'">List Business</a>
+      <a href="postadd.html" style="color: white; font-size: 0.95rem; padding: 8px 15px; background: rgba(255,255,255,0.2); text-decoration: none; transition: all 0.3s ease; font-weight: 600; border-radius: 6px; border: 1px solid rgba(255,255,255,0.4);" onmouseover="this.style.backgroundColor='rgba(255,255,255,0.3)'" onmouseout="this.style.backgroundColor='rgba(255,255,255,0.2)'">Post Free Ad</a>
+      <a href="SignIn.html" style="color: #0066cc; font-size: 0.95rem; padding: 8px 15px; background: white; text-decoration: none; transition: all 0.3s ease; font-weight: 600; border-radius: 6px;" onmouseover="this.style.backgroundColor='#f0f7ff'; this.style.color='#004080'" onmouseout="this.style.backgroundColor='white'; this.style.color='#0066cc'">Sign In</a>
+    </nav>
+
+    <!-- Menu Button for Mobile -->
+    <button onclick="toggleMenu()" style="display: none; background: rgba(255,255,255,0.2); border: 1px solid rgba(255,255,255,0.4); border-radius: 6px; padding: 8px 12px; font-size: 1.2rem; color: white; cursor: pointer; flex-shrink: 0;" id="menuToggle" aria-label="Toggle Menu">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M3 12H21" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M3 6H21" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M3 18H21" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+    </button>
+
+  </div>
+</header>
+
+<script>
+  function toggleMenu() {
+    var nav = document.getElementById("navLinks");
+    if (nav.style.display === "none" || nav.style.display === "") {
+      nav.style.display = "flex";
+      nav.style.flexDirection = "column";
+      nav.style.position = "absolute";
+      nav.style.top = "100%";
+      nav.style.left = "0";
+      nav.style.right = "0";
+      nav.style.background = "linear-gradient(135deg, #0066cc, #004080)";
+      nav.style.padding = "20px 5%";
+      nav.style.gap = "15px";
+      nav.style.boxShadow = "0 10px 20px rgba(0,0,0,0.1)";
+    } else {
+      nav.style.display = "none";
+    }
+  }
+
+  function handleResize() {
+    var width = window.innerWidth;
+    var menuToggle = document.getElementById("menuToggle");
+    var navLinks = document.getElementById("navLinks");
+
+    if (width <= 992) {
+      menuToggle.style.display = "flex";
+      menuToggle.style.alignItems = "center";
+      menuToggle.style.justifyContent = "center";
+      if (width > 768) {
+        navLinks.style.display = "none";
+      }
+    } else {
+      menuToggle.style.display = "none";
+      navLinks.style.display = "flex";
+      navLinks.style.flexDirection = "row";
+      navLinks.style.position = "static";
+      navLinks.style.padding = "0";
+      navLinks.style.background = "transparent";
+      navLinks.style.boxShadow = "none";
+    }
+  }
+
+  window.addEventListener("resize", handleResize);
+  window.addEventListener("load", handleResize);
+</script>
+  <section style="position: relative; height: 600px; display: flex; justify-content: space-between; overflow: hidden;">
+    <!-- Right Image -->
+    <div style="position: relative; flex: 1; background-image: url('https://images.pexels.com/photos/186077/pexels-photo-186077.jpeg'); background-size: cover; background-position: center; height: 100%;">
+      <div style="position: absolute; inset: 0; background: linear-gradient(to bottom right, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.4), transparent);"></div>
+      <div style="position: absolute; inset: 0; display: flex; align-items: center; justify-content: center; text-align: center; color: white; padding: 20px;">
+        <h6 style="font-size: 2.25rem; font-weight: 600;">"A HOME IS NOT A PLACE... ITS A FEELING." </h6>
+      </div>
+    </div>
+  </section>
+  
+
+  <section class="py-16 bg-gray-50 text-gray-800">
+        <div class="max-w-6xl mx-auto px-6 text-center">
+          <h2 class="text-4xl font-extrabold mb-4">Unlock the Power of <span class="text-blue-600">Housing Edge</span></h2>
+          <p class="text-lg text-gray-600 mb-10">Smart tools and expert guidance to help you find, buy, or rent properties with confidence.</p>
+            <div class="grid gap-8 md:grid-cols-3 text-left">
+              <div class="bg-white rounded-xl shadow-md p-6 hover:shadow-xl transition text-center">
+                <div class="flex justify-center mb-4">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5-2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                  </svg>
+                </div>
+                <h3 class="text-xl font-bold mb-2">Verified Listings</h3>
+                <p class="text-gray-600">All properties are thoroughly verified to ensure transparency and reliability.</p>
+              </div>
+              <div class="bg-white rounded-xl shadow-md p-6 hover:shadow-xl transition text-center">
+                <div class="flex justify-center mb-4">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 4H6a2 2 0 00-2 2v14l4-4h8a2 2 0 002-2V6a2 2 0 00-2-2H8z" />
+                  </svg>
+                </div>
+                <h3 class="text-xl font-bold mb-2">Smart Search Tools</h3>
+                <p class="text-gray-600">Filter by location, budget, amenities, and more to find the perfect fit.</p>
+              </div>
+              <div class="bg-white rounded-xl shadow-md p-6 hover:shadow-xl transition text-center">
+                <div class="flex justify-center mb-4">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5.121 17.804A13.937 13.937 0 0112 15c2.485 0 4.79.735 6.879 1.804M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                  </svg>
+                </div>
+                <h3 class="text-xl font-bold mb-2">Expert Assistance</h3>
+                <p class="text-gray-600">Get support from local property experts and legal advisors at every step.</p>
+              </div>
+            </div>
+        </div>
+  </section>
+
+  <section style="padding: 4rem 1.5rem; background: #faf9f9;padding: 60px 30px; max-width: 1200px; margin: 60px auto; border-radius: 20px;max-width:1200px; box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1); font-family: 'Segoe UI', sans-serif;">
+      <div class="max-w-6xl mx-auto px-6">
+        <h3 class="text-4xl font-extrabold text-center mb-4">Housing's <span class="text-blue-600">Top Picks</span></h3>
+        <p class="text-lg text-center text-gray-600 mb-12">Hand-picked premium listings in Hyderabad's most sought-after locations.</p>
+
+        <div class="grid gap-8 md:grid-cols-3">
+          <a href="contact_us.html" style="text-decoration: none;"> 
+          <div class="bg-gray-50 rounded-xl shadow-md overflow-hidden hover:shadow-xl transition">
+            <img src="https://live.staticflickr.com/925/42729655925_99888520c4.jpg" loading="lazy"alt="Top Pick 1" class="w-full h-48 object-cover">
+            <div class="p-6">
+              <h3 class="text-xl font-bold mb-2">Luxury 3BHK in Gachibowli</h3>
+              <p class="text-gray-600 mb-4">Spacious, semi-furnished, with skyline views and all modern amenities.</p>
+              <span class="block font-semibold text-blue-600">₹1.2 Cr</span>
+            </div>
+          </div>
+          </a>
+          <a href="contact_us.html" style="text-decoration: none;"> 
+          <div class="bg-gray-50 rounded-xl shadow-md overflow-hidden hover:shadow-xl transition">
+            <img src="https://live.staticflickr.com/7290/26933122834_a224ac4109_b.jpg" loading="lazy" alt="Top Pick 2" class="w-full h-48 object-cover">
+            <div class="p-6">
+              <h3 class="text-xl font-bold mb-2">Modern Villa in Kondapur</h3>
+              <p class="text-gray-600 mb-4">Independent 4BHK villa with garden, parking, and smart home features.</p>
+              <span class="block font-semibold text-blue-600">₹2.5 Cr</span>
+            </div>
+          </div>
+          </a>
+
+          <a href="contact_us.html" style="text-decoration: none;"> 
+          <div class="bg-gray-50 rounded-xl shadow-md overflow-hidden hover:shadow-xl transition">
+            <img src="https://www.cap-vacances.net/wp-content/uploads/2021/01/26.jpg" loading="lazy" alt="Top Pick 3" class="w-full h-48 object-cover">
+            <div class="p-6">
+              <h3 class="text-xl font-bold mb-2">2BHK in Hitech City</h3>
+              <p class="text-gray-600 mb-4">Ideal for professionals, this apartment is close to tech parks and metros.</p>
+              <span class="block font-semibold text-blue-600">₹85 Lakh</span>
+            </div>
+          </div>
+          </a>
+        </div>
+      </div>
+  </section>
+  <section style="padding: 4rem 1.5rem; background-color: #daeaf3;padding: 60px 30px; max-width: 1200px; margin: 60px auto; border-radius: 20px;max-width:1200px; box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1); font-family: 'Segoe UI', sans-serif;">
+      <div class="mb-12">
+        <h4 class="text-3xl font-bold mb-2">🏠 Properties to Buy in Hyderabad</h4>
+        <p class="text-gray-600 mb-6">6,000+ Listings Added Daily | 66,000+ Verified Listings</p>
+
+        <h3 class="text-xl font-semibold mb-3">📌 Popular Localities</h3>
+        <a href="contact_us.html" style="text-decoration: none;"> 
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+          <div class="bg-white p-4 rounded-xl shadow">🏘 <strong>Patancheru</strong><br>Rapidly growing suburb</div>
+          <div class="bg-white p-4 rounded-xl shadow">🌇 <strong>Kondapur</strong><br>Tech hub & lifestyle zone</div>
+          <div class="bg-white p-4 rounded-xl shadow">🏡 <strong>Shadnagar</strong><br>Affordable plot investment</div>
+          <div class="bg-white p-4 rounded-xl shadow">🌿 <strong>Maheshwaram</strong><br>Peaceful with future growth</div>
+        </div>
+        </a>
+
+        <h2 class="text-3xl font-bold mb-2 mt-12">🏘 Properties for Rent in Hyderabad</h2>
+        <p class="text-gray-600 mb-6">Daily Listings Updates | 100% Verified Rentals</p>
+
+        <h3 class="text-xl font-semibold mb-3">🌟 Featured Rental Localities</h3>
+        <a href="contact_us.html" style="text-decoration: none;"> 
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+          <div class="bg-white p-4 rounded-xl shadow">📍 <strong>Gachibowli</strong><br>Near IT hubs, ideal for professionals</div>
+          <div class="bg-white p-4 rounded-xl shadow">🏙 <strong>Madhapur</strong><br>Trendy spot with co-working spaces</div>
+          <div class="bg-white p-4 rounded-xl shadow">🏡 <strong>Kukatpally</strong><br>Family-friendly with good amenities</div>
+          <div class="bg-white p-4 rounded-xl shadow">🌆 <strong>Mehdipatnam</strong><br>Affordable with easy transport</div>
+        </div>
+        </a>
+      </div>
+  </section>
+
+  <section style="padding: 4rem 1.5rem; background-color: #d3d3d6;padding: 60px 30px; max-width: 1200px; margin: 60px auto; border-radius: 20px;max-width:1200px; box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1); font-family: 'Segoe UI', sans-serif;">
+      <div class="max-w-7xl mx-auto px-6">
+        <h2 class="text-4xl font-extrabold text-center mb-4">
+          Prominent Projects to <span class="text-blue-600">Explore</span>
+        </h2>
+        <p class="text-center text-lg text-gray-600 mb-12">
+          Discover top-rated residential and rental spaces in Hyderabad's prime locations.
+        </p>
+    
+        <div class="grid md:grid-cols-3 gap-8">
+          <!-- Project 1 -->
+          <div class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-xl transition">
+            <img src="https://images.squarespace-cdn.com/content/v1/6012f7470bfcfd193b1f7fd8/1621310100401-OX9WV1ZBHSHBHUX0GGMZ/13-stairway.jpg?format=1000w" loading="lazy" alt="Project 1" class="w-full h-48 object-cover">
+            <div class="p-5">
+              <h3 class="text-xl font-semibold mb-1">Skyline Heights, Gachibowli</h3>
+              <p class="text-sm text-gray-600 mb-3">Luxury apartments for rent & sale with metro access and rooftop amenities.</p>
+              <a href="contact_us.html" style="text-decoration: none;">
+              <span class="inline-block px-3 py-1 text-sm bg-blue-100 text-blue-600 rounded-full font-medium">Buy & Rent</span>
+              </a>
+            </div>
+          </div>
+    
+          <!-- Project 2 -->
+          <div class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-xl transition">
+            <img src="https://images.rawpixel.com/image_800/czNmcy1wcml2YXRlL3Jhd3BpeGVsX2ltYWdlcy93ZWJzaXRlX2NvbnRlbnQvcHg1OTk4MzMtaW1hZ2Uta3d2dmNkNmkuanBn.jpg" loading="lazy" alt="Project 2" class="w-full h-48 object-cover">
+            <div class="p-5">
+              <h3 class="text-xl font-semibold mb-1">Greenfield Villas, Kondapur</h3>
+              <p class="text-sm text-gray-600 mb-3">Premium gated villa community offering smart homes with garden spaces.</p>
+              <a href="contact_us.html" style="text-decoration: none;">
+              <span class="inline-block px-3 py-1 text-sm bg-green-100 text-green-700 rounded-full font-medium">Buy</span>
+              </a>
+            </div>
+          </div>
+    
+          <!-- Project 3 -->
+          <div class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-xl transition">
+            <img src="https://p3.pikrepo.com/preview/145/5/white-wooden-building-modern-villa-contemporary-architecture-outdoor-lifestyle-spacious-home-pool-luxury-property-beach-house-vacation-home-architectural-design.jpg" loading="lazy" alt="Project 3" class="w-full h-48 object-cover">
+            <div class="p-5">
+              <h3 class="text-xl font-semibold mb-1">Urban Nest, Madhapur</h3>
+              <p class="text-sm text-gray-600 mb-3">Ideal for professionals, offering 2 & 3BHK rentals near tech corridors.</p>
+              <a href="contact_us.html" style="text-decoration: none;">
+              <span class="inline-block px-3 py-1 text-sm bg-yellow-100 text-yellow-700 rounded-full font-medium">Rent</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+  </section>
+
+    <section style="padding: 4rem 1.5rem; background: linear-gradient(to bottom, #94deab, #f7fafc);padding: 60px 30px; max-width: 1200px; margin: 60px auto; border-radius: 20px;max-width:1200px; box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1); font-family: 'Segoe UI', sans-serif;">
+
+
+      <div class="max-w-7xl mx-auto px-6">
+        <b class="text-4xl font-extrabold text-center mb-4">
+          Featured <span class="text-blue-600">Developers</span>
+        </b>
+        <p class="text-center text-lg text-gray-600 mb-12">
+          Discover the top builders transforming Hyderabad’s skyline with world-class infrastructure.
+        </p>
+      
+        <div class="space-y-8">
+          <!-- Developer 1 -->
+          <a href="contact_us.html" class="block">
+            <div class="flex flex-col md:flex-row items-center bg-white rounded-3xl shadow-lg p-6 md:p-8 gap-6 hover:shadow-2xl transition">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/e/ed/Lodha---New-LOgo.png" loading="lazy" alt="Lodha Group" class="w-28 h-auto object-contain">
+              <div>
+                <h3 class="text-2xl font-bold mb-2">Lodha Group</h3>
+                <p class="text-gray-600 text-base max-w-2xl">India’s premier luxury real estate brand with iconic high-rises and world-class amenities.</p>
+              </div>
+            </div>
+          </a>
+      
+          <!-- Developer 2 -->
+          <a href="contact_us.html" class="block">
+            <div class="flex flex-col md:flex-row items-center bg-white rounded-3xl shadow-lg p-6 md:p-8 gap-6 hover:shadow-2xl transition">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/3/31/DlfibmkolkataITTechPark.jpg" loading="lazy" alt="DLF" class="w-28 h-auto object-contain">
+              <div>
+                <h3 class="text-2xl font-bold mb-2">DLF Limited</h3>
+                <p class="text-gray-600 text-base max-w-2xl">DLF has been shaping India's real estate landscape with commercial, retail, and residential excellence.</p>
+              </div>
+            </div>
+          </a>
+      
+          <!-- Developer 3 -->
+          <a href="contact_us.html" class="block">
+            <div class="flex flex-col md:flex-row items-center bg-white rounded-3xl shadow-lg p-6 md:p-8 gap-6 hover:shadow-2xl transition">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/5/5d/Prestige_Falcon_Towers.jpg" loading="lazy" alt="Prestige Group" class="w-28 h-auto object-contain">
+              <div>
+                <h3 class="text-2xl font-bold mb-2">Prestige Group</h3>
+                <p class="text-gray-600 text-base max-w-2xl">Leading South Indian developer known for innovation, quality, and luxurious communities.</p>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+      
+  </section>
+
+  <section style="padding: 4rem 1.5rem; background-color: #daeaf3;padding: 60px 30px; max-width: 1200px; margin: 60px auto; border-radius: 20px;max-width:1200px; box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1); font-family: 'Segoe UI', sans-serif;">
+      <div style="max-width: 80rem; margin-left: auto; margin-right: auto; padding-left: 1.5rem; padding-right: 1.5rem;">
+        <h5 style="font-size: 2.25rem; font-weight: 800; text-align: center; margin-bottom: 1rem;">
+          Projects by <span class="text-indigo-600">Trusted Developers</span>
+        </h5>
+        <p class="text-center text-lg text-gray-600 mb-12">
+          Explore premium properties built with excellence by India’s most reliable developers.
+        </p>
+    
+        <div class="grid md:grid-cols-3 gap-10">
+          <a href="contact_us.html" style="text-decoration: none;"> 
+          <div class="relative group overflow-hidden rounded-3xl shadow-xl">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/d/d0/Lodha_Trump_Tower_and_Marquise.png" loading="lazy" alt="Lodha Project" class="w-full h-60 object-cover transition-transform duration-500 group-hover:scale-105">
+            <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent p-6 flex flex-col justify-end">
+              <h3 class="text-white text-xl font-bold mb-1">Lodha Eternis, Hitech City</h3>
+              <p class="text-gray-300 text-sm mb-2">2 & 3BHK premium residences with luxury lifestyle amenities.</p>
+              <span class="text-xs inline-block bg-white text-blue-700 px-3 py-1 rounded-full font-semibold">Lodha Group</span>
+            </div>
+          </div>
+          </a>
+          <a href="contact_us.html" style="text-decoration: none;"> 
+          <div class="relative group overflow-hidden rounded-3xl shadow-xl">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/5/54/DLF_IT_Park_-_Rajarhat_2012-04-11_9380.JPG" loading="lazy" alt="DLF Project" class="w-full h-60 object-cover transition-transform duration-500 group-hover:scale-105">
+            <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent p-6 flex flex-col justify-end">
+              <h3 class="text-white text-xl font-bold mb-1">DLF Valley Enclave, Kondapur</h3>
+              <p class="text-gray-300 text-sm mb-2">Spacious luxury villas surrounded by nature and tranquility.</p>
+              <span class="text-xs inline-block bg-white text-green-700 px-3 py-1 rounded-full font-semibold">DLF Limited</span>
+            </div>
+          </div>
+          </a>
+    
+          <a href="contact_us.html" style="text-decoration: none;"> 
+          <div class="relative group overflow-hidden rounded-3xl shadow-xl">
+            <img src="https://media.licdn.com/dms/image/v2/C510BAQGLsOY8gKjCxA/company-logo_200_200/company-logo_200_200/0/1630604678123/prestige_falcon_towers_logo?e=2147483647&v=beta&t=rRAsnJX5oBgR0lDENe_k02XK1iKzzVXJOdfqP0AQ5_w" loading="lazy" alt="Prestige Project" class="w-full h-60 object-cover transition-transform duration-500 group-hover:scale-105">
+            <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent p-6 flex flex-col justify-end">
+              <h3 class="text-white text-xl font-bold mb-1">Prestige Azure Bay, Madhapur</h3>
+              <p class="text-gray-300 text-sm mb-2">Elegant urban apartments with close proximity to IT hubs.</p>
+              <span class="text-xs inline-block bg-white text-yellow-700 px-3 py-1 rounded-full font-semibold">Prestige Group</span>
+            </div>
+          </div>
+          </a>
+        </div>
+      </div>
+  </section>
+  
+ <section style="padding: 4rem 1.5rem; background-color: #f6f8f8; padding: 60px 30px; max-width: 1200px; margin: 60px auto; border-radius: 20px; box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1); font-family: 'Segoe UI', sans-serif;">
+  <div style="max-width: 1000px; margin: 0 auto;">
+    <i style="display: block; font-size: 2rem; font-weight: 700; text-align: center; color: #1f2937; margin: 1.5rem auto;">
+      FAQs on Properties & Rent
+    </i>
+
+    <p style="text-align: center; font-size: 1rem; color: #4b5563; margin-bottom: 2rem;">
+      Find answers to common questions from landlords and tenants about renting and leasing properties.
+    </p>
+
+    <div style="display: grid; gap: 1.5rem; grid-template-columns: 1fr;">
+      <!-- FAQ Card Template -->
+      <div class="faq-item" style="background: #ffffff; border-left: 4px solid #3b82f6; padding: 1rem 1rem; border-radius: 0.5rem; box-shadow: 0 2px 10px rgba(0,0,0,0.04); cursor: pointer;">
+        <h3 style="font-size: 1.125rem; font-weight: 700; margin-bottom: 0.25rem;">1. How is the monthly rent amount determined?</h3>
+        <p class="faq-answer" style="font-size: 0.95rem; color: #4b5563; display: none;">
+          Rent is based on market trends, property features, amenities, and the landlord’s costs such as mortgage and upkeep.
+        </p>
+      </div>
+
+      <div class="faq-item" style="background: #ffffff; border-left: 4px solid #10b981; padding: 1rem 1rem; border-radius: 0.5rem; box-shadow: 0 2px 10px rgba(0,0,0,0.04); cursor: pointer;">
+        <h3 style="font-size: 1.125rem; font-weight: 700; margin-bottom: 0.25rem;">2. What does a security deposit cover?</h3>
+        <p class="faq-answer" style="font-size: 0.95rem; color: #4b5563; display: none;">
+          It covers unpaid rent, damage beyond normal wear, and any cleaning charges stated in the lease agreement.
+        </p>
+      </div>
+
+      <div class="faq-item" style="background: #ffffff; border-left: 4px solid #ef4444; padding: 1rem 1rem; border-radius: 0.5rem; box-shadow: 0 2px 10px rgba(0,0,0,0.04); cursor: pointer;">
+        <h3 style="font-size: 1.125rem; font-weight: 700; margin-bottom: 0.25rem;">3. Can the landlord increase rent during the lease term?</h3>
+        <p class="faq-answer" style="font-size: 0.95rem; color: #4b5563; display: none;">
+          Not during the active lease term—rent changes usually apply only at renewal or with a new lease agreement.
+        </p>
+      </div>
+
+      <div class="faq-item" style="background: #ffffff; border-left: 4px solid #6366f1; padding: 1rem 1rem; border-radius: 0.5rem; box-shadow: 0 2px 10px rgba(0,0,0,0.04); cursor: pointer;">
+        <h3 style="font-size: 1.125rem; font-weight: 700; margin-bottom: 0.25rem;">4. Which utilities are typically included?</h3>
+        <p class="faq-answer" style="font-size: 0.95rem; color: #4b5563; display: none;">
+          Water and garbage are often included. Electricity, internet, and gas are usually paid separately by tenants.
+        </p>
+      </div>
+
+      <div class="faq-item" style="background: #ffffff; border-left: 4px solid #f59e0b; padding: 1rem 1rem; border-radius: 0.5rem; box-shadow: 0 2px 10px rgba(0,0,0,0.04); cursor: pointer;">
+        <h3 style="font-size: 1.125rem; font-weight: 700; margin-bottom: 0.25rem;">5. How do I request repairs?</h3>
+        <p class="faq-answer" style="font-size: 0.95rem; color: #4b5563; display: none;">
+          Submit a written request to the landlord or manager. Urgent issues should be addressed within a reasonable timeframe.
+        </p>
+      </div>
+    </div>
+  </div>
+ </section>
+
+  <script>
+    // Toggle visibility of each answer on question click
+    document.querySelectorAll('.faq-item').forEach(item => {
+      item.addEventListener('click', () => {
+        const answer = item.querySelector('.faq-answer');
+        const isVisible = answer.style.display === 'block';
+        document.querySelectorAll('.faq-answer').forEach(p => p.style.display = 'none');
+        answer.style.display = isVisible ? 'none' : 'block';
+      });
+    });
+  </script>
+ 
+  <script>
+    // JavaScript for handling the search
+    function searchService() {
+        const searchQuery = document.getElementById('searchInput').value;
+        if (searchQuery.trim() === '') {
+            alert('Please enter a search term!');
+        } else {
+            alert('Searching for: ' + searchQuery);
+        }
+    }
+
+    // JavaScript for form validation
+    function validateForm() {
+        const name = document.getElementById('name').value;
+        const email = document.getElementById('email').value;
+        const message = document.getElementById('message').value;
+
+        if (name === '' || email === '' || message === '') {
+            alert('Please fill out all fields.');
+            return false;
+        }
+        alert('Message sent successfully!');
+        return true;
+    }
+</script>
+
+ <footer style="background-color: #f1f1f1; padding: 40px 0;">
+    <div style="max-width: 1200px; margin: 0 auto; padding-left: -600px;">
+
+        <!-- Education & Training -->
+        <div style="text-align: left; margin: 10px;">
+            <a href="education_training.html" style="text-decoration: none;">
+                <p style="font-size: 16px; color: #333; font-weight: bold;">Education & Training</p>
+            </a>
+            <p style="font-size: 14px; color: #555; margin-top: 10px;">Explore a wide range of educational and training options across various fields to enhance your skills and career opportunities.</p>
+            <hr style="border: 1px solid #ddd; margin-top: 20px;"/>
+        </div>
+
+        <!-- Properties & Rents -->
+        <div style="text-align: left; margin: 10px;">
+            <a href="properties_rent.html" style="text-decoration: none;">
+                <p style="font-size: 16px; color: #333; font-weight: bold;">Properties & Rents</p>
+            </a>
+            <p style="font-size: 14px; color: #555; margin-top: 10px;">Find the perfect property for sale, rent, or investment in your desired location with comprehensive listings and details.</p>
+            <hr style="border: 1px solid #ddd; margin-top: 20px;"/>
+        </div>
+
+        <!-- Professional Services -->
+        <div style="text-align: left; margin: 10px;">
+            <a href="proffessional_services.html" style="text-decoration: none;">
+                <p style="font-size: 16px; color: #333; font-weight: bold;">Professional Services</p>
+            </a>
+            <p style="font-size: 14px; color: #555; margin-top: 10px;">Access top-notch professional services, including legal, financial, and consulting services, from trusted experts.</p>
+            <hr style="border: 1px solid #ddd; margin-top: 20px;"/>
+        </div>
+
+        <!-- Travel & Transport -->
+        <div style="text-align: left; margin: 10px;">
+            <a href="travel_transport.html" style="text-decoration: none;">
+                <p style="font-size: 16px; color: #333; font-weight: bold;">Travel & Transport</p>
+            </a>
+            <p style="font-size: 14px; color: #555; margin-top: 10px;">Book your travel needs, including flights, cabs, and buses, with ease and at the best prices.</p>
+            <hr style="border: 1px solid #ddd; margin-top: 20px;"/>
+        </div>
+
+        <!-- Health & Wellness -->
+        <div style="text-align: left; margin: 10px;">
+            <a href="health_wellness.html" style="text-decoration: none;">
+                <p style="font-size: 16px; color: #333; font-weight: bold;">Health & Wellness</p>
+            </a>
+            <p style="font-size: 14px; color: #555; margin-top: 10px;">Discover health and wellness services to maintain a balanced lifestyle, including fitness classes, clinics, and more.</p>
+            <hr style="border: 1px solid #ddd; margin-top: 20px;"/>
+        </div>
+
+        <!-- Events -->
+        <div style="text-align: left; margin: 10px;">
+            <a href="events.html" style="text-decoration: none;">
+                <p style="font-size: 16px; color: #333; font-weight: bold;">Events</p>
+            </a>
+            <p style="font-size: 14px; color: #555; margin-top: 10px;">Stay updated with upcoming events, conferences, exhibitions, and entertainment activities near you.</p>
+            <hr style="border: 1px solid #ddd; margin-top: 20px;"/>
+        </div>
+
+        <!-- Home & Office -->
+        <div style="text-align: left; margin: 10px;">
+            <a href="home_office.html" style="text-decoration: none;">
+                <p style="font-size: 16px; color: #333; font-weight: bold;">Home & Office</p>
+            </a>
+            <p style="font-size: 14px; color: #555; margin-top: 10px;">Explore furniture, appliances, and office supplies to furnish your home or workspace with the best products.</p>
+            <hr style="border: 1px solid #ddd; margin-top: 20px;"/>
+        </div>
+
+        <!-- Shopping -->
+        <div style="text-align: left; margin: 10px;">
+            <a href="shopping.html" style="text-decoration: none;">
+                <p style="font-size: 16px; color: #333; font-weight: bold;">Shopping</p>
+            </a>
+            <p style="font-size: 14px; color: #555; margin-top: 10px;">Shop online for a variety of products including electronics, clothing, accessories, and much more.</p>
+            <hr style="border: 1px solid #ddd; margin-top: 20px;"/>
+        </div>
+
+        <!-- Placement & Jobs -->
+        <div style="text-align: left; margin: 10px;">
+            <a href="placements_jobs.html" style="text-decoration: none;">
+                <p style="font-size: 16px; color: #333; font-weight: bold;">Placement & Jobs</p>
+            </a>
+            <p style="font-size: 14px; color: #555; margin-top: 10px;">Browse job listings and placement opportunities, and connect with top employers in various industries.</p>
+            <hr style="border: 1px solid #ddd; margin-top: 20px;"/>
+        </div>
+
+        <!-- Social Media Icons -->
+        <div style="text-align: center; margin-top: 20px;">
+            <p style="font-size: 16px; color: #333; font-weight: bold;">Follow Us</p>
+            <div style="margin-top:20px;display: flex;text-align: center;justify-content: center;justify-items: center;">
+                <a href="https://www.facebook.com" target="_blank" style="margin: 0 15px; text-decoration: none;">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" alt="Facebook" style="width: 40px; height: 40px;"/>
+                </a>
+                <a href="https://www.twitter.com" target="_blank" style="margin: 0 15px; text-decoration: none;">
+                    <img src="https://cdn.iconscout.com/icon/free/png-256/free-twitter-logo-icon-download-in-svg-png-gif-file-formats--social-media-pack-logos-icons-83443.png?f=webp&w=128" alt="Twitter" style="width: 40px; height: 40px;"/>
+                </a>
+                <a href="https://www.instagram.com" target="_blank" style="margin: 0 15px; text-decoration: none;">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram" style="width: 40px; height: 40px;"/>
+                </a>
+                <a href="https://www.linkedin.com" target="_blank" style="margin: 0 15px; text-decoration: none;">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/e/e6/729101_linkedin_icon.png" alt="LinkedIn" style="width: 40px; height: 40px;"/>
+                </a>
+            </div>
+            <br>
+                <p style="margin: auto; color: black;">&copy; 2025 Hitaishi Web Portal. All rights reserved.</p>
+        </div>
+    </div>
+    
+
+</footer>
+</body>
+</html>

@@ -1,0 +1,934 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home and Office Solutions | Interior, Maintenance & More | Hithaishi Services</title>
+  <meta name="keywords" content="home services, office solutions, interior design, office setup, home maintenance, Hithaishi Services, space planning, smart office, home improvement, residential services">
+  <meta name="description" content="Explore smart solutions for home and office spaces with Hithaishi Services. From interiors to repairs, we deliver tailored, efficient, and professional support.">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+<body style="margin: 0;padding: 0;font-family: Arial, Helvetica, sans-serif;">
+<header style="position: sticky; top: 0; z-index: 1000; background: linear-gradient(135deg, #0066cc, #004080); padding: 15px 5%; box-shadow: 0 4px 12px rgba(0,0,0,0.1); font-family: 'Segoe UI', Roboto, sans-serif; backdrop-filter: blur(5px);">
+  <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 20px; max-width: 1400px; margin: 0 auto;">
+    
+    <!-- Logo Section -->
+    <a href="index.html" style="color: white; text-decoration: none; flex-shrink: 0; display: flex; align-items: center; gap: 10px;">
+      <!-- <div style="background: white; border-radius: 8px; padding: 5px; display: inline-flex; align-items: center; justify-content: center;">
+        <svg width="30" height="30" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M12 2L3 7L12 12L21 7L12 2Z" fill="#0066cc" stroke="#0066cc" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M3 12L12 17L21 12" stroke="#0066cc" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M3 17L12 22L21 17" stroke="#0066cc" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </div> -->
+      <div style="background: #ffffff; border-radius: 10px; padding: 2px 2px; display: inline-flex; align-items: center; justify-content: center; box-shadow: 0 2px 6px rgba(0, 102, 204, 0.25);">
+        <img src="img/logo_hitaishiservices.png" alt="Hitaishi Logo" width="32" height="32" style="display: block;" />
+      </div>
+
+      <div>
+        <h1 style="margin: 0; font-size: 32px; font-weight: 800; letter-spacing: 1px; background: linear-gradient(to right, #ffffff, #e6f2ff); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">Hitaishi</h1>
+        <p style="font-size: 14px; margin: 2px 0 0 0; font-weight: 500; color: rgba(255,255,255,0.9);">Find trusted services and professionals</p>
+      </div>
+    </a>
+    
+    <!-- Search Form -->
+    <form action="search.html" method="GET" style="flex-grow: 1; max-width: 500px; min-width: 250px; display: flex; box-shadow: 0 2px 10px rgba(0,0,0,0.1); border-radius: 8px; overflow: hidden; background: rgba(255,255,255,0.9); transition: all 0.3s ease;" onfocusin="this.style.boxShadow='0 2px 15px rgba(0,80,200,0.2)'; this.style.background='white'" onfocusout="this.style.boxShadow='0 2px 10px rgba(0,0,0,0.1)'; this.style.background='rgba(255,255,255,0.9)'">
+      <input
+        type="text"
+        name="query"
+        placeholder="Search services, businesses..."
+        style="flex-grow: 1; border: none; padding: 12px 20px; font-size: 0.95rem; outline: none; color: #003366; background: transparent;"
+        required
+      />
+      <button
+        type="submit"
+        style="background: linear-gradient(to right, #0066cc, #004080); border: none; padding: 0 25px; cursor: pointer; color: white; font-weight: 600; font-size: 1rem; transition: all 0.3s ease; display: flex; align-items: center; justify-content: center;"
+        onmouseover="this.style.opacity='0.9'"
+        onmouseout="this.style.opacity='1'"
+        aria-label="Search"
+      >
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" style="margin-right: 5px;">
+          <path d="M11 19C15.4183 19 19 15.4183 19 11C19 6.58172 15.4183 3 11 3C6.58172 3 3 6.58172 3 11C3 15.4183 6.58172 19 11 19Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M21 21L16.65 16.65" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        Search
+      </button>
+    </form>
+
+    <!-- Navigation Links -->
+    <nav id="navLinks" style="display: flex; gap: 10px; flex-wrap: wrap; align-items: center; flex-shrink: 0;">
+      <a href="index.html" style="color: white; font-size: 0.95rem; padding: 8px 15px; text-decoration: none; transition: all 0.3s ease; font-weight: 500; border-radius: 6px; border: 1px solid rgba(255,255,255,0.3);" onmouseover="this.style.backgroundColor='rgba(255,255,255,0.15)'" onmouseout="this.style.backgroundColor='transparent'">Home</a>
+      <a href="Services.html" style="color: white; font-size: 0.95rem; padding: 8px 15px; text-decoration: none; transition: all 0.3s ease; font-weight: 500; border-radius: 6px; border: 1px solid rgba(255,255,255,0.3);" onmouseover="this.style.backgroundColor='rgba(255,255,255,0.15)'" onmouseout="this.style.backgroundColor='transparent'">Services</a>
+      <a href="ListBusiness.html" style="color: white; font-size: 0.95rem; padding: 8px 15px; text-decoration: none; transition: all 0.3s ease; font-weight: 500; border-radius: 6px; border: 1px solid rgba(255,255,255,0.3);" onmouseover="this.style.backgroundColor='rgba(255,255,255,0.15)'" onmouseout="this.style.backgroundColor='transparent'">List Business</a>
+      <a href="postadd.html" style="color: white; font-size: 0.95rem; padding: 8px 15px; background: rgba(255,255,255,0.2); text-decoration: none; transition: all 0.3s ease; font-weight: 600; border-radius: 6px; border: 1px solid rgba(255,255,255,0.4);" onmouseover="this.style.backgroundColor='rgba(255,255,255,0.3)'" onmouseout="this.style.backgroundColor='rgba(255,255,255,0.2)'">Post Free Ad</a>
+      <a href="SignIn.html" style="color: #0066cc; font-size: 0.95rem; padding: 8px 15px; background: white; text-decoration: none; transition: all 0.3s ease; font-weight: 600; border-radius: 6px;" onmouseover="this.style.backgroundColor='#f0f7ff'; this.style.color='#004080'" onmouseout="this.style.backgroundColor='white'; this.style.color='#0066cc'">Sign In</a>
+    </nav>
+
+    <!-- Menu Button for Mobile -->
+    <button onclick="toggleMenu()" style="display: none; background: rgba(255,255,255,0.2); border: 1px solid rgba(255,255,255,0.4); border-radius: 6px; padding: 8px 12px; font-size: 1.2rem; color: white; cursor: pointer; flex-shrink: 0;" id="menuToggle" aria-label="Toggle Menu">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M3 12H21" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M3 6H21" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M3 18H21" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+    </button>
+
+  </div>
+</header>
+
+<script>
+  function toggleMenu() {
+    var nav = document.getElementById("navLinks");
+    if (nav.style.display === "none" || nav.style.display === "") {
+      nav.style.display = "flex";
+      nav.style.flexDirection = "column";
+      nav.style.position = "absolute";
+      nav.style.top = "100%";
+      nav.style.left = "0";
+      nav.style.right = "0";
+      nav.style.background = "linear-gradient(135deg, #0066cc, #004080)";
+      nav.style.padding = "20px 5%";
+      nav.style.gap = "15px";
+      nav.style.boxShadow = "0 10px 20px rgba(0,0,0,0.1)";
+    } else {
+      nav.style.display = "none";
+    }
+  }
+
+  function handleResize() {
+    var width = window.innerWidth;
+    var menuToggle = document.getElementById("menuToggle");
+    var navLinks = document.getElementById("navLinks");
+
+    if (width <= 992) {
+      menuToggle.style.display = "flex";
+      menuToggle.style.alignItems = "center";
+      menuToggle.style.justifyContent = "center";
+      if (width > 768) {
+        navLinks.style.display = "none";
+      }
+    } else {
+      menuToggle.style.display = "none";
+      navLinks.style.display = "flex";
+      navLinks.style.flexDirection = "row";
+      navLinks.style.position = "static";
+      navLinks.style.padding = "0";
+      navLinks.style.background = "transparent";
+      navLinks.style.boxShadow = "none";
+    }
+  }
+
+  window.addEventListener("resize", handleResize);
+  window.addEventListener("load", handleResize);
+</script>
+
+  <section style="position: relative; width: 100%; height: 70vh; overflow: hidden; font-family: 'Segoe UI', sans-serif;">
+    <img src="https://img.goodfon.com/original/2560x1546/5/f1/unique-rustic-home-office-design-interer-stil-domashnii-ofis.jpg" 
+    loading="lazy"  alt="Home and Office Interior" 
+         style="width: 100%; height: 100%; object-fit: cover; object-position: center;">
+    
+    <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;
+                background: rgba(0, 0, 0, 0.45); display: flex; flex-direction: column;
+                justify-content: center; align-items: center; text-align: center; padding: 20px; color: #fff;">
+      
+      <h2 style="font-size: 3.5rem; margin-bottom: 20px;">Stylish Furniture for Home & Office</h2>
+      <p style="font-size: 1.25rem; max-width: 700px; margin-bottom: 30px;">
+        Elevate your living and working spaces with our curated collection of elegant and functional furniture from Hitaishi
+      </p>
+      <a href="home_office.html#services" style="background: #0d47a1; color: #fff; padding: 14px 28px; font-size: 1rem; 
+         border-radius: 8px; text-decoration: none; transition: background 0.3s;">
+        Explore Now
+      </a>
+  
+    </div>
+  </section>
+  <!-- home services -->
+  <section  style="padding: 20px 20px; background: #ffffff; font-family: 'Segoe UI', sans-serif;">
+    <h3 style="text-align: center; font-size: 2.5rem; color: #0d47a1; margin-bottom: 20px;">Our Home Services</h3>
+    <p style="text-align: center; max-width: 700px; margin: 0 auto 40px; font-size: 1.1rem; color: #555;">
+      Professional services tailored to every space in your home or office.
+    </p>
+  
+    <div style="display: flex; gap: 20px; overflow-x: auto; padding-bottom: 10px; justify-content: center; max-width: 1300px; margin: 0 auto;">
+      
+      <!-- Deep Cleaning -->
+      <a href="contact_us.html" style="flex: 0 0 auto; width: 240px; text-decoration: none;">
+        <div style="position: relative; overflow: hidden; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.06); transition: transform 0.3s, box-shadow 0.3s;" 
+             onmouseover="this.style.transform='scale(1.03)'; this.style.boxShadow='0 6px 18px rgba(0,0,0,0.1)'; this.querySelector('img').style.transform='scale(1.05)'; this.querySelector('.label').style.background='rgba(13,71,161,0.95)'"
+             onmouseout="this.style.transform='scale(1)'; this.style.boxShadow='0 4px 12px rgba(0,0,0,0.06)'; this.querySelector('img').style.transform='scale(1)'; this.querySelector('.label').style.background='rgba(13,71,161,0.8)'">
+          <img src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" loading="lazy" alt="Deep Cleaning" style="width: 100%; height: 220px; object-fit: cover; transition: transform 0.4s;">
+          <div class="label" style="position: absolute; bottom: 0; background: rgba(13,71,161,0.8); color: white; width: 100%; text-align: center; padding: 12px 0; font-size: 1.2rem; transition: background 0.3s;">Deep Cleaning</div>
+        </div>
+      </a>
+  
+      <!-- Office Maintenance -->
+      <a href="contact_us.html" style="flex: 0 0 auto; width: 240px; text-decoration: none;">
+        <div style="position: relative; overflow: hidden; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.06); transition: transform 0.3s, box-shadow 0.3s;" 
+             onmouseover="this.style.transform='scale(1.03)'; this.style.boxShadow='0 6px 18px rgba(0,0,0,0.1)'; this.querySelector('img').style.transform='scale(1.05)'; this.querySelector('.label').style.background='rgba(13,71,161,0.95)'"
+             onmouseout="this.style.transform='scale(1)'; this.style.boxShadow='0 4px 12px rgba(0,0,0,0.06)'; this.querySelector('img').style.transform='scale(1)'; this.querySelector('.label').style.background='rgba(13,71,161,0.8)'">
+          <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" loading="lazy" alt="Office Maintenance" style="width: 100%; height: 220px; object-fit: cover; transition: transform 0.4s;">
+          <div class="label" style="position: absolute; bottom: 0; background: rgba(13,71,161,0.8); color: white; width: 100%; text-align: center; padding: 12px 0; font-size: 1.2rem; transition: background 0.3s;">Office Maintenance</div>
+        </div>
+      </a>
+  
+      <!-- Home Organization -->
+      <a href="contact_us.html" style="flex: 0 0 auto; width: 240px; text-decoration: none;">
+        <div style="position: relative; overflow: hidden; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.06); transition: transform 0.3s, box-shadow 0.3s;" 
+             onmouseover="this.style.transform='scale(1.03)'; this.style.boxShadow='0 6px 18px rgba(0,0,0,0.1)'; this.querySelector('img').style.transform='scale(1.05)'; this.querySelector('.label').style.background='rgba(13,71,161,0.95)'"
+             onmouseout="this.style.transform='scale(1)'; this.style.boxShadow='0 4px 12px rgba(0,0,0,0.06)'; this.querySelector('img').style.transform='scale(1)'; this.querySelector('.label').style.background='rgba(13,71,161,0.8)'">
+          <img src="https://images.unsplash.com/photo-1600121848594-d8644e57abab?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" loading="lazy" alt="Home Organization" style="width: 100%; height: 220px; object-fit: cover; transition: transform 0.4s;">
+          <div class="label" style="position: absolute; bottom: 0; background: rgba(13,71,161,0.8); color: white; width: 100%; text-align: center; padding: 12px 0; font-size: 1.2rem; transition: background 0.3s;">Home Organization</div>
+        </div>
+      </a>
+  
+      <!-- Window Cleaning -->
+      <a href="contact_us.html" style="flex: 0 0 auto; width: 240px; text-decoration: none;">
+        <div style="position: relative; overflow: hidden; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.06); transition: transform 0.3s, box-shadow 0.3s;" 
+             onmouseover="this.style.transform='scale(1.03)'; this.style.boxShadow='0 6px 18px rgba(0,0,0,0.1)'; this.querySelector('img').style.transform='scale(1.05)'; this.querySelector('.label').style.background='rgba(13,71,161,0.95)'"
+             onmouseout="this.style.transform='scale(1)'; this.style.boxShadow='0 4px 12px rgba(0,0,0,0.06)'; this.querySelector('img').style.transform='scale(1)'; this.querySelector('.label').style.background='rgba(13,71,161,0.8)'">
+          <img src="https://live.staticflickr.com/1618/24441624384_d112976fbc_b.jpg" loading="lazy" alt="Window Cleaning" style="width: 100%; height: 220px; object-fit: cover; transition: transform 0.4s;">
+          <div class="label" style="position: absolute; bottom: 0; background: rgba(13,71,161,0.8); color: white; width: 100%; text-align: center; padding: 12px 0; font-size: 1.2rem; transition: background 0.3s;">Window Cleaning</div>
+        </div>
+      </a>
+  
+      <!-- Carpet Cleaning -->
+      <a href="contact_us.html" style="flex: 0 0 auto; width: 240px; text-decoration: none;">
+        <div style="position: relative; overflow: hidden; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.06); transition: transform 0.3s, box-shadow 0.3s;" 
+             onmouseover="this.style.transform='scale(1.03)'; this.style.boxShadow='0 6px 18px rgba(0,0,0,0.1)'; this.querySelector('img').style.transform='scale(1.05)'; this.querySelector('.label').style.background='rgba(13,71,161,0.95)'"
+             onmouseout="this.style.transform='scale(1)'; this.style.boxShadow='0 4px 12px rgba(0,0,0,0.06)'; this.querySelector('img').style.transform='scale(1)'; this.querySelector('.label').style.background='rgba(13,71,161,0.8)'">
+          <img src="https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2000&q=80" loading="lazy" alt="Carpet Cleaning" style="width: 100%; height: 220px; object-fit: cover; transition: transform 0.4s;">
+          <div class="label" style="position: absolute; bottom: 0; background: rgba(13,71,161,0.8); color: white; width: 100%; text-align: center; padding: 12px 0; font-size: 1.2rem; transition: background 0.3s;">Carpet Cleaning</div>
+        </div>
+      </a>
+  
+    </div>
+  </section>
+  <!-- comphrensive services -->
+  <section id="services" style="padding: 20px 20px; background: #f9f9f9;">
+    <div style="max-width: 1200px; margin: 0 auto;">
+      <h2 style="text-align: center; font-size: 2.5rem; margin-bottom: 20px; color: #333;">Our Comprehensive Services</h2>
+      <p style="text-align: center; max-width: 700px; margin: 0 auto 50px; color: #666; font-size: 1.1rem;">We offer a wide range of professional services to keep your home or office in perfect condition</p>
+      
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px;">
+        <div style="background: white; border-radius: 10px; overflow: hidden; box-shadow: 0 5px 15px rgba(0,0,0,0.05); transition: all 0.3s ease;" onmouseover="this.style.transform='translateY(-10px)'; this.style.boxShadow='0 15px 30px rgba(0,0,0,0.1)';" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 5px 15px rgba(0,0,0,0.05)';">
+          <div style="height: 200px; background: url('https://images.unsplash.com/photo-1600585152220-90363fe7e115?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80'); background-size: cover; background-position: center;"></div>
+          <div style="padding: 25px;">
+            <h3 style="font-size: 1.5rem; margin-bottom: 15px; color: #333;">Home Cleaning</h3>
+            <p style="color: #666; margin-bottom: 20px;">Professional deep cleaning services for every room in your home, using eco-friendly products.</p>
+            <a href="contact_us.html" style="color: #4CAF50; text-decoration: none; font-weight: bold; display: inline-flex; align-items: center;">Learn more <svg style="margin-left: 5px;" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#4CAF50" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+          </div>
+        </div>
+        
+        <div style="background: white; border-radius: 10px; overflow: hidden; box-shadow: 0 5px 15px rgba(0,0,0,0.05); transition: all 0.3s ease;" onmouseover="this.style.transform='translateY(-10px)'; this.style.boxShadow='0 15px 30px rgba(0,0,0,0.1)';" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 5px 15px rgba(0,0,0,0.05)';">
+          <div style="height: 200px; background: url('https://images.unsplash.com/photo-1497366811353-6870744d04b2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2069&q=80'); background-size: cover; background-position: center;"></div>
+          <div style="padding: 25px;">
+            <h3 style="font-size: 1.5rem; margin-bottom: 15px; color: #333;">Office Maintenance</h3>
+            <p style="color: #666; margin-bottom: 20px;">Complete office cleaning and maintenance to ensure a productive work environment.</p>
+            <a href="contact_us.html" style="color: #4CAF50; text-decoration: none; font-weight: bold; display: inline-flex; align-items: center;">Learn more <svg style="margin-left: 5px;" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#4CAF50" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+          </div>
+        </div>
+        
+        <div style="background: white; border-radius: 10px; overflow: hidden; box-shadow: 0 5px 15px rgba(0,0,0,0.05); transition: all 0.3s ease;" onmouseover="this.style.transform='translateY(-10px)'; this.style.boxShadow='0 15px 30px rgba(0,0,0,0.1)';" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 5px 15px rgba(0,0,0,0.05)';">
+          <div style="height: 200px; background: url('https://images.unsplash.com/photo-1556740738-b6a63e27c4df?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80'); background-size: cover; background-position: center;"></div>
+          <div style="padding: 25px;">
+            <h3 style="font-size: 1.5rem; margin-bottom: 15px; color: #333;">Organization</h3>
+            <p style="color: #666; margin-bottom: 20px;">Professional organization services to declutter and optimize your living or workspace.</p>
+            <a href="contact_us.html" style="color: #4CAF50; text-decoration: none; font-weight: bold; display: inline-flex; align-items: center;">Learn more <svg style="margin-left: 5px;" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#4CAF50" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>  
+  <!-- Explore collection -->
+  <section style="padding: 80px 20px; background: linear-gradient(135deg, #f3f6fb 0%, #e8edf7 100%); font-family: 'Segoe UI', sans-serif;">
+    <div style="max-width: 1200px; margin: 0 auto;">
+        <div style="display: flex; flex-wrap: wrap; align-items: center; gap: 50px; margin-bottom: 40px;">
+            <div style="flex: 1; min-width: 300px;">
+                <h4 style="font-size: 2.8rem; color: #0d47a1; margin-bottom: 25px; line-height: 1.3;">
+                    Redefine Your Spaces with <span style="color: #ff6d00;">Hitaishi</span>
+                </h4>
+                <p style="font-size: 1.15rem; color: #444; line-height: 1.6; margin-bottom: 30px;">
+                    Discover furniture that blends timeless craftsmanship with contemporary design, creating spaces that inspire and comfort.
+                </p>
+                <a href="SignIn.html" style="background: #0d47a1; color: white; padding: 14px 32px; border-radius: 8px; text-decoration: none; font-weight: bold; display: inline-block; transition: all 0.3s; box-shadow: 0 4px 12px rgba(13, 71, 161, 0.3);" 
+                   onmouseover="this.style.transform='translateY(-3px)'; this.style.boxShadow='0 6px 16px rgba(13, 71, 161, 0.4)';" 
+                   onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 4px 12px rgba(13, 71, 161, 0.3)';">
+                    Explore Collections
+                </a>
+            </div>
+            <div style="flex: 1; min-width: 300px;">
+                <img src="https://images.unsplash.com/photo-1555041469-a586c61ea9bc?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" 
+                     alt="Modern Living Room" 
+                     style="width: 100%; border-radius: 12px; box-shadow: 0 15px 30px rgba(0,0,0,0.1);">
+            </div>
+        </div>
+
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 30px; margin-top: 60px;">
+            <div style="background: white; border-radius: 12px; padding: 30px; box-shadow: 0 5px 15px rgba(0,0,0,0.05); transition: all 0.3s ease;" 
+                 onmouseover="this.style.transform='translateY(-10px)'; this.style.boxShadow='0 15px 30px rgba(0,0,0,0.1)';" 
+                 onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 5px 15px rgba(0,0,0,0.05)';">
+                <div style="width: 60px; height: 60px; background: #e3f2fd; border-radius: 12px; display: flex; align-items: center; justify-content: center; margin-bottom: 20px;">
+                    <svg width="30" height="30" viewBox="0 0 24 24" fill="#0d47a1" stroke="#0d47a1" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M20 9v11a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V9"/>
+                        <path d="M9 22V12h6v10M2 10.6L12 2l10 8.6"/>
+                    </svg>
+                </div>
+                <h5 style="font-size: 1.3rem; color: #0d47a1; margin-bottom: 15px;">Home Solutions</h5>
+                <p style="color: #555; line-height: 1.6;">Complete furniture sets for every room, designed for comfort and durability.</p>
+            </div>
+
+            <div style="background: white; border-radius: 12px; padding: 30px; box-shadow: 0 5px 15px rgba(0,0,0,0.05); transition: all 0.3s ease;" 
+                 onmouseover="this.style.transform='translateY(-10px)'; this.style.boxShadow='0 15px 30px rgba(0,0,0,0.1)';" 
+                 onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 5px 15px rgba(0,0,0,0.05)';">
+                <div style="width: 60px; height: 60px; background: #e3f2fd; border-radius: 12px; display: flex; align-items: center; justify-content: center; margin-bottom: 20px;">
+                    <svg width="30" height="30" viewBox="0 0 24 24" fill="#0d47a1" stroke="#0d47a1" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                        <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                        <line x1="8" y1="21" x2="16" y2="21"></line>
+                        <line x1="12" y1="17" x2="12" y2="21"></line>
+                    </svg>
+                </div>
+                <h5 style="font-size: 1.3rem; color: #0d47a1; margin-bottom: 15px;">Office Essentials</h5>
+                <p style="color: #555; line-height: 1.6;">Ergonomic and stylish furniture to boost productivity and professionalism.</p>
+            </div>
+
+            <div style="background: white; border-radius: 12px; padding: 30px; box-shadow: 0 5px 15px rgba(0,0,0,0.05); transition: all 0.3s ease;" 
+                 onmouseover="this.style.transform='translateY(-10px)'; this.style.boxShadow='0 15px 30px rgba(0,0,0,0.1)';" 
+                 onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 5px 15px rgba(0,0,0,0.05)';">
+                <div style="width: 60px; height: 60px; background: #e3f2fd; border-radius: 12px; display: flex; align-items: center; justify-content: center; margin-bottom: 20px;">
+                    <svg width="30" height="30" viewBox="0 0 24 24" fill="#0d47a1" stroke="#0d47a1" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M12 2a10 10 0 1 0 10 10 4 4 0 0 1-5-5 4 4 0 0 1-5-5"></path>
+                        <path d="M8.5 8.5v.01"></path>
+                        <path d="M16 15.5v.01"></path>
+                        <path d="M12 12v.01"></path>
+                        <path d="M11 17v.01"></path>
+                        <path d="M7 14v.01"></path>
+                    </svg>
+                </div>
+                <h5 style="font-size: 1.3rem; color: #0d47a1; margin-bottom: 15px;">Custom Designs</h5>
+                <p style="color: #555; line-height: 1.6;">Tailored furniture solutions to match your unique space and style.</p>
+            </div>
+        </div>
+
+        <div style="max-width: 800px; margin: 60px auto 0; text-align: center;">
+            <p style="font-size: 1.1rem; color: #444; line-height: 1.7; margin-bottom: 30px;">
+                With over a century of trust, Hithaishi combines traditional craftsmanship with modern technology to deliver furniture that stands the test of time.
+            </p>
+            <div style="display: flex; justify-content: center; gap: 20px; flex-wrap: wrap;">
+                <div style="display: flex; align-items: center; gap: 10px;">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="#4caf50" stroke="#4caf50" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                        <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                    </svg>
+                    <span style="color: #333;">Premium Materials</span>
+                </div>
+                <div style="display: flex; align-items: center; gap: 10px;">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="#4caf50" stroke="#4caf50" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M12 2a10 10 0 1 0 10 10 4 4 0 0 1-5-5 4 4 0 0 1-5-5"></path>
+                        <path d="M8.5 8.5v.01"></path>
+                        <path d="M16 15.5v.01"></path>
+                        <path d="M12 12v.01"></path>
+                        <path d="M11 17v.01"></path>
+                        <path d="M7 14v.01"></path>
+                    </svg>
+                    <span style="color: #333;">Customizable Options</span>
+                </div>
+                <div style="display: flex; align-items: center; gap: 10px;">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="#4caf50" stroke="#4caf50" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                    </svg>
+                    <span style="color: #333;">Trusted Brand</span>
+                </div>
+            </div>
+        </div>
+    </div>
+  </section>
+  <!-- premium home services -->
+  <section id="home-cleaning" style="padding: 10px 20px; background: white;">
+  <div style="max-width: 1200px; margin: 0 auto;">
+    <div style="display: flex; flex-wrap: wrap; align-items: center; gap: 50px;">
+      <div style="flex: 1; min-width: 300px;">
+        <h2 style="font-size: 2.5rem; margin-bottom: 20px; color: #333;">Premium Home Services</h2>
+        <p style="color: #666; margin-bottom: 30px; line-height: 1.6;">Our home services are designed to give you back your time while ensuring your living space is clean, organized, and well-maintained. We handle everything from routine cleaning to deep seasonal services.</p>
+        
+        <div style="margin-bottom: 30px;">
+          <div style="display: flex; align-items: flex-start; margin-bottom: 20px;">
+            <div style="width: 24px; height: 24px; background: #4CAF50; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 15px; flex-shrink: 0;">
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M20 6L9 17l-5-5"/>
+              </svg>
+            </div>
+            <div>
+              <h3 style="font-size: 1.2rem; margin-bottom: 5px; color: #333;">Deep Cleaning</h3>
+              <p style="color: #666;">Thorough cleaning of every corner, including baseboards, appliances, and hard-to-reach areas.</p>
+            </div>
+          </div>
+          
+          <div style="display: flex; align-items: flex-start; margin-bottom: 20px;">
+            <div style="width: 24px; height: 24px; background: #4CAF50; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 15px; flex-shrink: 0;">
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M20 6L9 17l-5-5"/>
+              </svg>
+            </div>
+            <div>
+              <h3 style="font-size: 1.2rem; margin-bottom: 5px; color: #333;">Move-In/Move-Out</h3>
+              <p style="color: #666;">Comprehensive cleaning for new homes or preparing your old one for the next residents.</p>
+            </div>
+          </div>
+          
+          <div style="display: flex; align-items: flex-start;">
+            <div style="width: 24px; height: 24px; background: #4CAF50; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 15px; flex-shrink: 0;">
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M20 6L9 17l-5-5"/>
+              </svg>
+            </div>
+            <div>
+              <h3 style="font-size: 1.2rem; margin-bottom: 5px; color: #333;">Recurring Services</h3>
+              <p style="color: #666;">Weekly, bi-weekly, or monthly cleaning plans tailored to your needs.</p>
+            </div>
+          </div>
+        </div>
+        
+        <a href="contact_us.html" style="background: #4CAF50; color: white; padding: 12px 25px; border-radius: 6px; text-decoration: none; font-weight: bold; display: inline-block; transition: all 0.3s;" onmouseover="this.style.background='#3e8e41';" onmouseout="this.style.background='#4CAF50';">Book Home Service</a>
+      </div>
+      
+      <div style="flex: 1; min-width: 300px; position: relative;">
+        <div style="background: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSCdXhqf8IDQddCGjJDJAU35OqQznSvyABY9w&s'); background-size: cover; background-position: center; height: 400px; border-radius: 10px; box-shadow: 0 15px 30px rgba(0,0,0,0.1);"></div>
+      </div>
+    </div>
+  </div>
+  </section>
+  <!-- Business solutions -->
+  <section id="office-maintenance" style="padding: 10px 20px; background: #f9f9f9;">
+  <div style="max-width: 1200px; margin: 0 auto;">
+    <div style="display: flex; flex-wrap: wrap-reverse; align-items: center; gap: 50px;">
+      <div style="flex: 1; min-width: 300px; position: relative;">
+        <div style="background: url('https://images.unsplash.com/photo-1522071820081-009f0129c71c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80'); background-size: cover; background-position: center; height: 400px; border-radius: 10px; box-shadow: 0 15px 30px rgba(0,0,0,0.1);"></div>
+        <div style="position: absolute; top: -20px; left: -20px; background: #4CAF50; color: white; padding: 15px 25px; border-radius: 50px; box-shadow: 0 10px 20px rgba(0,0,0,0.1);">
+          <p style="margin: 0; font-weight: bold; font-size: 1.1rem;">Business Solutions</p>
+        </div>
+      </div>
+      
+      <div style="flex: 1; min-width: 300px;">
+        <h2 style="font-size: 2.5rem; margin-bottom: 20px; color: #333;">Professional Office Services</h2>
+        <p style="color: #666; margin-bottom: 10px; line-height: 1.6;">Maintain a clean, healthy, and professional work environment with our comprehensive office services. We work around your business hours to minimize disruption.</p>
+        
+        <div style="margin-bottom: 30px;">
+          <div style="display: flex; margin-bottom: 15px;">
+            <div style="width: 8px; height: 8px; background: #4CAF50; border-radius: 50%; margin-top: 8px; margin-right: 15px;"></div>
+            <div>
+              <h3 style="font-size: 1.2rem; margin-bottom: 5px; color: #333;">Daily Office Cleaning</h3>
+              <p style="color: #666;">Regular maintenance to keep your workspace clean and presentable every day.</p>
+            </div>
+          </div>
+          
+          <div style="display: flex; margin-bottom: 15px;">
+            <div style="width: 8px; height: 8px; background: #4CAF50; border-radius: 50%; margin-top: 8px; margin-right: 15px;"></div>
+            <div>
+              <h3 style="font-size: 1.2rem; margin-bottom: 5px; color: #333;">Carpet & Floor Care</h3>
+              <p style="color: #666;">Professional cleaning and maintenance for all floor types.</p>
+            </div>
+          </div>
+          
+          <div style="display: flex; margin-bottom: 15px;">
+            <div style="width: 8px; height: 8px; background: #4CAF50; border-radius: 50%; margin-top: 8px; margin-right: 15px;"></div>
+            <div>
+              <h3 style="font-size: 1.2rem; margin-bottom: 5px; color: #333;">Window Cleaning</h3>
+              <p style="color: #666;">Streak-free interior and exterior window cleaning for a brighter workspace.</p>
+            </div>
+          </div>
+          
+          <div style="display: flex;">
+            <div style="width: 8px; height: 8px; background: #4CAF50; border-radius: 50%; margin-top: 8px; margin-right: 15px;"></div>
+            <div>
+              <h3 style="font-size: 1.2rem; margin-bottom: 5px; color: #333;">Special Event Cleaning</h3>
+              <p style="color: #666;">Pre- and post-event cleaning services for corporate functions.</p>
+            </div>
+          </div>
+        </div>
+        
+        <a href="contact_us.html" style="background: #4CAF50; color: white; padding: 12px 25px; border-radius: 6px; text-decoration: none; font-weight: bold; display: inline-block; transition: all 0.3s;" onmouseover="this.style.background='#3e8e41';" onmouseout="this.style.background='#4CAF50';">Request Office Service</a>
+      </div>
+    </div>
+  </div>
+  </section>
+  <!-- catagories -->
+  <section style="padding: 60px 20px; background: #f9f9fb; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
+  <h2 style="text-align: center; font-size: 2.8rem; color: #0d47a1; margin-bottom: 15px; font-weight: 700;">
+    Our Top Furniture Categories
+  </h2>
+  <p style="text-align: center; max-width: 700px; margin: 0 auto 50px; font-size: 1.2rem; color: #555;">
+    Explore our most popular collections crafted for comfort, function, and style in every space.
+  </p>
+
+  <div style="
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 30px;
+    max-width: 1100px;
+    margin: 0 auto;
+  ">
+
+    <!-- Living Room -->
+    <div style="
+      background: #ffffff;
+      border-radius: 16px;
+      padding: 30px 25px 40px;
+      box-shadow: 0 6px 15px rgba(13, 71, 161, 0.15);
+      text-align: center;
+      transition: transform 0.35s ease, box-shadow 0.35s ease;
+      cursor: default;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    "
+    onmouseover="this.style.transform='translateY(-10px)'; this.style.boxShadow='0 12px 30px rgba(13,71,161,0.3)';"
+    onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 6px 15px rgba(13,71,161,0.15)';"
+    >
+      <img src="https://img.icons8.com/ios-filled/100/0d47a1/sofa.png" alt="Living Room" style="width: 70px; margin-bottom: 20px;">
+      <h3 style="font-size: 1.5rem; color: #0d47a1; margin-bottom: 15px; font-weight: 700;">Living Room</h3>
+      <a href="SignIn.html" style="
+        padding: 10px 30px;
+        background-color: #0d47a1;
+        color: white;
+        font-weight: 600;
+        font-size: 1rem;
+        border-radius: 30px;
+        text-decoration: none;
+        box-shadow: 0 4px 12px rgba(13,71,161,0.3);
+        transition: background-color 0.3s ease;
+      " 
+      onmouseover="this.style.backgroundColor='#08306b';"
+      onmouseout="this.style.backgroundColor='#0d47a1';"
+      >
+        Learn More
+      </a>
+    </div>
+
+    <!-- Home Office -->
+    <div style="
+      background: #ffffff;
+      border-radius: 16px;
+      padding: 30px 25px 40px;
+      box-shadow: 0 6px 15px rgba(13, 71, 161, 0.15);
+      text-align: center;
+      transition: transform 0.35s ease, box-shadow 0.35s ease;
+      cursor: default;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    "
+    onmouseover="this.style.transform='translateY(-10px)'; this.style.boxShadow='0 12px 30px rgba(13,71,161,0.3)';"
+    onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 6px 15px rgba(13,71,161,0.15)';"
+    >
+      <img src="https://img.icons8.com/ios-filled/100/0d47a1/desk.png" alt="Home Office" style="width: 70px; margin-bottom: 20px;">
+      <h3 style="font-size: 1.5rem; color: #0d47a1; margin-bottom: 15px; font-weight: 700;">Home Office</h3>
+      <a href="SignIn.html" style="
+        padding: 10px 30px;
+        background-color: #0d47a1;
+        color: white;
+        font-weight: 600;
+        font-size: 1rem;
+        border-radius: 30px;
+        text-decoration: none;
+        box-shadow: 0 4px 12px rgba(13,71,161,0.3);
+        transition: background-color 0.3s ease;
+      "
+      onmouseover="this.style.backgroundColor='#08306b';"
+      onmouseout="this.style.backgroundColor='#0d47a1';"
+      >
+        Learn More
+      </a>
+    </div>
+
+    <!-- Dining Room -->
+    <div style="
+      background: #ffffff;
+      border-radius: 16px;
+      padding: 30px 25px 40px;
+      box-shadow: 0 6px 15px rgba(13, 71, 161, 0.15);
+      text-align: center;
+      transition: transform 0.35s ease, box-shadow 0.35s ease;
+      cursor: default;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    "
+    onmouseover="this.style.transform='translateY(-10px)'; this.style.boxShadow='0 12px 30px rgba(13,71,161,0.3)';"
+    onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 6px 15px rgba(13,71,161,0.15)';"
+    >
+      <img src="https://img.icons8.com/ios-filled/100/0d47a1/dining-room.png" alt="Dining Room" style="width: 70px; margin-bottom: 20px;">
+      <h3 style="font-size: 1.5rem; color: #0d47a1; margin-bottom: 15px; font-weight: 700;">Dining Room</h3>
+      <a href="SignIn.html" style="
+        padding: 10px 30px;
+        background-color: #0d47a1;
+        color: white;
+        font-weight: 600;
+        font-size: 1rem;
+        border-radius: 30px;
+        text-decoration: none;
+        box-shadow: 0 4px 12px rgba(13,71,161,0.3);
+        transition: background-color 0.3s ease;
+      "
+      onmouseover="this.style.backgroundColor='#08306b';"
+      onmouseout="this.style.backgroundColor='#0d47a1';"
+      >
+        Learn More
+      </a>
+    </div>
+
+    <!-- Bedroom -->
+    <div style="
+      background: #ffffff;
+      border-radius: 16px;
+      padding: 30px 25px 40px;
+      box-shadow: 0 6px 15px rgba(13, 71, 161, 0.15);
+      text-align: center;
+      transition: transform 0.35s ease, box-shadow 0.35s ease;
+      cursor: default;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    "
+    onmouseover="this.style.transform='translateY(-10px)'; this.style.boxShadow='0 12px 30px rgba(13,71,161,0.3)';"
+    onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 6px 15px rgba(13,71,161,0.15)';"
+    >
+      <img src="https://img.icons8.com/ios-filled/100/0d47a1/bed.png" alt="Bedroom" style="width: 70px; margin-bottom: 20px;">
+      <h3 style="font-size: 1.5rem; color: #0d47a1; margin-bottom: 15px; font-weight: 700;">Bedroom</h3>
+      <a href="SignIn.html" style="
+        padding: 10px 30px;
+        background-color: #0d47a1;
+        color: white;
+        font-weight: 600;
+        font-size: 1rem;
+        border-radius: 30px;
+        text-decoration: none;
+        box-shadow: 0 4px 12px rgba(13,71,161,0.3);
+        transition: background-color 0.3s ease;
+      "
+      onmouseover="this.style.backgroundColor='#08306b';"
+      onmouseout="this.style.backgroundColor='#0d47a1';"
+      >
+        Learn More
+      </a>
+    </div>
+
+  </div>
+  </section>
+  <!-- organization -->
+  <section id="organization" style="padding: 6px 20px; background: white;">
+  <div style="max-width: 1200px; margin: 0 auto; text-align: center;">
+    <h2 style="font-size: 2.5rem; margin-bottom: 20px; color: #333;">Organization & Decluttering</h2>
+    <p style="color: #666; max-width: 700px; margin: 0 auto 50px; line-height: 1.6;">Transform your cluttered spaces into organized, functional areas with our professional organization services. We help you create systems that work for your lifestyle.</p>
+    
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 30px; margin-bottom: 50px;">
+      <div style="background: #f9f9f9; border-radius: 10px; padding: 30px; transition: all 0.3s ease;" onmouseover="this.style.transform='translateY(-10px)'; this.style.background='white'; this.style.boxShadow='0 10px 30px rgba(0,0,0,0.05)';" onmouseout="this.style.transform='translateY(0)'; this.style.background='#f9f9f9'; this.style.boxShadow='none';">
+        <div style="width: 60px; height: 60px; background: #4CAF50; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 20px;">
+          <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+            <polyline points="9 22 9 12 15 12 15 22"></polyline>
+          </svg>
+        </div>
+        <h3 style="font-size: 1.3rem; margin-bottom: 15px; color: #333;">Home Organization</h3>
+        <p style="color: #666;">Closets, pantries, garages, and whole-home organization solutions.</p>
+      </div>
+      
+      <div style="background: #f9f9f9; border-radius: 10px; padding: 30px; transition: all 0.3s ease;" onmouseover="this.style.transform='translateY(-10px)'; this.style.background='white'; this.style.boxShadow='0 10px 30px rgba(0,0,0,0.05)';" onmouseout="this.style.transform='translateY(0)'; this.style.background='#f9f9f9'; this.style.boxShadow='none';">
+        <div style="width: 60px; height: 60px; background: #4CAF50; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 20px;">
+          <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+            <line x1="8" y1="21" x2="16" y2="21"></line>
+            <line x1="12" y1="17" x2="12" y2="21"></line>
+          </svg>
+        </div>
+        <h3 style="font-size: 1.3rem; margin-bottom: 15px; color: #333;">Office Organization</h3>
+        <p style="color: #666;">Workspace optimization for improved productivity and efficiency.</p>
+      </div>
+      
+      <div style="background: #f9f9f9; border-radius: 10px; padding: 30px; transition: all 0.3s ease;" onmouseover="this.style.transform='translateY(-10px)'; this.style.background='white'; this.style.boxShadow='0 10px 30px rgba(0,0,0,0.05)';" onmouseout="this.style.transform='translateY(0)'; this.style.background='#f9f9f9'; this.style.boxShadow='none';">
+        <div style="width: 60px; height: 60px; background: #4CAF50; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 20px;">
+          <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+            <polyline points="14 2 14 8 20 8"></polyline>
+            <line x1="16" y1="13" x2="8" y2="13"></line>
+            <line x1="16" y1="17" x2="8" y2="17"></line>
+            <polyline points="10 9 9 9 8 9"></polyline>
+          </svg>
+        </div>
+        <h3 style="font-size: 1.3rem; margin-bottom: 15px; color: #333;">Paper Management</h3>
+        <p style="color: #666;">Sorting, filing, and digitizing paperwork for a paperless environment.</p>
+      </div>
+    </div>
+    
+    <a href="contact_us.html" style="background: #4CAF50; color: white; padding: 15px 35px; border-radius: 6px; text-decoration: none; font-weight: bold; display: inline-block; transition: all 0.3s; box-shadow: 0 5px 15px rgba(76, 175, 80, 0.4);" onmouseover="this.style.transform='translateY(-3px)'; this.style.boxShadow='0 8px 20px rgba(76, 175, 80, 0.5)';" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 5px 15px rgba(76, 175, 80, 0.4)';">Get Organized Today</a>
+  </div>
+  </section>
+  <style>
+    /* Hide scrollbar cross-browser */
+    .scroll-hide::-webkit-scrollbar {
+      display: none;
+    }
+    .scroll-hide {
+      -ms-overflow-style: none;  /* IE and Edge */
+      scrollbar-width: none;     /* Firefox */
+    }
+  </style>
+<!-- office essentials -->
+  <section style="padding: 20px 20px; background-color: #ffffff; font-family: 'Segoe UI', sans-serif;">
+    <div style="max-width: 1100px; margin: 0 auto; text-align: center;">
+      <h6 style="font-size: 2.5rem; color: #0d47a1; margin-bottom: 20px;"><b>Office Essentials</b></h6>
+      <p style="font-size: 1.1rem; color: #555; margin-bottom: 40px;">Create the perfect work environment with our must-have office furniture.</p>
+  
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 30px;">
+        
+        <!-- Item 1 -->
+        <a href="#" style="text-decoration: none;">
+          <div style="background-color: #f5f8fc; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05); transition: transform 0.3s ease, box-shadow 0.3s ease;"
+               onmouseover="this.style.transform='scale(1.03)'; this.style.boxShadow='0 6px 20px rgba(0, 0, 0, 0.1)';"
+               onmouseout="this.style.transform='scale(1)'; this.style.boxShadow='0 4px 10px rgba(0, 0, 0, 0.05)';">
+            <img src="https://images.pexels.com/photos/265004/pexels-photo-265004.jpeg" loading="lazy" alt="Ergonomic Chair" style="width: 100%; height: 200px; object-fit: cover;">
+            <h3 style="font-size: 1.2rem; margin: 15px 0 10px; color: #0d47a1;">Ergonomic Chairs</h3>
+            <p style="font-size: 0.95rem; color: #555; padding: 0 15px 20px;">Supportive and stylish chairs designed to keep you comfortable through long hours.</p>
+          </div>
+        </a>
+  
+        <!-- Item 2 -->
+        <a href="#" style="text-decoration: none;">
+          <div style="background-color: #f5f8fc; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05); transition: transform 0.3s ease, box-shadow 0.3s ease;"
+               onmouseover="this.style.transform='scale(1.03)'; this.style.boxShadow='0 6px 20px rgba(0, 0, 0, 0.1)';"
+               onmouseout="this.style.transform='scale(1)'; this.style.boxShadow='0 4px 10px rgba(0, 0, 0, 0.05)';">
+            <img src="https://images.pexels.com/photos/245208/pexels-photo-245208.jpeg" loading="lazy" alt="Office Desk" style="width: 100%; height: 200px; object-fit: cover;">
+            <h3 style="font-size: 1.2rem; margin: 15px 0 10px; color: #0d47a1;">Modern Work Desks</h3>
+            <p style="font-size: 0.95rem; color: #555; padding: 0 15px 20px;">Spacious, functional desks that help you stay organized and productive.</p>
+          </div>
+        </a>
+  
+        <!-- Item 3 -->
+        <a href="#" style="text-decoration: none;">
+          <div style="background-color: #f5f8fc; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05); transition: transform 0.3s ease, box-shadow 0.3s ease;"
+               onmouseover="this.style.transform='scale(1.03)'; this.style.boxShadow='0 6px 20px rgba(0, 0, 0, 0.1)';"
+               onmouseout="this.style.transform='scale(1)'; this.style.boxShadow='0 4px 10px rgba(0, 0, 0, 0.05)';">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0VnEcfa4t6rErThkabZREWIdmazVcx6sknw&s" loading="lazy" alt="Storage Solutions" style="width: 100%; height: 200px; object-fit: cover;">
+            <h3 style="font-size: 1.2rem; margin: 15px 0 10px; color: #0d47a1;">Storage Solutions</h3>
+            <p style="font-size: 0.95rem; color: #555; padding: 0 15px 20px;">Smart storage units to keep your documents, gadgets, and supplies tidy.</p>
+          </div>
+        </a>
+  
+      </div>
+    </div>
+  </section>
+  <!-- home makeover tips -->
+  <section style="padding: 20px 20px; background-color: #f4f8fc; font-family: 'Segoe UI', sans-serif;">
+    <div style="max-width: 900px; margin: 0 auto;">
+      <h6 style="font-size: 2.5rem; color: #0d47a1; text-align: center; margin-bottom: 20px;"><i>Home Makeover Tips</i></h6>
+      <p style="font-size: 1.1rem; color: #555; text-align: center; margin-bottom: 50px;">Revamp your home with simple, stylish, and effective ideas from our experts.</p>
+      
+      <div style="display: flex; flex-direction: column; gap: 30px;">
+        
+        <div style="display: flex; align-items: flex-start; gap: 20px;">
+          <div style="flex-shrink: 0; width: 50px; height: 50px; background-color: #0d47a1; color: white; font-weight: bold; font-size: 1.2rem; border-radius: 50%; display: flex; align-items: center; justify-content: center;">1</div>
+          <div>
+            <h3 style="margin: 0; font-size: 1.3rem; color: #0d47a1;">Go Minimal</h3>
+            <p style="margin-top: 5px; color: #333;">Clear the clutter and opt for furniture that combines function with style for a clean, open feel.</p>
+          </div>
+        </div>
+        
+        <div style="display: flex; align-items: flex-start; gap: 20px;">
+          <div style="flex-shrink: 0; width: 50px; height: 50px; background-color: #0d47a1; color: white; font-weight: bold; font-size: 1.2rem; border-radius: 50%; display: flex; align-items: center; justify-content: center;">2</div>
+          <div>
+            <h3 style="margin: 0; font-size: 1.3rem; color: #0d47a1;">Add Accent Pieces</h3>
+            <p style="margin-top: 5px; color: #333;">Bring life to your space with bold rugs, cushions, or wall art to create focal points in each room.</p>
+          </div>
+        </div>
+        
+        <div style="display: flex; align-items: flex-start; gap: 20px;">
+          <div style="flex-shrink: 0; width: 50px; height: 50px; background-color: #0d47a1; color: white; font-weight: bold; font-size: 1.2rem; border-radius: 50%; display: flex; align-items: center; justify-content: center;">3</div>
+          <div>
+            <h3 style="margin: 0; font-size: 1.3rem; color: #0d47a1;">Play with Lighting</h3>
+            <p style="margin-top: 5px; color: #333;">Use layered lighting—ambient, task, and accent—to set the mood and add depth to your rooms.</p>
+          </div>
+        </div>
+        
+        <div style="display: flex; align-items: flex-start; gap: 20px;">
+          <div style="flex-shrink: 0; width: 50px; height: 50px; background-color: #0d47a1; color: white; font-weight: bold; font-size: 1.2rem; border-radius: 50%; display: flex; align-items: center; justify-content: center;">4</div>
+          <div>
+            <h3 style="margin: 0; font-size: 1.3rem; color: #0d47a1;">Mix Textures</h3>
+            <p style="margin-top: 5px; color: #333;">Combine materials like wood, metal, and fabric to add warmth and dimension to your interiors.</p>
+          </div>
+        </div>
+  
+      </div>
+    </div>
+  </section>
+  <script>
+    // JavaScript for handling the search
+    function searchService() {
+        const searchQuery = document.getElementById('searchInput').value;
+        if (searchQuery.trim() === '') {
+            alert('Please enter a search term!');
+        } else {
+            alert('Searching for: ' + searchQuery);
+        }
+    }
+
+    // JavaScript for form validation
+    function validateForm() {
+        const name = document.getElementById('name').value;
+        const email = document.getElementById('email').value;
+        const message = document.getElementById('message').value;
+
+        if (name === '' || email === '' || message === '') {
+            alert('Please fill out all fields.');
+            return false;
+        }
+        alert('Message sent successfully!');
+        return true;
+    }
+  </script>
+  <!-- what our customers say -->
+  <section style="padding: 10px 20px; background-color: #eef3fb; font-family: 'Segoe UI', sans-serif;">
+    <div style="max-width: 1000px; margin: 0 auto; text-align: center;">
+      <h6 style="font-size: 2.5rem; color: #0d47a1; margin-bottom: 20px;">What Our Customers Say</h6>
+      <p style="font-size: 1.1rem; color: #555; margin-bottom: 40px;">Hear directly from our happy customers across India.</p>
+
+      <div class="scroll-hide" style="display: flex; gap: 20px; overflow-x: auto; padding-bottom: 10px;">
+        
+        <!-- Testimonial 1 -->
+       
+          <div style="flex: 0 0 auto; width: 300px; background: white; border-radius: 16px; box-shadow: 0 4px 14px #00000012; padding: 30px 20px; position: relative;">
+            <i class="fas fa-user-circle" style="font-size: 40px; color: #0d47a1; margin-bottom: 10px;"></i>
+            <p style="color: #333; font-size: 1rem; font-style: italic;">“Absolutely love the quality and design! My living room looks so elegant with Hitaishi furniture.”</p>
+            <div style="margin-top: 20px; font-weight: bold; color: #0d47a1;">– Priya S., Mumbai</div>
+          </div>
+
+        <!-- Testimonial 2 -->
+       
+          <div style="flex: 0 0 auto; width: 300px; background: white; border-radius: 16px; box-shadow: 0 4px 14px rgba(0,0,0,0.07); padding: 30px 20px; position: relative;">
+            <i class="fas fa-user-circle" style="font-size: 40px; color: #0d47a1; margin-bottom: 10px;"></i>
+            <p style="color: #333; font-size: 1rem; font-style: italic;">“Perfect fit for my home office. Comfortable, sturdy, and delivered on time!”</p>
+            <div style="margin-top: 20px; font-weight: bold; color: #0d47a1;">– Rohan D., Bengaluru</div>
+          </div>
+      
+
+        <!-- Testimonial 3 -->
+    
+          <div style="flex: 0 0 auto; width: 300px; background: white; border-radius: 16px; box-shadow: 0 4px 14px rgba(0,0,0,0.07); padding: 30px 20px; position: relative;">
+            <i class="fas fa-user-circle" style="font-size: 40px; color: #0d47a1; margin-bottom: 10px;"></i>
+            <p style="color: #333; font-size: 1rem; font-style: italic;">“The entire buying experience was so smooth. Great furniture and great service! loved it...”</p>
+            <div style="margin-top: 20px; font-weight: bold; color: #0d47a1;">– Anjali R., Pune</div>
+          </div>
+       
+
+      </div>
+    </div>
+  </section>
+  <footer style="background-color: #f1f1f1; padding: 40px 0;">
+      <div style="max-width: 1200px; margin: 0 auto; padding-left: -600px;">
+
+          <!-- Education & Training -->
+          <div style="text-align: left; margin: 10px;">
+              <a href="education_training.html" style="text-decoration: none;">
+                  <p style="font-size: 16px; color: #333; font-weight: bold;">Education & Training</p>
+              </a>
+              <p style="font-size: 14px; color: #555; margin-top: 10px;">Explore a wide range of educational and training options across various fields to enhance your skills and career opportunities.</p>
+              <hr style="border: 1px solid #ddd; margin-top: 20px;"/>
+          </div>
+
+          <!-- Properties & Rents -->
+          <div style="text-align: left; margin: 10px;">
+              <a href="properties_rent.html" style="text-decoration: none;">
+                  <p style="font-size: 16px; color: #333; font-weight: bold;">Properties & Rents</p>
+              </a>
+              <p style="font-size: 14px; color: #555; margin-top: 10px;">Find the perfect property for sale, rent, or investment in your desired location with comprehensive listings and details.</p>
+              <hr style="border: 1px solid #ddd; margin-top: 20px;"/>
+          </div>
+
+          <!-- Professional Services -->
+          <div style="text-align: left; margin: 10px;">
+              <a href="proffessional_services.html" style="text-decoration: none;">
+                  <p style="font-size: 16px; color: #333; font-weight: bold;">Professional Services</p>
+              </a>
+              <p style="font-size: 14px; color: #555; margin-top: 10px;">Access top-notch professional services, including legal, financial, and consulting services, from trusted experts.</p>
+              <hr style="border: 1px solid #ddd; margin-top: 20px;"/>
+          </div>
+
+          <!-- Travel & Transport -->
+          <div style="text-align: left; margin: 10px;">
+              <a href="travel_transport.html" style="text-decoration: none;">
+                  <p style="font-size: 16px; color: #333; font-weight: bold;">Travel & Transport</p>
+              </a>
+              <p style="font-size: 14px; color: #555; margin-top: 10px;">Book your travel needs, including flights, cabs, and buses, with ease and at the best prices.</p>
+              <hr style="border: 1px solid #ddd; margin-top: 20px;"/>
+          </div>
+
+          <!-- Health & Wellness -->
+          <div style="text-align: left; margin: 10px;">
+              <a href="health_wellness.html" style="text-decoration: none;">
+                  <p style="font-size: 16px; color: #333; font-weight: bold;">Health & Wellness</p>
+              </a>
+              <p style="font-size: 14px; color: #555; margin-top: 10px;">Discover health and wellness services to maintain a balanced lifestyle, including fitness classes, clinics, and more.</p>
+              <hr style="border: 1px solid #ddd; margin-top: 20px;"/>
+          </div>
+
+          <!-- Events -->
+          <div style="text-align: left; margin: 10px;">
+              <a href="events.html" style="text-decoration: none;">
+                  <p style="font-size: 16px; color: #333; font-weight: bold;">Events</p>
+              </a>
+              <p style="font-size: 14px; color: #555; margin-top: 10px;">Stay updated with upcoming events, conferences, exhibitions, and entertainment activities near you.</p>
+              <hr style="border: 1px solid #ddd; margin-top: 20px;"/>
+          </div>
+
+          <!-- Home & Office -->
+          <div style="text-align: left; margin: 10px;">
+              <a href="home_office.html" style="text-decoration: none;">
+                  <p style="font-size: 16px; color: #333; font-weight: bold;">Home & Office</p>
+              </a>
+              <p style="font-size: 14px; color: #555; margin-top: 10px;">Explore furniture, appliances, and office supplies to furnish your home or workspace with the best products.</p>
+              <hr style="border: 1px solid #ddd; margin-top: 20px;"/>
+          </div>
+
+          <!-- Shopping -->
+          <div style="text-align: left; margin: 10px;">
+              <a href="shopping.html" style="text-decoration: none;">
+                  <p style="font-size: 16px; color: #333; font-weight: bold;">Shopping</p>
+              </a>
+              <p style="font-size: 14px; color: #555; margin-top: 10px;">Shop online for a variety of products including electronics, clothing, accessories, and much more.</p>
+              <hr style="border: 1px solid #ddd; margin-top: 20px;"/>
+          </div>
+
+          <!-- Placement & Jobs -->
+          <div style="text-align: left; margin: 10px;">
+              <a href="placements_jobs.html" style="text-decoration: none;">
+                  <p style="font-size: 16px; color: #333; font-weight: bold;">Placement & Jobs</p>
+              </a>
+              <p style="font-size: 14px; color: #555; margin-top: 10px;">Browse job listings and placement opportunities, and connect with top employers in various industries.</p>
+              <hr style="border: 1px solid #ddd; margin-top: 20px;"/>
+          </div>
+
+          <!-- Social Media Icons -->
+          <div style="text-align: center; margin-top: 20px;">
+              <p style="font-size: 16px; color: #333; font-weight: bold;">Follow Us</p>
+              <div style="margin-top:20px;display: flex;text-align: center;justify-content: center;justify-items: center;">
+                  <a href="https://www.facebook.com" target="_blank" style="margin: 0 15px; text-decoration: none;">
+                      <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" alt="Facebook" style="width: 40px; height: 40px;"/>
+                  </a>
+                  <a href="https://www.twitter.com" target="_blank" style="margin: 0 15px; text-decoration: none;">
+                      <img src="https://cdn.iconscout.com/icon/free/png-256/free-twitter-logo-icon-download-in-svg-png-gif-file-formats--social-media-pack-logos-icons-83443.png?f=webp&w=128" alt="Twitter" style="width: 40px; height: 40px;"/>
+                  </a>
+                  <a href="https://www.instagram.com" target="_blank" style="margin: 0 15px; text-decoration: none;">
+                      <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram" style="width: 40px; height: 40px;"/>
+                  </a>
+                  <a href="https://www.linkedin.com" target="_blank" style="margin: 0 15px; text-decoration: none;">
+                      <img src="https://upload.wikimedia.org/wikipedia/commons/e/e6/729101_linkedin_icon.png" alt="LinkedIn" style="width: 40px; height: 40px;"/>
+                  </a>
+              </div>
+              <br>
+                  <p style="margin: auto; color: black;">&copy; 2025 Hitaishi Web Portal. All rights reserved.</p>
+          </div>
+      </div>
+      
+
+  </footer>
+</body>
+</html>

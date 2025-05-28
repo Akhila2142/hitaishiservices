@@ -1,0 +1,867 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Event Management Services | Corporate & Social Events | Hithaishi Services</title>
+  <meta name="description" content="Discover expert event management by Hithaishi Services. From corporate functions to social gatherings, we plan, organize, and deliver unforgettable events with precision.">
+  <meta name="keywords" content="event management, Hithaishi Services, corporate events, social events, event planning, virtual events, event services, professional event organizers, event company, customized events">
+
+</head>
+<body style="margin: 0;padding: 0;font-family: Arial, Helvetica, sans-serif;">
+ <header style="position: sticky; top: 0; z-index: 1000; background: linear-gradient(135deg, #0066cc, #004080); padding: 15px 5%; box-shadow: 0 4px 12px rgba(0,0,0,0.1); font-family: 'Segoe UI', Roboto, sans-serif; backdrop-filter: blur(5px);">
+  <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 20px; max-width: 1400px; margin: 0 auto;">
+    
+    <!-- Logo Section -->
+    <a href="index.html" style="color: white; text-decoration: none; flex-shrink: 0; display: flex; align-items: center; gap: 10px;">
+      
+      <div style="background: #ffffff; border-radius: 10px; padding: 2px 2px; display: inline-flex; align-items: center; justify-content: center; box-shadow: 0 2px 6px rgba(0, 102, 204, 0.25);">
+        <img src="img/logo_hitaishiservices.png" alt="Hitaishi Logo" width="32" height="32" style="display: block;" />
+      </div>
+
+      <div>
+        <h1 style="margin: 0; font-size: 32px; font-weight: 800; letter-spacing: 1px; background: linear-gradient(to right, #ffffff, #e6f2ff); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">Hitaishi</h1>
+        <p style="font-size: 14px; margin: 2px 0 0 0; font-weight: 500; color: rgba(255,255,255,0.9);">Find trusted services and professionals</p>
+      </div>
+    </a>
+    
+    <!-- Search Form -->
+    <form action="search.html" method="GET" style="flex-grow: 1; max-width: 500px; min-width: 250px; display: flex; box-shadow: 0 2px 10px rgba(0,0,0,0.1); border-radius: 8px; overflow: hidden; background: rgba(255,255,255,0.9); transition: all 0.3s ease;" onfocusin="this.style.boxShadow='0 2px 15px rgba(0,80,200,0.2)'; this.style.background='white'" onfocusout="this.style.boxShadow='0 2px 10px rgba(0,0,0,0.1)'; this.style.background='rgba(255,255,255,0.9)'">
+      <input
+        type="text"
+        name="query"
+        placeholder="Search services, businesses..."
+        style="flex-grow: 1; border: none; padding: 12px 20px; font-size: 0.95rem; outline: none; color: #003366; background: transparent;"
+        required
+      />
+      <button
+        type="submit"
+        style="background: linear-gradient(to right, #0066cc, #004080); border: none; padding: 0 25px; cursor: pointer; color: white; font-weight: 600; font-size: 1rem; transition: all 0.3s ease; display: flex; align-items: center; justify-content: center;"
+        onmouseover="this.style.opacity='0.9'"
+        onmouseout="this.style.opacity='1'"
+        aria-label="Search"
+      >
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" style="margin-right: 5px;">
+          <path d="M11 19C15.4183 19 19 15.4183 19 11C19 6.58172 15.4183 3 11 3C6.58172 3 3 6.58172 3 11C3 15.4183 6.58172 19 11 19Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M21 21L16.65 16.65" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        Search
+      </button>
+    </form>
+
+    <!-- Navigation Links -->
+    <nav id="navLinks" style="display: flex; gap: 10px; flex-wrap: wrap; align-items: center; flex-shrink: 0;">
+      <a href="index.html" style="color: white; font-size: 0.95rem; padding: 8px 15px; text-decoration: none; transition: all 0.3s ease; font-weight: 500; border-radius: 6px; border: 1px solid rgba(255,255,255,0.3);" onmouseover="this.style.backgroundColor='rgba(255,255,255,0.15)'" onmouseout="this.style.backgroundColor='transparent'">Home</a>
+      <a href="Services.html" style="color: white; font-size: 0.95rem; padding: 8px 15px; text-decoration: none; transition: all 0.3s ease; font-weight: 500; border-radius: 6px; border: 1px solid rgba(255,255,255,0.3);" onmouseover="this.style.backgroundColor='rgba(255,255,255,0.15)'" onmouseout="this.style.backgroundColor='transparent'">Services</a>
+      <a href="ListBusiness.html" style="color: white; font-size: 0.95rem; padding: 8px 15px; text-decoration: none; transition: all 0.3s ease; font-weight: 500; border-radius: 6px; border: 1px solid rgba(255,255,255,0.3);" onmouseover="this.style.backgroundColor='rgba(255,255,255,0.15)'" onmouseout="this.style.backgroundColor='transparent'">List Business</a>
+      <a href="postadd.html" style="color: white; font-size: 0.95rem; padding: 8px 15px; background: rgba(255,255,255,0.2); text-decoration: none; transition: all 0.3s ease; font-weight: 600; border-radius: 6px; border: 1px solid rgba(255,255,255,0.4);" onmouseover="this.style.backgroundColor='rgba(255,255,255,0.3)'" onmouseout="this.style.backgroundColor='rgba(255,255,255,0.2)'">Post Free Ad</a>
+      <a href="SignIn.html" style="color: #0066cc; font-size: 0.95rem; padding: 8px 15px; background: white; text-decoration: none; transition: all 0.3s ease; font-weight: 600; border-radius: 6px;" onmouseover="this.style.backgroundColor='#f0f7ff'; this.style.color='#004080'" onmouseout="this.style.backgroundColor='white'; this.style.color='#0066cc'">Sign In</a>
+    </nav>
+
+    <!-- Menu Button for Mobile -->
+    <button onclick="toggleMenu()" style="display: none; background: rgba(255,255,255,0.2); border: 1px solid rgba(255,255,255,0.4); border-radius: 6px; padding: 8px 12px; font-size: 1.2rem; color: white; cursor: pointer; flex-shrink: 0;" id="menuToggle" aria-label="Toggle Menu">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M3 12H21" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M3 6H21" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M3 18H21" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+    </button>
+
+  </div>
+</header>
+
+<script>
+  function toggleMenu() {
+    var nav = document.getElementById("navLinks");
+    if (nav.style.display === "none" || nav.style.display === "") {
+      nav.style.display = "flex";
+      nav.style.flexDirection = "column";
+      nav.style.position = "absolute";
+      nav.style.top = "100%";
+      nav.style.left = "0";
+      nav.style.right = "0";
+      nav.style.background = "linear-gradient(135deg, #0066cc, #004080)";
+      nav.style.padding = "20px 5%";
+      nav.style.gap = "15px";
+      nav.style.boxShadow = "0 10px 20px rgba(0,0,0,0.1)";
+    } else {
+      nav.style.display = "none";
+    }
+  }
+
+  function handleResize() {
+    var width = window.innerWidth;
+    var menuToggle = document.getElementById("menuToggle");
+    var navLinks = document.getElementById("navLinks");
+
+    if (width <= 992) {
+      menuToggle.style.display = "flex";
+      menuToggle.style.alignItems = "center";
+      menuToggle.style.justifyContent = "center";
+      if (width > 768) {
+        navLinks.style.display = "none";
+      }
+    } else {
+      menuToggle.style.display = "none";
+      navLinks.style.display = "flex";
+      navLinks.style.flexDirection = "row";
+      navLinks.style.position = "static";
+      navLinks.style.padding = "0";
+      navLinks.style.background = "transparent";
+      navLinks.style.boxShadow = "none";
+    }
+  }
+
+  window.addEventListener("resize", handleResize);
+  window.addEventListener("load", handleResize);
+</script>
+<div style="font-family: 'Inter', sans-serif; background-color: #f8f9fa; color: #333; line-height: 1.6;">
+  <section style="position: relative; height: 500px; background: url('https://images.rawpixel.com/image_800/cHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDIyLTA1L3Vwd2s2MTY5MTk3NS13aWtpbWVkaWEtaW1hZ2Uta293YjI4OTguanBn.jpg') center center / cover no-repeat; font-family: 'Segoe UI', sans-serif; display: flex; align-items: center; justify-content: center; animation: moveBackground 20s ease-in-out infinite alternate;">
+    <div style="background-color: rgba(15, 23, 42, 0.6); padding: 2rem 3rem; border-radius: 1rem; box-shadow: 0 10px 30px rgba(0,0,0,0.3); text-align: center;">
+     <h1 style="font-size: 3.8em; margin-bottom: 15px; font-weight: 800; letter-spacing: -1px;color: white;">Exceptional Event Services by Hitaishi</h1>
+        <p style="font-size: 1.5em; max-width: 800px; margin: 0 auto 30px auto; opacity: 0.9;color: white;">Bringing your vision to life with seamless planning and unforgettable experiences.</p>
+        <a href="#contact" style="background-color: #0084ff; color: #ffffff; text-decoration: none; padding: 15px 35px; border-radius: 30px; font-size: 1.2em; font-weight: 700; transition: background-color 0.3s ease, transform 0.2s ease; display: inline-block;"
+           onmouseover="this.style.backgroundColor='#e6b800'; this.style.transform='scale(1.05)';"
+           onmouseout="this.style.backgroundColor='#0084ff'; this.style.transform='scale(1)';">Get a Free Consultation</a>
+    
+    <!-- <style>
+      @keyframes moveBackground {
+        0% { background-position: center center; }
+        100% { background-position: center top; }
+      }
+    </style> -->
+  </section>
+    <!-- <section style="background: linear-gradient(to right, #4a90e2, #6a5acd); color: #ffffff; padding: 80px 20px; text-align: center; border-bottom-left-radius: 20px; border-bottom-right-radius: 20px; box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);">
+        <h1 style="font-size: 3.8em; margin-bottom: 15px; font-weight: 800; letter-spacing: -1px;">Exceptional Event Services by Hitaishi</h1>
+        <p style="font-size: 1.5em; max-width: 800px; margin: 0 auto 30px auto; opacity: 0.9;">Bringing your vision to life with seamless planning and unforgettable experiences.</p>
+        <a href="#contact" style="background-color: #f1c40f; color: #333; text-decoration: none; padding: 15px 35px; border-radius: 30px; font-size: 1.2em; font-weight: 700; transition: background-color 0.3s ease, transform 0.2s ease; display: inline-block;"
+           onmouseover="this.style.backgroundColor='#e6b800'; this.style.transform='scale(1.05)';"
+           onmouseout="this.style.backgroundColor='#f1c40f'; this.style.transform='scale(1)';">Get a Free Consultation</a>
+    
+          </section> -->
+
+    <section style="padding: 60px 20px; max-width: 1200px; margin: 40px auto; text-align: center;">
+        <h2 style="font-size: 2.8em; color: #2c3e50; margin-bottom: 40px; font-weight: 700;">Our Comprehensive Event Solutions</h2>
+        <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 30px;">
+
+            <div style="background-color: #ffffff; border-radius: 12px; padding: 30px; width: 300px; box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08); transition: transform 0.3s ease, box-shadow 0.3s ease; display: flex; flex-direction: column; align-items: center; justify-content: flex-start;"
+                 onmouseover="this.style.transform='translateY(-10px)'; this.style.boxShadow='0 12px 30px rgba(0, 0, 0, 0.15)';"
+                 onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 6px 20px rgba(0, 0, 0, 0.08)';">
+                <h3 style="font-size: 1.8em; color: #3498db; margin-bottom: 15px; font-weight: 600;">Corporate Events</h3>
+                <p style="font-size: 1.1em; color: #666; margin-bottom: 20px;">Conferences, seminars, product launches, team-building retreats, annual meetings, and gala dinners.</p>
+                <ul style="list-style-type: none; padding: 0; margin: 0; text-align: left; width: 100%;">
+                    <li style="margin-bottom: 8px; font-size: 1em; color: #555;"><span style="color: #3498db; font-weight: bold;">&#10003;</span> Venue Sourcing</li>
+                    <li style="margin-bottom: 8px; font-size: 1em; color: #555;"><span style="color: #3498db; font-weight: bold;">&#10003;</span> Logistics Management</li>
+                    <li style="margin-bottom: 8px; font-size: 1em; color: #555;"><span style="color: #3498db; font-weight: bold;">&#10003;</span> AV & Production</li>
+                    <li style="font-size: 1em; color: #555;"><span style="color: #3498db; font-weight: bold;">&#10003;</span> Speaker Coordination</li>
+                </ul>
+            </div>
+
+            <div style="background-color: #ffffff; border-radius: 12px; padding: 30px; width: 300px; box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08); transition: transform 0.3s ease, box-shadow 0.3s ease; display: flex; flex-direction: column; align-items: center; justify-content: flex-start;"
+                 onmouseover="this.style.transform='translateY(-10px)'; this.style.boxShadow='0 12px 30px rgba(0, 0, 0, 0.15)';"
+                 onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 6px 20px rgba(0, 0, 0, 0.08)';">
+                <h3 style="font-size: 1.8em; color: #2ecc71; margin-bottom: 15px; font-weight: 600;">Social Events</h3>
+                <p style="font-size: 1.1em; color: #666; margin-bottom: 20px;">Weddings, birthdays, anniversaries, family reunions, holiday parties, and private celebrations.</p>
+                <ul style="list-style-type: none; padding: 0; margin: 0; text-align: left; width: 100%;">
+                    <li style="margin-bottom: 8px; font-size: 1em; color: #555;"><span style="color: #2ecc71; font-weight: bold;">&#10003;</span> Theme & Decor</li>
+                    <li style="margin-bottom: 8px; font-size: 1em; color: #555;"><span style="color: #2ecc71; font-weight: bold;">&#10003;</span> Catering & Menu Planning</li>
+                    <li style="margin-bottom: 8px; font-size: 1em; color: #555;"><span style="color: #2ecc71; font-weight: bold;">&#10003;</span> Entertainment Booking</li>
+                    <li style="font-size: 1em; color: #555;"><span style="color: #2ecc71; font-weight: bold;">&#10003;</span> Guest Management</li>
+                </ul>
+            </div>
+
+            <div style="background-color: #ffffff; border-radius: 12px; padding: 30px; width: 300px; box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08); transition: transform 0.3s ease, box-shadow 0.3s ease; display: flex; flex-direction: column; align-items: center; justify-content: flex-start;"
+                 onmouseover="this.style.transform='translateY(-10px)'; this.style.boxShadow='0 12px 30px rgba(0, 0, 0, 0.15)';"
+                 onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 6px 20px rgba(0, 0, 0, 0.08)';">
+                <h3 style="font-size: 1.8em; color: #e67e22; margin-bottom: 15px; font-weight: 600;">Virtual & Hybrid</h3>
+                <p style="font-size: 1.1em; color: #666; margin-bottom: 20px;">Online conferences, webinars, virtual product launches, and hybrid event solutions.</p>
+                <ul style="list-style-type: none; padding: 0; margin: 0; text-align: left; width: 100%;">
+                    <li style="margin-bottom: 8px; font-size: 1em; color: #555;"><span style="color: #e67e22; font-weight: bold;">&#10003;</span> Platform Selection</li>
+                    <li style="margin-bottom: 8px; font-size: 1em; color: #555;"><span style="color: #e67e22; font-weight: bold;">&#10003;</span> Content Production</li>
+                    <li style="margin-bottom: 8px; font-size: 1em; color: #555;"><span style="color: #e67e22; font-weight: bold;">&#10003;</span> Technical Support</li>
+                    <li style="font-size: 1em; color: #555;"><span style="color: #e67e22; font-weight: bold;">&#10003;</span> Engagement Tools</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section style="background-color: #eaf2f8; padding: 60px 20px; text-align: center; margin: 40px auto; border-radius: 16px; max-width: 1200px; box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);">
+        <h2 style="font-size: 2.8em; color: #2c3e50; margin-bottom: 40px; font-weight: 700;">Why Choose Hitaishi for Your Event?</h2>
+        <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 30px;">
+            <div style="background-color: #ffffff; border-radius: 10px; padding: 25px; width: 280px; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06); text-align: left;">
+                <h3 style="font-size: 1.6em; color: #4a90e2; margin-bottom: 10px; font-weight: 600;">Expertise & Experience</h3>
+                <p style="font-size: 1.05em; color: #555;">Years of experience in managing diverse events, ensuring flawless execution every time.</p>
+            </div>
+            <div style="background-color: #ffffff; border-radius: 10px; padding: 25px; width: 280px; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06); text-align: left;">
+                <h3 style="font-size: 1.6em; color: #4a90e2; margin-bottom: 10px; font-weight: 600;">Customized Solutions</h3>
+                <p style="font-size: 1.05em; color: #555;">Tailored event plans that perfectly align with your objectives, budget, and vision.</p>
+            </div>
+            <div style="background-color: #ffffff; border-radius: 10px; padding: 25px; width: 280px; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06); text-align: left;">
+                <h3 style="font-size: 1.6em; color: #4a90e2; margin-bottom: 10px; font-weight: 600;">Seamless Execution</h3>
+                <p style="font-size: 1.05em; color: #555;">From concept to completion, we handle every detail, allowing you to relax and enjoy your event.</p>
+            </div>
+        </div>
+    </section>
+</div>
+<section style="font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; padding: -20px 20px; background: #f9f9f9;max-width: 80%;margin: auto;">
+
+    <!-- Services Cards (Scroll Container) -->
+  <section style="font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; padding: 60px 20px; background: #f9f9f9;">
+    <!-- Hero Section -->
+    <div style="text-align: center; margin-bottom: 50px;">
+      <h1 style="font-size: 2.5rem; color: #2e3a59; margin-bottom: 10px;">Premium Event Services</h1>
+      <p style="font-size: 1.1rem; color: #666;">Creating unforgettable moments, one event at a time.</p>
+    </div>
+
+    <!-- Cards Container -->
+    <div id="cardScroll" style="display: flex; gap: 30px; overflow-x: auto; padding-bottom: 20px; scroll-behavior: smooth; scrollbar-width: none; -ms-overflow-style: none;">
+      <style>
+        /* Hide scrollbar for WebKit */
+        #cardScroll::-webkit-scrollbar {
+          display: none;
+        }
+
+        /* Dot styling */
+        .dot-container {
+          text-align: center;
+          margin-top: 20px;
+        }
+
+        .dot {
+          display: inline-block;
+          width: 12px;
+          height: 12px;
+          margin: 0 8px;
+          background-color: #bbb;
+          border-radius: 50%;
+          cursor: pointer;
+          transition: background-color 0.3s ease;
+        }
+
+        .dot.active {
+          background-color: #2e3a59;
+        }
+      </style>
+
+      <!-- Card 1 -->
+      <div class="card" style="background: #ffffff; padding: 25px; min-width: 280px; border-radius: 15px; box-shadow: 0 8px 20px rgba(0,0,0,0.1); text-align: center; transition: transform 0.3s ease;"
+        onmouseover="this.style.transform='scale(1.05)';" 
+        onmouseout="this.style.transform='scale(1)';">
+        <img src="https://cdn-icons-png.flaticon.com/512/3176/3176361.png" style="width: 60px; height: 60px; margin-bottom: 20px;">
+        <h3 style="font-size: 1.3rem; color: #2e3a59; margin-bottom: 10px;">Wedding Planning</h3>
+        <p style="font-size: 0.95rem; color: #555;">Complete wedding planning, decoration, guest management, and catering services.</p>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="card" style="background: #ffffff; padding: 25px; min-width: 280px; border-radius: 15px; box-shadow: 0 8px 20px rgba(0,0,0,0.1); text-align: center; transition: transform 0.3s ease;"
+        onmouseover="this.style.transform='scale(1.05)';" 
+        onmouseout="this.style.transform='scale(1)';">
+        <img src="https://cdn-icons-png.flaticon.com/512/1909/1909670.png" style="width: 60px; height: 60px; margin-bottom: 20px;">
+        <h3 style="font-size: 1.3rem; color: #2e3a59; margin-bottom: 10px;">Corporate Events</h3>
+        <p style="font-size: 0.95rem; color: #555;">Professional setup for meetings, conferences, and business gatherings.</p>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="card" style="background: #ffffff; padding: 25px; min-width: 280px; border-radius: 15px; box-shadow: 0 8px 20px rgba(0,0,0,0.1); text-align: center; transition: transform 0.3s ease;"
+        onmouseover="this.style.transform='scale(1.05)';" 
+        onmouseout="this.style.transform='scale(1)';">
+        <img src="https://cdn-icons-png.flaticon.com/512/3132/3132693.png" style="width: 60px; height: 60px; margin-bottom: 20px;">
+        <h3 style="font-size: 1.3rem; color: #2e3a59; margin-bottom: 10px;">Government Summits</h3>
+        <p style="font-size: 0.95rem; color: #555;">Organizing national summits, panels, and public outreach programs.</p>
+      </div>
+
+      <!-- Card 4 -->
+      <div class="card" style="background: #ffffff; padding: 25px; min-width: 280px; border-radius: 15px; box-shadow: 0 8px 20px rgba(0,0,0,0.1); text-align: center; transition: transform 0.3s ease;"
+        onmouseover="this.style.transform='scale(1.05)';" 
+        onmouseout="this.style.transform='scale(1)';">
+        <img src="https://cdn-icons-png.flaticon.com/512/4350/4350687.png" style="width: 60px; height: 60px; margin-bottom: 20px;">
+        <h3 style="font-size: 1.3rem; color: #2e3a59; margin-bottom: 10px;">Cultural Events</h3>
+        <p style="font-size: 0.95rem; color: #555;">From traditional programs to public celebrations, we handle it all.</p>
+      </div>
+    </div>
+
+    <!-- Dot Navigation -->
+    <div class="dot-container">
+      <span class="dot active" onclick="scrollToCard(0)"></span>
+      <span class="dot" onclick="scrollToCard(1)"></span>
+      <span class="dot" onclick="scrollToCard(2)"></span>
+      <span class="dot" onclick="scrollToCard(3)"></span>
+    </div>
+
+    <script>
+      function scrollToCard(index) {
+        const container = document.getElementById('cardScroll');
+        const cardWidth = container.querySelector('.card').offsetWidth + 30; // 280px + gap
+        container.scrollTo({
+          left: index * cardWidth,
+          behavior: 'smooth'
+        });
+
+        // Update active dot
+        const dots = document.querySelectorAll('.dot');
+        dots.forEach(dot => dot.classList.remove('active'));
+        if (dots[index]) dots[index].classList.add('active');
+      }
+    </script>
+  </section>
+
+</section>
+
+
+
+  <!-- <section style="padding: 70px 20px; background: #ffffff; font-family: 'Segoe UI', sans-serif;">
+    <h2 style="text-align: center; font-size: 2.5rem; color: #004ba0; margin-bottom: 20px;">Upcoming Hethaishi Events</h2>
+    <p style="text-align: center; max-width: 720px; margin: 0 auto 50px; color: #444; font-size: 1.05rem;">
+          Join us for experiences that inspire, educate, and connect. Here's what's happening soon!
+    </p>
+    <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 40px; max-width: 1100px; margin: 0 auto;">
+      <a href="#" style="text-decoration: none; width: 300px; margin: 10px;">
+        <div style="background: #fff; border-radius: 16px; padding: 25px; width: 100%; box-shadow: 0 6px 14px rgba(0,0,0,0.06); transition: transform 0.3s ease, box-shadow 0.3s ease; height: 100%; display: flex; flex-direction: column;"
+              onmouseover="this.style.transform='scale(1.05)'; this.style.boxShadow='0 8px 18px rgba(0,0,0,0.12)';"
+              onmouseout="this.style.transform='scale(1)'; this.style.boxShadow='0 6px 14px rgba(0,0,0,0.06)';">
+              <p style="color: #004ba0;font-weight: bold; font-size: 0.9rem; margin-bottom: 8px;">May 18, 2025</p>
+              <h3 style="color: #004ba0; font-size: 1.3rem; margin-bottom: 10px;">Mindfulness in Nature</h3>
+              <p style="color: #555; font-size: 0.95rem; margin-bottom: 20px; flex-grow: 1;">A guided walk through the park with meditative practices to calm the mind and deepen awareness.</p>
+              <div style="text-align: center;">
+                <button style="background-color: #004ba0; color: white; border: none; padding: 10px 20px; border-radius: 6px; font-size: 0.95rem; cursor: pointer; transition: all 0.3s ease;"
+                        onmouseover="this.style.backgroundColor='#002d62';"
+                        onmouseout="this.style.backgroundColor='#004ba0';">
+                  Learn More
+                </button>
+              </div>
+        </div>
+      </a>
+      <a href="#" style="text-decoration: none; width: 300px; margin: 10px;">
+        <div style="background: #fff; border-radius: 16px; padding: 25px; width: 100%; box-shadow: 0 6px 14px rgba(0,0,0,0.06); transition: transform 0.3s ease, box-shadow 0.3s ease; height: 100%; display: flex; flex-direction: column;"
+              onmouseover="this.style.transform='scale(1.05)'; this.style.boxShadow='0 8px 18px rgba(0,0,0,0.12)';"
+              onmouseout="this.style.transform='scale(1)'; this.style.boxShadow='0 6px 14px rgba(0,0,0,0.06)';">
+              <p style="color: #004ba0; font-weight: bold; font-size: 0.9rem; margin-bottom: 8px;">June 3, 2025</p>
+              <h3 style="color: #004ba0; font-size: 1.3rem; margin-bottom: 10px;">Creative Wellness Workshop</h3>
+              <p style="color: #555; font-size: 0.95rem; margin-bottom: 20px; flex-grow: 1;">An immersive session combining art and self-expression to boost mood and mental clarity.</p>
+              <div style="text-align: center;">
+                <button style="background-color: #004ba0; color: white; border: none; padding: 10px 20px; border-radius: 6px; font-size: 0.95rem; cursor: pointer; transition: all 0.3s ease;"
+                        onmouseover="this.style.backgroundColor='#002d62';"
+                        onmouseout="this.style.backgroundColor='#004ba0';">
+                  Learn More
+                </button>
+              </div>
+        </div>
+      </a>
+      <a href="#" style="text-decoration: none; width: 300px; margin: 10px;">
+        <div style="background: #fff; border-radius: 16px; padding: 25px; width: 100%; box-shadow: 0 6px 14px rgba(0,0,0,0.06); transition: transform 0.3s ease, box-shadow 0.3s ease; height: 100%; display: flex; flex-direction: column;"
+              onmouseover="this.style.transform='scale(1.05)'; this.style.boxShadow='0 8px 18px rgba(0,0,0,0.12)';"
+              onmouseout="this.style.transform='scale(1)'; this.style.boxShadow='0 6px 14px rgba(0,0,0,0.06)';">
+              <p style="color: #004ba0; font-weight: bold; font-size: 0.9rem; margin-bottom: 8px;">July 22, 2025</p>
+              <h3 style="color: #004ba0; font-size: 1.3rem; margin-bottom: 10px;">Community Movement Jam</h3>
+              <p style="color: #555; font-size: 0.95rem; margin-bottom: 20px; flex-grow: 1;">A joyful open-air event with music and wellness practices for all ages. Enjoy live music gets everyone moving.</p>
+              <div style="text-align: center;">
+                <button style="background-color: #004ba0; color: white; border: none; padding: 10px 20px; border-radius: 6px; font-size: 0.95rem; cursor: pointer; transition: all 0.3s ease;"
+                        onmouseover="this.style.backgroundColor='#002d62';"
+                        onmouseout="this.style.backgroundColor='#004ba0';">
+                  Learn More
+                </button>
+              </div>
+          </div>
+      </a>
+    </div>
+</section> -->
+ <!-- How It Works Section -->
+<!-- How Hitaishi Services Works Section - Redesigned with circle-attached lines -->
+<section style=" padding: 10px 20px; font-family: 'Inter', sans-serif; text-align: center;">
+    <div style="max-width: 1200px; margin: 0 auto; background-color: white; border-radius: 20px; padding: 50px;  position: relative;">
+        <h2 style="font-size: 2.8rem; color: #0056b3; margin-bottom: 20px; font-weight: bold;">How Hitaishi Services Works</h2>
+        <p style="font-size: 1.15rem; color: #666; margin-bottom: 50px; line-height: 1.7;">
+            Our simple process ensures you find and hire the best professionals with ease.
+        </p>
+
+        <div style="display: flex; justify-content: center; align-items: flex-start; flex-wrap: wrap; position: relative;">
+
+            <!-- Line Layer -->
+            <div style="position: absolute; top: 55px; left: 11.5%; width: 77%; height: 4px; background: linear-gradient(to right, #0084ff, #4fc3f7, #ff7043, #66bb6a); z-index: 0; border-radius: 2px;"></div>
+
+            <!-- Step 1 -->
+            <div style="flex: 1 1 220px; max-width: 25%; padding: 25px 15px; text-align: center; display: flex; flex-direction: column; align-items: center; position: relative; z-index: 1;">
+                <div style="background: #0084ff; color: white; width: 70px; height: 70px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 2.2rem; font-weight: bold; box-shadow: 0 4px 10px rgba(0,132,255,0.3); position: relative; z-index: 2;">
+                    1
+                </div>
+                <h3 style="margin-top: 20px; margin-bottom: 10px; color: #2c3e50; font-size: 1.5rem; font-weight: bold;">Search Services</h3>
+                <p style="color: #555; margin: 0; font-size: 0.95rem; line-height: 1.6;">Browse thousands of service providers in your area.</p>
+            </div>
+
+            <!-- Step 2 -->
+            <div style="flex: 1 1 220px; max-width: 25%; padding: 25px 15px; text-align: center; display: flex; flex-direction: column; align-items: center; position: relative; z-index: 1;">
+                <div style="background: #4fc3f7; color: white; width: 70px; height: 70px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 2.2rem; font-weight: bold; box-shadow: 0 4px 10px rgba(79,195,247,0.3); position: relative; z-index: 2;">
+                    2
+                </div>
+                <h3 style="margin-top: 20px; margin-bottom: 10px; color: #2c3e50; font-size: 1.5rem; font-weight: bold;">Compare & Choose</h3>
+                <p style="color: #555; margin: 0; font-size: 0.95rem; line-height: 1.6;">Compare prices, reviews and ratings to find the best match.</p>
+            </div>
+
+            <!-- Step 3 -->
+            <div style="flex: 1 1 220px; max-width: 25%; padding: 25px 15px; text-align: center; display: flex; flex-direction: column; align-items: center; position: relative; z-index: 1;">
+                <div style="background: #ff7043; color: white; width: 70px; height: 70px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 2.2rem; font-weight: bold; box-shadow: 0 4px 10px rgba(255,112,67,0.3); position: relative; z-index: 2;">
+                    3
+                </div>
+                <h3 style="margin-top: 20px; margin-bottom: 10px; color: #2c3e50; font-size: 1.5rem; font-weight: bold;">Contact Provider</h3>
+                <p style="color: #555; margin: 0; font-size: 0.95rem; line-height: 1.6;">Connect directly with the service provider.</p>
+            </div>
+
+            <!-- Step 4 -->
+            <div style="flex: 1 1 220px; max-width: 25%; padding: 25px 15px; text-align: center; display: flex; flex-direction: column; align-items: center; position: relative; z-index: 1;">
+                <div style="background: #66bb6a; color: white; width: 70px; height: 70px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 2.2rem; font-weight: bold; box-shadow: 0 4px 10px rgba(102,187,106,0.3); position: relative; z-index: 2;">
+                    4
+                </div>
+                <h3 style="margin-top: 20px; margin-bottom: 10px; color: #2c3e50; font-size: 1.5rem; font-weight: bold;">Get Work Done</h3>
+                <p style="color: #555; margin: 0; font-size: 0.95rem; line-height: 1.6;">Hire and get your work completed satisfactorily.</p>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<div style="background-color: #f9fafb; padding: 60px 20px; font-family: 'Segoe UI', sans-serif;">
+  <h2 style="font-size: 2.5rem; text-align: center; margin-bottom: 40px; color: #111827;">Upcoming Official Events</h2>
+
+  <div style="display: flex; flex-wrap: wrap; gap: 30px; justify-content: center; max-width: 1200px; margin: auto;">
+
+    <!-- Tech Conference -->
+    <div style="background: white; border-radius: 15px; width: 300px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); overflow: hidden;">
+      <img src="img/tech_conference.png" alt="Tech Conference" style="width: 100%; height: 180px; object-fit: cover;">
+      <div style="padding: 20px;">
+        <h3 style="font-size: 1.3rem; margin-bottom: 8px; color: #1f2937;">India Tech Conference </h3>
+        <p style="font-size: 0.95rem; color: #6b7280;">📍 Hyderabad | 🗓️ 12 July 2025</p>
+        <p style="font-size: 0.9rem; color: #4b5563;">Explore the future of AI, Blockchain, and Cloud Computing with experts.</p>
+        <a href="Register.html" style="display: inline-block; margin-top: 15px; padding: 8px 16px; background: #2563eb; color: white; border-radius: 6px; text-decoration: none;">Register Now</a>
+      </div>
+    </div>
+
+    <!-- Job Fair -->
+    <div style="background: white; border-radius: 15px; width: 300px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); overflow: hidden;">
+      <img src="img/jobfair.png" alt="Job Fair" style="width: 100%; height: 180px; object-fit: cover;">
+      <div style="padding: 20px;">
+        <h3 style="font-size: 1.3rem; margin-bottom: 8px; color: #1f2937;">National Job Fair 2025</h3>
+        <p style="font-size: 0.95rem; color: #6b7280;">📍 Chennai | 🗓️ 30 June 2025</p>
+        <p style="font-size: 0.9rem; color: #4b5563;">Meet top employers hiring in IT, Finance, BPO, and Government sectors.</p>
+        <a href="Register.html" style="display: inline-block; margin-top: 15px; padding: 8px 16px; background: #047857; color: white; border-radius: 6px; text-decoration: none;">Register Now</a>
+      </div>
+    </div>
+
+    <!-- Government Startup Expo -->
+    <div style="background: white; border-radius: 15px; width: 300px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); overflow: hidden;">
+      <img src="img/govt_stratup.png" alt="Startup Expo" style="width: 100%; height: 180px; object-fit: cover;">
+      <div style="padding: 20px;">
+        <h3 style="font-size: 1.3rem; margin-bottom: 8px; color: #1f2937;">Govt. Startup Expo</h3>
+        <p style="font-size: 0.95rem; color: #6b7280;">📍 Noida | 🗓️ 10 August 2025</p>
+        <p style="font-size: 0.9rem; color: #4b5563;">An initiative by MSME to empower small businesses and tech startups.</p>
+        <a href="Register.html" style="display: inline-block; margin-top: 15px; padding: 8px 16px; background: #d97706; color: white; border-radius: 6px; text-decoration: none;">Register Now</a>
+      </div>
+    </div>
+
+    <!-- Cyber Security Summit -->
+    <div style="background: white; border-radius: 15px; width: 300px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); overflow: hidden;">
+      <img src="img/cyber_security.png" alt="Cyber Summit" style="width: 100%; height: 180px; object-fit: cover;">
+      <div style="padding: 20px;">
+        <h3 style="font-size: 1.3rem; margin-bottom: 8px; color: #1f2937;">Cyber Security Summit</h3>
+        <p style="font-size: 0.95rem; color: #6b7280;">📍 Pune | 🗓️ 18 September 2025</p>
+        <p style="font-size: 0.9rem; color: #4b5563;">Experts discuss national cyber defense, ethical hacking & more.</p>
+        <a href="Register.html" style="display: inline-block; margin-top: 15px; padding: 8px 16px; background: #dc2626; color: white; border-radius: 6px; text-decoration: none;">Register Now</a>
+      </div>
+    </div>
+
+    <!-- Career Development Workshop -->
+    <div style="background: white; border-radius: 15px; width: 300px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); overflow: hidden;">
+      <img src="img/career_boostworkshop.png" alt="Career Workshop" style="width: 100%; height: 180px; object-fit: cover;">
+      <div style="padding: 20px;">
+        <h3 style="font-size: 1.3rem; margin-bottom: 8px; color: #1f2937;">Career Boost Workshop</h3>
+        <p style="font-size: 0.95rem; color: #6b7280;">📍 Online | 🗓️ 5 July 2025</p>
+        <p style="font-size: 0.9rem; color: #4b5563;">Online session on resume writing, interview skills, and job search tips.</p>
+        <a href="Register.html" style="display: inline-block; margin-top: 15px; padding: 8px 16px; background: #6366f1; color: white; border-radius: 6px; text-decoration: none;">Register Now</a>
+      </div>
+    </div>
+
+    <!-- International Education Expo -->
+    <div style="background: white; border-radius: 15px; width: 300px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); overflow: hidden;">
+      <img src="img/international.png" alt="Education Expo" style="width: 100%; height: 180px; object-fit: cover;">
+      <div style="padding: 20px;">
+        <h3 style="font-size: 1.3rem; margin-bottom: 8px; color: #1f2937;">International Edu Expo</h3>
+        <p style="font-size: 0.95rem; color: #6b7280;">📍 Ahmedabad | 🗓️ 28 June 2025</p>
+        <p style="font-size: 0.9rem; color: #4b5563;">Top universities from USA, UK, Canada & more under one roof.</p>
+        <a href="Register.html" style="display: inline-block; margin-top: 15px; padding: 8px 16px; background: #0d9488; color: white; border-radius: 6px; text-decoration: none;">Register Now</a>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+  <section>
+   <div style="background-color: #f3f4f6; padding: 60px 20px; font-family: 'Segoe UI', sans-serif;">
+  <h2 style="font-size: 2.8rem; text-align: center; margin-bottom: 50px; color: #1f2937;">🎨 Event Design</h2>
+
+  <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 30px; max-width:90%; margin: 0 auto;">
+    
+    <!-- Lighting & Ambiance -->
+    <div style="text-decoration: none; flex: 1 1 250px; max-width: 280px;">
+      <div style="background: #ffffff; border-radius: 15px; padding: 25px; box-shadow: 0 8px 20px rgba(0,0,0,0.05); transition: transform 0.3s; height: 70%;" 
+        onmouseover="this.style.transform='scale(1.05)';" 
+        onmouseout="this.style.transform='scale(1)';">
+        <div style="font-size: 2.2rem; color: #3b82f6; margin-bottom: 10px;">💡</div>
+        <h3 style="font-size: 1.3rem; color: #1f2937; margin-bottom: 10px;">Lighting & Ambiance</h3>
+        <p style="color: #4b5563; line-height: 1.6;">Set the mood with creative lighting — from soft, romantic glows to energetic beams.</p>
+      </div>
+    </div>
+
+    <!-- Themed Decor -->
+    <div style="text-decoration: none; flex: 1 1 250px; max-width: 280px;">
+      <div style="background: #ffffff; border-radius: 15px; padding: 25px; box-shadow: 0 8px 20px rgba(0,0,0,0.05); transition: transform 0.3s; height: 70%;" 
+        onmouseover="this.style.transform='scale(1.05)';" 
+        onmouseout="this.style.transform='scale(1)';">
+        <div style="font-size: 2.2rem; color: #f59e0b; margin-bottom: 10px;">🏵</div>
+        <h3 style="font-size: 1.3rem; color: #1f2937; margin-bottom: 10px;">Themed Decor</h3>
+        <p style="color: #4b5563; line-height: 1.6;">Bring your theme to life with decor that reflects your vision — elegant or whimsical.</p>
+      </div>
+    </div>
+
+    <!-- Branding & Signage -->
+    <div style="text-decoration: none; flex: 1 1 250px; max-width: 280px;">
+      <div style="background: #ffffff; border-radius: 15px; padding: 25px; box-shadow: 0 8px 20px rgba(0,0,0,0.05); transition: transform 0.3s; height: 70%;" 
+        onmouseover="this.style.transform='scale(1.05)';" 
+        onmouseout="this.style.transform='scale(1)';">
+        <div style="font-size: 2.2rem; color: #10b981; margin-bottom: 10px;">🪧</div>
+        <h3 style="font-size: 1.3rem; color: #1f2937; margin-bottom: 10px;">Branding & Signage</h3>
+        <p style="color: #4b5563; line-height: 1.6;">Make your brand shine with custom signage and cohesive visual identity.</p>
+      </div>
+    </div>
+
+    <!-- Interactive Installations -->
+    <div style="text-decoration: none; flex: 1 1 250px; max-width: 280px;">
+      <div style="background: #ffffff; border-radius: 15px; padding: 25px; box-shadow: 0 8px 20px rgba(0,0,0,0.05); transition: transform 0.3s; height: 70%;" 
+        onmouseover="this.style.transform='scale(1.05)';" 
+        onmouseout="this.style.transform='scale(1)';">
+        <div style="font-size: 2.2rem; color: #ef4444; margin-bottom: 10px;">🎯</div>
+        <h3 style="font-size: 1.3rem; color: #1f2937; margin-bottom: 10px;">Interactive&nbsp;Installations</h3>
+        <p style="color: #4b5563; line-height: 1.6;">Delight guests with selfie zones, projection walls, and immersive tech setups.</p>
+      </div>
+    </div>
+
+  </div>
+</div>
+  
+  </section>
+
+  <section style="padding: 90px 20px; background: linear-gradient(135deg, #f5f7fa, #c3cfe2); font-family: 'Segoe UI', sans-serif;">
+  <h2 style="text-align: center; font-size: 2.8rem; color: #2c3e50; margin-bottom: 25px;">Creative Retail Awards</h2>
+  <p style="text-align: center; max-width: 750px; margin: 0 auto 60px; color: #34495e; font-size: 1.15rem;">
+    Celebrating the trailblazers of the retail world — from captivating store design to immersive customer experiences. Join us as we spotlight creativity, innovation, and excellence in retail.
+  </p>
+
+  <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 40px; max-width: 1200px; margin: 0 auto;">
+    <div style="background: #ffffff; border-radius: 16px; padding: 30px; width: 280px; text-align: center; box-shadow: 0 6px 20px rgba(0,0,0,0.06); transition: all 0.3s ease;"
+         onmouseover="this.style.transform='scale(1.05)'; this.style.boxShadow='0 10px 25px rgba(0,0,0,0.1)';"
+         onmouseout="this.style.transform='scale(1)'; this.style.boxShadow='0 6px 20px rgba(0,0,0,0.06)';">
+      <img src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png" loading="lazy" alt="Award Icon" style="width: 80px; margin-bottom: 20px;">
+      <h3 style="color: #2c3e50; font-size: 1.3rem; margin-bottom: 10px;">Best Store Design</h3>
+      <p style="color: #555; font-size: 0.95rem;">Honoring aesthetics, layout, and atmosphere that elevate the shopping experience.</p>
+    </div>
+  
+    <div style="background: #ffffff; border-radius: 16px; padding: 30px; width: 280px; text-align: center; box-shadow: 0 6px 20px rgba(0,0,0,0.06); transition: all 0.3s ease;"
+         onmouseover="this.style.transform='scale(1.05)'; this.style.boxShadow='0 10px 25px rgba(0,0,0,0.1)';"
+         onmouseout="this.style.transform='scale(1)'; this.style.boxShadow='0 6px 20px rgba(0,0,0,0.06)';">
+      <img src="https://cdn-icons-png.flaticon.com/512/3595/3595455.png" loading="lazy" alt="Award Icon" style="width: 80px; margin-bottom: 20px;">
+      <h3 style="color: #2c3e50; font-size: 1.3rem; margin-bottom: 10px;">Digital Innovation</h3>
+      <p style="color: #555; font-size: 0.95rem;">Recognizing breakthrough technology that redefines retail engagement.</p>
+    </div>
+  
+    <div style="background: #ffffff; border-radius: 16px; padding: 30px; width: 280px; text-align: center; box-shadow: 0 6px 20px rgba(0,0,0,0.06); transition: all 0.3s ease;"
+         onmouseover="this.style.transform='scale(1.05)'; this.style.boxShadow='0 10px 25px rgba(0,0,0,0.1)';"
+         onmouseout="this.style.transform='scale(1)'; this.style.boxShadow='0 6px 20px rgba(0,0,0,0.06)';">
+      <img src="https://cdn-icons-png.flaticon.com/512/2107/2107957.png" loading="lazy" alt="Award Icon" style="width: 80px; margin-bottom: 20px;">
+      <h3 style="color: #2c3e50; font-size: 1.3rem; margin-bottom: 10px;">Customer Experience</h3>
+      <p style="color: #555; font-size: 0.95rem;">Rewarding brands that create unforgettable and meaningful customer journeys.</p>
+    </div>
+  </div>
+  
+  </div>
+
+  <div style="text-align: center; margin-top: 60px;">
+    <a href="contact_us.html" style="display: inline-block; padding: 14px 32px; background-color: #2980b9; color: white; border-radius: 8px; text-decoration: none; font-size: 1rem; font-weight: bold; transition: background 0.3s;">
+      Learn More & Nominate
+    </a>
+  </div>
+  </section>
+  <section style="padding: 10px 20px; background: #f4f9ff; font-family: 'Segoe UI', sans-serif;">
+  <h2 style="text-align: center; font-size: 2.5rem; color: #003c8f; margin-bottom: 30px;">Event Tools & Features</h2>
+  <p style="text-align: center; max-width: 750px; margin: 0 auto 50px; color: #444; font-size: 1.1rem;">
+    Our event experience goes beyond the ordinary. Explore the tools and features that keep you connected, informed, and fully engaged from start to finish.
+  </p>
+
+  <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 30px; max-width: 1200px; margin: 0 auto;">
+    <a href="contact_us.html" style="text-decoration: none;">
+      <div style="background: #fff; border-radius: 16px; padding: 25px; width: 280px; box-shadow: 0 6px 16px rgba(0,0,0,0.06); transition: all 0.3s ease;"
+           onmouseover="this.style.transform='scale(1.05)'; this.style.boxShadow='0 10px 24px rgba(0,0,0,0.1)';"
+           onmouseout="this.style.transform='scale(1)'; this.style.boxShadow='0 6px 16px rgba(0,0,0,0.06)';">
+        <h3 style="color: #003c8f; font-size: 1.2rem; margin-bottom: 10px;">Personalized Schedule</h3>
+        <p style="color: #555;">Build your own agenda with a click. Save sessions, set reminders, and stay organized.</p>
+      </div>
+    </a>
+  
+    <a href="contact_us.html" style="text-decoration: none;">
+      <div style="background: #fff; border-radius: 16px; padding: 25px; width: 280px; box-shadow: 0 6px 16px rgba(0,0,0,0.06); transition: all 0.3s ease;"
+           onmouseover="this.style.transform='scale(1.05)'; this.style.boxShadow='0 10px 24px rgba(0,0,0,0.1)';"
+           onmouseout="this.style.transform='scale(1)'; this.style.boxShadow='0 6px 16px rgba(0,0,0,0.06)';">
+        <h3 style="color: #003c8f; font-size: 1.2rem; margin-bottom: 10px;">Live Polls & Q&A</h3>
+        <p style="color: #555;">Engage in real time during sessions with polls, chats, and live speaker questions.</p>
+      </div>
+    </a>
+  
+    <a href="contact_us.html" style="text-decoration: none;">
+      <div style="background: #fff; border-radius: 16px; padding: 25px; width: 280px; box-shadow: 0 6px 16px rgba(0,0,0,0.  06); transition: all 0.3s ease;"
+           onmouseover="this.style.transform='scale(1.05)'; this.style.boxShadow='0 10px 24px rgba(0,0,0,0.1)';"
+           onmouseout="this.style.transform='scale(1)'; this.style.boxShadow='0 6px 16px rgba(0,0,0,0.06)';">
+        <h3 style="color: #003c8f; font-size: 1.2rem; margin-bottom: 10px;">Smart Networking</h3>
+        <p style="color: #555;">Use our AI-powered tool to find and connect with like-minded attendees and professionals.</p>
+      </div>
+    </a>
+  
+    <a href="contact_us.html" style="text-decoration: none;">
+      <div style="background: #fff; border-radius: 16px; padding: 25px; width: 280px; box-shadow: 0 6px 16px rgba(0,0,0,0.06); transition: all 0.3s ease;"
+           onmouseover="this.style.transform='scale(1.05)'; this.style.boxShadow='0 10px 24px rgba(0,0,0,0.1)';"
+           onmouseout="this.style.transform='scale(1)'; this.style.boxShadow='0 6px 16px rgba(0,0,0,0.06)';">
+        <h3 style="color: #003c8f; font-size: 1.2rem; margin-bottom: 10px;">Event App Access</h3>
+        <p style="color: #555;">Everything at your fingertips — from maps and speaker bios to session updates and messages.</p>
+      </div>
+    </a>
+  
+    <a href="contact_us.html" style="text-decoration: none;">
+      <div style="background: #fff; border-radius: 16px; padding: 25px; width: 280px; box-shadow: 0 6px 16px rgba(0,0,0,0.06); transition: all 0.3s ease;"
+           onmouseover="this.style.transform='scale(1.05)'; this.style.boxShadow='0 10px 24px rgba(0,0,0,0.1)';"
+           onmouseout="this.style.transform='scale(1)'; this.style.boxShadow='0 6px 16px rgba(0,0,0,0.06)';">
+        <h3 style="color: #003c8f; font-size: 1.2rem; margin-bottom: 10px;">On-Demand Content</h3>
+        <p style="color: #555;">Missed a session? No worries. Access recordings anytime post-event to keep learning.</p>
+      </div>
+    </a>
+  
+    <a href="contact_us.html" style="text-decoration: none;">
+      <div style="background: #fff; border-radius: 16px; padding: 25px; width: 280px; box-shadow: 0 6px 16px rgba(0,0,0,0.06); transition: all 0.3s ease;"
+           onmouseover="this.style.transform='scale(1.05)'; this.style.boxShadow='0 10px 24px rgba(0,0,0,0.1)';"
+           onmouseout="this.style.transform='scale(1)'; this.style.boxShadow='0 6px 16px rgba(0,0,0,0.06)';">
+        <h3 style="color: #003c8f; font-size: 1.2rem; margin-bottom: 10px;">Virtual & Hybrid Support</h3>
+        <p style="color: #555;">Join us in person or online with seamless integration for all attendee types.</p>
+      </div>
+    </a>
+  </div>
+  </section>
+  <section style="padding: 10px 20px; background: #d7d7d8; font-family: 'Segoe UI', sans-serif;">
+  <h2 style="text-align: center; font-size: 2.5rem; color: #0d47a1; margin-bottom: 30px;">Frequently Asked Questions</h2>
+  <p style="text-align: center; max-width: 750px; margin: 0 auto 50px; color: #444; font-size: 1.1rem;">
+    Got questions? We've got answers. Click a question to reveal the answer.
+  </p>
+
+  <div style="max-width: 900px; margin: 0 auto;">
+
+    <!-- FAQ ITEM TEMPLATE -->
+    <div class="faq-item" style="background: #fff; border-radius: 12px; margin-bottom: 15px; box-shadow: 0 6px 16px rgba(0,0,0,0.05);">
+      <div onclick="toggleFaq(this)" style="cursor: pointer; padding: 20px 25px; display: flex; justify-content: space-between; align-items: center;">
+        <h3 style="color: #0d47a1; font-size: 1.2rem; margin: 0;">What types of events are hosted on Hitaishi Services?</h3>
+        <span style="font-size: 1.5rem; color: #0d47a1;">&#9656;</span>
+      </div>
+      <div style="padding: 0 25px 20px; display: none; color: #555; font-size: 1.05rem; line-height: 1.6;">
+        Hitaishi Services hosts a variety of professional events such as job fairs, training workshops, networking meetups, and project exhibitions. These events are designed to connect job seekers, freelancers, and employers in meaningful ways.
+      </div>
+    </div>
+
+
+    <div class="faq-item" style="background: #fff; border-radius: 12px; margin-bottom: 15px; box-shadow: 0 6px 16px rgba(0,0,0,0.05);">
+      <div onclick="toggleFaq(this)" style="cursor: pointer; padding: 20px 25px; display: flex; justify-content: space-between; align-items: center;">
+        <h3 style="color: #0d47a1; font-size: 1.2rem; margin: 0;">How do I register for the event?</h3>
+        <span style="font-size: 1.5rem; color: #0d47a1;">&#9656;</span>
+      </div>
+      <div style="padding: 0 25px 20px; display: none; color: #555; font-size: 1.05rem; line-height: 1.6;">
+        You can register online through our official website. Early bird discounts are available until May 10, 2025.
+      </div>
+    </div>
+
+    <div class="faq-item" style="background: #fff; border-radius: 12px; margin-bottom: 15px; box-shadow: 0 6px 16px rgba(0,0,0,0.05);">
+      <div onclick="toggleFaq(this)" style="cursor: pointer; padding: 20px 25px; display: flex; justify-content: space-between; align-items: center;">
+        <h3 style="color: #0d47a1; font-size: 1.2rem; margin: 0;">Is there a refund policy?</h3>
+        <span style="font-size: 1.5rem; color: #0d47a1;">&#9656;</span>
+      </div>
+      <div style="padding: 0 25px 20px; display: none; color: #555; font-size: 1.05rem; line-height: 1.6;">
+        Yes. Cancellations made by June 1, 2025, are eligible for a full refund. After that, partial refunds may be issued.
+      </div>
+    </div>
+
+    <div class="faq-item" style="background: #fff; border-radius: 12px; margin-bottom: 15px; box-shadow: 0 6px 16px rgba(0,0,0,0.05);">
+      <div onclick="toggleFaq(this)" style="cursor: pointer; padding: 20px 25px; display: flex; justify-content: space-between; align-items: center;">
+        <h3 style="color: #0d47a1; font-size: 1.2rem; margin: 0;">Can I attend virtually?</h3>
+        <span style="font-size: 1.5rem; color: #0d47a1;">&#9656;</span>
+      </div>
+      <div style="padding: 0 25px 20px; display: none; color: #555; font-size: 1.05rem; line-height: 1.6;">
+        Absolutely! We’re offering full virtual access through our EventLink platform with live streams and interactive features.
+      </div>
+    </div>
+
+    <div class="faq-item" style="background: #fff; border-radius: 12px; margin-bottom: 15px; box-shadow: 0 6px 16px rgba(0,0,0,0.05);">
+      <div onclick="toggleFaq(this)" style="cursor: pointer; padding: 20px 25px; display: flex; justify-content: space-between; align-items: center;">
+        <h3 style="color: #0d47a1; font-size: 1.2rem; margin: 0;">How can I connect with other attendees?</h3>
+        <span style="font-size: 1.5rem; color: #0d47a1;">&#9656;</span>
+      </div>
+      <div style="padding: 0 25px 20px; display: none; color: #555; font-size: 1.05rem; line-height: 1.6;">
+        Our event app includes chat features, live polls, and community boards. You’ll also be invited to join private LinkedIn groups.
+      </div>
+    </div>
+
+  </div>
+    <section id="contact" style="background-color: #34495e; color: #ffffff; padding: 60px 20px; text-align: center; margin: 40px auto; border-radius: 16px; max-width: 1200px; box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);">
+        <h2 style="font-size: 2.8em; margin-bottom: 20px; font-weight: 700;">Ready to Plan Your Next Event?</h2>
+        <p style="font-size: 1.3em; max-width: 700px; margin: 0 auto 30px auto; opacity: 0.9;">Contact us today to discuss your event needs and receive a personalized proposal.</p>
+        <a href="contact_us.html" style="background-color: #f1c40f; color: #333; text-decoration: none; padding: 18px 45px; border-radius: 35px; font-size: 1.4em; font-weight: 700; transition: background-color 0.3s ease, transform 0.2s ease; display: inline-block;"
+           onmouseover="this.style.backgroundColor='#e6b800'; this.style.transform='scale(1.05)';"
+           onmouseout="this.style.backgroundColor='#f1c40f'; this.style.transform='scale(1)';">Contact Hitaishi Events</a>
+    </section>
+  <!-- Simple Toggle Script -->
+  <script>
+    function toggleFaq(header) {
+      const content = header.nextElementSibling;
+      const arrow = header.querySelector('span');
+      const isOpen = content.style.display === 'block';
+
+      content.style.display = isOpen ? 'none' : 'block';
+      arrow.innerHTML = isOpen ? '&#9656;' : '&#9662;'; // Right arrow to down arrow
+    }
+  </script>
+  </section>
+  <script>
+    // JavaScript for handling the search
+    function searchService() {
+        const searchQuery = document.getElementById('searchInput').value;
+        if (searchQuery.trim() === '') {
+            alert('Please enter a search term!');
+        } else {
+            alert('Searching for: ' + searchQuery);
+        }
+    }
+
+    // JavaScript for form validation
+    function validateForm() {
+        const name = document.getElementById('name').value;
+        const email = document.getElementById('email').value;
+        const message = document.getElementById('message').value;
+
+        if (name === '' || email === '' || message === '') {
+            alert('Please fill out all fields.');
+            return false;
+        }
+        alert('Message sent successfully!');
+        return true;
+    }
+</script>
+ <footer style="background-color: #f1f1f1; padding: 40px 0;">
+    <div style="max-width: 1200px; margin: 0 auto; padding-left: -600px;">
+
+        <!-- Education & Training -->
+        <div style="text-align: left; margin: 10px;">
+            <a href="education_training.html" style="text-decoration: none;">
+                <p style="font-size: 16px; color: #333; font-weight: bold;">Education & Training</p>
+            </a>
+            <p style="font-size: 14px; color: #555; margin-top: 10px;">Explore a wide range of educational and training options across various fields to enhance your skills and career opportunities.</p>
+            <hr style="border: 1px solid #ddd; margin-top: 20px;"/>
+        </div>
+
+        <!-- Properties & Rents -->
+        <div style="text-align: left; margin: 10px;">
+            <a href="properties_rent.html" style="text-decoration: none;">
+                <p style="font-size: 16px; color: #333; font-weight: bold;">Properties & Rents</p>
+            </a>
+            <p style="font-size: 14px; color: #555; margin-top: 10px;">Find the perfect property for sale, rent, or investment in your desired location with comprehensive listings and details.</p>
+            <hr style="border: 1px solid #ddd; margin-top: 20px;"/>
+        </div>
+
+        <!-- Professional Services -->
+        <div style="text-align: left; margin: 10px;">
+            <a href="proffessional_services.html" style="text-decoration: none;">
+                <p style="font-size: 16px; color: #333; font-weight: bold;">Professional Services</p>
+            </a>
+            <p style="font-size: 14px; color: #555; margin-top: 10px;">Access top-notch professional services, including legal, financial, and consulting services, from trusted experts.</p>
+            <hr style="border: 1px solid #ddd; margin-top: 20px;"/>
+        </div>
+
+        <!-- Travel & Transport -->
+        <div style="text-align: left; margin: 10px;">
+            <a href="travel_transport.html" style="text-decoration: none;">
+                <p style="font-size: 16px; color: #333; font-weight: bold;">Travel & Transport</p>
+            </a>
+            <p style="font-size: 14px; color: #555; margin-top: 10px;">Book your travel needs, including flights, cabs, and buses, with ease and at the best prices.</p>
+            <hr style="border: 1px solid #ddd; margin-top: 20px;"/>
+        </div>
+
+        <!-- Health & Wellness -->
+        <div style="text-align: left; margin: 10px;">
+            <a href="health_wellness.html" style="text-decoration: none;">
+                <p style="font-size: 16px; color: #333; font-weight: bold;">Health & Wellness</p>
+            </a>
+            <p style="font-size: 14px; color: #555; margin-top: 10px;">Discover health and wellness services to maintain a balanced lifestyle, including fitness classes, clinics, and more.</p>
+            <hr style="border: 1px solid #ddd; margin-top: 20px;"/>
+        </div>
+
+        <!-- Events -->
+        <div style="text-align: left; margin: 10px;">
+            <a href="events.html" style="text-decoration: none;">
+                <p style="font-size: 16px; color: #333; font-weight: bold;">Events</p>
+            </a>
+            <p style="font-size: 14px; color: #555; margin-top: 10px;">Stay updated with upcoming events, conferences, exhibitions, and entertainment activities near you.</p>
+            <hr style="border: 1px solid #ddd; margin-top: 20px;"/>
+        </div>
+
+        <!-- Home & Office -->
+        <div style="text-align: left; margin: 10px;">
+            <a href="home_office.html" style="text-decoration: none;">
+                <p style="font-size: 16px; color: #333; font-weight: bold;">Home & Office</p>
+            </a>
+            <p style="font-size: 14px; color: #555; margin-top: 10px;">Explore furniture, appliances, and office supplies to furnish your home or workspace with the best products.</p>
+            <hr style="border: 1px solid #ddd; margin-top: 20px;"/>
+        </div>
+
+        <!-- Shopping -->
+        <div style="text-align: left; margin: 10px;">
+            <a href="shopping.html" style="text-decoration: none;">
+                <p style="font-size: 16px; color: #333; font-weight: bold;">Shopping</p>
+            </a>
+            <p style="font-size: 14px; color: #555; margin-top: 10px;">Shop online for a variety of products including electronics, clothing, accessories, and much more.</p>
+            <hr style="border: 1px solid #ddd; margin-top: 20px;"/>
+        </div>
+
+        <!-- Placement & Jobs -->
+        <div style="text-align: left; margin: 10px;">
+            <a href="placements_jobs.html" style="text-decoration: none;">
+                <p style="font-size: 16px; color: #333; font-weight: bold;">Placement & Jobs</p>
+            </a>
+            <p style="font-size: 14px; color: #555; margin-top: 10px;">Browse job listings and placement opportunities, and connect with top employers in various industries.</p>
+            <hr style="border: 1px solid #ddd; margin-top: 20px;"/>
+        </div>
+
+        <!-- Social Media Icons -->
+        <div style="text-align: center; margin-top: 20px;">
+            <p style="font-size: 16px; color: #333; font-weight: bold;">Follow Us</p>
+            <div style="margin-top:20px;display: flex;text-align: center;justify-content: center;justify-items: center;">
+                <a href="https://www.facebook.com" target="_blank" style="margin: 0 15px; text-decoration: none;">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" alt="Facebook" style="width: 40px; height: 40px;"/>
+                </a>
+                <a href="https://www.twitter.com" target="_blank" style="margin: 0 15px; text-decoration: none;">
+                    <img src="https://cdn.iconscout.com/icon/free/png-256/free-twitter-logo-icon-download-in-svg-png-gif-file-formats--social-media-pack-logos-icons-83443.png?f=webp&w=128" alt="Twitter" style="width: 40px; height: 40px;"/>
+                </a>
+                <a href="https://www.instagram.com" target="_blank" style="margin: 0 15px; text-decoration: none;">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram" style="width: 40px; height: 40px;"/>
+                </a>
+                <a href="https://www.linkedin.com" target="_blank" style="margin: 0 15px; text-decoration: none;">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/e/e6/729101_linkedin_icon.png" alt="LinkedIn" style="width: 40px; height: 40px;"/>
+                </a>
+            </div>
+            <br>
+                <p style="margin: auto; color: black;">&copy; 2025 Hitaishi Web Portal. All rights reserved.</p>
+        </div>
+    </div>
+    
+
+</footer>
+</body>
+</html>

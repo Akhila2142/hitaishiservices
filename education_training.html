@@ -1,0 +1,791 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Meta Title and Description for Education & Training Page -->
+<title>Education & Training | Hithaishi Services</title>
+<meta name="description" content="Discover expert-led education and training programs at Hithaishi Services. Enhance your skills, grow your career, and unlock your potential today.">
+<meta name="keywords" content="education services, training programs, skill development, career training, professional courses, Hithaishi Services, learning solutions">
+<meta name="robots" content="index, follow">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+  @media (max-width: 768px) {
+    .announcements h4 {
+      font-size: 28px !important;
+    }
+    .announcement-box {
+      padding: 15px 20px !important;
+    }
+    .announcement-box h3, .announcement-box h4 {
+      font-size: 1.2rem !important;
+    }
+    .announcement-box p {
+      font-size: 1rem !important;
+    }
+  }
+</style>
+</head>
+<body style="padding: 0;margin: 0;background-color: #ffffff;font-family: Arial, Helvetica, sans-serif;">
+ <header style="position: sticky; top: 0; z-index: 1000; background: linear-gradient(135deg, #0066cc, #004080); padding: 15px 5%; box-shadow: 0 4px 12px rgba(0,0,0,0.1); font-family: 'Segoe UI', Roboto, sans-serif; backdrop-filter: blur(5px);">
+  <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 20px; max-width: 1400px; margin: 0 auto;">
+    
+    <!-- Logo Section -->
+    <a href="index.html" style="color: white; text-decoration: none; flex-shrink: 0; display: flex; align-items: center; gap: 10px;">
+      
+      <div style="background: #ffffff; border-radius: 10px; padding: 2px 2px; display: inline-flex; align-items: center; justify-content: center; box-shadow: 0 2px 6px rgba(0, 102, 204, 0.25);">
+        <img src="img/logo_hitaishiservices.png" alt="Hitaishi Logo" width="32" height="32" style="display: block;" />
+      </div>
+
+      <div>
+        <h1 style="margin: 0; font-size: 32px; font-weight: 800; letter-spacing: 1px; background: linear-gradient(to right, #ffffff, #e6f2ff); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">Hitaishi</h1>
+        <p style="font-size: 14px; margin: 2px 0 0 0; font-weight: 500; color: rgba(255,255,255,0.9);">Find trusted services and professionals</p>
+      </div>
+    </a>
+    
+    <!-- Search Form -->
+    <form action="search.html" method="GET" style="flex-grow: 1; max-width: 500px; min-width: 250px; display: flex; box-shadow: 0 2px 10px rgba(0,0,0,0.1); border-radius: 8px; overflow: hidden; background: rgba(255,255,255,0.9); transition: all 0.3s ease;" onfocusin="this.style.boxShadow='0 2px 15px rgba(0,80,200,0.2)'; this.style.background='white'" onfocusout="this.style.boxShadow='0 2px 10px rgba(0,0,0,0.1)'; this.style.background='rgba(255,255,255,0.9)'">
+      <input
+        type="text"
+        name="query"
+        placeholder="Search services, businesses..."
+        style="flex-grow: 1; border: none; padding: 12px 20px; font-size: 0.95rem; outline: none; color: #003366; background: transparent;"
+        required
+      />
+      <button
+        type="submit"
+        style="background: linear-gradient(to right, #0066cc, #004080); border: none; padding: 0 25px; cursor: pointer; color: white; font-weight: 600; font-size: 1rem; transition: all 0.3s ease; display: flex; align-items: center; justify-content: center;"
+        onmouseover="this.style.opacity='0.9'"
+        onmouseout="this.style.opacity='1'"
+        aria-label="Search"
+      >
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" style="margin-right: 5px;">
+          <path d="M11 19C15.4183 19 19 15.4183 19 11C19 6.58172 15.4183 3 11 3C6.58172 3 3 6.58172 3 11C3 15.4183 6.58172 19 11 19Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M21 21L16.65 16.65" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        Search
+      </button>
+    </form>
+
+    <!-- Navigation Links -->
+    <nav id="navLinks" style="display: flex; gap: 10px; flex-wrap: wrap; align-items: center; flex-shrink: 0;">
+      <a href="index.html" style="color: white; font-size: 0.95rem; padding: 8px 15px; text-decoration: none; transition: all 0.3s ease; font-weight: 500; border-radius: 6px; border: 1px solid rgba(255,255,255,0.3);" onmouseover="this.style.backgroundColor='rgba(255,255,255,0.15)'" onmouseout="this.style.backgroundColor='transparent'">Home</a>
+      <a href="Services.html" style="color: white; font-size: 0.95rem; padding: 8px 15px; text-decoration: none; transition: all 0.3s ease; font-weight: 500; border-radius: 6px; border: 1px solid rgba(255,255,255,0.3);" onmouseover="this.style.backgroundColor='rgba(255,255,255,0.15)'" onmouseout="this.style.backgroundColor='transparent'">Services</a>
+      <a href="ListBusiness.html" style="color: white; font-size: 0.95rem; padding: 8px 15px; text-decoration: none; transition: all 0.3s ease; font-weight: 500; border-radius: 6px; border: 1px solid rgba(255,255,255,0.3);" onmouseover="this.style.backgroundColor='rgba(255,255,255,0.15)'" onmouseout="this.style.backgroundColor='transparent'">List Business</a>
+      <a href="postadd.html" style="color: white; font-size: 0.95rem; padding: 8px 15px; background: rgba(255,255,255,0.2); text-decoration: none; transition: all 0.3s ease; font-weight: 600; border-radius: 6px; border: 1px solid rgba(255,255,255,0.4);" onmouseover="this.style.backgroundColor='rgba(255,255,255,0.3)'" onmouseout="this.style.backgroundColor='rgba(255,255,255,0.2)'">Post Free Ad</a>
+      <a href="SignIn.html" style="color: #0066cc; font-size: 0.95rem; padding: 8px 15px; background: white; text-decoration: none; transition: all 0.3s ease; font-weight: 600; border-radius: 6px;" onmouseover="this.style.backgroundColor='#f0f7ff'; this.style.color='#004080'" onmouseout="this.style.backgroundColor='white'; this.style.color='#0066cc'">Sign In</a>
+    </nav>
+
+    <!-- Menu Button for Mobile -->
+    <button onclick="toggleMenu()" style="display: none; background: rgba(255,255,255,0.2); border: 1px solid rgba(255,255,255,0.4); border-radius: 6px; padding: 8px 12px; font-size: 1.2rem; color: white; cursor: pointer; flex-shrink: 0;" id="menuToggle" aria-label="Toggle Menu">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M3 12H21" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M3 6H21" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M3 18H21" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+    </button>
+
+  </div>
+</header>
+
+<script>
+  function toggleMenu() {
+    var nav = document.getElementById("navLinks");
+    if (nav.style.display === "none" || nav.style.display === "") {
+      nav.style.display = "flex";
+      nav.style.flexDirection = "column";
+      nav.style.position = "absolute";
+      nav.style.top = "100%";
+      nav.style.left = "0";
+      nav.style.right = "0";
+      nav.style.background = "linear-gradient(135deg, #0066cc, #004080)";
+      nav.style.padding = "20px 5%";
+      nav.style.gap = "15px";
+      nav.style.boxShadow = "0 10px 20px rgba(0,0,0,0.1)";
+    } else {
+      nav.style.display = "none";
+    }
+  }
+
+  function handleResize() {
+    var width = window.innerWidth;
+    var menuToggle = document.getElementById("menuToggle");
+    var navLinks = document.getElementById("navLinks");
+
+    if (width <= 992) {
+      menuToggle.style.display = "flex";
+      menuToggle.style.alignItems = "center";
+      menuToggle.style.justifyContent = "center";
+      if (width > 768) {
+        navLinks.style.display = "none";
+      }
+    } else {
+      menuToggle.style.display = "none";
+      navLinks.style.display = "flex";
+      navLinks.style.flexDirection = "row";
+      navLinks.style.position = "static";
+      navLinks.style.padding = "0";
+      navLinks.style.background = "transparent";
+      navLinks.style.boxShadow = "none";
+    }
+  }
+
+  window.addEventListener("resize", handleResize);
+  window.addEventListener("load", handleResize);
+</script>
+<section style="
+  background-image: url('https://www.graduateprogram.org/wp-content/uploads/2023/11/Enhancing-Education-Innovative-Staff-Training-in-Schools-resize-1024x689.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 80vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  font-family: 'Segoe UI', sans-serif;
+  color: white;
+  text-align: center;
+">
+  <div style="
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+  "></div>
+  <div style="z-index: 2; max-width: 800px; padding: 20px;">
+    <h2 style="font-size: 48px; margin-bottom: 20px;">Education and Training</h2>
+    <p style="font-size: 20px; line-height: 1.6;">
+      Empowering individuals through innovative learning experiences that spark growth, curiosity, and lifelong development. Discover how education transforms lives and builds brighter futures.
+    </p>
+  </div>
+</section>
+<section style="padding: 20px 20px; background-color: #f4f6f8; font-family: 'Segoe UI', sans-serif;">
+  <style>
+    @media (max-width: 768px) {
+      .about-container {
+        flex-direction: column !important;
+      }
+      .about-img, .about-text {
+        width: 100% !important;
+        text-align: center !important;
+      }
+    }
+  </style>
+
+  <h3 style="text-align: center; font-size: 36px; margin-bottom: 40px; color: #222;">About Us</h3>
+
+  <div class="about-container" style="display: flex; align-items: center; justify-content: center; gap: 40px;">
+    <img class="about-img" src="https://dcblog.b-cdn.net/wp-content/uploads/2021/04/difference-between-teaching-and-training.jpg" loading="lazy"
+         alt="Teaching vs Training" 
+         style="width: 45%; height: auto; border-radius: 8px;">
+
+    <div class="about-text" style="width: 45%; text-align: left;">
+      <p style="font-size: 1.2rem; line-height: 1.6;">
+        At <strong>Hitaishi Services</strong>, we are committed to driving impactful transformation in education and skill development. 
+        Since our inception, we’ve been dedicated to bridging the gap between knowledge and opportunity, making learning more accessible, practical, and future-ready.
+      </p>
+      <p style="font-size: 1.2rem; line-height: 1.6;">
+        We specialize in a variety of training programs designed to empower students, educators, and institutions with cutting-edge tools and real-world skills. 
+        Our offerings range from digital platforms and interactive modules to hands-on industry-focused workshops and personalized mentorship.
+      </p>
+      <p style="font-size: 1.2rem; line-height: 1.6;">
+        Backed by a team of passionate professionals and education experts, <strong>Hitaishi Services</strong> envisions a future where learning knows no boundaries. 
+        Join us on our mission to create meaningful change and unlock new possibilities for every learner.
+      </p>
+    </div>
+  </div>
+</section>
+
+
+<section style="padding: 50px 20px; background-color: #ffffff; font-family: 'Segoe UI', sans-serif;max-width: 80%;margin: auto;">
+  <h2 style="text-align: center; font-size: 2rem; color: #1a3c6c; margin-bottom: 30px;">📣 Announcements</h2>
+
+  <div id="carousel" style="display: flex; overflow-x: auto; scroll-snap-type: x mandatory; gap: 20px; padding-bottom: 20px; scrollbar-width: none; -ms-overflow-style: none;">
+    
+    <div class="card" style="flex: 0 0 80%; scroll-snap-align: start; background-color: #ffffff; border-radius: 12px; box-shadow: 0 6px 15px rgba(0,0,0,0.08); padding: 25px; min-width: 280px;">
+      <h3 style="margin: 0 0 12px; color: #1a3c6c; font-size: 1.3rem;">📢 Digital Training Portal Launched</h3>
+      <p style="font-size: 1rem; color: #333; line-height: 1.5;">Access online courses, webinars, and learning tools in our new digital platform, built for all education levels.</p>
+    </div>
+
+    <div class="card" style="flex: 0 0 80%; scroll-snap-align: start; background-color: #ffffff; border-radius: 12px; box-shadow: 0 6px 15px rgba(0,0,0,0.08); padding: 25px; min-width: 280px;">
+      <h3 style="margin: 0 0 12px; color: #1a3c6c; font-size: 1.3rem;">📅 Workshop: Future-Ready Teaching</h3>
+      <p style="font-size: 1rem; color: #333; line-height: 1.5;">Join our upcoming workshop on May 15th for hands-on methods to modernize your classroom. Register now!</p>
+    </div>
+
+    <div class="card" style="flex: 0 0 80%; scroll-snap-align: start; background-color: #ffffff; border-radius: 12px; box-shadow: 0 6px 15px rgba(0,0,0,0.08); padding: 25px; min-width: 280px;">
+      <h3 style="margin: 0 0 12px; color: #1a3c6c; font-size: 1.3rem;">🎓 2025 Scholarship Applications Open</h3>
+      <p style="font-size: 1rem; color: #333; line-height: 1.5;">Apply for scholarships today! Explore criteria, deadlines, and application steps on our official portal.</p>
+    </div>
+
+    <div class="card" style="flex: 0 0 80%; scroll-snap-align: start; background-color: #ffffff; border-radius: 12px; box-shadow: 0 6px 15px rgba(0,0,0,0.08); padding: 25px; min-width: 280px;">
+      <h3 style="margin: 0 0 12px; color: #1a3c6c; font-size: 1.3rem;">🛠️ Maintenance Scheduled</h3>
+      <p style="font-size: 1rem; color: #333; line-height: 1.5;">Heads up! Scheduled maintenance on June 5th may affect access to training materials between 1–4 PM.</p>
+    </div>
+  </div>
+
+  <div style="display: flex; justify-content: center; gap: 10px; margin-top: 10px;">
+    <div onclick="scrollToCard(0)" style="width: 12px; height: 12px; background-color: #1a3c6c; border-radius: 50%; cursor: pointer;" id="dot0"></div>
+    <div onclick="scrollToCard(1)" style="width: 12px; height: 12px; background-color: #bbb; border-radius: 50%; cursor: pointer;" id="dot1"></div>
+    <div onclick="scrollToCard(2)" style="width: 12px; height: 12px; background-color: #bbb; border-radius: 50%; cursor: pointer;" id="dot2"></div>
+    <div onclick="scrollToCard(3)" style="width: 12px; height: 12px; background-color: #bbb; border-radius: 50%; cursor: pointer;" id="dot3"></div>
+  </div>
+
+  <script>
+    function scrollToCard(index) {
+      const carousel = document.getElementById('carousel');
+      const card = carousel.children[index];
+      const scrollX = card.offsetLeft;
+      carousel.scrollTo({ left: scrollX, behavior: 'smooth' });
+
+      for (let i = 0; i < 4; i++) {
+        document.getElementById('dot' + i).style.backgroundColor = i === index ? '#1a3c6c' : '#bbb';
+      }
+    }
+
+    document.getElementById('carousel').addEventListener('scroll', function () {
+      const scrollLeft = this.scrollLeft;
+      const width = this.children[0].offsetWidth + 20;
+      const index = Math.round(scrollLeft / width);
+      for (let i = 0; i < 4; i++) {
+        document.getElementById('dot' + i).style.backgroundColor = i === index ? '#1a3c6c' : '#bbb';
+      }
+    });
+  </script>
+</section>
+
+
+<!-- <section style="padding: 60px 20px; background-color: #f9f9f9; font-family: 'Segoe UI', sans-serif; overflow-x: auto;">
+  <h2 style="text-align: center; font-size: 36px; margin-bottom: 40px; color: #2c3e50;">Courses Collection</h2>
+
+  <div style="display: flex; flex-wrap: nowrap; gap: 30px; justify-content: flex-start; max-width: 100%; overflow-x: auto; padding-bottom: 20px;">
+    
+    <a href="#" style="text-decoration: none;">
+      <div style="background-color: #ffffff; min-width: 350px; padding: 20px; border-radius: 12px; box-shadow: 0 4px 10px rgba(0,0,0,0.05); transition: transform 0.3s, box-shadow 0.3s;" 
+           onmouseover="this.style.transform='translateY(-5px)'; this.style.boxShadow='0 12px 20px rgba(0,0,0,0.1)'" 
+           onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 4px 10px rgba(0,0,0,0.05)'">
+        <img src="https://cdn.pixabay.com/photo/2015/07/17/22/43/student-849825_960_720.jpg"loading="lazy" alt="Course 1" 
+             style="width: 100%; height: 200px; object-fit: cover; border-radius: 8px; margin-bottom: 15px;">
+        <h3 style="font-size: 20px; color: #34495e;">Introduction to Digital Learning</h3>
+        <p style="font-size: 1rem; color: #555;">Learn the fundamentals of online education, tools, and best practices for learners and educators alike.</p>
+      </div>
+    </a>
+
+    <a href="#" style="text-decoration: none;">
+      <div style="background-color: #ffffff; min-width: 350px; padding: 20px; border-radius: 12px; box-shadow: 0 4px 10px rgba(0,0,0,0.05); transition: transform 0.3s, box-shadow 0.3s;" 
+           onmouseover="this.style.transform='translateY(-5px)'; this.style.boxShadow='0 12px 20px rgba(0,0,0,0.1)'" 
+           onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 4px 10px rgba(0,0,0,0.05)'">
+        <img src="https://www.plannedparenthood.org/uploads/filer_public_thumbnails/filer_public/54/ea/54ea14e6-a87a-4d18-93cf-d96d47090de4/20170713_affiliate_images-595349163-1920x1080.jpg__800x600_q75_subsampling-2.jpg"loading="lazy" alt="Course 2" 
+             style="width: 100%; height: 200px; object-fit: cover; border-radius: 8px; margin-bottom: 15px;">
+        <h3 style="font-size: 20px; color: #34495e;">Teaching Strategies for Modern Classrooms</h3>
+        <p style="font-size: 1rem; color: #555;">Enhance your teaching methods with interactive tools, student engagement tips, and inclusive practices.</p>
+      </div>
+    </a>
+
+    <a href="#" style="text-decoration: none;">
+      <div style="background-color: #ffffff; min-width: 350px; padding: 20px; border-radius: 12px; box-shadow: 0 4px 10px rgba(0,0,0,0.05); transition: transform 0.3s, box-shadow 0.3s;" 
+           onmouseover="this.style.transform='translateY(-5px)'; this.style.boxShadow='0 12px 20px rgba(0,0,0,0.1)'" 
+           onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 4px 10px rgba(0,0,0,0.05)'">
+        <img src="https://images.pexels.com/photos/8177925/pexels-photo-8177925.jpeg"loading="lazy" alt="Course 3" 
+             style="width: 100%; height: 200px; object-fit: cover; border-radius: 8px; margin-bottom: 15px;">
+        <h3 style="font-size: 20px; color: #34495e;">Certificate in Educational Leadership</h3>
+        <p style="font-size: 1rem; color: #555;">Develop leadership skills and lead education-focused initiatives with impact and confidence.</p>
+      </div>
+    </a>
+  </div>
+</section> -->
+<div id="courses" style="max-width:100%;overflow-x:auto;padding:20px;background:#ffffff;max-width: 80%;margin: auto;">
+  <h2 style="text-align:center;font-size:32px;color:#2c3e50;margin-bottom:30px;">Explore Our Courses</h2>
+
+  <div id="course" style="display:flex;gap:20px;min-width:800px;padding-bottom:10px;overflow-x: auto;">
+    
+    <!-- Card 1 -->
+    <a href="SignIn.html" style="flex:0 0 auto;width:250px;text-decoration:none;background:#fff;border-radius:10px;box-shadow:0 4px 10px rgba(0,0,0,0.1);overflow:hidden;">
+      <img src="https://img.freepik.com/free-vector/online-tutorials-concept_52683-37480.jpg" style="width:100%;height:150px;object-fit:cover;">
+      <div style="padding:15px;">
+        <h3 style="font-size:18px;margin:0 0 10px;color:#007BFF;">Web Development</h3>
+        <p style="font-size:14px;color:#555;">HTML, CSS, JS, React basics to advanced.</p>
+      </div>
+    </a>
+
+    <!-- Card 2 -->
+    <a href="SignIn.html" style="flex:0 0 auto;width:250px;text-decoration:none;background:#fff;border-radius:10px;box-shadow:0 4px 10px rgba(0,0,0,0.1);overflow:hidden;">
+      <img src="https://img.freepik.com/free-vector/data-science-illustration_23-2149443497.jpg" style="width:100%;height:150px;object-fit:cover;">
+      <div style="padding:15px;">
+        <h3 style="font-size:18px;margin:0 0 10px;color:#007BFF;">Data Science</h3>
+        <p style="font-size:14px;color:#555;">Learn Python, ML, Pandas, and analytics.</p>
+      </div>
+    </a>
+
+    <!-- Card 3 -->
+    <a href="SignIn.html" style="flex:0 0 auto;width:250px;text-decoration:none;background:#fff;border-radius:10px;box-shadow:0 4px 10px rgba(0,0,0,0.1);overflow:hidden;">
+      <img src="img/digital_marketing.png" style="width:100%;height:150px;object-fit:cover;">
+      <div style="padding:15px;">
+        <h3 style="font-size:18px;margin:0 0 10px;color:#007BFF;">Digital Marketing</h3>
+        <p style="font-size:14px;color:#555;">SEO, social media, PPC, and content.</p>
+      </div>
+    </a>
+
+    <!-- Card 4 -->
+    <a href="SignIn.html" style="flex:0 0 auto;width:250px;text-decoration:none;background:#fff;border-radius:10px;box-shadow:0 4px 10px rgba(0,0,0,0.1);overflow:hidden;">
+      <img src="https://img.freepik.com/free-vector/online-certification-illustration_23-2148573633.jpg" style="width:100%;height:150px;object-fit:cover;">
+      <div style="padding:15px;">
+        <h3 style="font-size:18px;margin:0 0 10px;color:#007BFF;">Business Management</h3>
+        <p style="font-size:14px;color:#555;">Leadership, operations, and strategy.</p>
+      </div>
+    </a>
+
+    <!-- Card 5 -->
+    <a href="SignIn.html" style="flex:0 0 auto;width:250px;text-decoration:none;background:#fff;border-radius:10px;box-shadow:0 4px 10px rgba(0,0,0,0.1);overflow:hidden;">
+      <img src="https://img.freepik.com/free-vector/graphic-designer-concept_23-2148234700.jpg" style="width:100%;height:150px;object-fit:cover;">
+      <div style="padding:15px;">
+        <h3 style="font-size:18px;margin:0 0 10px;color:#007BFF;">Graphic Design</h3>
+        <p style="font-size:14px;color:#555;">Photoshop, Illustrator, Figma basics.</p>
+      </div>
+    </a>
+
+    <!-- Card 6 -->
+    <a href="SignIn.html" style="flex:0 0 auto;width:250px;text-decoration:none;background:#fff;border-radius:10px;box-shadow:0 4px 10px rgba(0,0,0,0.1);overflow:hidden;">
+      <img src="https://img.freepik.com/free-vector/mobile-app-development-concept_23-2148684984.jpg" style="width:100%;height:150px;object-fit:cover;">
+      <div style="padding:15px;">
+        <h3 style="font-size:18px;margin:0 0 10px;color:#007BFF;">App Development</h3>
+        <p style="font-size:14px;color:#555;">Android, iOS, Flutter, React Native.</p>
+      </div>
+    </a>
+
+    <!-- Card 7 -->
+    <a href="SignIn.html" style="flex:0 0 auto;width:250px;text-decoration:none;background:#fff;border-radius:10px;box-shadow:0 4px 10px rgba(0,0,0,0.1);overflow:hidden;">
+      <img src="img/ai&ml.png" style="width:100%;height:150px;object-fit:cover;">
+      <div style="padding:15px;">
+        <h3 style="font-size:18px;margin:0 0 10px;color:#007BFF;">AI & ML</h3>
+        <p style="font-size:14px;color:#555;">Neural networks, deep learning, NLP.</p>
+      </div>
+    </a>
+
+  </div>
+</div>
+<style>
+  #course {
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none;  /* IE and Edge */
+  }
+  #course::-webkit-scrollbar {
+    display: none; /* Chrome, Safari, Opera */
+  }
+</style>
+
+
+
+<section style="padding: 20px 20px; background-color: #eef9f1; font-family: 'Segoe UI', sans-serif; max-width: 90%; margin: auto; border-radius: 20px;">
+  <h5 style="text-align: center; font-size: 36px; margin-bottom: 40px; color: #222;">Empower Your Future with Hitaishi Services</h5>
+
+  <div style="display: flex; flex-wrap: wrap; align-items: center; gap: 40px; max-width: 1200px; margin: 0 auto;">
+    <div style="flex: 1; min-width: 300px;">
+      <p style="font-size: 1.2rem; color: #444; line-height: 1.7; margin-bottom: 15px;">
+        <strong>Hitaishi Services</strong> is your trusted partner in career development through a wide range of educational and training programs.
+        Whether you're a student, fresher, or working professional, our expert-led modules help you gain industry-relevant skills at your own pace.
+      </p>
+      <p style="font-size: 1.2rem; color: #444; line-height: 1.7;">
+        We offer both free and premium training in various domains—like IT, digital marketing, healthcare, business, and more.
+        Our platform connects you with top educators and institutions to prepare you for your dream job or next big opportunity.
+      </p>
+      <a href="education_training.html#courses" 
+         style="display: inline-block; margin-top: 25px; padding: 12px 24px; background-color: #28a745; color: white; text-decoration: none; border-radius: 8px; font-size: 1rem;">
+        Explore Hitaishi courses
+      </a>
+    </div>
+    <div style="flex: 1; min-width: 300px;">
+      <img src="https://tweakindia.com/wp-content/uploads/2023/07/czNmcy1wcml2YXRlL3Jhd3BpeGVsX2ltYWdlcy93ZWJzaXRlX2NvbnRlbnQvbHIvbnMyMDQwNS1pbWFnZS1rd3Z5OXZ3Zi5qcGc.jpg" 
+           loading="lazy" alt="Hitaishi Education Platform" 
+           style="width: 100%; border-radius: 16px; box-shadow: 0 6px 20px rgba(0,0,0,0.1);">
+    </div>
+  </div>
+</section>
+
+
+<section style="padding: 60px 20px; background-color: #ffffff; font-family: 'Segoe UI', sans-serif;max-width: 90%;margin: auto;">
+  <h6 style="text-align: center; font-size: 36px; margin-bottom: 40px; color: #2c3e50;">Self-Directed Learning</h6>
+
+  <div style="display: flex; flex-wrap: wrap; align-items: stretch; gap: 40px; max-width: 1200px; margin: 0 auto;">
+    <div style="flex: 1; min-width: 300px; display: flex; flex-direction: column; justify-content: center;">
+      <div style="height: 100%;">
+        <p style="font-size: 1.2rem; color: #444; line-height: 1.7; margin-bottom: 15px;">
+          <strong>Self-directed learning</strong> empowers individuals to take control of their own educational journey. It involves setting personal goals, identifying resources, and evaluating progress—placing the learner at the center of the experience.
+        </p>
+        <p style="font-size: 1.2rem; color: #444; line-height: 1.7;">
+          This approach promotes critical thinking, motivation, and lifelong learning. Whether you're mastering a new skill or exploring a topic of passion, self-directed learning gives you the flexibility to learn at your own pace and on your own terms.
+        </p>
+        <p style="font-size: 1.2rem; color: #444; line-height: 1.7;">
+          Embrace the freedom to learn what you want, when you want, and how you want—with tools and resources that support your individual learning style and goals.
+        </p>
+      </div>
+    </div>
+    <div style="flex: 1; min-width: 300px; display: flex; align-items: center;">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/b/bf/Online_learning_img.jpg" loading="lazy"
+           alt="Self-directed learning" 
+           style="width: 100%; height: auto; max-height: 100%; object-fit: cover; border-radius: 16px; box-shadow: 0 6px 20px rgba(0,0,0,0.1);">
+    </div>
+
+  </div>
+</section>
+
+<section style="padding: 80px 20px; background-color: #f8f1f1; font-family: 'Segoe UI', sans-serif;max-width: 90%;margin: auto;">
+  <h2 style="text-align: center; font-size: 36px; color: #2c3e50; margin-bottom: 50px;">Our Skilled Faculty</h2>
+
+  <div style="display: flex; justify-content: center; flex-wrap: wrap; gap: 40px; max-width: 1200px; margin: 0 auto;">
+    
+    <div style="background-color: #f9f9f9; width: 300px; padding: 30px; border-radius: 16px; box-shadow: 0 4px 16px rgba(0,0,0,0.05); text-align: center; transition: transform 0.3s, box-shadow 0.3s;" 
+         onmouseover="this.style.transform='translateY(-6px)'; this.style.boxShadow='0 10px 25px rgba(0,0,0,0.1)'" 
+         onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 4px 16px rgba(0,0,0,0.05)'">
+      <img src="https://cdn-icons-png.flaticon.com/512/4140/4140048.png"loading="lazy" alt="Professor" style="width: 80px; height: 80px; margin-bottom: 20px;">
+      <h3 style="font-size: 20px; color: #34495e; margin-bottom: 10px;">Dr. Aisha Rahman</h3>
+      <p style="font-size: 1rem; color: #555;">Expert in Educational Technology with 15+ years of experience in digital pedagogy and curriculum innovation.</p>
+    </div>
+
+    <div style="background-color: #f9f9f9; width: 300px; padding: 30px; border-radius: 16px; box-shadow: 0 4px 16px rgba(0,0,0,0.05); text-align: center; transition: transform 0.3s, box-shadow 0.3s;" 
+         onmouseover="this.style.transform='translateY(-6px)'; this.style.boxShadow='0 10px 25px rgba(0,0,0,0.1)'" 
+         onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 4px 16px rgba(0,0,0,0.05)'">
+      <img src="https://cdn-icons-png.flaticon.com/512/4140/4140037.png" loading="lazy"alt="Lecturer" style="width: 80px; height: 80px; margin-bottom: 20px;">
+      <h3 style="font-size: 20px; color: #34495e; margin-bottom: 10px;">Prof. Michael Chen</h3>
+      <p style="font-size: 1rem; color: #555;">Specialist in Inclusive Education, known for dynamic teaching methods and student-centered learning approaches.</p>
+    </div>
+
+    <div style="background-color: #f9f9f9; width: 300px; padding: 30px; border-radius: 16px; box-shadow: 0 4px 16px rgba(0,0,0,0.05); text-align: center; transition: transform 0.3s, box-shadow 0.3s;" 
+         onmouseover="this.style.transform='translateY(-6px)'; this.style.boxShadow='0 10px 25px rgba(0,0,0,0.1)'" 
+         onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 4px 16px rgba(0,0,0,0.05)'">
+      <img src="https://cdn-icons-png.flaticon.com/512/4140/4140051.png"loading="lazy" alt="Instructor" style="width: 80px; height: 80px; margin-bottom: 20px;">
+      <h3 style="font-size: 20px; color: #34495e; margin-bottom: 10px;">Dr. Neha Kapoor</h3>
+      <p style="font-size: 1rem; color: #555;">Renowned researcher in leadership training, mentoring tomorrow’s leaders in academic and corporate spaces.</p>
+    </div>
+
+  </div>
+</section>
+
+<section style="padding: 80px 20px; background-color: #ffffff; font-family: 'Segoe UI', sans-serif;">
+  <h2 style="text-align: center; font-size: 38px; color: #1a1a1a; margin-bottom: 20px;">Placements That Propel Careers</h2>
+  <p style="text-align: center; font-size: 1.1rem; color: #666; max-width: 800px; margin: 0 auto 50px;">
+    Empowering students to succeed beyond the classroom with industry connections, skill-building, and hands-on career support.
+  </p>
+
+  <div style="display: flex; flex-wrap: wrap; align-items: stretch; gap: 50px; max-width: 1200px; margin: 0 auto;">
+    <div style="flex: 1; min-width: 300px; background-color: #f9f9f9; border-radius: 16px; padding: 30px; box-shadow: 0 8px 24px rgba(0,0,0,0.05); display: flex; flex-direction: column; justify-content: center;">
+      <p style="font-size: 1.2rem; color: #333; line-height: 1.8; margin-bottom: 20px;">
+        Our dedicated <strong>Placement Cell</strong> connects learners with renowned companies across industries. From resume building to real interviews—we guide you every step of the way.
+      </p>
+      <p style="font-size: 1.1rem; color: #666; line-height: 1.6;">
+        With personalized mentorship, mock interview sessions, and upskilling workshops, students are equipped with confidence and real-world readiness.
+      </p>
+    </div>
+    <div style="flex: 1; min-width: 300px; position: relative;">
+      <img src="https://storage.needpix.com/rsynced_images/work-222768_1280.jpg" loading="lazy"
+           alt="Placements Provided" 
+           style="width: 100%; border-radius: 16px; box-shadow: 0 6px 20px rgba(0,0,0,0.1);">
+           <a href="placements_jobs.html" style="text-decoration: none;">
+      <div style="position: absolute; bottom: 20px; left: 20px; background-color: rgba(0,102,204,0.9); color: #fff; padding: 10px 20px; border-radius: 8px; font-size: 1rem;">
+        Career-Ready Graduates
+      </div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<section style="padding: 40px 20px; background-color: #ffffff; font-family: 'Segoe UI', sans-serif;">
+  <h2 style="text-align: center; font-size: 36px; color: #1a202c; margin-bottom: 60px;">🎓 New Placements Highlights</h2>
+
+  <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 30px; max-width: 1200px; margin: 0 auto;">
+    <!-- <a href=" # " style="text-decoration: none;"> -->
+    <div style="position: relative; border-radius: 16px; overflow: hidden; box-shadow: 0 8px 20px rgba(0,0,0,0.08); transition: transform 0.3s, box-shadow 0.3s;" 
+         onmouseover="this.style.transform='scale(1.05)'; this.style.boxShadow='0 12px 25px rgba(0,0,0,0.15)'; this.querySelector('img').style.filter='brightness(1)'" 
+         onmouseout="this.style.transform='scale(1)'; this.style.boxShadow='0 8px 20px rgba(0,0,0,0.08)'; this.querySelector('img').style.filter='brightness(0.7)'">
+      <img src="https://images.pexels.com/photos/3182812/pexels-photo-3182812.jpeg" loading="lazy" alt="Placement 1" style="width: 100%; height: 100%; object-fit: cover; filter: brightness(0.7);">
+      <div style="position: absolute; bottom: 20px; left: 20px; color: white;">
+        <i style="margin: 0; font-size: 20px;">Aarav Mehta</i>
+        <p style="margin: 5px 0 0; font-size: 16px;">Software Developer at Infosys</p>
+      </div>
+    </div>
+    </a>
+
+    <!-- <a href=" # " style="text-decoration: none;"> -->
+    <div style="position: relative; border-radius: 16px; overflow: hidden; box-shadow: 0 8px 20px rgba(0,0,0,0.08); transition: transform 0.3s, box-shadow 0.3s;" 
+         onmouseover="this.style.transform='scale(1.05)'; this.style.boxShadow='0 12px 25px rgba(0,0,0,0.15)'; this.querySelector('img').style.filter='brightness(1)'" 
+         onmouseout="this.style.transform='scale(1)'; this.style.boxShadow='0 8px 20px rgba(0,0,0,0.08)'; this.querySelector('img').style.filter='brightness(0.7)'">
+      <img src="https://images.pexels.com/photos/1181298/pexels-photo-1181298.jpeg" loading="lazy" alt="Placement 2" style="width: 100%; height: 100%; object-fit: cover; filter: brightness(0.7);">
+      <div style="position: absolute; bottom: 20px; left: 20px; color: white;">
+        <i style="margin: 0; font-size: 20px;">Riya Kapoor</i>
+        <p style="margin: 5px 0 0; font-size: 16px;">Business Analyst at Deloitte</p>
+      </div>
+    </div>
+    </a>
+
+    <!-- <a href=" # " style="text-decoration: none;"> -->
+    <div style="position: relative; border-radius: 16px; overflow: hidden; box-shadow: 0 8px 20px rgba(0,0,0,0.08); transition: transform 0.3s, box-shadow 0.3s;" 
+         onmouseover="this.style.transform='scale(1.05)'; this.style.boxShadow='0 12px 25px rgba(0,0,0,0.15)'; this.querySelector('img').style.filter='brightness(1)'" 
+         onmouseout="this.style.transform='scale(1)'; this.style.boxShadow='0 8px 20px rgba(0,0,0,0.08)'; this.querySelector('img').style.filter='brightness(0.7)'">
+      <img src="https://images.pexels.com/photos/3778611/pexels-photo-3778611.jpeg" loading="lazy" alt="Placement 3" style="width: 100%; height: 100%; object-fit: cover; filter: brightness(0.7);">
+      <div style="position: absolute; bottom: 20px; left: 20px; color: white;">
+        <i style="margin: 0; font-size: 20px;">Vikram Sharma</i>
+        <p style="margin: 5px 0 0; font-size: 16px;">System Engineer at TCS</p>
+      </div>
+    </div>
+    </a>
+  </div>
+</section>
+
+<section style="padding: 10px 20px; background-color: #ffffff; font-family: 'Segoe UI', sans-serif;max-width: 90%;margin: auto;">
+  <div style="text-align: center;">
+    <h2 style="font-size: 2.5rem; color: #333; margin-bottom: 30px;">Top Hiring Partners</h2>
+
+    <div style="display: flex; overflow-x: auto; gap: 30px; padding: 10px 0; justify-content: flex-start; align-items: center; white-space: nowrap; scrollbar-width: none; -ms-overflow-style: none;">
+
+      <!-- Partner Logos -->
+      <a href="https://www.tcs.com" target="_blank" title="TCS" style="flex: 0 0 auto; width: 100px; height: 100px; border-radius: 50%; background: #fff; display: flex; justify-content: center; align-items: center; box-shadow: 0 4px 12px rgba(0,0,0,0.1); transition: transform 0.3s;">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRTPAWYqoR1E-YMPwd869I0X2WuToOjTrPXgQ&s" alt="TCS" style="width: 80%; height: 80%; object-fit: contain;">
+      </a>
+
+      <a href="https://www.ibm.com" target="_blank" title="IBM" style="flex: 0 0 auto; width: 100px; height: 100px; border-radius: 50%; background: #fff; display: flex; justify-content: center; align-items: center; box-shadow: 0 4px 12px rgba(0,0,0,0.1); transition: transform 0.3s;">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/b/b9/IBM_Logo_2017.jpg" alt="IBM" style="width: 80%; height: 80%; object-fit: contain;">
+      </a>
+
+      <a href="https://www.accenture.com" target="_blank" title="Accenture" style="flex: 0 0 auto; width: 100px; height: 100px; border-radius: 50%; background: #fff; display: flex; justify-content: center; align-items: center; box-shadow: 0 4px 12px rgba(0,0,0,0.1); transition: transform 0.3s;">
+        <img src="img/accenture.png" alt="Accenture" style="width: 80%; height: 80%; object-fit: contain;">
+      </a>
+
+      <a href="https://www.aboutamazon.com" target="_blank" title="Amazon" style="flex: 0 0 auto; width: 100px; height: 100px; border-radius: 50%; background: #fff; display: flex; justify-content: center; align-items: center; box-shadow: 0 4px 12px rgba(0,0,0,0.1); transition: transform 0.3s;">
+        <img src="https://images.icon-icons.com/1195/PNG/512/1490889698-amazon_82521.png" alt="Amazon" style="width: 80%; height: 80%; object-fit: contain;">
+      </a>
+
+      <a href="https://www.manpowergroup.com" target="_blank" title="ManpowerGroup" style="flex: 0 0 auto; width: 100px; height: 100px; border-radius: 50%; background: #fff; display: flex; justify-content: center; align-items: center; box-shadow: 0 4px 12px rgba(0,0,0,0.1); transition: transform 0.3s;">
+        <img src="img/manpower.png" alt="ManpowerGroup" style="width: 80%; height: 80%; object-fit: contain;">
+      </a>
+
+      <a href="https://www.cognizant.com" target="_blank" title="Cognizant" style="flex: 0 0 auto; width: 100px; height: 100px; border-radius: 50%; background: #fff; display: flex; justify-content: center; align-items: center; box-shadow: 0 4px 12px rgba(0,0,0,0.1); transition: transform 0.3s;">
+        <img src="img/cognigent.png" alt="Cognizant" style="width: 80%; height: 80%; object-fit: contain;">
+      </a>
+
+      <a href="https://www.wipro.com" target="_blank" title="Wipro" style="flex: 0 0 auto; width: 100px; height: 100px; border-radius: 50%; background: #fff; display: flex; justify-content: center; align-items: center; box-shadow: 0 4px 12px rgba(0,0,0,0.1); transition: transform 0.3s;">
+        <img src="https://images.icon-icons.com/3915/PNG/512/wipro_logo_icon_249176.png" alt="Wipro" style="width: 80%; height: 80%; object-fit: contain;">
+      </a>
+
+      <a href="https://www.hcltech.com" target="_blank" title="HCL" style="flex: 0 0 auto; width: 100px; height: 100px; border-radius: 50%; background: #fff; display: flex; justify-content: center; align-items: center; box-shadow: 0 4px 12px rgba(0,0,0,0.1); transition: transform 0.3s;">
+        <img src="https://images.icon-icons.com/3912/PNG/512/hcl_logo_icon_248104.png" alt="HCL" style="width: 80%; height: 80%; object-fit: contain;">
+      </a>
+
+      <a href="https://www.capgemini.com" target="_blank" title="Capgemini" style="flex: 0 0 auto; width: 100px; height: 100px; border-radius: 50%; background: #fff; display: flex; justify-content: center; align-items: center; box-shadow: 0 4px 12px rgba(0,0,0,0.1); transition: transform 0.3s;">
+        <img src="img/capgemini.png" alt="Capgemini" style="width: 80%; height: 80%; object-fit: contain;">
+      </a>
+
+      <a href="https://www.infosys.com" target="_blank" title="Infosys" style="flex: 0 0 auto; width: 100px; height: 100px; border-radius: 50%; background: #fff; display: flex; justify-content: center; align-items: center; box-shadow: 0 4px 12px rgba(0,0,0,0.1); transition: transform 0.3s;">
+        <img src="https://images.icon-icons.com/3912/PNG/512/infosys_logo_icon_248021.png" alt="Infosys" style="width: 80%; height: 80%; object-fit: contain;">
+      </a>
+
+    </div>
+  </div>
+
+  <style>
+    section::-webkit-scrollbar {
+      display: none;
+    }
+    section a:hover {
+      transform: scale(1.05);
+    }
+  </style>
+</section>
+
+<section style="background: #ffffff; padding: 60px 20px; font-family: 'Inter', sans-serif;">
+  <div style="max-width: 90%; margin: auto;">
+    <h2 style="font-size: 2.4rem; text-align: center; color: #0d47a1; margin-bottom: 40px;">Frequently Asked Questions</h2>
+
+    <!-- FAQ 1 -->
+    <div style="background: #fff; border-radius: 12px; margin-bottom: 15px; box-shadow: 0 6px 16px rgba(0,0,0,0.05);">
+      <div onclick="toggleFaq(this)" style="cursor: pointer; padding: 20px 25px; display: flex; justify-content: space-between; align-items: center;">
+        <h3 style="color: #0d47a1; font-size: 1.2rem; margin: 0;">What types of training programs does Hitaishi offer?</h3>
+        <span style="font-size: 1.5rem; color: #0d47a1;">&#9656;</span>
+      </div>
+      <div style="padding: 0 25px 20px; display: none; color: #555; font-size: 1.05rem; line-height: 1.6;">
+        We offer training in technical skills, soft skills, job readiness, and industry-specific programs like IT, healthcare, construction, and more.
+      </div>
+    </div>
+
+    <!-- FAQ 2 -->
+    <div style="background: #fff; border-radius: 12px; margin-bottom: 15px; box-shadow: 0 6px 16px rgba(0,0,0,0.05);">
+      <div onclick="toggleFaq(this)" style="cursor: pointer; padding: 20px 25px; display: flex; justify-content: space-between; align-items: center;">
+        <h3 style="color: #0d47a1; font-size: 1.2rem; margin: 0;">Are the training programs certified?</h3>
+        <span style="font-size: 1.5rem; color: #0d47a1;">&#9656;</span>
+      </div>
+      <div style="padding: 0 25px 20px; display: none; color: #555; font-size: 1.05rem; line-height: 1.6;">
+        Yes, all our courses provide certificates upon completion, which are recognized by industry partners and employers.
+      </div>
+    </div>
+
+    <!-- FAQ 3 -->
+    <div style="background: #fff; border-radius: 12px; margin-bottom: 15px; box-shadow: 0 6px 16px rgba(0,0,0,0.05);">
+      <div onclick="toggleFaq(this)" style="cursor: pointer; padding: 20px 25px; display: flex; justify-content: space-between; align-items: center;">
+        <h3 style="color: #0d47a1; font-size: 1.2rem; margin: 0;">How can I enroll in a training course?</h3>
+        <span style="font-size: 1.5rem; color: #0d47a1;">&#9656;</span>
+      </div>
+      <div style="padding: 0 25px 20px; display: none; color: #555; font-size: 1.05rem; line-height: 1.6;">
+        You can enroll directly through the Education & Training section by selecting your desired course and clicking “Enroll Now.”
+      </div>
+    </div>
+
+    <!-- FAQ 4 -->
+    <div style="background: #fff; border-radius: 12px; margin-bottom: 15px; box-shadow: 0 6px 16px rgba(0,0,0,0.05);">
+      <div onclick="toggleFaq(this)" style="cursor: pointer; padding: 20px 25px; display: flex; justify-content: space-between; align-items: center;">
+        <h3 style="color: #0d47a1; font-size: 1.2rem; margin: 0;">Are there any free training programs available?</h3>
+        <span style="font-size: 1.5rem; color: #0d47a1;">&#9656;</span>
+      </div>
+      <div style="padding: 0 25px 20px; display: none; color: #555; font-size: 1.05rem; line-height: 1.6;">
+        Yes, we regularly offer free training sessions sponsored by our partners and government skill initiatives. Keep an eye on the “Upcoming Training” section.
+      </div>
+    </div>
+  </div>
+</section>
+
+<script>
+  function toggleFaq(element) {
+    const answer = element.nextElementSibling;
+    const isVisible = answer.style.display === 'block';
+    answer.style.display = isVisible ? 'none' : 'block';
+    const arrow = element.querySelector('span');
+    arrow.innerHTML = isVisible ? '&#9656;' : '&#9662;';
+  }
+</script>
+
+<script>
+  // JavaScript for handling the search
+  function searchService() {
+      const searchQuery = document.getElementById('searchInput').value;
+      if (searchQuery.trim() === '') {
+          alert('Please enter a search term!');
+      } else {
+          alert('Searching for: ' + searchQuery);
+      }
+  }
+
+  // JavaScript for form validation
+  function validateForm() {
+      const name = document.getElementById('name').value;
+      const email = document.getElementById('email').value;
+      const message = document.getElementById('message').value;
+
+      if (name === '' || email === '' || message === '') {
+          alert('Please fill out all fields.');
+          return false;
+      }
+      alert('Message sent successfully!');
+      return true;
+  }
+</script>
+
+  <footer style="background-color: #f1f1f1; padding: 40px 0;">
+    <div style="max-width: 1200px; margin: 0 auto; padding-left: -600px;">
+
+        <!-- Education & Training -->
+        <div style="text-align: left; margin: 10px;">
+            <a href="education_training.html" style="text-decoration: none;">
+                <p style="font-size: 16px; color: #333; font-weight: bold;">Education & Training</p>
+            </a>
+            <p style="font-size: 14px; color: #555; margin-top: 10px;">Explore a wide range of educational and training options across various fields to enhance your skills and career opportunities.</p>
+            <hr style="border: 1px solid #ddd; margin-top: 20px;"/>
+        </div>
+
+        <!-- Properties & Rents -->
+        <div style="text-align: left; margin: 10px;">
+            <a href="properties_rent.html" style="text-decoration: none;">
+                <p style="font-size: 16px; color: #333; font-weight: bold;">Properties & Rents</p>
+            </a>
+            <p style="font-size: 14px; color: #555; margin-top: 10px;">Find the perfect property for sale, rent, or investment in your desired location with comprehensive listings and details.</p>
+            <hr style="border: 1px solid #ddd; margin-top: 20px;"/>
+        </div>
+
+        <!-- Professional Services -->
+        <div style="text-align: left; margin: 10px;">
+            <a href="proffessional_services.html" style="text-decoration: none;">
+                <p style="font-size: 16px; color: #333; font-weight: bold;">Professional Services</p>
+            </a>
+            <p style="font-size: 14px; color: #555; margin-top: 10px;">Access top-notch professional services, including legal, financial, and consulting services, from trusted experts.</p>
+            <hr style="border: 1px solid #ddd; margin-top: 20px;"/>
+        </div>
+
+        <!-- Travel & Transport -->
+        <div style="text-align: left; margin: 10px;">
+            <a href="travel_transport.html" style="text-decoration: none;">
+                <p style="font-size: 16px; color: #333; font-weight: bold;">Travel & Transport</p>
+            </a>
+            <p style="font-size: 14px; color: #555; margin-top: 10px;">Book your travel needs, including flights, cabs, and buses, with ease and at the best prices.</p>
+            <hr style="border: 1px solid #ddd; margin-top: 20px;"/>
+        </div>
+
+        <!-- Health & Wellness -->
+        <div style="text-align: left; margin: 10px;">
+            <a href="health_wellness.html" style="text-decoration: none;">
+                <p style="font-size: 16px; color: #333; font-weight: bold;">Health & Wellness</p>
+            </a>
+            <p style="font-size: 14px; color: #555; margin-top: 10px;">Discover health and wellness services to maintain a balanced lifestyle, including fitness classes, clinics, and more.</p>
+            <hr style="border: 1px solid #ddd; margin-top: 20px;"/>
+        </div>
+
+        <!-- Events -->
+        <div style="text-align: left; margin: 10px;">
+            <a href="events.html" style="text-decoration: none;">
+                <p style="font-size: 16px; color: #333; font-weight: bold;">Events</p>
+            </a>
+            <p style="font-size: 14px; color: #555; margin-top: 10px;">Stay updated with upcoming events, conferences, exhibitions, and entertainment activities near you.</p>
+            <hr style="border: 1px solid #ddd; margin-top: 20px;"/>
+        </div>
+
+        <!-- Home & Office -->
+        <div style="text-align: left; margin: 10px;">
+            <a href="home_office.html" style="text-decoration: none;">
+                <p style="font-size: 16px; color: #333; font-weight: bold;">Home & Office</p>
+            </a>
+            <p style="font-size: 14px; color: #555; margin-top: 10px;">Explore furniture, appliances, and office supplies to furnish your home or workspace with the best products.</p>
+            <hr style="border: 1px solid #ddd; margin-top: 20px;"/>
+        </div>
+
+        <!-- Shopping -->
+        <div style="text-align: left; margin: 10px;">
+            <a href="shopping.html" style="text-decoration: none;">
+                <p style="font-size: 16px; color: #333; font-weight: bold;">Shopping</p>
+            </a>
+            <p style="font-size: 14px; color: #555; margin-top: 10px;">Shop online for a variety of products including electronics, clothing, accessories, and much more.</p>
+            <hr style="border: 1px solid #ddd; margin-top: 20px;"/>
+        </div>
+
+        <!-- Placement & Jobs -->
+        <div style="text-align: left; margin: 10px;">
+            <a href="placements_jobs.html" style="text-decoration: none;">
+                <p style="font-size: 16px; color: #333; font-weight: bold;">Placement & Jobs</p>
+            </a>
+            <p style="font-size: 14px; color: #555; margin-top: 10px;">Browse job listings and placement opportunities, and connect with top employers in various industries.</p>
+            <hr style="border: 1px solid #ddd; margin-top: 20px;"/>
+        </div>
+
+        <!-- Social Media Icons -->
+        <div style="text-align: center; margin-top: 20px;">
+            <p style="font-size: 16px; color: #333; font-weight: bold;">Follow Us</p>
+            <div style="margin-top:20px;">
+                <a href="https://www.facebook.com" target="_blank" style="margin: 0 15px; text-decoration: none;">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" alt="Facebook" style="width: 40px; height: 40px;"/>
+                </a>
+                <a href="https://www.twitter.com" target="_blank" style="margin: 0 15px; text-decoration: none;">
+                    <img src="https://cdn.iconscout.com/icon/free/png-256/free-twitter-logo-icon-download-in-svg-png-gif-file-formats--social-media-pack-logos-icons-83443.png?f=webp&w=128" alt="Twitter" style="width: 40px; height: 40px;"/>
+                </a>
+                <a href="https://www.instagram.com" target="_blank" style="margin: 0 15px; text-decoration: none;">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram" style="width: 40px; height: 40px;"/>
+                </a>
+                <a href="https://www.linkedin.com" target="_blank" style="margin: 0 15px; text-decoration: none;">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/e/e6/729101_linkedin_icon.png" alt="LinkedIn" style="width: 40px; height: 40px;"/>
+                </a>
+            </div>
+            <br>
+            <p style="margin: 0; color: black;">&copy; 2025 Hitaishi Web Portal. All rights reserved.</p>
+        </div>
+    </div>
+    
+</footer>
+</body>
+</html>

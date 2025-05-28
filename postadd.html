@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Post an Ad</title>
+</head>
+<body style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; margin:0; padding:0; background:#f0f2f5;">
+
+<!-- Header -->
+ <header style="position: sticky; top: 0; z-index: 1000; background: linear-gradient(135deg, #0066cc, #004080); padding: 15px 5%; box-shadow: 0 4px 12px rgba(0,0,0,0.1); font-family: 'Segoe UI', Roboto, sans-serif; backdrop-filter: blur(5px);">
+  <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 20px; max-width: 1400px; margin: 0 auto;">
+    
+    <!-- Logo Section -->
+    <a href="index.html" style="color: white; text-decoration: none; flex-shrink: 0; display: flex; align-items: center; gap: 10px;">
+      
+      <div style="background: #ffffff; border-radius: 10px; padding: 2px 2px; display: inline-flex; align-items: center; justify-content: center; box-shadow: 0 2px 6px rgba(0, 102, 204, 0.25);">
+        <img src="img/logo_hitaishiservices.png" alt="Hitaishi Logo" width="32" height="32" style="display: block;" />
+      </div>
+
+      <div>
+        <h1 style="margin: 0; font-size: 32px; font-weight: 800; letter-spacing: 1px; background: linear-gradient(to right, #ffffff, #e6f2ff); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">Hitaishi</h1>
+        <p style="font-size: 14px; margin: 2px 0 0 0; font-weight: 500; color: rgba(255,255,255,0.9);">Find trusted services and professionals</p>
+      </div>
+    </a>
+    
+    <!-- Search Form -->
+    <form action="search.html" method="GET" style="flex-grow: 1; max-width: 500px; min-width: 250px; display: flex; box-shadow: 0 2px 10px rgba(0,0,0,0.1); border-radius: 8px; overflow: hidden; background: rgba(255,255,255,0.9); transition: all 0.3s ease;" onfocusin="this.style.boxShadow='0 2px 15px rgba(0,80,200,0.2)'; this.style.background='white'" onfocusout="this.style.boxShadow='0 2px 10px rgba(0,0,0,0.1)'; this.style.background='rgba(255,255,255,0.9)'">
+      <input
+        type="text"
+        name="query"
+        placeholder="Search services, businesses..."
+        style="flex-grow: 1; border: none; padding: 12px 20px; font-size: 0.95rem; outline: none; color: #003366; background: transparent;"
+        required
+      />
+      <button
+        type="submit"
+        style="background: linear-gradient(to right, #0066cc, #004080); border: none; padding: 0 25px; cursor: pointer; color: white; font-weight: 600; font-size: 1rem; transition: all 0.3s ease; display: flex; align-items: center; justify-content: center;"
+        onmouseover="this.style.opacity='0.9'"
+        onmouseout="this.style.opacity='1'"
+        aria-label="Search"
+      >
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" style="margin-right: 5px;">
+          <path d="M11 19C15.4183 19 19 15.4183 19 11C19 6.58172 15.4183 3 11 3C6.58172 3 3 6.58172 3 11C3 15.4183 6.58172 19 11 19Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M21 21L16.65 16.65" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        Search
+      </button>
+    </form>
+
+    <!-- Navigation Links -->
+    <nav id="navLinks" style="display: flex; gap: 10px; flex-wrap: wrap; align-items: center; flex-shrink: 0;">
+      <a href="index.html" style="color: white; font-size: 0.95rem; padding: 8px 15px; text-decoration: none; transition: all 0.3s ease; font-weight: 500; border-radius: 6px; border: 1px solid rgba(255,255,255,0.3);" onmouseover="this.style.backgroundColor='rgba(255,255,255,0.15)'" onmouseout="this.style.backgroundColor='transparent'">Home</a>
+      <a href="Services.html" style="color: white; font-size: 0.95rem; padding: 8px 15px; text-decoration: none; transition: all 0.3s ease; font-weight: 500; border-radius: 6px; border: 1px solid rgba(255,255,255,0.3);" onmouseover="this.style.backgroundColor='rgba(255,255,255,0.15)'" onmouseout="this.style.backgroundColor='transparent'">Services</a>
+      <a href="ListBusiness.html" style="color: white; font-size: 0.95rem; padding: 8px 15px; text-decoration: none; transition: all 0.3s ease; font-weight: 500; border-radius: 6px; border: 1px solid rgba(255,255,255,0.3);" onmouseover="this.style.backgroundColor='rgba(255,255,255,0.15)'" onmouseout="this.style.backgroundColor='transparent'">List Business</a>
+      <a href="postadd.html" style="color: white; font-size: 0.95rem; padding: 8px 15px; background: rgba(255,255,255,0.2); text-decoration: none; transition: all 0.3s ease; font-weight: 600; border-radius: 6px; border: 1px solid rgba(255,255,255,0.4);" onmouseover="this.style.backgroundColor='rgba(255,255,255,0.3)'" onmouseout="this.style.backgroundColor='rgba(255,255,255,0.2)'">Post Free Ad</a>
+      <a href="SignIn.html" style="color: #0066cc; font-size: 0.95rem; padding: 8px 15px; background: white; text-decoration: none; transition: all 0.3s ease; font-weight: 600; border-radius: 6px;" onmouseover="this.style.backgroundColor='#f0f7ff'; this.style.color='#004080'" onmouseout="this.style.backgroundColor='white'; this.style.color='#0066cc'">Sign In</a>
+    </nav>
+
+    <!-- Menu Button for Mobile -->
+    <button onclick="toggleMenu()" style="display: none; background: rgba(255,255,255,0.2); border: 1px solid rgba(255,255,255,0.4); border-radius: 6px; padding: 8px 12px; font-size: 1.2rem; color: white; cursor: pointer; flex-shrink: 0;" id="menuToggle" aria-label="Toggle Menu">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M3 12H21" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M3 6H21" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M3 18H21" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+    </button>
+
+  </div>
+</header>
+
+<script>
+  function toggleMenu() {
+    var nav = document.getElementById("navLinks");
+    if (nav.style.display === "none" || nav.style.display === "") {
+      nav.style.display = "flex";
+      nav.style.flexDirection = "column";
+      nav.style.position = "absolute";
+      nav.style.top = "100%";
+      nav.style.left = "0";
+      nav.style.right = "0";
+      nav.style.background = "linear-gradient(135deg, #0066cc, #004080)";
+      nav.style.padding = "20px 5%";
+      nav.style.gap = "15px";
+      nav.style.boxShadow = "0 10px 20px rgba(0,0,0,0.1)";
+    } else {
+      nav.style.display = "none";
+    }
+  }
+
+  function handleResize() {
+    var width = window.innerWidth;
+    var menuToggle = document.getElementById("menuToggle");
+    var navLinks = document.getElementById("navLinks");
+
+    if (width <= 992) {
+      menuToggle.style.display = "flex";
+      menuToggle.style.alignItems = "center";
+      menuToggle.style.justifyContent = "center";
+      if (width > 768) {
+        navLinks.style.display = "none";
+      }
+    } else {
+      menuToggle.style.display = "none";
+      navLinks.style.display = "flex";
+      navLinks.style.flexDirection = "row";
+      navLinks.style.position = "static";
+      navLinks.style.padding = "0";
+      navLinks.style.background = "transparent";
+      navLinks.style.boxShadow = "none";
+    }
+  }
+
+  window.addEventListener("resize", handleResize);
+  window.addEventListener("load", handleResize);
+</script>
+<script>
+// Inject responsive styles via JavaScript
+(function() {
+  const style = document.createElement("style");
+  style.textContent = `
+    /* Basic global responsiveness */
+    body {
+      max-width: 100%;
+      margin: 0;
+      padding: 0;
+      font-size: 16px;
+      overflow-x: hidden;
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+
+    /* Responsive typography */
+    h1, h2, h3, h4, h5 {
+      font-size: calc(1em + 1vw);
+    }
+
+    /* Mobile layout adjustments */
+    @media (max-width: 768px) {
+      .container, .wrapper, .section {
+        width: 100% !important;
+        padding: 10px !important;
+        box-sizing: border-box;
+      }
+
+      .row, .columns {
+        display: flex;
+        flex-direction: column !important;
+      }
+
+      .col, .column {
+        width: 100% !important;
+        margin-bottom: 15px;
+      }
+
+      nav, header, footer {
+        padding: 10px !important;
+        text-align: center;
+      }
+
+      .hide-on-mobile {
+        display: none !important;
+      }
+
+      .text-center-mobile {
+        text-align: center !important;
+      }
+
+      button, input, select {
+        width: 100% !important;
+        font-size: 1em;
+      }
+    }
+  `;
+  document.head.appendChild(style);
+})();
+</script>
+
+<!-- Form Container -->
+<div style="max-width: 1200px; margin: 40px auto; background: #bae0ff8e; border-radius: 10px; box-shadow: 0 10px 20px rgba(0,0,0,0.1); display: flex; flex-wrap: wrap; overflow: hidden; animation: fadeIn 0.6s ease-out;">
+
+  <!-- Left Content -->
+  <div style="flex: 1 1 300px; background:white; padding: 10px; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center;">
+    <img src="img/postadd.png" alt="Post Ad" style="max-width: 100%; height: auto; border-radius: 8px; margin-bottom: 0px;">
+    <h3 style="color: #007BFF; margin-bottom: 10px;">Reach More People</h3>
+    <p style="font-size: 16px; color: #555;">Easily post your services or products and connect with thousands of potential customers across your region. It’s fast, secure, and free to start!</p>
+  </div>
+
+  <!-- Form Section -->
+  <div style="flex: 2 1 500px; padding: 30px;">
+    <h2 style="text-align: center; color: #007BFF; margin-bottom: 30px;">Post an Ad</h2>
+    <form method="post" action="#">
+      <div style="display: flex; flex-direction: column; gap: 20px;">
+        <div>
+          <label style="display:block; font-weight:600; margin-bottom: 5px;">Name</label>
+          <input type="text" name="contact-info" id="Name" placeholder="Enter Name" required style="width:100%; padding: 10px; border-radius: 5px; border:1px solid #ccc;" />
+        </div>
+        <div>
+          <label style="display:block; font-weight:600; margin-bottom: 5px;">Email</label>
+          <input type="email" name="contact-info" id="Email" placeholder="Enter Email Id" required style="width:100%; padding: 10px; border-radius: 5px; border:1px solid #ccc;" />
+        </div>
+        <div>
+          <label style="display:block; font-weight:600; margin-bottom: 5px;">Phone Number</label>
+          <input type="number" name="contact-info" id="Phone Number" placeholder="Enter Phone Number" required style="width:100%; padding: 10px; border-radius: 5px; border:1px solid #ccc;" />
+        </div>
+        <div>
+          <label style="display:block; font-weight:600; margin-bottom: 5px;">Country</label>
+          <select name="country" id="country" required style="width:100%; padding: 10px; border-radius: 5px; border:1px solid #ccc;">
+            <option value="" disabled selected>Select Country</option>
+            <option value="USA">United States</option>
+            <option value="UK">United Kingdom</option>
+            <option value="Canada">Canada</option>
+            <option value="Australia">Australia</option>
+            <option value="India">India</option>
+          </select>
+        </div>
+        <div>
+          <label style="display:block; font-weight:600; margin-bottom: 5px;">Location</label>
+          <input type="text" name="Location" id="Location" placeholder="Enter Your Location" required style="width:100%; padding: 10px; border-radius: 5px; border:1px solid #ccc;" />
+        </div>
+        <div>
+          <label style="display:block; font-weight:600; margin-bottom: 5px;">Services</label>
+          <input type="text" name="services" id="Services" placeholder="Enter Service" required style="width:100%; padding: 10px; border-radius: 5px; border:1px solid #ccc;" />
+        </div>
+        <div>
+          <label style="display:block; font-weight:600; margin-bottom: 5px;">Description</label>
+          <textarea name="description" id="description" placeholder="Describe your service or product" required style="width:100%; padding: 10px; border-radius: 5px; border:1px solid #ccc; resize: vertical; height:100px;"></textarea>
+        </div>
+        <button type="submit" style="background: #007BFF; color:white; padding: 12px; border:none; border-radius: 5px; font-size: 16px; cursor: pointer;">
+          Post Ad
+        </button>
+      </div>
+    </form>
+  </div>
+</div>
+
+
+<!-- Animation -->
+<style>
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  input:focus, select:focus, textarea:focus {
+    border-color: #007BFF;
+    outline: none;
+    box-shadow: 0 0 5px rgba(0,123,255,0.2);
+  }
+  a:hover {
+    background-color: rgba(0,0,0,0.4);
+  }
+  button:hover {
+    background-color: #0056b3;
+  }
+</style>
+  <footer style="background-color: #f1f1f1; padding: 40px 0;">
+    <div style="max-width: 1200px; margin: 0 auto; padding-left: -600px;">
+
+        <!-- Education & Training -->
+        <div style="text-align: left; margin: 10px;">
+            <a href="education_training.html" style="text-decoration: none;">
+                <p style="font-size: 16px; color: #333; font-weight: bold;">Education & Training</p>
+            </a>
+            <p style="font-size: 14px; color: #555; margin-top: 10px;">Explore a wide range of educational and training options across various fields to enhance your skills and career opportunities.</p>
+            <hr style="border: 1px solid #ddd; margin-top: 20px;"/>
+        </div>
+
+        <!-- Properties & Rents -->
+        <div style="text-align: left; margin: 10px;">
+            <a href="properties_rent.html" style="text-decoration: none;">
+                <p style="font-size: 16px; color: #333; font-weight: bold;">Properties & Rents</p>
+            </a>
+            <p style="font-size: 14px; color: #555; margin-top: 10px;">Find the perfect property for sale, rent, or investment in your desired location with comprehensive listings and details.</p>
+            <hr style="border: 1px solid #ddd; margin-top: 20px;"/>
+        </div>
+
+        <!-- Professional Services -->
+        <div style="text-align: left; margin: 10px;">
+            <a href="proffessional_services.html" style="text-decoration: none;">
+                <p style="font-size: 16px; color: #333; font-weight: bold;">Professional Services</p>
+            </a>
+            <p style="font-size: 14px; color: #555; margin-top: 10px;">Access top-notch professional services, including legal, financial, and consulting services, from trusted experts.</p>
+            <hr style="border: 1px solid #ddd; margin-top: 20px;"/>
+        </div>
+
+        <!-- Travel & Transport -->
+        <div style="text-align: left; margin: 10px;">
+            <a href="travel_transport.html" style="text-decoration: none;">
+                <p style="font-size: 16px; color: #333; font-weight: bold;">Travel & Transport</p>
+            </a>
+            <p style="font-size: 14px; color: #555; margin-top: 10px;">Book your travel needs, including flights, cabs, and buses, with ease and at the best prices.</p>
+            <hr style="border: 1px solid #ddd; margin-top: 20px;"/>
+        </div>
+
+        <!-- Health & Wellness -->
+        <div style="text-align: left; margin: 10px;">
+            <a href="health_wellness.html" style="text-decoration: none;">
+                <p style="font-size: 16px; color: #333; font-weight: bold;">Health & Wellness</p>
+            </a>
+            <p style="font-size: 14px; color: #555; margin-top: 10px;">Discover health and wellness services to maintain a balanced lifestyle, including fitness classes, clinics, and more.</p>
+            <hr style="border: 1px solid #ddd; margin-top: 20px;"/>
+        </div>
+
+        <!-- Events -->
+        <div style="text-align: left; margin: 10px;">
+            <a href="events.html" style="text-decoration: none;">
+                <p style="font-size: 16px; color: #333; font-weight: bold;">Events</p>
+            </a>
+            <p style="font-size: 14px; color: #555; margin-top: 10px;">Stay updated with upcoming events, conferences, exhibitions, and entertainment activities near you.</p>
+            <hr style="border: 1px solid #ddd; margin-top: 20px;"/>
+        </div>
+
+        <!-- Home & Office -->
+        <div style="text-align: left; margin: 10px;">
+            <a href="home_office.html" style="text-decoration: none;">
+                <p style="font-size: 16px; color: #333; font-weight: bold;">Home & Office</p>
+            </a>
+            <p style="font-size: 14px; color: #555; margin-top: 10px;">Explore furniture, appliances, and office supplies to furnish your home or workspace with the best products.</p>
+            <hr style="border: 1px solid #ddd; margin-top: 20px;"/>
+        </div>
+
+        <!-- Shopping -->
+        <div style="text-align: left; margin: 10px;">
+            <a href="shopping.html" style="text-decoration: none;">
+                <p style="font-size: 16px; color: #333; font-weight: bold;">Shopping</p>
+            </a>
+            <p style="font-size: 14px; color: #555; margin-top: 10px;">Shop online for a variety of products including electronics, clothing, accessories, and much more.</p>
+            <hr style="border: 1px solid #ddd; margin-top: 20px;"/>
+        </div>
+
+        <!-- Placement & Jobs -->
+        <div style="text-align: left; margin: 10px;">
+            <a href="placements_jobs.html" style="text-decoration: none;">
+                <p style="font-size: 16px; color: #333; font-weight: bold;">Placement & Jobs</p>
+            </a>
+            <p style="font-size: 14px; color: #555; margin-top: 10px;">Browse job listings and placement opportunities, and connect with top employers in various industries.</p>
+            <hr style="border: 1px solid #ddd; margin-top: 20px;"/>
+        </div>
+
+        <!-- Social Media Icons -->
+        <div style="text-align: center; margin-top: 20px;">
+            <p style="font-size: 16px; color: #333; font-weight: bold;">Follow Us</p>
+            <div style="margin-top:20px;">
+                <a href="https://www.facebook.com" target="_blank" style="margin: 0 15px; text-decoration: none;">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" alt="Facebook" style="width: 40px; height: 40px;"/>
+                </a>
+                <a href="https://www.twitter.com" target="_blank" style="margin: 0 15px; text-decoration: none;">
+                    <img src="https://cdn.iconscout.com/icon/free/png-256/free-twitter-logo-icon-download-in-svg-png-gif-file-formats--social-media-pack-logos-icons-83443.png?f=webp&w=128" alt="Twitter" style="width: 40px; height: 40px;"/>
+                </a>
+                <a href="https://www.instagram.com" target="_blank" style="margin: 0 15px; text-decoration: none;">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram" style="width: 40px; height: 40px;"/>
+                </a>
+                <a href="https://www.linkedin.com" target="_blank" style="margin: 0 15px; text-decoration: none;">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/e/e6/729101_linkedin_icon.png" alt="LinkedIn" style="width: 40px; height: 40px;"/>
+                </a>
+            </div>
+                <br>
+                    <p style="margin: 0; color: black;">&copy; 2025 Hitaishi Web Portal. All rights reserved.</p>
+        </div>
+    </div>
+   
+</footer>
+</body>
+</html>

@@ -1,0 +1,1108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Online & Local Shopping Services | Product Sourcing & Delivery | Hithaishi Services</title>
+  <meta name="description" content="Discover reliable shopping services with Hithaishi Services — from local store pickups to curated product sourcing and delivery, we make shopping hassle-free.">
+  <meta name="keywords" content="shopping services, online shopping support, product sourcing, store pickup, shopping assistance, Hithaishi Services, local delivery, personal shopper, curated shopping">
+
+</head>
+<body style="margin: 0;padding:0;font-family: Arial, Helvetica, sans-serif;">
+<header style="position: sticky; top: 0; z-index: 1000; background: linear-gradient(135deg, #0066cc, #004080); padding: 15px 5%; box-shadow: 0 4px 12px rgba(0,0,0,0.1); font-family: 'Segoe UI', Roboto, sans-serif; backdrop-filter: blur(5px);">
+  <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 20px; max-width: 1400px; margin: 0 auto;">
+    
+    <!-- Logo Section -->
+    <a href="index.html" style="color: white; text-decoration: none; flex-shrink: 0; display: flex; align-items: center; gap: 10px;">
+      
+      <div style="background: #ffffff; border-radius: 10px; padding: 2px 2px; display: inline-flex; align-items: center; justify-content: center; box-shadow: 0 2px 6px rgba(0, 102, 204, 0.25);">
+        <img src="img/logo_hitaishiservices.png" alt="Hitaishi Logo" width="32" height="32" style="display: block;" />
+      </div>
+
+      <div>
+        <h1 style="margin: 0; font-size: 32px; font-weight: 800; letter-spacing: 1px; background: linear-gradient(to right, #ffffff, #e6f2ff); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">Hitaishi</h1>
+        <p style="font-size: 14px; margin: 2px 0 0 0; font-weight: 500; color: rgba(255,255,255,0.9);">Find trusted services and professionals</p>
+      </div>
+    </a>
+    
+    <!-- Search Form -->
+    <form action="search.html" method="GET" style="flex-grow: 1; max-width: 500px; min-width: 250px; display: flex; box-shadow: 0 2px 10px rgba(0,0,0,0.1); border-radius: 8px; overflow: hidden; background: rgba(255,255,255,0.9); transition: all 0.3s ease;" onfocusin="this.style.boxShadow='0 2px 15px rgba(0,80,200,0.2)'; this.style.background='white'" onfocusout="this.style.boxShadow='0 2px 10px rgba(0,0,0,0.1)'; this.style.background='rgba(255,255,255,0.9)'">
+      <input
+        type="text"
+        name="query"
+        placeholder="Search services, businesses..."
+        style="flex-grow: 1; border: none; padding: 12px 20px; font-size: 0.95rem; outline: none; color: #003366; background: transparent;"
+        required
+      />
+      <button
+        type="submit"
+        style="background: linear-gradient(to right, #0066cc, #004080); border: none; padding: 0 25px; cursor: pointer; color: white; font-weight: 600; font-size: 1rem; transition: all 0.3s ease; display: flex; align-items: center; justify-content: center;"
+        onmouseover="this.style.opacity='0.9'"
+        onmouseout="this.style.opacity='1'"
+        aria-label="Search"
+      >
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" style="margin-right: 5px;">
+          <path d="M11 19C15.4183 19 19 15.4183 19 11C19 6.58172 15.4183 3 11 3C6.58172 3 3 6.58172 3 11C3 15.4183 6.58172 19 11 19Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M21 21L16.65 16.65" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        Search
+      </button>
+    </form>
+
+    <!-- Navigation Links -->
+    <nav id="navLinks" style="display: flex; gap: 10px; flex-wrap: wrap; align-items: center; flex-shrink: 0;">
+      <a href="index.html" style="color: white; font-size: 0.95rem; padding: 8px 15px; text-decoration: none; transition: all 0.3s ease; font-weight: 500; border-radius: 6px; border: 1px solid rgba(255,255,255,0.3);" onmouseover="this.style.backgroundColor='rgba(255,255,255,0.15)'" onmouseout="this.style.backgroundColor='transparent'">Home</a>
+      <a href="Services.html" style="color: white; font-size: 0.95rem; padding: 8px 15px; text-decoration: none; transition: all 0.3s ease; font-weight: 500; border-radius: 6px; border: 1px solid rgba(255,255,255,0.3);" onmouseover="this.style.backgroundColor='rgba(255,255,255,0.15)'" onmouseout="this.style.backgroundColor='transparent'">Services</a>
+      <a href="ListBusiness.html" style="color: white; font-size: 0.95rem; padding: 8px 15px; text-decoration: none; transition: all 0.3s ease; font-weight: 500; border-radius: 6px; border: 1px solid rgba(255,255,255,0.3);" onmouseover="this.style.backgroundColor='rgba(255,255,255,0.15)'" onmouseout="this.style.backgroundColor='transparent'">List Business</a>
+      <a href="postadd.html" style="color: white; font-size: 0.95rem; padding: 8px 15px; background: rgba(255,255,255,0.2); text-decoration: none; transition: all 0.3s ease; font-weight: 600; border-radius: 6px; border: 1px solid rgba(255,255,255,0.4);" onmouseover="this.style.backgroundColor='rgba(255,255,255,0.3)'" onmouseout="this.style.backgroundColor='rgba(255,255,255,0.2)'">Post Free Ad</a>
+      <a href="SignIn.html" style="color: #0066cc; font-size: 0.95rem; padding: 8px 15px; background: white; text-decoration: none; transition: all 0.3s ease; font-weight: 600; border-radius: 6px;" onmouseover="this.style.backgroundColor='#f0f7ff'; this.style.color='#004080'" onmouseout="this.style.backgroundColor='white'; this.style.color='#0066cc'">Sign In</a>
+    </nav>
+
+    <!-- Menu Button for Mobile -->
+    <button onclick="toggleMenu()" style="display: none; background: rgba(255,255,255,0.2); border: 1px solid rgba(255,255,255,0.4); border-radius: 6px; padding: 8px 12px; font-size: 1.2rem; color: white; cursor: pointer; flex-shrink: 0;" id="menuToggle" aria-label="Toggle Menu">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M3 12H21" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M3 6H21" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M3 18H21" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+    </button>
+
+  </div>
+</header>
+
+<script>
+  function toggleMenu() {
+    var nav = document.getElementById("navLinks");
+    if (nav.style.display === "none" || nav.style.display === "") {
+      nav.style.display = "flex";
+      nav.style.flexDirection = "column";
+      nav.style.position = "absolute";
+      nav.style.top = "100%";
+      nav.style.left = "0";
+      nav.style.right = "0";
+      nav.style.background = "linear-gradient(135deg, #0066cc, #004080)";
+      nav.style.padding = "20px 5%";
+      nav.style.gap = "15px";
+      nav.style.boxShadow = "0 10px 20px rgba(0,0,0,0.1)";
+    } else {
+      nav.style.display = "none";
+    }
+  }
+
+  function handleResize() {
+    var width = window.innerWidth;
+    var menuToggle = document.getElementById("menuToggle");
+    var navLinks = document.getElementById("navLinks");
+
+    if (width <= 992) {
+      menuToggle.style.display = "flex";
+      menuToggle.style.alignItems = "center";
+      menuToggle.style.justifyContent = "center";
+      if (width > 768) {
+        navLinks.style.display = "none";
+      }
+    } else {
+      menuToggle.style.display = "none";
+      navLinks.style.display = "flex";
+      navLinks.style.flexDirection = "row";
+      navLinks.style.position = "static";
+      navLinks.style.padding = "0";
+      navLinks.style.background = "transparent";
+      navLinks.style.boxShadow = "none";
+    }
+  }
+
+  window.addEventListener("resize", handleResize);
+  window.addEventListener("load", handleResize);
+</script>
+
+  <section style="position: relative; width: 100%; height: 70vh; overflow: hidden; font-family: 'Segoe UI', sans-serif;">
+    <img src="https://images.stockcake.com/public/8/3/9/8391a570-a569-40bc-8669-044986f276e2/colorful-shopping-bags-stockcake.jpg" loading="lazy" style="width:100%; height:100%; object-fit: cover; display:block;">
+    <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(13, 71, 161, 0.5); color: #fff; display: flex; align-items: center; justify-content: center; text-align: center; padding: 20px;">
+      <div>
+        <h2 style="font-size: 3rem; margin-bottom: 10px;">Big Summer Sale</h2>
+        <p style="font-size: 1.5rem;">Up to 50% off on selected items</p>
+      </div>
+    </div>
+  </section>
+  <!-- <section style="padding: 60px 20px; background: white; font-family: 'Segoe UI', sans-serif;">
+    <div style="max-width: 1200px; margin: 0 auto;">
+      <h3 style="text-align: center; font-size: 2.5rem; color: #2b2d42; margin-bottom: 40px;">
+        Shop by Category
+        <span style="display: block; width: 80px; height: 4px; background: #4cc9f0; margin: 10px auto 0;"></span>
+      </h3>
+
+    <div style="display: flex; justify-content: space-between; gap: 20px; flex-wrap: nowrap; overflow-x: auto;">
+  
+      
+      <a href="#" style="text-decoration: none; width: 16.66%; text-align: center;">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcReMSmdIzuFnkoaHu7-rMJ7EP37HTwlvCwI9w&s" loading="lazy" alt="Furniture" style="width: 150px; height: 150px; object-fit: cover; border-radius: 50%; margin-bottom: 15px;">
+        <h3 style="font-size: 1rem; color: #0d47a1;">Furniture</h3>
+      </a>
+  
+      
+      <a href="#" style="text-decoration: none; width: 16.66%; text-align: center;">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSKzIXgomSTmSH4SBSQg704n-D32ntag77cjw&s" loading="lazy" alt="Clothing" style="width: 150px; height: 150px; object-fit: cover; border-radius: 50%; margin-bottom: 15px;">
+        <h3 style="font-size: 1rem; color: #0d47a1;">Clothing</h3>
+      </a>
+  
+      
+      <a href="#" style="text-decoration: none; width: 16.66%; text-align: center;">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSvrr2se0KHKRFk8kwxkgmcf2bmhXw8T07eNA&s" loading="lazy"alt="Electronics" style="width: 150px; height: 150px; object-fit: cover; border-radius: 50%; margin-bottom: 15px;">
+        <h3 style="font-size: 1rem; color: #0d47a1;">Electronics</h3>
+      </a>
+  
+      
+      <a href="#" style="text-decoration: none; width: 16.66%; text-align: center;">
+        <img src="https://comerciant.wansait.com/wp-content/uploads/2023/05/upwk61662337-wikimedia-image.jpg" loading="lazy" alt="Home Appliances" style="width: 150px; height: 150px; object-fit: cover; border-radius: 50%; margin-bottom: 15px;">
+        <h3 style="font-size: 1rem; color: #0d47a1;">Appliances</h3>
+      </a>
+  
+      
+      <a href="#" style="text-decoration: none; width: 16.66%; text-align: center;">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlypAJMka93lpZg0xF742h4G5u81X_NNyLNg&s" loading="lazy" alt="Books" style="width: 150px; height: 150px; object-fit: cover; border-radius: 50%; margin-bottom: 15px;">
+        <h3 style="font-size: 1rem; color: #0d47a1;">Books</h3>
+      </a>
+  
+      <a href="#" style="text-decoration: none; width: 16.66%; text-align: center;">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR8Qjgtxum1PZU_3w5xszxG5bifYgDNLAHZUw&s" loading="lazy" alt="Sports" style="width: 150px; height: 150px; object-fit: cover; border-radius: 50%; margin-bottom: 15px;">
+        <h3 style="font-size: 1rem; color: #0d47a1;">Sports</h3>
+      </a>
+  
+    </div>
+  </section> -->
+
+<section style="padding: 60px 20px; background: linear-gradient(to bottom, #f8fafc 0%, #ffffff 100%); font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
+  <div style="max-width: 1200px; margin: 0 auto;">
+    <!-- Section Header -->
+    <div style="text-align: center; margin-bottom: 40px;">
+      <h2 style="color: #0d47a1; font-size: 2.2rem; margin-bottom: 15px; position: relative; display: inline-block;">
+        Featured Products
+        <span style="position: absolute; bottom: -10px; left: 50%; transform: translateX(-50%); width: 80px; height: 4px; background: #0d47a1; border-radius: 2px;"></span>
+      </h2>
+      <p style="color: #546e7a; max-width: 700px; margin: 15px auto 0; line-height: 1.6; font-size: 1.1rem;">
+        Discover our handpicked selection of premium products loved by customers worldwide
+      </p>
+    </div>
+    
+    <!-- Products Carousel -->
+    <div style="display: flex; gap: 25px; overflow-x: auto; scroll-snap-type: x mandatory; padding-bottom: 20px; scrollbar-width: none;">
+      <style>
+        /* Hide scrollbar for all browsers */
+        div::-webkit-scrollbar { display: none; }
+        div { -ms-overflow-style: none; scrollbar-width: none; }
+      </style>
+
+      <!-- Product 1 -->
+      <a href="#" style="text-decoration: none; scroll-snap-align: start; flex: 0 0 auto;">
+        <div style="width: 280px; background: #fff; border-radius: 16px; box-shadow: 0 5px 15px rgba(0,0,0,0.08); padding: 20px; transition: all 0.3s ease; cursor: pointer; position: relative;"
+             onmouseover="this.style.transform='translateY(-8px)'; this.style.boxShadow='0 15px 30px rgba(13, 71, 161, 0.15)'"
+             onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 5px 15px rgba(0,0,0,0.08)'">
+          <!-- Badge -->
+          <div style="position: absolute; top: 20px; left: 20px; background: #e53935; color: white; padding: 5px 10px; border-radius: 20px; font-size: 0.8rem; font-weight: bold; z-index: 2;">BESTSELLER</div>
+          <div style="height: 200px; overflow: hidden; border-radius: 12px; margin-bottom: 15px;">
+            <img src="https://images.unsplash.com/photo-1519947486511-46149fa0a254?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&q=80" loading="lazy" style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s ease;">
+          </div>
+          <h3 style="font-size: 1.2rem; color: #0d47a1; margin: 0 0 10px;">Ergonomic Office Chair</h3>
+          <div style="display: flex; align-items: center; margin-bottom: 10px;">
+            <div style="color: #ffb300; margin-right: 8px;">★★★★★</div>
+            <span style="color: #546e7a; font-size: 0.9rem;">(128 reviews)</span>
+          </div>
+          <p style="color: #546e7a; margin: 0 0 15px; font-size: 0.95rem; line-height: 1.5;">
+            Premium ergonomic chair with adjustable lumbar support, breathable mesh back, and 360° swivel. Perfect for long work sessions.
+          </p>
+          <div style="display: flex; justify-content: space-between; align-items: center;">
+            <span style="font-size: 1.3rem; font-weight: bold; color: #0d47a1;">$999.99</span>
+           <button onclick="addToCart('Ergonomic Office Chair', 999.99, 'https://images.unsplash.com/photo-1519947486511-46149fa0a254?auto=format&fit=crop&w=800&q=80')" 
+              style="background: #0d47a1; color: white; border: none; padding: 8px 20px; border-radius: 25px; cursor: pointer; font-weight: 500;">
+              Add to Cart
+            </button>
+
+          </div>
+        </div>
+      </a>
+
+      <!-- Product 2 -->
+      <a href="#" style="text-decoration: none; scroll-snap-align: start; flex: 0 0 auto;">
+        <div style="width: 280px; background: #fff; border-radius: 16px; box-shadow: 0 5px 15px rgba(0,0,0,0.08); padding: 20px; transition: all 0.3s ease; cursor: pointer; position: relative;"
+             onmouseover="this.style.transform='translateY(-8px)'; this.style.boxShadow='0 15px 30px rgba(13, 71, 161, 0.15)'"
+             onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 5px 15px rgba(0,0,0,0.08)'">
+          <div style="height: 200px; overflow: hidden; border-radius: 12px; margin-bottom: 15px;">
+            <img src="https://images.unsplash.com/photo-1518455027359-f3f8164ba6bd?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&q=80" loading="lazy" style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s ease;">
+          </div>
+          <h3 style="font-size: 1.2rem; color: #0d47a1; margin: 0 0 10px;">Executive Standing Desk</h3>
+          <div style="display: flex; align-items: center; margin-bottom: 10px;">
+            <div style="color: #ffb300; margin-right: 8px;">★★★★☆</div>
+            <span style="color: #546e7a; font-size: 0.9rem;">(86 reviews)</span>
+          </div>
+          <p style="color: #546e7a; margin: 0 0 15px; font-size: 0.95rem; line-height: 1.5;">
+            Electric height-adjustable desk with memory presets, spacious 60"x30" surface, and built-in USB charging ports.
+          </p>
+          <div style="display: flex; justify-content: space-between; align-items: center;">
+            <span style="font-size: 1.3rem; font-weight: bold; color: #0d47a1;">$549.99</span>
+            <button onclick="addToCart('Executive Standing Desk', 549.99, 'https://images.unsplash.com/photo-1518455027359-f3f8164ba6bd?auto=format&fit=crop&w=800&q=80')" 
+              style="background: #0d47a1; color: white; border: none; padding: 8px 20px; border-radius: 25px; cursor: pointer; font-weight: 500;">
+              Add to Cart
+            </button>
+
+          </div>
+        </div>
+      </a>
+
+      <!-- Product 3 -->
+      <a href="#" style="text-decoration: none; scroll-snap-align: start; flex: 0 0 auto;">
+        <div style="width: 280px; background: #fff; border-radius: 16px; box-shadow: 0 5px 15px rgba(0,0,0,0.08); padding: 20px; transition: all 0.3s ease; cursor: pointer; position: relative;"
+             onmouseover="this.style.transform='translateY(-8px)'; this.style.boxShadow='0 15px 30px rgba(13, 71, 161, 0.15)'"
+             onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 5px 15px rgba(0,0,0,0.08)'">
+          <!-- Badge -->
+          <div style="position: absolute; top: 20px; left: 20px; background: #43a047; color: white; padding: 5px 10px; border-radius: 20px; font-size: 0.8rem; font-weight: bold; z-index: 2;">NEW</div>
+          <div style="height: 200px; overflow: hidden; border-radius: 12px; margin-bottom: 15px;">
+            <img src="https://images.unsplash.com/photo-1593784991095-a205069470b6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&q=80" loading="lazy" style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s ease;">
+          </div>
+          <h3 style="font-size: 1.2rem; color: #0d47a1; margin: 0 0 10px;">4K OLED Smart TV</h3>
+          <div style="display: flex; align-items: center; margin-bottom: 10px;">
+            <div style="color: #ffb300; margin-right: 8px;">★★★★★</div>
+            <span style="color: #546e7a; font-size: 0.9rem;">(214 reviews)</span>
+          </div>
+          <p style="color: #546e7a; margin: 0 0 15px; font-size: 0.95rem; line-height: 1.5;">
+            65" OLED display with Dolby Vision, 120Hz refresh rate, built-in Alexa, and next-gen gaming features.
+          </p>
+          <div style="display: flex; justify-content: space-between; align-items: center;">
+            <div>
+              <span style="color: #e53935; text-decoration: line-through; margin-right: 8px; font-size: 1rem;">$4,499.99</span>
+              <span style="font-size: 1.3rem; font-weight: bold; color: #0d47a1;">$3,999.99</span>
+            </div>
+            <button onclick="addToCart('4K OLED Smart TV', 3999.99, 'https://images.unsplash.com/photo-1593784991095-a205069470b6?auto=format&fit=crop&w=800&q=80')" 
+              style="background: #0d47a1; color: white; border: none; padding: 8px 20px; border-radius: 25px; cursor: pointer; font-weight: 500;">
+              Add to Cart
+            </button>
+
+          </div>
+        </div>
+      </a>
+
+      <!-- Product 4 -->
+      <a href="#" style="text-decoration: none; scroll-snap-align: start; flex: 0 0 auto;">
+        <div style="width: 280px; background: #fff; border-radius: 16px; box-shadow: 0 5px 15px rgba(0,0,0,0.08); padding: 20px; transition: all 0.3s ease; cursor: pointer; position: relative;"
+             onmouseover="this.style.transform='translateY(-8px)'; this.style.boxShadow='0 15px 30px rgba(13, 71, 161, 0.15)'"
+             onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 5px 15px rgba(0,0,0,0.08)'">
+          <div style="height: 200px; overflow: hidden; border-radius: 12px; margin-bottom: 15px;">
+            <img src="https://images.unsplash.com/photo-1598033129183-c4f50c736f10?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&q=80" loading="lazy" style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s ease;">
+          </div>
+          <h3 style="font-size: 1.2rem; color: #0d47a1; margin: 0 0 10px;">Premium Dress Shirt</h3>
+          <div style="display: flex; align-items: center; margin-bottom: 10px;">
+            <div style="color: #ffb300; margin-right: 8px;">★★★★☆</div>
+            <span style="color: #546e7a; font-size: 0.9rem;">(53 reviews)</span>
+          </div>
+          <p style="color: #546e7a; margin: 0 0 15px; font-size: 0.95rem; line-height: 1.5;">
+            100% Egyptian cotton shirt with non-iron technology, mother-of-pearl buttons, and tailored fit.
+          </p>
+          <div style="display: flex; justify-content: space-between; align-items: center;">
+            <span style="font-size: 1.3rem; font-weight: bold; color: #0d47a1;">$629.99</span>
+            <button onclick="addToCart('Premium Dress Shirt', 629.99, 'https://images.unsplash.com/photo-1598033129183-c4f50c736f10?auto=format&fit=crop&w=800&q=80')" 
+              style="background: #0d47a1; color: white; border: none; padding: 8px 20px; border-radius: 25px; cursor: pointer; font-weight: 500;">
+              Add to Cart
+            </button>
+
+          </div>
+        </div>
+      </a>
+
+      <!-- Product 5 -->
+      <a href="#" style="text-decoration: none; scroll-snap-align: start; flex: 0 0 auto;">
+        <div style="width: 280px; background: #fff; border-radius: 16px; box-shadow: 0 5px 15px rgba(0,0,0,0.08); padding: 20px; transition: all 0.3s ease; cursor: pointer; position: relative;"
+             onmouseover="this.style.transform='translateY(-8px)'; this.style.boxShadow='0 15px 30px rgba(13, 71, 161, 0.15)'"
+             onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 5px 15px rgba(0,0,0,0.08)'">
+          <!-- Badge -->
+          <div style="position: absolute; top: 20px; left: 20px; background: #fb8c00; color: white; padding: 5px 10px; border-radius: 20px; font-size: 0.8rem; font-weight: bold; z-index: 2;">LIMITED</div>
+          <div style="height: 200px; overflow: hidden; border-radius: 12px; margin-bottom: 15px;">
+            <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&q=80" loading="lazy" style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s ease;">
+          </div>
+          <h3 style="font-size: 1.2rem; color: #0d47a1; margin: 0 0 10px;">Pro Running Shoes</h3>
+          <div style="display: flex; align-items: center; margin-bottom: 10px;">
+            <div style="color: #ffb300; margin-right: 8px;">★★★★★</div>
+            <span style="color: #546e7a; font-size: 0.9rem;">(187 reviews)</span>
+          </div>
+          <p style="color: #546e7a; margin: 0 0 15px; font-size: 0.95rem; line-height: 1.5;">
+            Lightweight performance runners with responsive cushioning, breathable mesh, and carbon rubber traction.
+          </p>
+          <div style="display: flex; justify-content: space-between; align-items: center;">
+            <span style="font-size: 1.3rem; font-weight: bold; color: #0d47a1;">$299.99</span>
+           <button onclick="addToCart('Pro Running Shoes', 299.99, 'https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=800&q=80')" 
+              style="background: #0d47a1; color: white; border: none; padding: 8px 20px; border-radius: 25px; cursor: pointer; font-weight: 500;">
+              Add to Cart
+            </button>
+     
+          </div>
+        </div>
+      </a>
+    </div>
+  </div>
+</section>
+
+  
+  <section style="padding:20px 20px; background:#fff7f0;">
+     <div style="text-align: center; margin-bottom: 50px;">
+      <h2 style="color: #d35400; font-size: 2.5rem; margin-bottom: 15px; position: relative; display: inline-block;">
+        New Arrivals
+        <span style="position: absolute; bottom: -10px; left: 50%; transform: translateX(-50%); width: 80px; height: 4px; background: #d35400; border-radius: 2px;"></span>
+      </h2>
+      <p style="color: #7f8c8d; max-width: 700px; margin: 20px auto 0; line-height: 1.6; font-size: 1.1rem;">
+        Discover our latest collection of premium products just arrived this season
+      </p>
+    </div>
+   <!-- Scrollable Product Row (holds all cards) -->
+      <div style="display: flex; overflow-x: auto; gap: 30px; padding-bottom: 10px; scrollbar-width: none; -ms-overflow-style: none;">
+        <style>
+          div::-webkit-scrollbar { display: none; }
+        </style>
+
+        <!-- Product 1 -->
+        <div onclick="window.location.href='cart.html'" style="min-width: 300px; background: #fff; border-radius: 16px; box-shadow: 0 5px 20px rgba(0,0,0,0.08); transition: all 0.3s ease; cursor: pointer;"
+            onmouseover="this.style.transform='translateY(-8px)'; this.style.boxShadow='0 15px 30px rgba(211, 84, 0, 0.15)'"
+            onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 5px 20px rgba(0,0,0,0.08)'">
+          <img src="https://images.unsplash.com/photo-1605000797499-95a51c5269ae?auto=format&fit=crop&w=800&q=80" style="width: 100%; height: 240px; object-fit: cover;">
+          <div style="padding: 20px;">
+            <h3 style="color: #d35400; font-size: 1.3rem;">Minimalist Desk Lamp</h3>
+            <p style="color: #7f8c8d; font-size: 0.95rem;">USB charging, adjustable brightness.</p>
+            <div style="display: flex; justify-content: space-between; align-items: center;">
+              <span style="color: #d35400; font-weight: bold;">$739.99</span>
+             <button onclick="addToCart('Minimalist Desk Lamp', 739.99, 'https://images.unsplash.com/photo-1605000797499-95a51c5269ae?auto=format&fit=crop&w=800&q=80')" 
+              style="background: #d35400; color: white; border: none; padding: 10px 20px; border-radius: 25px; cursor: pointer;">
+              Add to Cart
+            </button>
+
+            </div>
+          </div>
+        </div>
+
+        <!-- Product 2 -->
+        <div onclick="window.location.href='cart.html'" style="min-width: 300px; background: #fff; border-radius: 16px; box-shadow: 0 5px 20px rgba(0,0,0,0.08); transition: all 0.3s ease; cursor: pointer;"
+            onmouseover="this.style.transform='translateY(-8px)'; this.style.boxShadow='0 15px 30px rgba(211, 84, 0, 0.15)'"
+            onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 5px 20px rgba(0,0,0,0.08)'">
+          <img src="https://images.unsplash.com/photo-1503602642458-232111445657?auto=format&fit=crop&w=800&q=80" style="width: 100%; height: 240px; object-fit: cover;">
+          <div style="padding: 20px;">
+            <h3 style="color: #d35400; font-size: 1.3rem;">Mid-Century Armchair</h3>
+            <p style="color: #7f8c8d; font-size: 0.95rem;">Walnut wood, ergonomic wool seat.</p>
+            <div style="display: flex; justify-content: space-between; align-items: center;">
+              <span style="color: #d35400; font-weight: bold;">$2,059.99</span>
+              <button onclick="addToCart('Mid-Century Armchair', 739.99, 'https://images.unsplash.com/photo-1503602642458-232111445657?auto=format&fit=crop&w=800&q=80')" 
+                style="background: #d35400; color: white; border: none; padding: 10px 20px; border-radius: 25px; cursor: pointer;">
+                Add to Cart
+              </button>
+
+            </div>
+          </div>
+        </div>
+
+          <div style="min-width: 300px; background: #fff; border-radius: 16px; box-shadow: 0 5px 20px rgba(0,0,0,0.08); transition: all 0.3s ease; cursor: pointer;"
+              onmouseover="this.style.transform='translateY(-8px)'; this.style.boxShadow='0 15px 30px rgba(211, 84, 0, 0.15)'"
+              onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 5px 20px rgba(0,0,0,0.08)'">
+            <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&w=800&q=80" style="width: 100%; height: 240px; object-fit: cover;">
+            <div style="padding: 20px;">
+              <h3 style="color: #d35400; font-size: 1.3rem;">Noise-Canceling Headphones</h3>
+              <p style="color: #7f8c8d; font-size: 0.95rem;">30-hour battery, immersive sound.</p>
+              <div style="display: flex; justify-content: space-between; align-items: center;">
+                <span style="color: #d35400; font-weight: bold;">$999.99</span>
+                <button onclick="addToCart('Noise-Canceling Headphones', 999.99, 'https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&w=800&q=80')"
+                  style="background: #d35400; color: white; border: none; padding: 8px 20px; border-radius: 20px;">Add to Cart</button>
+              </div>
+            </div>
+          </div>
+          <div style="min-width: 300px; background: #fff; border-radius: 16px; box-shadow: 0 5px 20px rgba(0,0,0,0.08); transition: all 0.3s ease; cursor: pointer;"
+              onmouseover="this.style.transform='translateY(-8px)'; this.style.boxShadow='0 15px 30px rgba(211, 84, 0, 0.15)'"
+              onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 5px 20px rgba(0,0,0,0.08)'">
+            <img src="https://images.unsplash.com/photo-1485955900006-10f4d324d411?auto=format&fit=crop&w=800&q=80" style="width: 100%; height: 240px; object-fit: cover;">
+            <div style="padding: 20px;">
+              <h3 style="color: #d35400; font-size: 1.3rem;">Fiddle Leaf Fig Tree</h3>
+              <p style="color: #7f8c8d; font-size: 0.95rem;">5-foot live plant with ceramic pot.</p>
+              <div style="display: flex; justify-content: space-between; align-items: center;">
+                <span style="color: #d35400; font-weight: bold;">$324.99</span>
+                <button onclick="addToCart('Fiddle Leaf Fig Tree', 324.99, 'https://images.unsplash.com/photo-1485955900006-10f4d324d411?auto=format&fit=crop&w=800&q=80')"
+                  style="background: #d35400; color: white; border: none; padding: 8px 20px; border-radius: 20px;">Add to Cart</button>
+              </div>
+            </div>
+          </div>
+
+      </div>
+    </section>
+  <section style="padding: 20px 20px; background: linear-gradient(135deg, #e5e9fce2, #f9f7cbeb); color: rgb(0, 0, 0); font-family: 'Segoe UI', sans-serif;">
+  <div style="max-width: 1200px; margin: 0 auto;">
+    <h6 style="text-align: center; font-size: 2.5rem; margin-bottom: 10px;margin-top: -0px;">Special Offers</h6>
+    <p style="text-align: center; font-size: 1.1rem; max-width: 700px; margin: 0 auto 40px; opacity: 0.9;">
+      Limited time deals you don't want to miss
+    </p>
+    
+    <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 30px;">
+      <!-- Offer 1 -->
+      <div style="flex: 1; min-width: 300px; max-width: 400px; background: rgba(255,255,255,0.1); backdrop-filter: blur(10px); border-radius: 12px; padding: 30px; border: 1px solid rgb(255, 255, 255);">
+        <div style="display: flex; align-items: center; margin-bottom: 20px;">
+          <span style="background: #f72585; padding: 5px 15px; border-radius: 50px; font-weight: bold; font-size: 0.9rem;">50% OFF</span>
+          <span style="margin-left: auto; font-size: 0.9rem; opacity: 0.8;">Ends in 2 days</span>
+        </div>
+        <h3 style="margin: 0 0 15px 0; font-size: 1.5rem;">Summer Collection</h3>
+        <p style="margin: 0 0 20px 0; opacity: 0.9; line-height: 1.6;">All summer fashion items at half price. Limited stock available.</p>
+       <a href="SignIn.html" style="text-decoration: none;">
+        <button style="padding: 10px 25px; background: rgba(58, 46, 191, 0.934);   color: #000000; border: none; border-radius: 50px; font-weight: bold; cursor: pointer; transition: all 0.3s ease;"
+                onmouseover="this.style.background='#f8f9fa'; this.style.transform='translateY(-2px)'"
+                onmouseout="this.style.background='white'; this.style.transform='translateY(0)'">
+          Shop Now
+        </button>
+        </a>
+      </div>
+      
+      <!-- Offer 2 -->
+      <div style="flex: 1; min-width: 300px; max-width: 400px; background: rgba(255,255,255,0.1); backdrop-filter: blur(10px); border-radius: 12px; padding: 30px; border: 1px solid rgb(255, 255, 255);">
+        <div style="display: flex; align-items: center; margin-bottom: 20px;">
+          <span style="background: #4cc9f0; padding: 5px 15px; border-radius: 50px; font-weight: bold; font-size: 0.9rem;">BUY 1 GET 1</span>
+          <span style="margin-left: auto; font-size: 0.9rem; opacity: 0.8;">Ends tomorrow</span>
+        </div>
+        <h3 style="margin: 0 0 15px 0; font-size: 1.5rem;">Electronics Sale</h3>
+        <p style="margin: 0 0 20px 0; opacity: 0.9; line-height: 1.6;">Select headphones and accessories - buy one get one free.</p>
+        <a href="SignIn.html" style="text-decoration: none;">
+        <button style="padding: 10px 25px; background: rgba(58, 46, 191, 0.934); color: #000000; border: none; border-radius: 50px; font-weight: bold; cursor: pointer; transition: all 0.3s ease;"
+                onmouseover="this.style.background='#f8f9fa'; this.style.transform='translateY(-2px)'"
+                onmouseout="this.style.background='white'; this.style.transform='translateY(0)'">
+          Shop Now
+        </button>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+<section style="padding:10px 20px; background:#f0f4f8;font-family: Arial, Helvetica, sans-serif;">
+  <h6 style="text-align:center; color:#2c3e50; margin-bottom:40px; font-size:3rem;margin-top:20px;">Bestsellers</h6>
+  <div style="display:flex; justify-content:center; gap:25px; flex-wrap:wrap;">
+
+    <!-- Smart Sofa -->
+    <div style="width:260px; background:#fff; border-radius:16px; box-shadow:0 3px 12px rgba(0,0,0,0.1); padding:20px; transition:all 0.3s ease;"
+         onmouseover="this.style.transform='scale(1.05)'; this.style.boxShadow='0 10px 24px rgba(0,0,0,0.15)';"
+         onmouseout="this.style.transform='scale(1)'; this.style.boxShadow='0 3px 12px rgba(0,0,0,0.1)';">
+      <img src="https://images.pexels.com/photos/1866149/pexels-photo-1866149.jpeg?auto=compress&cs=tinysrgb&w=600" style="width:100%; height:240px; object-fit:cover; border-radius:10px;">
+      <h3 style="color:#2c3e50; margin-top:10px;">Smart Sofa</h3>
+      <p style="color:#555;">$5099.99</p>
+      <button onclick="addToCart('Smart Sofa', 5099.99, 'https://images.pexels.com/photos/1866149/pexels-photo-1866149.jpeg?auto=compress&cs=tinysrgb&w=600')" 
+              style="margin-top:10px; background:#2c3e50; color:white; border:none; padding:8px 16px; border-radius:20px; cursor:pointer;">
+        Add to Cart
+      </button>
+    </div>
+
+    <!-- Modern Bed -->
+    <div style="width:260px; background:#fff; border-radius:16px; box-shadow:0 3px 12px rgba(0,0,0,0.1); padding:20px; transition:all 0.3s ease;"
+         onmouseover="this.style.transform='scale(1.05)'; this.style.boxShadow='0 10px 24px rgba(0,0,0,0.15)';"
+         onmouseout="this.style.transform='scale(1)'; this.style.boxShadow='0 3px 12px rgba(0,0,0,0.1)';">
+      <img src="https://images.pexels.com/photos/6284239/pexels-photo-6284239.jpeg?auto=compress&cs=tinysrgb&w=600" style="width:100%; height:240px; object-fit:cover; border-radius:10px;">
+      <h3 style="color:#2c3e50; margin-top:10px;">Modern Bed</h3>
+      <p style="color:#555;">$6099.00</p>
+      <button onclick="addToCart('Modern Bed', 6099.00, 'https://images.pexels.com/photos/6284239/pexels-photo-6284239.jpeg?auto=compress&cs=tinysrgb&w=600')" 
+              style="margin-top:10px; background:#2c3e50; color:white; border:none; padding:8px 16px; border-radius:20px; cursor:pointer;">
+        Add to Cart
+      </button>
+    </div>
+
+    <!-- Luxury Table -->
+    <div style="width:260px; background:#fff; border-radius:16px; box-shadow:0 3px 12px rgba(0,0,0,0.1); padding:20px; transition:all 0.3s ease;"
+         onmouseover="this.style.transform='scale(1.05)'; this.style.boxShadow='0 10px 24px rgba(0,0,0,0.15)';"
+         onmouseout="this.style.transform='scale(1)'; this.style.boxShadow='0 3px 12px rgba(0,0,0,0.1)';">
+      <img src="https://images.pexels.com/photos/18285884/pexels-photo-18285884/free-photo-of-a-luxurious-dining-room-design.jpeg" style="width:100%; height:240px; object-fit:cover; border-radius:10px;">
+      <h3 style="color:#2c3e50; margin-top:10px;">Luxury Table</h3>
+      <p style="color:#555;">$4199.99</p>
+      <button onclick="addToCart('Luxury Table', 4199.99, 'https://images.pexels.com/photos/18285884/pexels-photo-18285884/free-photo-of-a-luxurious-dining-room-design.jpeg')" 
+              style="margin-top:10px; background:#2c3e50; color:white; border:none; padding:8px 16px; border-radius:20px; cursor:pointer;">
+        Add to Cart
+      </button>
+    </div>
+
+    <!-- Ergonomic Chair -->
+    <div style="width:260px; background:#fff; border-radius:16px; box-shadow:0 3px 12px rgba(0,0,0,0.1); padding:20px; transition:all 0.3s ease;"
+         onmouseover="this.style.transform='scale(1.05)'; this.style.boxShadow='0 10px 24px rgba(0,0,0,0.15)';"
+         onmouseout="this.style.transform='scale(1)'; this.style.boxShadow='0 3px 12px rgba(0,0,0,0.1)';">
+      <img src="https://live.staticflickr.com/3653/3604453020_6ee8328662.jpg" style="width:100%; height:240px; object-fit:cover; border-radius:10px;">
+      <h3 style="color:#2c3e50; margin-top:10px;">Ergonomic Chair</h3>
+      <p style="color:#555;">$1319.99</p>
+      <button onclick="addToCart('Ergonomic Chair', 1319.99, 'https://live.staticflickr.com/3653/3604453020_6ee8328662.jpg')" 
+              style="margin-top:10px; background:#2c3e50; color:white; border:none; padding:8px 16px; border-radius:20px; cursor:pointer;">
+        Add to Cart
+      </button>
+    </div>
+
+  </div>
+</section>
+
+  
+<section style="padding: 80px 20px; background: linear-gradient(to bottom, #ffffff 0%, #f8f9fa 100%);">
+    <div style="max-width: 1200px; margin: 0 auto;">
+        <!-- Section Header -->
+        <div style="text-align: center; margin-bottom: 60px;">
+            <h2 style="color: #2c3e50; font-size: 2.5rem; margin-bottom: 15px; position: relative; display: inline-block;">
+                Our Unique Offerings
+                <span style="position: absolute; bottom: -10px; left: 50%; transform: translateX(-50%); width: 80px; height: 4px; background: #8e44ad; border-radius: 2px;"></span>
+            </h2>
+            <p style="color: #7f8c8d; max-width: 700px; margin: 20px auto 0; line-height: 1.6; font-size: 1.1rem;">
+                We go beyond just products to deliver exceptional services that enhance your shopping experience
+            </p>
+        </div>
+        
+        <!-- Offerings Grid -->
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 25px; justify-items: center;">
+            <!-- Offering 1 -->
+            <!-- <div style="text-align: center; max-width: 200px;">
+                <div style="width: 100px; height: 100px; background: #f0e6ff; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 20px; transition: all 0.3s ease;"
+                     onmouseover="this.style.transform='scale(1.1)'; this.style.background='#8e44ad'; this.querySelector('svg').style.fill='#ffffff';"
+                     onmouseout="this.style.transform='scale(1)'; this.style.background='#f0e6ff'; this.querySelector('svg').style.fill='#8e44ad';">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" style="fill:#8e44ad;transition: all 0.3s ease;">
+                        <path d="M20.5 11H19V7c0-1.1-.9-2-2-2h-4V3.5a2.5 2.5 0 0 0-5 0V5H4c-1.1 0-1.99.9-1.99 2v3.8H3.5c1.49 0 2.7 1.21 2.7 2.7 0 1.49-1.21 2.7-2.7 2.7H2V20c0 1.1.9 2 2 2h3.8v-1.5c0-1.49 1.21-2.7 2.7-2.7 1.49 0 2.7 1.21 2.7 2.7V22H17c1.1 0 2-.9 2-2v-4h1.5a2.5 2.5 0 0 0 0-5z"></path>
+                    </svg>
+                </div>
+                <h3 style="color: #2c3e50; margin: 0 0 10px 0; font-size: 1.1rem;">Free Alterations</h3>
+                <p style="color: #7f8c8d; margin: 0; font-size: 0.9rem; line-height: 1.5;">
+                    Perfect fit guaranteed with our complimentary tailoring service on all apparel purchases
+                </p>
+            </div> -->
+            
+            <!-- Offering 2 -->
+            <div style="text-align: center; max-width: 200px;">
+                <div style="width: 100px; height: 100px; background: #e6f7ff; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 20px; transition: all 0.3s ease;"
+                     onmouseover="this.style.transform='scale(1.1)'; this.style.background='#3498db'; this.querySelector('svg').style.fill='#ffffff';"
+                     onmouseout="this.style.transform='scale(1)'; this.style.background='#e6f7ff'; this.querySelector('svg').style.fill='#3498db';">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" style="fill:#3498db;transition: all 0.3s ease;">
+                        <path d="M19 7h-3V5.5A2.5 2.5 0 0 0 13.5 3h-3A2.5 2.5 0 0 0 8 5.5V7H5c-1.1 0-2 .9-2 2v9c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V9c0-1.1-.9-2-2-2zm-9-1.5c0-.28.22-.5.5-.5h3c.28 0 .5.22.5.5V7h-4V5.5zm9 11.5H5V9h14v7z"></path>
+                    </svg>
+                </div>
+                <h3 style="color: #2c3e50; margin: 0 0 10px 0; font-size: 1.1rem;">Easy Returns</h3>
+                <p style="color: #7f8c8d; margin: 0; font-size: 0.9rem; line-height: 1.5;">
+                    30-day hassle-free returns with free pickup service for your convenience
+                </p>
+            </div>
+            
+            <!-- Offering 3 -->
+            <div style="text-align: center; max-width: 200px;">
+                <div style="width: 100px; height: 100px; background: #fff2e6; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 20px; transition: all 0.3s ease;"
+                     onmouseover="this.style.transform='scale(1.1)'; this.style.background='#e67e22'; this.querySelector('svg').style.fill='#ffffff';"
+                     onmouseout="this.style.transform='scale(1)'; this.style.background='#fff2e6'; this.querySelector('svg').style.fill='#e67e22';">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" style="fill:#e67e22;transition: all 0.3s ease;">
+                        <path d="M19 7h-1V6c0-2.76-2.24-5-5-5S8 3.24 8 6v1H7c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V9c0-1.1-.9-2-2-2zM10 6c0-1.66 1.34-3 3-3s3 1.34 3 3v1H10V6zm10 13H8V9h12v10z"></path>
+                        <path d="M12 13c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2z"></path>
+                    </svg>
+                </div>
+                <h3 style="color: #2c3e50; margin: 0 0 10px 0; font-size: 1.1rem;">Express Delivery</h3>
+                <p style="color: #7f8c8d; margin: 0; font-size: 0.9rem; line-height: 1.5;">
+                    Get your orders delivered within 24 hours in major cities with our priority service
+                </p>
+            </div>
+            
+            <!-- Offering 4 -->
+            <div style="text-align: center; max-width: 200px;">
+                <div style="width: 100px; height: 100px; background: #ffe6e6; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 20px; transition: all 0.3s ease;"
+                     onmouseover="this.style.transform='scale(1.1)'; this.style.background='#e74c3c'; this.querySelector('svg').style.fill='#ffffff';"
+                     onmouseout="this.style.transform='scale(1)'; this.style.background='#ffe6e6'; this.querySelector('svg').style.fill='#e74c3c';">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" style="fill:#e74c3c;transition: all 0.3s ease;">
+                        <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm4.59-12.42L10 14.17l-2.59-2.58L6 13l4 4 8-8z"></path>
+                    </svg>
+                </div>
+                <h3 style="color: #2c3e50; margin: 0 0 10px 0; font-size: 1.1rem;">Personal Engraving</h3>
+                <p style="color: #7f8c8d; margin: 0; font-size: 0.9rem; line-height: 1.5;">
+                    Add a personal touch with complimentary engraving on jewelry and accessories
+                </p>
+            </div>
+            
+            <!-- Offering 5 -->
+            <div style="text-align: center; max-width: 200px;">
+                <div style="width: 100px; height: 100px; background: #e6ffe6; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 20px; transition: all 0.3s ease;"
+                     onmouseover="this.style.transform='scale(1.1)'; this.style.background='#2ecc71'; this.querySelector('svg').style.fill='#ffffff';"
+                     onmouseout="this.style.transform='scale(1)'; this.style.background='#e6ffe6'; this.querySelector('svg').style.fill='#2ecc71';">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" style="fill:#2ecc71;transition: all 0.3s ease;">
+                        <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 3c1.66 0 3 1.34 3 3s-1.34 3-3 3-3-1.34-3-3 1.34-3 3-3zm0 14.2c-2.5 0-4.71-1.28-6-3.22.03-1.99 4-3.08 6-3.08 1.99 0 5.97 1.09 6 3.08-1.29 1.94-3.5 3.22-6 3.22z"></path>
+                    </svg>
+                </div>
+                <h3 style="color: #2c3e50; margin: 0 0 10px 0; font-size: 1.1rem;">Styling Advice</h3>
+                <p style="color: #7f8c8d; margin: 0; font-size: 0.9rem; line-height: 1.5;">
+                    Free consultations with our fashion experts to help you create your perfect look
+                </p>
+            </div>
+            
+            <!-- Offering 6 -->
+            <div style="text-align: center; max-width: 200px;">
+                <div style="width: 100px; height: 100px; background: #f0e6ff; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 20px; transition: all 0.3s ease;"
+                     onmouseover="this.style.transform='scale(1.1)'; this.style.background='#9b59b6'; this.querySelector('svg').style.fill='#ffffff';"
+                     onmouseout="this.style.transform='scale(1)'; this.style.background='#f0e6ff'; this.querySelector('svg').style.fill='#9b59b6';">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" style="fill:#9b59b6;transition: all 0.3s ease;">
+                        <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 16H5V5h14v14zM12 6c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3zm-1 3.5h-1v-1h1v1zm1.5 0h-1v-1h1v1zm1.5 0h-1v-1h1v1z"></path>
+                    </svg>
+                </div>
+                <h3 style="color: #2c3e50; margin: 0 0 10px 0; font-size: 1.1rem;">Click & Collect</h3>
+                <p style="color: #7f8c8d; margin: 0; font-size: 0.9rem; line-height: 1.5;">
+                    Order online and pick up in-store with our dedicated express collection points
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+  
+ <section style="padding: 60px 20px; background: linear-gradient(135deg, #f9f9ff 0%, #f1f1f1 100%);">
+    <div style="max-width: 1200px; margin: 0 auto;">
+        <!-- Section Header -->
+        <div style="text-align: center; margin-bottom: 50px;">
+            <h2 style="color: #8e44ad; font-size: 2.2rem; margin-bottom: 10px; position: relative; display: inline-block;">
+                Trending Now
+                <span style="position: absolute; bottom: -10px; left: 50%; transform: translateX(-50%); width: 60px; height: 3px; background: #8e44ad; border-radius: 3px;"></span>
+            </h2>
+            <p style="color: #666; max-width: 700px; margin: 15px auto 0; line-height: 1.6;">Discover our most popular products loved by customers worldwide</p>
+        </div>
+        
+        <!-- Products Grid -->
+        <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 30px; padding: 0 10px;">
+            <!-- Product 1 -->
+            <div onmouseover="this.style.transform='translateY(-8px)'; this.style.boxShadow='0 15px 30px rgba(142, 68, 173, 0.2)';" 
+                 onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 5px 15px rgba(0,0,0,0.1)';" 
+                 style="background: #fff; border-radius: 16px; box-shadow: 0 5px 15px rgba(0,0,0,0.1); overflow: hidden; transition: all 0.3s ease; position: relative;">
+                <!-- Badge -->
+                <div style="position: absolute; top: 15px; right: 15px; background: #e74c3c; color: white; padding: 5px 10px; border-radius: 20px; font-size: 0.8rem; font-weight: bold; z-index: 2;">BESTSELLER</div>
+                <div style="height: 220px; overflow: hidden;">
+                    <img src="https://images.rawpixel.com/image_800/czNmcy1wcml2YXRlL3Jhd3BpeGVsX2ltYWdlcy93ZWJzaXRlX2NvbnRlbnQvbHIvcGJ3azEwMDEta3ZnZGY4Z2cta3oyZHo3ZGguanBn.jpg" loading="lazy" style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s ease;">
+                </div>
+                <div style="padding: 20px;">
+                    <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px;">
+                        <h3 style="color: #2c3e50; margin: 0; font-size: 1.3rem;">Luxury Chronograph Watch</h3>
+                        <span style="color: #8e44ad; font-weight: bold; font-size: 1.1rem;">$799.99</span>
+                    </div>
+                    <p style="color: #7f8c8d; margin: 0 0 15px 0; line-height: 1.5; font-size: 0.95rem;">
+                        Premium Swiss-made timepiece with sapphire crystal glass, 50m water resistance, and genuine leather strap. 
+                        Automatic movement with 42-hour power reserve.
+                    </p>
+                    <div style="display: flex; justify-content: space-between; align-items: center;">
+                        <div style="color: #f39c12;">
+                            ★★★★★ <span style="color: #7f8c8d; margin-left: 5px;">(128 reviews)</span>
+                        </div>
+                        <button onclick="addToCart('Luxury Chronograph Watch', 799.99, 'https://images.rawpixel.com/image_800/czNmcy1wcml2YXRlL3Jhd3BpeGVsX2ltYWdlcy93ZWJzaXRlX2NvbnRlbnQvbHIvcGJ3azEwMDEta3ZnZGY4Z2cta3oyZHo3ZGguanBn.jpg')" 
+                          style="background: #8e44ad; color: white; border: none; padding: 8px 20px; border-radius: 25px; cursor: pointer; font-weight: 500;">
+                          Add to Cart
+                        </button>
+
+                      </div>
+                </div>
+            </div>
+            
+            <!-- Product 2 -->
+            <div onmouseover="this.style.transform='translateY(-8px)'; this.style.boxShadow='0 15px 30px rgba(142, 68, 173, 0.2)';" 
+                 onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 5px 15px rgba(0,0,0,0.1)';" 
+                 style="background: #fff; border-radius: 16px; box-shadow: 0 5px 15px rgba(0,0,0,0.1); overflow: hidden; transition: all 0.3s ease; position: relative;">
+                <!-- Badge -->
+                <div style="position: absolute; top: 15px; right: 15px; background: #2ecc71; color: white; padding: 5px 10px; border-radius: 20px; font-size: 0.8rem; font-weight: bold; z-index: 2;">NEW</div>
+                <div style="height: 220px; overflow: hidden;">
+                    <img src="https://images.pexels.com/photos/4917455/pexels-photo-4917455.jpeg" loading="lazy" style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s ease;">
+                </div>
+                <div style="padding: 20px;">
+                    <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px;">
+                        <h3 style="color: #2c3e50; margin: 0; font-size: 1.3rem;">Wireless Bluetooth Speaker</h3>
+                        <span style="color: #8e44ad; font-weight: bold; font-size: 1.1rem;">$149.99</span>
+                    </div>
+                    <p style="color: #7f8c8d; margin: 0 0 15px 0; line-height: 1.5; font-size: 0.95rem;">
+                        Portable 20W speaker with 15-hour battery life, IPX7 waterproof rating, and deep bass technology. 
+                        Connects via Bluetooth 5.0 with 30ft range. Includes built-in microphone for hands-free calls.
+                    </p>
+                    <div style="display: flex; justify-content: space-between; align-items: center;">
+                        <div style="color: #f39c12;">
+                            ★★★★☆ <span style="color: #7f8c8d; margin-left: 5px;">(64 reviews)</span>
+                        </div>
+                        <button onclick="addToCart('Wireless Bluetooth Speaker', 149.99, 'https://images.pexels.com/photos/4917455/pexels-photo-4917455.jpeg')" 
+                            style="background: #8e44ad; color: white; border: none; padding: 8px 20px; border-radius: 25px; cursor: pointer; font-weight: 500;">
+                            Add to Cart
+                        </button>
+
+                      </div>
+                </div>
+            </div>
+            
+            <!-- Product 3 -->
+            <!-- <div onmouseover="this.style.transform='translateY(-8px)'; this.style.boxShadow='0 15px 30px rgba(142, 68, 173, 0.2)';" 
+                 onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 5px 15px rgba(0,0,0,0.1)';" 
+                 style="background: #fff; border-radius: 16px; box-shadow: 0 5px 15px rgba(0,0,0,0.1); overflow: hidden; transition: all 0.3s ease; position: relative;">
+                <div style="height: 220px; overflow: hidden;">
+                    <img src="https://images.pexels.com/photos/19012029/pexels-photo-19012029.jpeg?auto=compress&cs=tinysrgb&h=627&fit=crop&w=1200" loading="lazy" style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s ease;">
+                </div>
+                <div style="padding: 20px;">
+                    <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px;">
+                        <h3 style="color: #2c3e50; margin: 0; font-size: 1.3rem;">Pro Gaming Laptop</h3>
+                        <span style="color: #8e44ad; font-weight: bold; font-size: 1.1rem;">$1,299.99</span>
+                    </div>
+                    <p style="color: #7f8c8d; margin: 0 0 15px 0; line-height: 1.5; font-size: 0.95rem;">
+                        High-performance gaming laptop with 15.6" 144Hz display, RTX 3060 GPU, Intel i7 processor, 
+                        16GB RAM, and 1TB SSD. RGB backlit keyboard and advanced cooling system for marathon gaming sessions.
+                    </p>
+                    <div style="display: flex; justify-content: space-between; align-items: center;">
+                        <div style="color: #f39c12;">
+                            ★★★★★ <span style="color: #7f8c8d; margin-left: 5px;">(92 reviews)</span>
+                        </div>
+                        <button style="background: #8e44ad; color: white; border: none; padding: 8px 20px; border-radius: 25px; cursor: pointer; font-weight: 500; transition: background 0.3s;">Add to Cart</button>
+                    </div>
+                </div>
+            </div> -->
+            
+            <!-- Product 4 -->
+            <div onmouseover="this.style.transform='translateY(-8px)'; this.style.boxShadow='0 15px 30px rgba(142, 68, 173, 0.2)';" 
+                 onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 5px 15px rgba(0,0,0,0.1)';" 
+                 style="background: #fff; border-radius: 16px; box-shadow: 0 5px 15px rgba(0,0,0,0.1); overflow: hidden; transition: all 0.3s ease; position: relative;">
+                <!-- Badge -->
+                <div style="position: absolute; top: 15px; right: 15px; background: #3498db; color: white; padding: 5px 10px; border-radius: 20px; font-size: 0.8rem; font-weight: bold; z-index: 2;">-20%</div>
+                <div style="height: 220px; overflow: hidden;">
+                    <img src="https://media.istockphoto.com/id/1313312188/photo/clubhouse-app-icon-on-smatphone-screen-surrounded-by-other-social-media-apps-and-user-run.jpg?s=612x612&w=0&k=20&c=5k_nUUArdbFobkJb_psV8gmh2MKWfIlI-MCYQAbsBIY=" loading="lazy" style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s ease;">
+                </div>
+                <div style="padding: 20px;">
+                    <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px;">
+                        <h3 style="color: #2c3e50; margin: 0; font-size: 1.3rem;">Flagship Smartphone</h3>
+                        <div>
+                            <span style="color: #e74c3c; text-decoration: line-through; margin-right: 8px; font-size: 0.9rem;">$999.99</span>
+                            <span style="color: #8e44ad; font-weight: bold; font-size: 1.1rem;">$799.99</span>
+                        </div>
+                    </div>
+                    <p style="color: #7f8c8d; margin: 0 0 15px 0; line-height: 1.5; font-size: 0.95rem;">
+                        Latest flagship smartphone with 6.7" AMOLED display, triple camera system (108MP main), 
+                        5G connectivity, 5000mAh battery, and 256GB storage. IP68 water and dust resistant.
+                    </p>
+                    <div style="display: flex; justify-content: space-between; align-items: center;">
+                        <div style="color: #f39c12;">
+                            ★★★★☆ <span style="color: #7f8c8d; margin-left: 5px;">(187 reviews)</span>
+                        </div>
+                        <button onclick="addToCart('Flagship Smartphone', 799.99, 'https://media.istockphoto.com/id/1313312188/photo/clubhouse-app-icon-on-smatphone-screen-surrounded-by-other-social-media-apps-and-user-run.jpg')" 
+                          style="background: #8e44ad; color: white; border: none; padding: 8px 20px; border-radius: 25px; cursor: pointer; font-weight: 500;">
+                          Add to Cart
+                        </button>
+
+                      </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- View All Button -->
+        <div style="text-align: center; margin-top: 50px;">
+          <a href="SignIn.html" style="text-decoration: none;">
+            <button style="background: transparent; color: #8e44ad; border: 2px solid #8e44ad; padding: 12px 30px; border-radius: 30px; cursor: pointer; font-weight: 600; font-size: 1rem; transition: all 0.3s ease;">
+                View All Trending Products
+            </button>
+          </a>
+        </div>
+    </div>
+</section>
+  
+<section style="padding:20px 20px; background:#f7f9fa; overflow-x:auto;">
+    <div style="max-width:1400px; margin:0 auto;">
+        <h2 style="text-align:center; color:#2c3e50; margin-bottom:16px; font-size:2.2rem; font-weight:700; font-family: Arial, sans-serif;">Customer Favorites</h2>
+        <p style="text-align:center; color:#7b8a8b; margin-bottom:50px; font-size:1.1rem; font-family: Arial, sans-serif;">Top-rated picks loved by our shoppers</p>
+        
+        <div id="products" style="display:flex; gap:30px; padding-bottom:20px; width:max-content; margin:0 auto;">
+
+            <!-- Product 1 -->
+            <div class="product-card" style="cursor:pointer; min-width:280px;"
+                 data-name="Elegant Armchair"
+                 data-price="$1949.99"
+                 data-img="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRr82164Ax1h5DjzEb4VskJnBFT8HsPyK0k6w&s"
+                 data-description="A stylish and elegant armchair made with high-quality materials to complement your living room. Comfortable, durable, and modern design.">
+                <div style="width:280px; background:#ffffff; border-radius:20px; overflow:hidden; box-shadow:0 4px 20px rgba(0,0,0,0.06); transition:transform 0.3s ease, box-shadow 0.3s ease;" 
+                     onmouseover="this.style.transform='translateY(-8px)'; this.style.boxShadow='0 12px 30px rgba(0,0,0,0.1)';" 
+                     onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 4px 20px rgba(0,0,0,0.06)';">
+                    <div style="position:relative;">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRr82164Ax1h5DjzEb4VskJnBFT8HsPyK0k6w&s" loading="lazy" style="width:100%; height:230px; object-fit:cover;">
+                        <div style="position:absolute; top:0; left:0; right:0; bottom:0; background:rgba(0,0,0,0.05); opacity:0; transition:opacity 0.3s ease;" 
+                             onmouseover="this.style.opacity='1'" onmouseout="this.style.opacity='0'"></div>
+                    </div>
+                    <div style="padding:20px;">
+                        <h3 style="color:#2c3e50; font-size:1.2rem; margin-bottom:6px; font-family: Arial, sans-serif;">Elegant Armchair</h3>
+                        <p style="color:#16a085; font-weight:600; font-size:1.05rem; font-family: Arial, sans-serif;">$1949.99</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product 2 -->
+            <div class="product-card" style="cursor:pointer; min-width:280px;"
+                 data-name="Stylish Sneakers"
+                 data-price="$1129.99"
+                 data-img="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJ5ukTwburVqgxA19yGJyUU53z4jHCEMI70A&s"
+                 data-description="Trendy and comfortable sneakers perfect for everyday wear and casual outings. Durable sole with stylish design.">
+                <div style="width:280px; background:#ffffff; border-radius:20px; overflow:hidden; box-shadow:0 4px 20px rgba(0,0,0,0.06); transition:transform 0.3s ease, box-shadow 0.3s ease;" 
+                     onmouseover="this.style.transform='translateY(-8px)'; this.style.boxShadow='0 12px 30px rgba(0,0,0,0.1)';" 
+                     onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 4px 20px rgba(0,0,0,0.06)';">
+                    <div style="position:relative;">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJ5ukTwburVqgxA19yGJyUU53z4jHCEMI70A&s" loading="lazy" style="width:100%; height:230px; object-fit:cover;">
+                        <div style="position:absolute; top:0; left:0; right:0; bottom:0; background:rgba(0,0,0,0.05); opacity:0; transition:opacity 0.3s ease;" 
+                             onmouseover="this.style.opacity='1'" onmouseout="this.style.opacity='0'"></div>
+                    </div>
+                    <div style="padding:20px;">
+                        <h3 style="color:#2c3e50; font-size:1.2rem; margin-bottom:6px; font-family: Arial, sans-serif;">Stylish Sneakers</h3>
+                        <p style="color:#16a085; font-weight:600; font-size:1.05rem; font-family: Arial, sans-serif;">$1129.99</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product 3 -->
+            <div class="product-card" style="cursor:pointer; min-width:280px;"
+                 data-name="Vintage Rocking Chair"
+                 data-price="$899.99"
+                 data-img="https://live.staticflickr.com/1721/40863936440_da7a55861b_b.jpg"
+                 data-description="Classic vintage rocking chair with wooden finish, perfect for relaxation and adding charm to your home decor.">
+                <div style="width:280px; background:#ffffff; border-radius:20px; overflow:hidden; box-shadow:0 4px 20px rgba(0,0,0,0.06); transition:transform 0.3s ease, box-shadow 0.3s ease;" 
+                     onmouseover="this.style.transform='translateY(-8px)'; this.style.boxShadow='0 12px 30px rgba(0,0,0,0.1)';" 
+                     onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 4px 20px rgba(0,0,0,0.06)';">
+                    <div style="position:relative;">
+                        <img src="https://live.staticflickr.com/1721/40863936440_da7a55861b_b.jpg" loading="lazy" style="width:100%; height:230px; object-fit:cover;">
+                        <div style="position:absolute; top:0; left:0; right:0; bottom:0; background:rgba(0,0,0,0.05); opacity:0; transition:opacity 0.3s ease;" 
+                             onmouseover="this.style.opacity='1'" onmouseout="this.style.opacity='0'"></div>
+                    </div>
+                    <div style="padding:20px;">
+                        <h3 style="color:#2c3e50; font-size:1.2rem; margin-bottom:6px; font-family: Arial, sans-serif;">Vintage Rocking Chair</h3>
+                        <p style="color:#16a085; font-weight:600; font-size:1.05rem; font-family: Arial, sans-serif;">$899.99</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product 4 -->
+            <div class="product-card" style="cursor:pointer; min-width:280px;"
+                 data-name="Modern Table Lamp"
+                 data-price="$990.99"
+                 data-img="https://cdn12.picryl.com/photo/2016/12/31/replacement-lamp-modern-the-interior-of-the-3b86ca-1024.jpg"
+                 data-description="A sleek and modern table lamp that brightens up your room with elegant lighting and style. Perfect for desks and bedside tables.">
+                <div style="width:280px; background:#ffffff; border-radius:20px; overflow:hidden; box-shadow:0 4px 20px rgba(0,0,0,0.06); transition:transform 0.3s ease, box-shadow 0.3s ease;" 
+                     onmouseover="this.style.transform='translateY(-8px)'; this.style.boxShadow='0 12px 30px rgba(0,0,0,0.1)';" 
+                     onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 4px 20px rgba(0,0,0,0.06)';">
+                    <div style="position:relative;">
+                        <img src="https://cdn12.picryl.com/photo/2016/12/31/replacement-lamp-modern-the-interior-of-the-3b86ca-1024.jpg" loading="lazy" style="width:100%; height:230px; object-fit:cover;">
+                        <div style="position:absolute; top:0; left:0; right:0; bottom:0; background:rgba(0,0,0,0.05); opacity:0; transition:opacity 0.3s ease;" 
+                             onmouseover="this.style.opacity='1'" onmouseout="this.style.opacity='0'"></div>
+                    </div>
+                    <div style="padding:20px;">
+                        <h3 style="color:#2c3e50; font-size:1.2rem; margin-bottom:6px; font-family: Arial, sans-serif;">Modern Table Lamp</h3>
+                        <p style="color:#16a085; font-weight:600; font-size:1.05rem; font-family: Arial, sans-serif;">$990.99</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Overlay popup container -->
+    <!-- Overlay popup container -->
+<div id="overlay" style="display:none; position:fixed; top:0; left:0; width:100vw; height:100vh; background:rgba(0,0,0,0.7); backdrop-filter:blur(6px); -webkit-backdrop-filter:blur(6px); z-index:1000; justify-content:center; align-items:center;">
+    <div id="overlay-content" style="position:relative; background:#fff; border-radius:30px; max-width:650px; width:90vw; max-height:90vh; overflow-y:auto; box-shadow:0 20px 40px rgba(0,0,0,0.3); font-family: Arial, sans-serif;">
+        <button id="overlay-close" style="position:absolute; top:20px; right:25px; background:#16a085; border:none; color:#fff; font-weight:700; font-size:18px; width:40px; height:40px; border-radius:50%; cursor:pointer;">×</button>
+        <img id="overlay-img" src="" alt="" loading="lazy" style="width:100%; max-height:350px; object-fit:cover; border-top-left-radius:30px; border-top-right-radius:30px;">
+        <div style="padding:30px 40px;">
+            <h3 id="overlay-name" style="margin-bottom:10px; color:#2c3e50; font-size:1.8rem; font-weight:700;"></h3>
+            <p id="overlay-price" style="font-weight:600; font-size:1.3rem; margin-bottom:25px; color:#16a085;"></p>
+            <p id="overlay-desc" style="font-size:1rem; color:#7b8a8b; line-height:1.5; margin-bottom:40px;"></p>
+            <div style="display:flex; gap:20px; flex-wrap:wrap;">
+                <button id="overlay-buy" style="background:#16a085; color:#fff; padding:15px 60px; border:none; border-radius:50px; font-weight:700; font-size:1.1rem; cursor:pointer; box-shadow:0 12px 30px rgba(22,160,133,0.4); transition:background-color 0.3s ease;">
+                    Buy Now
+                </button>
+                <button id="overlay-add-to-cart" 
+                    style="background: #8e44ad; color: white; border: none; padding: 15px 40px; border-radius: 50px; cursor: pointer; font-weight: 500; font-size: 1.1rem;">
+                    Add to Cart
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+
+</section>
+
+<script>
+  const products = document.querySelectorAll('.product-card');
+const overlay = document.getElementById('overlay');
+const overlayImg = document.getElementById('overlay-img');
+const overlayName = document.getElementById('overlay-name');
+const overlayPrice = document.getElementById('overlay-price');
+const overlayDesc = document.getElementById('overlay-desc');
+const overlayClose = document.getElementById('overlay-close');
+const overlayBuy = document.getElementById('overlay-buy');
+const overlayAddToCart = document.getElementById('overlay-add-to-cart');
+
+let currentProduct = {};  // to store current product info shown in overlay
+
+products.forEach(product => {
+    product.addEventListener('click', () => {
+        overlay.style.display = 'flex';
+        overlayImg.src = product.dataset.img;
+        overlayName.textContent = product.dataset.name;
+        overlayPrice.textContent = product.dataset.price;
+        overlayDesc.textContent = product.dataset.description;
+        
+        // Store current product details
+        currentProduct = {
+            name: product.dataset.name,
+            price: parseFloat(product.dataset.price.replace(/[^0-9.-]+/g,"")),  // get numeric price
+            img: product.dataset.img
+        };
+    });
+});
+
+overlayClose.addEventListener('click', () => {
+    overlay.style.display = 'none';
+});
+
+overlay.addEventListener('click', (e) => {
+    if (e.target === overlay) overlay.style.display = 'none';
+});
+
+overlayBuy.addEventListener('click', () => {
+    alert(`You bought: ${currentProduct.name} for $${currentProduct.price}`);
+    overlay.style.display = 'none';
+});
+
+overlayAddToCart.addEventListener('click', () => {
+    addToCart(currentProduct.name, currentProduct.price, currentProduct.img);
+});
+
+// Your addToCart function
+function addToCart(name, price, img) {
+    // Here you can add your cart logic, e.g., storing in localStorage or updating cart UI
+    alert(`Added to cart:\n${name} - $${price}`);
+    // Example: save cart item in localStorage (you can customize this)
+    let cart = JSON.parse(localStorage.getItem('cart')) || [];
+    cart.push({ name, price, img });
+    localStorage.setItem('cart', JSON.stringify(cart));
+}
+
+</script>
+
+  <script>
+    // JavaScript for handling the search
+    function searchService() {
+        const searchQuery = document.getElementById('searchInput').value;
+        if (searchQuery.trim() === '') {
+            alert('Please enter a search term!');
+        } else {
+            alert('Searching for: ' + searchQuery);
+        }
+    }
+
+    // JavaScript for form validation
+    function validateForm() {
+        const name = document.getElementById('name').value;
+        const email = document.getElementById('email').value;
+        const message = document.getElementById('message').value;
+
+        if (name === '' || email === '' || message === '') {
+            alert('Please fill out all fields.');
+            return false;
+        }
+        alert('Message sent successfully!');
+        return true;
+    }
+</script>
+
+  <footer style="background-color: #f1f1f1; padding: 40px 0;">
+    <div style="max-width: 1200px; margin: 0 auto; padding-left: -600px;">
+
+        <!-- Education & Training -->
+        <div style="text-align: left; margin: 10px;">
+            <a href="education_training.html" style="text-decoration: none;">
+                <p style="font-size: 16px; color: #333; font-weight: bold;">Education & Training</p>
+            </a>
+            <p style="font-size: 14px; color: #555; margin-top: 10px;">Explore a wide range of educational and training options across various fields to enhance your skills and career opportunities.</p>
+            <hr style="border: 1px solid #ddd; margin-top: 20px;"/>
+        </div>
+
+        <!-- Properties & Rents -->
+        <div style="text-align: left; margin: 10px;">
+            <a href="properties_rent.html" style="text-decoration: none;">
+                <p style="font-size: 16px; color: #333; font-weight: bold;">Properties & Rents</p>
+            </a>
+            <p style="font-size: 14px; color: #555; margin-top: 10px;">Find the perfect property for sale, rent, or investment in your desired location with comprehensive listings and details.</p>
+            <hr style="border: 1px solid #ddd; margin-top: 20px;"/>
+        </div>
+
+        <!-- Professional Services -->
+        <div style="text-align: left; margin: 10px;">
+            <a href="proffessional_services.html" style="text-decoration: none;">
+                <p style="font-size: 16px; color: #333; font-weight: bold;">Professional Services</p>
+            </a>
+            <p style="font-size: 14px; color: #555; margin-top: 10px;">Access top-notch professional services, including legal, financial, and consulting services, from trusted experts.</p>
+            <hr style="border: 1px solid #ddd; margin-top: 20px;"/>
+        </div>
+
+        <!-- Travel & Transport -->
+        <div style="text-align: left; margin: 10px;">
+            <a href="travel_transport.html" style="text-decoration: none;">
+                <p style="font-size: 16px; color: #333; font-weight: bold;">Travel & Transport</p>
+            </a>
+            <p style="font-size: 14px; color: #555; margin-top: 10px;">Book your travel needs, including flights, cabs, and buses, with ease and at the best prices.</p>
+            <hr style="border: 1px solid #ddd; margin-top: 20px;"/>
+        </div>
+
+        <!-- Health & Wellness -->
+        <div style="text-align: left; margin: 10px;">
+            <a href="health_wellness.html" style="text-decoration: none;">
+                <p style="font-size: 16px; color: #333; font-weight: bold;">Health & Wellness</p>
+            </a>
+            <p style="font-size: 14px; color: #555; margin-top: 10px;">Discover health and wellness services to maintain a balanced lifestyle, including fitness classes, clinics, and more.</p>
+            <hr style="border: 1px solid #ddd; margin-top: 20px;"/>
+        </div>
+
+        <!-- Events -->
+        <div style="text-align: left; margin: 10px;">
+            <a href="events.html" style="text-decoration: none;">
+                <p style="font-size: 16px; color: #333; font-weight: bold;">Events</p>
+            </a>
+            <p style="font-size: 14px; color: #555; margin-top: 10px;">Stay updated with upcoming events, conferences, exhibitions, and entertainment activities near you.</p>
+            <hr style="border: 1px solid #ddd; margin-top: 20px;"/>
+        </div>
+
+        <!-- Home & Office -->
+        <div style="text-align: left; margin: 10px;">
+            <a href="home_office.html" style="text-decoration: none;">
+                <p style="font-size: 16px; color: #333; font-weight: bold;">Home & Office</p>
+            </a>
+            <p style="font-size: 14px; color: #555; margin-top: 10px;">Explore furniture, appliances, and office supplies to furnish your home or workspace with the best products.</p>
+            <hr style="border: 1px solid #ddd; margin-top: 20px;"/>
+        </div>
+
+        <!-- Shopping -->
+        <div style="text-align: left; margin: 10px;">
+            <a href="shopping.html" style="text-decoration: none;">
+                <p style="font-size: 16px; color: #333; font-weight: bold;">Shopping</p>
+            </a>
+            <p style="font-size: 14px; color: #555; margin-top: 10px;">Shop online for a variety of products including electronics, clothing, accessories, and much more.</p>
+            <hr style="border: 1px solid #ddd; margin-top: 20px;"/>
+        </div>
+
+        <!-- Placement & Jobs -->
+        <div style="text-align: left; margin: 10px;">
+            <a href="placements_jobs.html" style="text-decoration: none;">
+                <p style="font-size: 16px; color: #333; font-weight: bold;">Placement & Jobs</p>
+            </a>
+            <p style="font-size: 14px; color: #555; margin-top: 10px;">Browse job listings and placement opportunities, and connect with top employers in various industries.</p>
+            <hr style="border: 1px solid #ddd; margin-top: 20px;"/>
+        </div>
+
+        <!-- Social Media Icons -->
+        <div style="text-align: center; margin-top: 20px;">
+            <p style="font-size: 16px; color: #333; font-weight: bold;">Follow Us</p>
+            <div style="margin-top:20px;">
+                <a href="https://www.facebook.com" target="_blank" style="margin: 0 15px; text-decoration: none;">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" alt="Facebook" style="width: 40px; height: 40px;"/>
+                </a>
+                <a href="https://www.twitter.com" target="_blank" style="margin: 0 15px; text-decoration: none;">
+                    <img src="https://cdn.iconscout.com/icon/free/png-256/free-twitter-logo-icon-download-in-svg-png-gif-file-formats--social-media-pack-logos-icons-83443.png?f=webp&w=128" alt="Twitter" style="width: 40px; height: 40px;"/>
+                </a>
+                <a href="https://www.instagram.com" target="_blank" style="margin: 0 15px; text-decoration: none;">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram" style="width: 40px; height: 40px;"/>
+                </a>
+                <a href="https://www.linkedin.com" target="_blank" style="margin: 0 15px; text-decoration: none;">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/e/e6/729101_linkedin_icon.png" alt="LinkedIn" style="width: 40px; height: 40px;"/>
+                </a>
+            </div>
+             <br>
+                <p style="margin: 0; color: black;">&copy; 2025 Hitaishi Web Portal. All rights reserved.</p>
+        </div>
+    </div>
+    
+</footer>
+<script>
+  function addToCart(name, price, image) {
+    let cart = JSON.parse(localStorage.getItem('cart')) || [];
+    cart.push({ name, price, image, quantity: 1 });
+    localStorage.setItem('cart', JSON.stringify(cart));
+    window.location.href = 'cart.html';
+  }
+</script>
+
+</body>
+</html>

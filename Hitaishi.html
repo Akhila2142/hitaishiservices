@@ -1,0 +1,1151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hitaishi</title>
+    <style>
+        *{
+            padding: 0px;
+            margin: 0px;
+        }
+        /* General styling */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        h1, h2, h3, p {
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Header */
+        header {
+            background-color: #0c6b87;
+            padding: 20px;
+            color: white;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 36px;
+        }
+
+        /* Navigation Bar */
+        nav {
+            background-color: #0c6b87;
+            color: white;
+            padding: 10px 20px;
+        }
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            margin: 0;
+            padding: 0;
+        }
+        nav ul li {
+            margin: 0 20px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            transition: color 0.3s ease;
+        }
+        nav ul li a:hover {
+            color: #f4b400;
+        }
+
+        /* Search Section */
+        .search-section {
+            padding: 20px;
+            background-color: #f4f4f4;
+            text-align: center;
+        }
+        .search-section h2 {
+            font-size: 28px;
+            color: #333;
+        }
+        .search-section input {
+            padding: 10px;
+            width: 40%;
+            font-size: 16px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+        .search-section button {
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #0c6b87;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        .search-section button:hover {
+            background-color: #f4b400;
+        }
+
+        .featured-services {
+            padding: 40px 20px;
+            background-color: #f4f4f4;
+        }
+        .featured-services h2 {
+            text-align: center;
+            font-size: 28px;
+            color: #333;
+        }
+        .services-container {
+            display: flex;
+            justify-content: space-between;
+            gap: 30px;
+            flex-wrap: wrap;
+        }
+        .service-card {
+            width: 250px;
+            text-align: center;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+            position: relative;
+        }
+        .service-card:hover {
+            transform: scale(1.05);
+        }
+        .service-card img {
+            width: 80px;
+            height: 80px;
+            margin-bottom: 15px;
+        }
+        .service-card h3 {
+            font-size: 22px;
+            color: #0c6b87;
+        }
+        .service-card p {
+            font-size: 16px;
+            color: #666;
+            margin-bottom: 10px;
+        }
+
+        /* Dropdown Styling */
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+            border-radius: 5px;
+        }
+        .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+        .dropdown-content a:hover {
+            background-color: #ddd;
+        }
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        /* Customer Reviews Section */
+        .reviews-section {
+            background-color: #f9f9f9;
+            padding: 40px 20px;
+        }
+        .reviews-section h2 {
+            font-size: 28px;
+            color: #333;
+            text-align: center;
+        }
+        .reviews-container {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+        .review-card {
+            width: 250px;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        .review-card p {
+            font-size: 16px;
+            color: #666;
+        }
+
+        /* Contact Us Section */
+        .contact-us {
+            padding: 40px 20px;
+            background-color: #0c6b87;
+            color: white;
+            text-align: center;
+        }
+        .contact-us h2 {
+            font-size: 28px;
+        }
+        .contact-us form {
+            margin-top: 20px;
+        }
+        .contact-us input, .contact-us textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            font-size: 16px;
+        }
+        .contact-us button {
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #f4b400;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .contact-us button:hover {
+            background-color: #0c6b87;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+    </style>
+</head>
+<body>
+    
+
+    <!-- Header -->
+    <header style="position: relative; padding: 30px 50px; background: linear-gradient(30deg,#0084ff,white ); border-bottom: 3px solid #ffffff; margin-bottom: 0;">
+        <h1 style="margin: 0; font-size: 42px; font-family: 'Arial', sans-serif; color: white; text-align: left; font-weight: bold; letter-spacing: 2px;">Hitaishi</h1>
+        <p style="margin: 5px 0 20px; font-size: 20px; font-family: 'Georgia', serif; color: white; text-align: left;">Find trusted services and professionals</p>
+    
+        <div style="position: absolute; top: 30px; right: 50px; display: flex; gap: 20px;">
+            <a href="#Home" style="text-decoration: none; color: white; font-size: 18px; padding: 10px 20px; background-color: rgba(0, 0, 0, 0.3); border-radius: 5px; font-family: 'Arial', sans-serif; transition: background-color 0.3s;">
+                Home
+            </a>
+            <a href="Services.html" style="text-decoration: none; color: white; font-size: 18px; padding: 10px 20px; background-color: rgba(0, 0, 0, 0.3); border-radius: 5px; font-family: 'Arial', sans-serif; transition: background-color 0.3s;">
+                Services
+            </a>
+            
+            <a href="ListBusiness.html" style="text-decoration: none; color: white; font-size: 18px; padding: 10px 20px; background-color: rgba(0, 0, 0, 0.3); border-radius: 5px; font-family: 'Arial', sans-serif; transition: background-color 0.3s;">
+                List your Business
+            </a>
+            <a href="postadd.html" style="text-decoration: none; color: white; font-size: 18px; padding: 10px 20px; background-color: rgba(0, 0, 0, 0.3); border-radius: 5px; font-family: 'Arial', sans-serif; transition: background-color 0.3s;">
+                Post a free add
+            </a>
+            <a href="SignIn.html" style="text-decoration: none; color: white; font-size: 18px; padding: 10px 20px; background-color: rgba(0, 0, 0, 0.3); border-radius: 5px; font-family: 'Arial', sans-serif; transition: background-color 0.3s;">
+                SignIn
+            </a>
+        </div>
+    </header>
+    
+    <!-- Search Section -->
+    <section class="search-section" style="background-image: url('https://images.rawpixel.com/image_800/czNmcy1wcml2YXRlL3Jhd3BpeGVsX2ltYWdlcy93ZWJzaXRlX2NvbnRlbnQvbHIvZnJ1cF9pbl93b29kcy1pbWFnZS1reWJjZjU1Ni5qcGc.jpg'); background-size: cover; background-position: center; padding: 50px 0; height: 350px; display: flex; justify-content: center; align-items: center; color: white; position: relative; z-index: 1; margin-top: -3px;">
+    
+        <!-- Search Bar Container -->
+        <div style="display: flex; width: 90%; max-width: 1200px; background-color: rgba(0, 0, 0, 0.5); padding: 15px; border-radius: 5px; align-items: center; justify-content: space-between; z-index: 2;">
+            
+            <!-- Left Part: Country Dropdown -->
+            <div style="flex: 1; padding: 10px;">
+                <select id="countrySelect" style="width: 100%; padding: 10px; border-radius: 5px; font-size: 1rem; border: none; color: #333;">
+                    <option value="India">India</option>
+                    <option value="Canada">Canada</option>
+                    <option value="Japan">Japan</option>
+                    <option value="France">France</option>
+                    <option value="South Korea">South Korea</option>
+                    <option value="europe">Europe</option>
+                    <option value="Spain">Spain</option>
+                    <option value="Italy">Italy</option>
+                    <option value="Switzerland">Switzerland</option>
+                </select>
+            </div>
+    
+            <!-- Middle Part: Location Input -->
+            <div style="flex: 2; padding: 10px;">
+                <input type="text" id="locationInput" placeholder="Enter Location" style="width: 100%; padding: 10px; border-radius: 5px; font-size: 1rem; border: none; color: #333;">
+            </div>
+    
+            <!-- Right Part: Service Input -->
+            <div style="flex: 2; padding:12px;">
+                <input type="text" id="serviceInput" placeholder="Enter Service" style="width: 100%; padding: 10px; border-radius: 5px; font-size: 1rem; border: none; color: #333;">
+            </div>
+    
+            <!-- Search Button -->
+            <div style="padding: 10px;">
+                <button onclick="searchService()" style="padding: 10px 20px; background-color: #007BFF; color: white; font-size: 1rem; border: none; border-radius: 5px; cursor: pointer; transition: background-color 0.3s;">
+                    Search Service
+                </button>
+            </div>
+        </div>
+    
+        <!-- Optional background image (with overlay effect) -->
+        <div style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background-image: url('https://img.freepik.com/free-vector/map-location-pin-background_23-2148489733.jpg'); background-size: cover; background-position: center; opacity: 0.3; z-index: 1;"></div>
+    
+        <script>
+        // Function to handle the service search
+        function searchService() {
+            let country = document.getElementById("countrySelect").value;
+            let location = document.getElementById("locationInput").value;
+            let service = document.getElementById("serviceInput").value;
+    
+            // Log the search query (You can replace this with an API call)
+            console.log("Searching for Service:", service, "in", location, "in", country);
+        }
+        </script>
+    
+    </section>
+    
+    
+     <!-- Main Content -->
+     <div style="display: flex; justify-content: space-between; padding: 20px; overflow-x: auto; white-space: nowrap; width: 100%; scroll-behavior: smooth; scrollbar-width: none; -ms-overflow-style: none; box-sizing: border-box;">
+        <!-- Community Section -->
+        <section id="community" style="background-color: rgba(255, 255, 255, 0.3); margin: 20px; padding: 30px; border-radius: 15px; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); width: 300px; display: inline-block; backdrop-filter: blur(10px); border: 2px solid rgba(255, 255, 255, 0.5); transition: transform 0.3s ease, box-shadow 0.3s ease; background: linear-gradient(135deg, #ff9a8b, #ff6a00);">
+            <h2 style="color: white; font-size: 2em;">Community</h2>
+            <p style="color: white;">Find local events, gatherings, and news.<br> Connect with neighbors & local organizations!</p>
+            <select style="width: 100%; padding: 12px; margin-top: 10px; font-size: 1.1em; border-radius: 5px; border: 1px solid #ccc; background-color: #fff;">
+                <option>Search for service</option>
+                <option>Community Events</option>
+                <option>Local News</option>
+                <option>Volunteer Opportunities</option>
+                <option>Activities</option>
+                <option>Artists</option>
+            </select>
+        </section>
+    
+        <!-- Housing Section -->
+        <section id="housing" style="background-color: rgba(255, 255, 255, 0.3); margin: 20px; padding: 30px; border-radius: 15px; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); width: 300px; display: inline-block; backdrop-filter: blur(10px); border: 2px solid rgba(255, 255, 255, 0.5); background: linear-gradient(135deg, #87cefa, #00bfff);">
+            <h2 style="color: white; font-size: 2em;">Housing</h2>
+            <p style="color: white;">Browse available properties for rent or sale,<br> or post a listing of your own!</p>
+            <select style="width: 100%; padding: 12px; margin-top: 10px; font-size: 1.1em; border-radius: 5px; border: 1px solid #ccc; background-color: #fff;">
+                <option>Search for service</option>
+                <option>Apartments for Rent</option>
+                <option>Houses for Sale</option>
+                <option>Roommates Needed</option>
+                <option>Vacation rental</option>
+                <option>Housing swap</option>
+            </select>
+        </section>
+    
+        <!-- Services Section -->
+        <section id="services" style="background-color: rgba(255, 255, 255, 0.3); margin: 20px; padding: 30px; border-radius: 15px; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); width: 300px; display: inline-block; backdrop-filter: blur(10px); border: 2px solid rgba(255, 255, 255, 0.5); background: linear-gradient(135deg, #ffb6c1, #ff69b4);">
+            <h2 style="color: white; font-size: 2em;">Services</h2>
+            <p style="color: white;">Looking for a plumber, tutor, or other services? <br>Find local professionals here.</p>
+            <select style="width: 100%; padding: 12px; margin-top: 10px; font-size: 1.1em; border-radius: 5px; border: 1px solid #ccc; background-color: #fff;">
+                <option>Search for service</option>
+                <option>Tutoring</option>
+                <option>Plumbing</option>
+                <option>Cleaning Services</option>
+            </select>
+        </section>
+    
+        <!-- Discussion Forums Section -->
+        <section id="discussion-forums" style="background-color: rgba(255, 255, 255, 0.3); margin: 20px; padding: 30px; border-radius: 15px; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); width: 300px; display: inline-block; backdrop-filter: blur(10px); border: 2px solid rgba(255, 255, 255, 0.5); background: linear-gradient(135deg, #ffcccb, #f4a261);">
+            <h2 style="color: white; font-size: 2em;">Discussion Forums</h2>
+            <p style="color: white;">Join discussions on various topics or<br> start a new conversation!</p>
+            <select style="width: 100%; padding: 12px; margin-top: 10px; font-size: 1.1em; border-radius: 5px; border: 1px solid #ccc; background-color: #fff;">
+                <option>Search for service</option>
+                <option>Local Issues</option>
+                <option>Event Planning</option>
+                <option>Recommendations</option>
+                <option>Automative</option>
+                <option>Housing</option>
+            </select>
+        </section>
+    
+        <!-- For Sale Section -->
+        <section id="for-sale" style="background-color: rgba(255, 255, 255, 0.3); margin: 20px; padding: 30px; border-radius: 15px; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); width: 300px; display: inline-block; backdrop-filter: blur(10px); border: 2px solid rgba(255, 255, 255, 0.5); background: linear-gradient(135deg, #f39c12, #e74c3c);">
+            <h2 style="color: white; font-size: 2em;">For Sale</h2>
+            <p style="color: white;">Buy or sell items locally! From furniture to electronics, <br>find what you're looking for.</p>
+            <select style="width: 100%; padding: 12px; margin-top: 10px; font-size: 1.1em; border-radius: 5px; border: 1px solid #ccc; background-color: #fff;">
+                <option>Search for service</option>
+                <option>Electronics</option>
+                <option>Furniture</option>
+                <option>Clothing</option>
+                <option>bikes</option>
+                <option>boats</option>
+                <option>cars</option>
+                <option>trucks</option>
+                <option>bike parts</option>
+            </select>
+        </section>
+    
+        <!-- Jobs Section -->
+        <section id="jobs" style="background-color: rgba(255, 255, 255, 0.3); margin: 20px; padding: 30px; border-radius: 15px; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); width: 300px; display: inline-block; backdrop-filter: blur(10px); border: 2px solid rgba(255, 255, 255, 0.5); background: linear-gradient(135deg, #8e44ad, #9b59b6);">
+            <h2 style="color: white; font-size: 2em;">Jobs</h2>
+            <p style="color: white;">Find local job opportunities or post an opening <br>for your business!</p>
+            <select style="width: 100%; padding: 12px; margin-top: 10px; font-size: 1.1em; border-radius: 5px; border: 1px solid #ccc; background-color: #fff;">
+                <option>Search for service</option>
+                <option>Full-Time</option>
+                <option>Part-Time</option>
+                <option>Freelance</option>
+                <option>Customer service</option>
+                <option>Admin</option>
+                <option>BioTech</option>
+                <option>Architech</option>
+            </select>
+        </section>
+    </div>
+    
+   
+    <section>
+        <div style="display: flex; justify-content: center; align-items: center; padding: 30px; background-color:white; gap:82px; flex-direction: column; position: relative; text-align: center;height: 300px;">
+            <div style="display: flex; justify-content: center; gap: 40px; margin-bottom: 10px;">
+                <div>
+                    <p style="font-size: 22px; font-weight:bold; color: black; margin: 0;">10M+ <br><p style="font-size: 14px;font-weight: normal;color:gray">Users</p></p>
+                </div>
+                <div>
+                    <p style="font-size:22px; font-weight:bold; color: black; margin: 0;">30K+<br> <p style="font-size: 14px;font-weight: normal;color:gray">Paying Customers</p></p>
+                </div>
+                <div>
+                    <p style="font-size:22px; font-weight:bolder; color: black; margin: 0;">200K+<br><p style="font-size: 14px;font-weight: normal;color:gray"> Active Customers</p></p>
+                </div>
+            </div>
+            <div style="display: flex; justify-content: center; align-items: center; gap: 32px; flex-wrap: wrap;">
+    
+                <!-- Education and Training -->
+                <div style="text-align: center;">
+                    <img src="https://cdn-icons-png.flaticon.com/128/1478/1478956.png" alt="education and Training" title="Explore Our Presence in India" style="width: 60px; height: 60px; margin: 0 20px; transition: transform 0.3s ease; cursor: pointer;" onmouseover="this.style.transform='scale(1.1)'" onmouseout="this.style.transform='scale(1)'"/>
+                    <p style="font-size: 14px; color: #333;">Education & Training</p>
+                </div>
+    
+                <!-- Properties and Rents -->
+                <div style="text-align: center;">
+                    <img src="https://cdn-icons-png.flaticon.com/128/1441/1441371.png" alt="Properties and rents" title="" style="width: 60px; height: 60px; margin: 0 20px; transition: transform 0.3s ease; cursor: pointer;" onmouseover="this.style.transform='scale(1.1)'" onmouseout="this.style.transform='scale(1)'"/>
+                    <p style="font-size: 14px; color: #333;">Properties & Rents</p>
+                </div>
+    
+                <!-- Professional Services -->
+                <div style="text-align: center;">
+                    <img src="https://cdn-icons-png.flaticon.com/128/7928/7928677.png" alt="Proffesional Services" title="Explore Our Presence in India" style="width: 60px; height: 60px; margin: 0 20px; transition: transform 0.3s ease; cursor: pointer;" onmouseover="this.style.transform='scale(1.1)'" onmouseout="this.style.transform='scale(1)'"/>
+                    <p style="font-size: 14px; color: #333;">Professional Services</p>
+                </div>
+    
+                <!-- Travel and Transport -->
+                <div style="text-align: center;">
+                    <img src="https://cdn-icons-png.flaticon.com/128/995/995260.png" alt="Travel and transport" title="" style="width: 60px; height: 60px; margin: 0 20px; transition: transform 0.3s ease; cursor: pointer;" onmouseover="this.style.transform='scale(1.1)'" onmouseout="this.style.transform='scale(1)'"/>
+                    <p style="font-size: 14px; color: #333;">Travel & Transport</p>
+                </div>
+    
+                <!-- Health and Wellness -->
+                <div style="text-align: center;">
+                    <img src="https://cdn-icons-png.flaticon.com/128/10605/10605926.png" alt="Health and wellness" title="" style="width: 60px; height: 60px; margin: 0 20px; transition: transform 0.3s ease; cursor: pointer;" onmouseover="this.style.transform='scale(1.1)'" onmouseout="this.style.transform='scale(1)'"/>
+                    <p style="font-size: 14px; color: #333;">Health & Wellness</p>
+                </div>
+    
+                <!-- Events -->
+                <div style="text-align: center;">
+                    <img src="https://cdn-icons-png.flaticon.com/128/3269/3269019.png" alt="Events" title="" style="width: 60px; height: 60px; margin: 0 20px; transition: transform 0.3s ease; cursor: pointer;" onmouseover="this.style.transform='scale(1.1)'" onmouseout="this.style.transform='scale(1)'"/>
+                    <p style="font-size: 14px; color: #333;">Events</p>
+                </div>
+    
+                <!-- India Map -->
+                <div style="text-align: center;">
+                    <img src="https://cdn-icons-png.flaticon.com/128/3590/3590783.png" alt="India Map" title="Home and office" style="width: 60px; height: 60px; margin: 0 20px; transition: transform 0.3s ease; cursor: pointer;" onmouseover="this.style.transform='scale(1.1)'" onmouseout="this.style.transform='scale(1)'"/>
+                    <p style="font-size: 14px; color: #333;">Home&Office</p>
+                </div>
+    
+                <!-- Shopping -->
+                <div style="text-align: center;">
+                    <img src="https://cdn-icons-png.flaticon.com/128/8863/8863863.png" alt="Shopping" title="" style="width: 60px; height: 60px; margin: 0 20px; transition: transform 0.3s ease; cursor: pointer;" onmouseover="this.style.transform='scale(1.1)'" onmouseout="this.style.transform='scale(1)'"/>
+                    <p style="font-size: 14px; color: #333;">Shopping</p>
+                </div>
+    
+                <!-- Placement and Jobs -->
+                <div style="text-align: center;">
+                    <img src="https://cdn-icons-png.flaticon.com/128/1589/1589592.png" alt="placement and job" title="" style="width: 60px; height: 60px; margin: 0 20px; transition: transform 0.3s ease; cursor: pointer;" onmouseover="this.style.transform='scale(1.1)'" onmouseout="this.style.transform='scale(1)'"/>
+                    <p style="font-size: 14px; color: #333;">Placement & Jobs</p>
+                </div>
+    
+            </div>
+            <a href="#" style="text-decoration: none; font-size: 16px; color: #007BFF; font-weight: bold; display: block; margin-top: 10px;">Learn More About Our Global Impact</a>
+        </div>
+    </section><hr><br><br>
+    
+    
+    <body style="margin: 0; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
+
+        <!-- Education and Training Section -->
+        <h2 style="text-align: center; font-size: 28px; color: #333; margin: 20px 0; font-family: 'Arial', sans-serif;">Education and Training</h2> 
+        <div id="scroll-container" style="overflow: hidden; width: 100%; position: relative; display: flex; align-items: center;">
+            <button class="arrow-button left-arrow" onclick="scrollContent('left', 'scrolling-content-1')" style="position: absolute; top: 50%; transform: translateY(-50%); background-color: rgba(0, 0, 0, 0.4); color: white; padding: 12px; font-size: 24px; border: none; cursor: pointer; z-index: 1; left: 0; border-radius: 5px;">&#8592;</button>
+    
+            <div id="scrolling-content-1" style="display: flex; transition: transform 0.3s ease-in-out; white-space: nowrap;">
+                <!-- Education Item 1 -->
+                <div class="item" style="display: inline-block; padding: 15px; margin-right: 20px; background-color: #ffffff; border-radius: 10px; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); width: 250px; text-align: center;">
+                    <img src="https://plus.unsplash.com/premium_photo-1682125773446-259ce64f9dd7?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8ZWR1Y2F0aW9ufGVufDB8fDB8fHww" alt="Education" style="width: 100%; height: 150px; object-fit: cover; border-radius: 8px;">
+                    <h3 style="font-size: 20px; color: #1E90FF;">Education</h3>
+                    <p style="font-size: 14px; color: #333;">Enhance your knowledge with <br>top-rated educational programs.</p>
+                    <button onclick="alert('Request a quote for Education!')" style="padding: 8px 16px; border: none; border-radius: 5px; margin-top: 10px; background-color: #1E90FF; color: white; cursor: pointer;">Get Quote</button>
+                </div>
+                <div class="item" style="display: inline-block; padding: 15px; margin-right: 20px; background-color: #ffffff; border-radius: 10px; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); width: 250px; text-align: center;">
+                    <img src="https://media.istockphoto.com/id/1353769234/photo/training-and-skill-development-concept-with-icons-of-online-course-conference-seminar-webinar.jpg?s=612x612&w=0&k=20&c=2YJG1My6Lu1T1FnzIPbimRNORcSbSuz6A8zb7HKNpx4=" alt="Training" style="width: 100%; height: 150px; object-fit: cover; border-radius: 8px;">
+                    <h3 style="font-size: 20px; color: #28A745;">Training</h3>
+                    <p style="font-size: 14px; color: #333;">Get hands-on training to master <br>new skills and boost your career.</p>
+                    <button onclick="alert('Request a quote for Training!')" style="padding: 8px 16px; border: none; border-radius: 5px; margin-top: 10px; background-color: #28A745; color: white; cursor: pointer;">Get Quote</button>
+                  </div>
+            
+                  <!-- Item 3: Coaching -->
+                  <div class="item" style="display: inline-block; padding: 15px; margin-right: 20px; background-color: #ffffff; border-radius: 10px; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); width: 250px; text-align: center;">
+                    <img src="https://mentoringgroup.com/wp-content/uploads/2023/12/what-is-coaching.jpg" alt="Coaching" style="width: 100%; height: 150px; object-fit: cover; border-radius: 8px;">
+                    <h3 style="font-size: 20px; color: #17A2B8;">Coaching</h3>
+                    <p style="font-size: 14px; color: #333;">Personal coaching to help<br> you achieve your goals.</p>
+                    <button onclick="alert('Request a quote for Coaching!')" style="padding: 8px 16px; border: none; border-radius: 5px; margin-top: 10px; background-color: #17A2B8; color: white; cursor: pointer;">Get Quote</button>
+                  </div>
+            
+                  <!-- Item 4: Learning -->
+                  <div class="item" style="display: inline-block; padding: 15px; margin-right: 20px; background-color: #ffffff; border-radius: 10px; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); width: 250px; text-align: center;">
+                    <img src="https://img.freepik.com/free-vector/lovely-education-concept-with-flat-design_23-2147914477.jpg?semt=ais_hybrid" alt="Learning" style="width: 100%; height: 150px; object-fit: cover; border-radius: 8px;">
+                    <h3 style="font-size: 20px; color: #FFC107;">Learning</h3>
+                    <p style="font-size: 14px; color: #333;">Find the best learning materials<br> for any subject or skill.</p>
+                    <button onclick="alert('Request a quote for Learning!')" style="padding: 8px 16px; border: none; border-radius: 5px; margin-top: 10px; background-color: #FFC107; color: white; cursor: pointer;">Get Quote</button>
+                  </div>
+            
+                  <!-- Item 5: Mentoring -->
+                  <div class="item" style="display: inline-block; padding: 15px; margin-right: 20px; background-color: #ffffff; border-radius: 10px; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); width: 250px; text-align: center;">
+                    <img src="https://media.istockphoto.com/id/1447900634/photo/mature-businessman-mentoring-younger-colleague-working-on-laptop-at-desk.jpg?s=612x612&w=0&k=20&c=kztLjUgQOjhw3tQCfSTyMOOjPwSopG_fwdeMFcYn2Y8=" alt="Mentoring" style="width: 100%; height: 150px; object-fit: cover; border-radius: 8px;">
+                    <h3 style="font-size: 20px; color: #6610f2;">Mentoring</h3>
+                    <p style="font-size: 14px; color: #333;">Expert mentoring to guide your <br>personal and professional growth.</p>
+                    <button onclick="alert('Request a quote for Mentoring!')" style="padding: 8px 16px; border: none; border-radius: 5px; margin-top: 10px; background-color: #6610f2; color: white; cursor: pointer;">Get Quote</button>
+                  </div>
+             <!-- Item 6: Consulting -->
+             <div class="item" style="display: inline-block; padding: 15px; margin-right: 20px; background-color: #ffffff; border-radius: 10px; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); width: 250px; text-align: center;">
+                <img src="https://t4.ftcdn.net/jpg/03/89/39/17/360_F_389391783_ujJjCn2nGUdeDi2jUl97utjhIeEx7tqr.jpg" alt="Consulting" style="width: 100%; height: 150px; object-fit: cover; border-radius: 8px;">
+                <h3 style="font-size: 20px; color: #dc3545;">Consulting</h3>
+                <p style="font-size: 14px; color: #333;">Consulting services to help<br> you solve complex challenges.</p>
+                <button onclick="alert('Request a quote for Consulting!')" style="padding: 8px 16px; border: none; border-radius: 5px; margin-top: 10px; background-color: #dc3545; color: white; cursor: pointer;">Get Quote</button>
+              </div>
+                <!-- More items here ... -->
+            </div>
+
+
+    
+            <button class="arrow-button right-arrow" onclick="scrollContent('right', 'scrolling-content-1')" style="position: absolute; top: 50%; transform: translateY(-50%); background-color: rgba(0, 0, 0, 0.4); color: white; padding: 12px; font-size: 24px; border: none; cursor: pointer; z-index: 1; right: 0; border-radius: 5px;">&#8594;</button>
+        </div><br><br>
+    
+        <!-- Wealth and Health Section -->
+        <h2 style="text-align: center; font-size: 28px; color: #333; margin: 20px 0; font-family: 'Arial', sans-serif;">Wealth and Health</h2>
+        <div id="scroll-container" style="overflow: hidden; width: 100%; position: relative; display: flex; align-items: center;">
+            <button class="arrow-button left-arrow" onclick="scrollContent('left', 'scrolling-content-2')" style="position: absolute; top: 50%; transform: translateY(-50%); background-color: rgba(0, 0, 0, 0.4); color: white; padding: 12px; font-size: 24px; border: none; cursor: pointer; z-index: 1; left: 0; border-radius: 5px;">&#8592;</button>
+    
+            <div id="scrolling-content-2" style="display: flex; transition: transform 0.3s ease-in-out; white-space: nowrap;">
+                <!-- Item 1 for Wealth and Health -->
+                <div class="item" style="display: inline-block; padding: 15px; margin-right: 20px; background-color: #ffffff; border-radius: 10px; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); width: 250px; text-align: center;">
+                    <img src="https://media.istockphoto.com/id/547226992/photo/young-smiling-woman-warming-up-and-stretching-her-legs.jpg?s=612x612&w=0&k=20&c=FCMF3QJfx8wum26bexXBJYsH6LjvYwaI8Pe5eYy058U=" alt="Health and Wealth" style="width: 100%; height: 150px; object-fit: cover; border-radius: 8px;">
+                    <h3 style="font-size: 20px; color: #28A745;">Exercise</h3>
+                    <p style="font-size: 14px; color: #333;">Achieve financial stability and <br>personal health together.</p>
+                    <button onclick="alert('Request a quote for Wealth and Health!')" style="padding: 8px 16px; border: none; border-radius: 5px; margin-top: 10px; background-color: #28A745; color: white; cursor: pointer;">Get Quote</button>
+                </div>
+                <div class="item" style="display: inline-block; padding: 15px; margin-right: 20px; background-color: #ffffff; border-radius: 10px; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); width: 250px; text-align: center; font-family: 'Arial', sans-serif;">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSSti69YUhaOdqzletReE4mWTUBpgOdNhB9-Q&s" alt="Fitness Training" style="width: 100%; height: 150px; object-fit: cover; border-radius: 8px;">
+                    <h3 style="font-size: 20px; color: #dc3545;">Fitness Training</h3>
+                    <p style="font-size: 14px; color: #333;">Achieve your fitness goals with <br>personalized training sessions .</p>
+                    <button onclick="alert('Request Fitness Training!')" style="padding: 8px 16px; border: none; border-radius: 5px; margin-top: 10px; background-color: #dc3545; color: white; cursor: pointer;">Get Started</button>
+                </div>
+    
+                <!-- Item 2: Yoga Classes -->
+                <div class="item" style="display: inline-block; padding: 15px; margin-right: 20px; background-color: #ffffff; border-radius: 10px; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); width: 250px; text-align: center;">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLJ-jfUy75j0Pr4HfuBC630U6z8GMgw2EY1goSuQl0TFvYWCeZHTGpAZA_aI4b5Z3QjMs&usqp=CAU" alt="Yoga Classes" style="width: 100%; height: 150px; object-fit: cover; border-radius: 8px;">
+                    <h3 style="font-size: 20px; color: #28A745;">Yoga Classes</h3>
+                    <p style="font-size: 14px; color: #333;">Relax your mind&body with our expert-led<br> yoga sessions designed for all levels.</p>
+                    <button onclick="alert('Join Yoga Classes!')" style="padding: 8px 16px; border: none; border-radius: 5px; margin-top: 10px; background-color: #28A745; color: white; cursor: pointer;">Join Now</button>
+                </div>
+    
+                <!-- Item 3: Nutrition Counseling -->
+                <div class="item" style="display: inline-block; padding: 15px; margin-right: 20px; background-color: #ffffff; border-radius: 10px; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); width: 250px; text-align: center;">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRCFB3uePL27ZzgIPZYIUIA2i-yghUh31QbzchQJW5v6PHPAVV3X-sqXkO57DLhuU1Ys0c&usqp=CAU" alt="Nutrition Counseling" style="width: 100%; height: 150px; object-fit: cover; border-radius: 8px;">
+                    <h3 style="font-size: 20px; color: #007bff;">Nutrition Counseling</h3>
+                    <p style="font-size: 14px; color: #333;">Get expert advice on healthy eating and <br>nutrition to support your wellness journey.</p>
+                    <button onclick="alert('Request Nutrition Counseling!')" style="padding: 8px 16px; border: none; border-radius: 5px; margin-top: 10px; background-color: #007bff; color: white; cursor: pointer;">Get Advice</button>
+                </div>
+    
+                <!-- Item 4: Mental Health Therapy -->
+                <div class="item" style="display: inline-block; padding: 15px; margin-right: 20px; background-color: #ffffff; border-radius: 10px; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); width: 250px; text-align: center;">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRpd1ZKDExDc01X15Km8yNcZKpLSg7hVCfs32uAZyvcAGY2eTI8Cj0IKt8ws5VmW9plD5g&usqp=CAU" alt="Mental Health Therapy" style="width: 100%; height: 150px; object-fit: cover; border-radius: 8px;">
+                    <h3 style="font-size: 20px; color: #f39c12;">Mental Health Therapy</h3>
+                    <p style="font-size: 14px; color: #333;">Access professional therapy and <br>counseling services for mental well-being.</p>
+                    <button onclick="alert('Request Therapy Session!')" style="padding: 8px 16px; border: none; border-radius: 5px; margin-top: 10px; background-color: #f39c12; color: white; cursor: pointer;">Book a Session</button>
+                </div>
+    
+                <!-- Item 5: Weight Loss Program -->
+                <div class="item" style="display: inline-block; padding: 15px; margin-right: 20px; background-color: #ffffff; border-radius: 10px; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); width: 250px; text-align: center;">
+                    <img src="https://live.staticflickr.com/2758/4222532649_69f9853104_b.jpg" alt="Weight Loss Program" style="width: 100%; height: 150px; object-fit: cover; border-radius: 8px;">
+                    <h3 style="font-size: 20px; color: #6610f2;">Weight Loss Program</h3>
+                    <p style="font-size: 14px; color: #333;">Join our structured weight loss<br> program & achieve your health goals .</p>
+                    <button onclick="alert('Join Weight Loss Program!')" style="padding: 8px 16px; border: none; border-radius: 5px; margin-top: 10px; background-color: #6610f2; color: white; cursor: pointer;">Start Today</button>
+                </div>
+    
+                <!-- Item 6: Massage Therapy -->
+                <div class="item" style="display: inline-block; padding: 15px; margin-right: 20px; background-color: #ffffff; border-radius: 10px; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); width: 250px; text-align: center;">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRqME4ZsmBwwnSEXhjAAYK_tw1Gqg88yAc06g&s" alt="Massage Therapy" style="width: 100%; height: 150px; object-fit: cover; border-radius: 8px;">
+                    <h3 style="font-size: 20px; color: #e83e8c;">Massage Therapy</h3>
+                    <p style="font-size: 14px; color: #333;">Relax and rejuvenate with a therapeutic<br> massage tailored to your needs.</p>
+                    <button onclick="alert('Book a Massage Session!')" style="padding: 8px 16px; border: none; border-radius: 5px; margin-top: 10px; background-color: #e83e8c; color: white; cursor: pointer;">Book Now</button>
+                </div>
+                <!-- More items here ... -->
+            </div>
+
+
+
+    
+            <button class="arrow-button right-arrow" onclick="scrollContent('right', 'scrolling-content-2')" style="position: absolute; top: 50%; transform: translateY(-50%); background-color: rgba(0, 0, 0, 0.4); color: white; padding: 12px; font-size: 24px; border: none; cursor: pointer; z-index: 1; right: 0; border-radius: 5px;">&#8594;</button>
+        </div><br><br>
+    
+        <!-- Business Section -->
+        <h2 style="text-align: center; font-size: 28px; color: #333; margin: 20px 0; font-family: 'Arial', sans-serif;">Business Services</h2>
+        <div id="scroll-container" style="overflow: hidden; width: 100%; position: relative; display: flex; align-items: center;">
+            <button class="arrow-button left-arrow" onclick="scrollContent('left', 'scrolling-content-3')" style="position: absolute; top: 50%; transform: translateY(-50%); background-color: rgba(0, 0, 0, 0.4); color: white; padding: 12px; font-size: 24px; border: none; cursor: pointer; z-index: 1; left: 0; border-radius: 5px;">&#8592;</button>
+    
+            <div id="scrolling-content-3" style="display: flex; transition: transform 0.3s ease-in-out; white-space: nowrap;">
+                <!-- Business Item -->
+                <div class="item" style="display: inline-block; padding: 15px; margin-right: 20px; background-color: #ffffff; border-radius: 10px; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); width: 250px; text-align: center;">
+                    <img src="https://techchannel.news/wp-content/uploads/2020/10/DATA-privacy.jpg" alt="Business" style="width: 100%; height: 150px; object-fit: cover; border-radius: 8px;">
+                    <h3 style="font-size: 20px; color: #FF5733;">Virtual assistant</h3>
+                    <p style="font-size: 14px; color: #333;">Take your business to the next <br>level with tailored solutions.</p>
+                    <button onclick="alert('Request a quote for Business!')" style="padding: 8px 16px; border: none; border-radius: 5px; margin-top: 10px; background-color: #FF5733; color: white; cursor: pointer;">Get Quote</button>
+                </div>
+                <div class="item" style="display: inline-block; padding: 15px; margin-right: 20px; background-color: #ffffff; border-radius: 10px; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); width: 250px; text-align: center; font-family: 'Arial', sans-serif;">
+                    <img src="https://pix4free.org/assets/library/2021-06-16/originals/consulting.jpg" alt="Consulting" style="width: 100%; height: 150px; object-fit: cover; border-radius: 8px;">
+                    <h3 style="font-size: 20px; color: #dc3545;">Consulting</h3>
+                    <p style="font-size: 14px; color: #333;">Get expert advice and strategies<br> for your business growth.</p>
+                    <button onclick="alert('Request a quote for Consulting!')" style="padding: 8px 16px; border: none; border-radius: 5px; margin-top: 10px; background-color: #dc3545; color: white; cursor: pointer;">Get Quote</button>
+                </div>
+    
+                <!-- Item 2: Marketing -->
+                <div class="item" style="display: inline-block; padding: 15px; margin-right: 20px; background-color: #ffffff; border-radius: 10px; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); width: 250px; text-align: center;">
+                    <img src="https://evenbound.com/hubfs/shutterstock_2424450089.jpg" alt="Marketing" style="width: 100%; height: 150px; object-fit: cover; border-radius: 8px;">
+                    <h3 style="font-size: 20px; color: #28A745;">Marketing</h3>
+                    <p style="font-size: 14px; color: #333;">Boost your brand visibility and<br> reach with our marketing services.</p>
+                    <button onclick="alert('Request a quote for Marketing!')" style="padding: 8px 16px; border: none; border-radius: 5px; margin-top: 10px; background-color: #28A745; color: white; cursor: pointer;">Get Quote</button>
+                </div>
+    
+                <!-- Item 3: Web Development -->
+                <div class="item" style="display: inline-block; padding: 15px; margin-right: 20px; background-color: #ffffff; border-radius: 10px; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); width: 250px; text-align: center;">
+                    <img src="https://www.naukri.com/cloudgateway-fastforward/ff-content-services/v0/unauth/cms/photo?id=1ef70ae23479f496b8b7f9d6208eae814470ad500849e684f13ed4a0015a764a77742e0911831173cd7506bcef76862c28e46fd818390b704505bdf3acc69b8d9c5d85d3c35d9639b679862093b973de&postTypeId=c4eff10da33c562d3e88af8f60fcf6cecdf3e35370f49177&source=ff" alt="Web Development" style="width: 100%; height: 150px; object-fit: cover; border-radius: 8px;">
+                    <h3 style="font-size: 20px; color: #007bff;">Web Development</h3>
+                    <p style="font-size: 14px; color: #333;">Get a professionally designed website<br> to elevate your online presence.</p>
+                    <button onclick="alert('Request a quote for Web Development!')" style="padding: 8px 16px; border: none; border-radius: 5px; margin-top: 10px; background-color: #007bff; color: white; cursor: pointer;">Get Quote</button>
+                </div>
+    
+                <!-- Item 4: IT Support -->
+                <div class="item" style="display: inline-block; padding: 15px; margin-right: 20px; background-color: #ffffff; border-radius: 10px; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); width: 250px; text-align: center;">
+                    <img src="https://www.elitewa.com.au/assets/images/tech_product.jpg" alt="IT Support" style="width: 100%; height: 150px; object-fit: cover; border-radius: 8px;">
+                    <h3 style="font-size: 20px; color: #f39c12;">IT Support</h3>
+                    <p style="font-size: 14px; color: #333;">Reliable IT support services to<br> keep your systems running smoothly.</p>
+                    <button onclick="alert('Request a quote for IT Support!')" style="padding: 8px 16px; border: none; border-radius: 5px; margin-top: 10px; background-color: #f39c12; color: white; cursor: pointer;">Get Quote</button>
+                </div>
+    
+                <!-- Item 5: Financial Advisory -->
+                <div class="item" style="display: inline-block; padding: 15px; margin-right: 20px; background-color: #ffffff; border-radius: 10px; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); width: 250px; text-align: center;">
+                    <img src="https://www.picpedia.org/post-it-note/images/financial-advisor.jpg" alt="Financial Advisory" style="width: 100%; height: 150px; object-fit: cover; border-radius: 8px;">
+                    <h3 style="font-size: 20px; color: #6610f2;">Financial Advisory</h3>
+                    <p style="font-size: 14px; color: #333;">Expert financial advice to help you <br>manage and grow your business.</p>
+                    <button onclick="alert('Request a quote for Financial Advisory!')" style="padding: 8px 16px; border: none; border-radius: 5px; margin-top: 10px; background-color: #6610f2; color: white; cursor: pointer;">Get Quote</button>
+                </div>
+    
+                <!-- Item 6: Human Resources -->
+                <div class="item" style="display: inline-block; padding: 15px; margin-right: 20px; background-color: #ffffff; border-radius: 10px; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); width: 250px; text-align: center;">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQv3xmAYzZeOYLaWcvS0rlbZaDzbDiC_GU4ZQ&s" alt="Human Resources" style="width: 100%; height: 150px; object-fit: cover; border-radius: 8px;">
+                    <h3 style="font-size: 20px; color: #17a2b8;">Human Resources</h3>
+                    <p style="font-size: 14px; color: #333;">Optimize your workforce with our<br> human resources services.</p>
+                    <button onclick="alert('Request a quote for Human Resources!')" style="padding: 8px 16px; border: none; border-radius: 5px; margin-top: 10px; background-color: #17a2b8; color: white; cursor: pointer;">Get Quote</button>
+                </div>
+                <!-- More items here ... -->
+            </div>
+
+
+    
+            <button class="arrow-button right-arrow" onclick="scrollContent('right', 'scrolling-content-3')" style="position: absolute; top: 50%; transform: translateY(-50%); background-color: rgba(0, 0, 0, 0.4); color: white; padding: 12px; font-size: 24px; border: none; cursor: pointer; z-index: 1; right: 0; border-radius: 5px;">&#8594;</button>
+        </div><br><br>
+    
+        <!-- Home Section -->
+        <h2 style="text-align: center; font-size: 28px; color: #333; margin: 20px 0; font-family: 'Arial', sans-serif;">Home Services</h2>
+        <div id="scroll-container" style="overflow: hidden; width: 100%; position: relative; display: flex; align-items: center;">
+            <button class="arrow-button left-arrow" onclick="scrollContent('left', 'scrolling-content-4')" style="position: absolute; top: 50%; transform: translateY(-50%); background-color: rgba(0, 0, 0, 0.4); color: white; padding: 12px; font-size: 24px; border: none; cursor: pointer; z-index: 1; left: 0; border-radius: 5px;">&#8592;</button>
+    
+            <div id="scrolling-content-4" style="display: flex; transition: transform 0.3s ease-in-out; white-space: nowrap;">
+                <!-- Home Item -->
+                <div class="item" style="display: inline-block; padding: 15px; margin-right: 20px; background-color: #ffffff; border-radius: 10px; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); width: 250px; text-align: center;">
+                    <img src="https://media.licdn.com/dms/image/v2/D4E12AQFsybKK5xm_aw/article-cover_image-shrink_600_2000/article-cover_image-shrink_600_2000/0/1728019187487?e=2147483647&v=beta&t=B1uwtygWF5mEnp59OetWWyYSHGuBLHxpEH3XQZVuj7g" alt="Pest Control" style="width: 100%; height: 150px; object-fit: cover; border-radius: 8px;">
+                    <h3 style="font-size: 20px; color: #dc3545;">Pest Control</h3>
+                    <p style="font-size: 14px; color: #333;">Professional pest control services <br>to keep your home pest-free.</p>
+                    <button onclick="alert('Request a quote for Pest Control!')" style="padding: 8px 16px; border: none; border-radius: 5px; margin-top: 10px; background-color: #dc3545; color: white; cursor: pointer;">Get Quote</button>
+                </div>
+                
+                <div class="item" style="display: inline-block; padding: 15px; margin-right: 20px; background-color: #ffffff; border-radius: 10px; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); width: 250px; text-align: center;">
+                    <img src="https://us.123rf.com/450wm/tongpatong321/tongpatong3212103/tongpatong321210300066/165297506-engineer-repair-connector-the-fibers-on-splitter-tray-close-up-outside.jpg?ver=6" alt="Electrical Services" style="width: 100%; height: 150px; object-fit: cover; border-radius: 8px;">
+                    <h3 style="font-size: 20px; color: #28A745;">Electrical Services</h3>
+                    <p style="font-size: 14px; color: #333;">Reliable electrical repairs and <br>installations for your home or office.</p>
+                    <button onclick="alert('Request a quote for Electrical Services!')" style="padding: 8px 16px; border: none; border-radius: 5px; margin-top: 10px; background-color: #28A745; color: white; cursor: pointer;">Get Quote</button>
+                </div>
+        
+                <!-- Item 3: Handyman Services -->
+                <div class="item" style="display: inline-block; padding: 15px; margin-right: 20px; background-color: #ffffff; border-radius: 10px; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); width: 250px; text-align: center;">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSYc2-y7RxkIp2Zaj9qlQ-vdCISFXimKa5qmA&s" alt="Handyman Services" style="width: 100%; height: 150px; object-fit: cover; border-radius: 8px;">
+                    <h3 style="font-size: 20px; color: #17A2B8;">Handyman Services</h3>
+                    <p style="font-size: 14px; color: #333;">Get your small repairs and <br>installations handled with ease.</p>
+                    <button onclick="alert('Request a quote for Handyman Services!')" style="padding: 8px 16px; border: none; border-radius: 5px; margin-top: 10px; background-color: #17A2B8; color: white; cursor: pointer;">Get Quote</button>
+                </div>
+        
+                <!-- Item 4: House Cleaning -->
+                <div class="item" style="display: inline-block; padding: 15px; margin-right: 20px; background-color: #ffffff; border-radius: 10px; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); width: 250px; text-align: center;">
+                    <img src="https://cdn.prod.website-files.com/67169bb89b3cc9938e183a86/6728d7bdd2b66550dadcdc3f_6723a6713666a98e69bdcf04_aprtment-cleaning.jpeg" alt="House Cleaning" style="width: 100%; height: 150px; object-fit: cover; border-radius: 8px;">
+                    <h3 style="font-size: 20px; color: #FFC107;">House Cleaning</h3>
+                    <p style="font-size: 14px; color: #333;">Expert cleaning services to keep <br>your home spotless and fresh.</p>
+                    <button onclick="alert('Request a quote for House Cleaning!')" style="padding: 8px 16px; border: none; border-radius: 5px; margin-top: 10px; background-color: #FFC107; color: white; cursor: pointer;">Get Quote</button>
+                </div>
+        
+                <!-- Item 5: HVAC Services -->
+                <div class="item" style="display: inline-block; padding: 15px; margin-right: 20px; background-color: #ffffff; border-radius: 10px; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); width: 250px; text-align: center;">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR06M4G1E79nJsoQdUs6FKbzvebaXBmQdVgGDCpn73zcQ6tHFIs8a5sCKJe8aiNwxiqRao&usqp=CAU" alt="HVAC Services" style="width: 100%; height: 150px; object-fit: cover; border-radius: 8px;">
+                    <h3 style="font-size: 20px; color: #6610f2;">HVAC Services</h3>
+                    <p style="font-size: 14px; color: #333;">Keep your home comfortable with <br>professional heating and cooling services.</p>
+                    <button onclick="alert('Request a quote for HVAC Services!')" style="padding: 8px 16px; border: none; border-radius: 5px; margin-top: 10px; background-color: #6610f2; color: white; cursor: pointer;">Get Quote</button>
+                </div>
+        
+                <!-- Item 6: Pest Control -->
+                
+                <div class="item" style="display: inline-block; padding: 15px; margin-right: 20px; background-color: #ffffff; border-radius: 10px; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); width: 250px; text-align: center;">
+                    <img src="https://thumbs.dreamstime.com/b/kitchen-dining-area-stove-sink-49855930.jpg" alt="Home" style="width: 100%; height: 150px; object-fit: cover; border-radius: 8px;">
+                    <h3 style="font-size: 20px; color: #FFD700;">Home </h3>
+                    <p style="font-size: 14px; color: #333;">Create a comfortable and <br>stylish living space.</p>
+                    <button onclick="alert('Request a quote for Home!')" style="padding: 8px 16px; border: none; border-radius: 5px; margin-top: 10px; background-color: #FFD700; color: white; cursor: pointer;">Get Quote</button>
+                </div>
+                
+            </div>
+            <button class="arrow-button right-arrow" onclick="scrollContent('right', 'scrolling-content-4')" style="position: absolute; top: 50%; transform: translateY(-50%); background-color: rgba(0, 0, 0, 0.4); color: white; padding: 12px; font-size: 24px; border: none; cursor: pointer; z-index: 1; right: 0; border-radius: 5px;">&#8594;</button>
+                <!-- More items here ... -->
+            </div>
+    
+            
+        </div>
+    
+        <script>
+            let scrollIndex1 = 0;
+            let scrollIndex2 = 0;
+            let scrollIndex3 = 0;
+            let scrollIndex4 = 0;
+    
+            const content1 = document.getElementById('scrolling-content-1');
+            const content2 = document.getElementById('scrolling-content-2');
+            const content3 = document.getElementById('scrolling-content-3');
+            const content4 = document.getElementById('scrolling-content-4');
+    
+            const items1 = document.querySelectorAll('#scrolling-content-1 .item');
+            const items2 = document.querySelectorAll('#scrolling-content-2 .item');
+            const items3 = document.querySelectorAll('#scrolling-content-3 .item');
+            const items4 = document.querySelectorAll('#scrolling-content-4 .item');
+    
+            const itemWidth1 = items1[0].offsetWidth + 20;
+            const itemWidth2 = items2[0].offsetWidth + 20;
+            const itemWidth3 = items3[0].offsetWidth + 20;
+            const itemWidth4 = items4[0].offsetWidth + 20;
+    
+            function scrollContent(direction, contentId) {
+                let scrollIndex;
+                let content;
+                let items;
+                let itemWidth;
+    
+                if(contentId === 'scrolling-content-1') {
+                    scrollIndex = scrollIndex1;
+                    content = content1;
+                    items = items1;
+                    itemWidth = itemWidth1;
+                }
+                if(contentId === 'scrolling-content-2') {
+                    scrollIndex = scrollIndex2;
+                    content = content2;
+                    items = items2;
+                    itemWidth = itemWidth2;
+                }
+                if(contentId === 'scrolling-content-3') {
+                    scrollIndex = scrollIndex3;
+                    content = content3;
+                    items = items3;
+                    itemWidth = itemWidth3;
+                }
+                if(contentId === 'scrolling-content-4') {
+                    scrollIndex = scrollIndex4;
+                    content = content4;
+                    items = items4;
+                    itemWidth = itemWidth4;
+                }
+    
+                if (direction === 'left') {
+                    scrollIndex--;
+                } else {
+                    scrollIndex++;
+                }
+    
+                // Prevent out of bounds scrolling
+                if (scrollIndex < 0) scrollIndex = 0;
+                if (scrollIndex > items.length - 3) scrollIndex = items.length - 3;
+    
+                content.style.transform = `translateX(-${scrollIndex * itemWidth}px)`;
+    
+                // Update the scrollIndex
+                if(contentId === 'scrolling-content-1') scrollIndex1 = scrollIndex;
+                if(contentId === 'scrolling-content-2') scrollIndex2 = scrollIndex;
+                if(contentId === 'scrolling-content-3') scrollIndex3 = scrollIndex;
+                if(contentId === 'scrolling-content-4') scrollIndex4 = scrollIndex;
+            }
+        </script>
+    </body>
+   
+<br><br>
+
+
+
+    <hr>
+    <section style="padding: 20px 10%; background-color: #fff; text-align: center; height: 300px;">
+        <div style="height: 100px;">
+            <h1>Study Abroad</h1>
+        </div>
+        <div style="display: flex; justify-content: center; display: flex; gap: 40px; width: 100%;">
+    
+            <!-- Canada -->
+            <div style="width: 120px; text-align: center;">
+                <img src="https://static.vecteezy.com/system/resources/thumbnails/029/749/351/small_2x/canada-flag-button-emblem-of-canada-flag-symbol-colors-and-proportion-correctly-vector.jpg" alt="Canada" style="width: 120px; height: 120px; border-radius: 50%; object-fit: cover; margin-bottom: 10px; transition: transform 0.3s ease; cursor: pointer;">
+                <h3 style="font-size: 16px; color: #333; margin: 0;">Canada</h3>
+            </div>
+    
+            <!-- Japan -->
+            <div style="width: 120px; text-align: center;">
+                <img src="https://media.istockphoto.com/id/1347140401/vector/japan-3d-rounded-country-flag-button-icon.jpg?s=612x612&w=0&k=20&c=ooX0qj-rXplSV8VEDRkGb1lvoExgFka_EPv8Chpf8Jw=" alt="Japan" style="width: 120px; height: 120px; border-radius: 50%; object-fit: cover; margin-bottom: 10px; transition: transform 0.3s ease; cursor: pointer;">
+                <h3 style="font-size: 16px; color: #333; margin: 0;">Japan</h3>
+            </div>
+    
+            <!-- France -->
+            <div style="width: 120px; text-align: center;">
+                <img src="https://e7.pngegg.com/pngimages/540/908/png-clipart-flag-of-france-flag-of-france-france-flag-france-thumbnail.png" alt="France" style="width: 120px; height: 120px; border-radius: 50%; object-fit: cover; margin-bottom: 10px; transition: transform 0.3s ease; cursor: pointer;">
+                <h3 style="font-size: 16px; color: #333; margin: 0;">France</h3>
+            </div>
+    
+            <!-- South Korea -->
+            <div style="width: 120px; text-align: center;">
+                <img src="https://img.freepik.com/premium-vector/south-korea-3d-rounded-flag-button_97173-244.jpg" alt="South Korea" style="width: 120px; height: 120px; border-radius: 50%; object-fit: cover; margin-bottom: 10px; transition: transform 0.3s ease; cursor: pointer;">
+                <h3 style="font-size: 16px; color: #333; margin: 0;">South Korea</h3>
+            </div>
+    
+            <!-- India -->
+            <div style="width: 120px; text-align: center;">
+                <img src="https://t4.ftcdn.net/jpg/08/86/41/25/360_F_886412548_8QMjcD7BpAfHNYO42b53EFbvxJokIHQU.jpg" alt="USA" style="width: 120px; height: 120px; border-radius: 50%; object-fit: cover; margin-bottom: 10px; transition: transform 0.3s ease; cursor: pointer;">
+                <h3 style="font-size: 16px; color: #333; margin: 0;">USA</h3>
+            </div>
+    
+            <!-- Spain -->
+            <div style="width: 120px; text-align: center;">
+                <img src="https://banner2.cleanpng.com/20180410/dqe/avf4j6lbs.webp" alt="Spain" style="width: 120px; height: 120px; border-radius: 50%; object-fit: cover; margin-bottom: 10px; transition: transform 0.3s ease; cursor: pointer;">
+                <h3 style="font-size: 16px; color: #333; margin: 0;">Spain</h3>
+            </div>
+    
+            <!-- Italy -->
+            <div style="width: 120px; text-align: center;">
+                <img src="https://png.pngtree.com/png-vector/20240111/ourmid/pngtree-italy-round-flag-glossy-glass-effect-vector-transparent-background-png-image_11432528.png" alt="Italy" style="width: 120px; height: 120px; border-radius: 50%; object-fit: cover; margin-bottom: 10px; transition: transform 0.3s ease; cursor: pointer;">
+                <h3 style="font-size: 16px; color: #333; margin: 0;">Italy</h3>
+            </div>
+    
+            <!-- Switzerland -->
+            <div style="width: 120px; text-align: center;">
+                <img src="https://media.istockphoto.com/id/175600066/vector/badge-british-flag.jpg?s=612x612&w=0&k=20&c=C4C5TG9uWaU6vExJ_uyusUhHlmKe8GmVSUWfXBL9Zag=" alt="Switzerland" style="width: 120px; height: 120px; border-radius: 50%; object-fit: cover; margin-bottom: 10px; transition: transform 0.3s ease; cursor: pointer;">
+                <h3 style="font-size: 16px; color: #333; margin: 0;">UK</h3>
+            </div>
+    
+        </div>
+    </section><hr>
+    
+    <style>
+        /* Hover effect */
+        div img:hover {
+            transform: scale(1.1); /* Slight zoom on hover */
+        }
+    </style>
+    
+    
+       
+    
+    <section style="padding: 40px 10%; background-color: #f4f4f4;">
+        <h2 style="text-align: center; font-size: 28px; color: #333; margin-bottom: 30px;">Latest Blogs</h2>
+        <div style="display: flex; justify-content: space-between; gap: 30px;">
+    
+            <!-- Blog 1 -->
+            <div style="background-color: #fff; border-radius: 8px; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); overflow: hidden; width: 23%;">
+                <img src="https://images.pexels.com/photos/6683580/pexels-photo-6683580.jpeg" alt="Education and Training" style="width: 100%; height: 200px; object-fit: cover;">
+                <div style="padding: 20px;">
+                    <h3 style="font-size: 20px; color: #333; margin-bottom: 10px;">The Importance of Education and Training</h3>
+                    <p style="font-size: 14px; color: #777; margin-bottom: 15px;">Education and training are essential for personal and professional growth. Whether it's for career advancement or personal enrichment, acquiring new skills and knowledge is key to success.</p>
+                    <a href="#" style="font-size: 14px; color: #007bff; text-decoration: none;">Read More</a>
+                </div>
+            </div>
+            
+    
+          <!-- Health and Wellness Blog -->
+            <div style="background-color: #fff; border-radius: 8px; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); overflow: hidden; width: 23%;">
+                <img src="https://img.freepik.com/free-photo/mother-daughter-doing-yoga-side-view_23-2149854601.jpg" alt="Health and Wellness" style="width: 100%; height: 200px; object-fit: cover;">
+                 <div style="padding: 20px;">
+                      <h3 style="font-size: 20px; color: #333; margin-bottom: 10px;">Achieving Optimal Health and Wellness</h3>
+                         <p style="font-size: 14px; color: #777; margin-bottom: 15px;">Health and wellness go hand in hand to create a balanced life. A proper diet, regular exercise, and mindfulness practices can help you maintain both physical and mental well-being.</p>
+                         <a href="#" style="font-size: 14px; color: #007bff; text-decoration: none;">Read More</a>
+                </div>
+            </div>
+
+<!-- Home Sales, Flats, and Services Blog -->
+                <div style="background-color: #fff; border-radius: 8px; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); overflow: hidden; width: 23%;">
+                    <img src="https://lid.zoocdn.com/645/430/0570bf911d88e2a33d5ad047723f500e94685fad.jpg" alt="Home Sales and Flats" style="width: 100%; height: 200px; object-fit: cover;">
+                    <div style="padding: 20px;">
+                        <h3 style="font-size: 20px; color: #333; margin-bottom: 10px;">Find Your Dream Home: Flats and Real Estate Services</h3>
+                        <p style="font-size: 14px; color: #777; margin-bottom: 15px;">Whether you're buying or renting, finding the right flat or home is a big decision. Explore expert services that help you navigate the housing market and secure your ideal property.</p>
+                        <a href="#" style="font-size: 14px; color: #007bff; text-decoration: none;">Read More</a>
+                    </div>
+                </div>
+
+<!-- Another Blog on Home Services -->
+                <div style="background-color: #fff; border-radius: 8px; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); overflow: hidden; width: 23%;">
+                    <img src="https://img.freepik.com/premium-photo/disinfector-means-protection-disinfection-premises-from-viruses-infections_151013-41326.jpg?semt=ais_hybrid" alt="Home Services" style="width: 100%; height: 200px; object-fit: cover;">
+                    <div style="padding: 20px;">
+                        <h3 style="font-size: 20px; color: #333; margin-bottom: 10px;">Home Services for Your Everyday Needs</h3>
+                        <p style="font-size: 14px; color: #777; margin-bottom: 15px;">From plumbing to electrical repairs, home services ensure that your living space remains comfortable and safe. Learn how these essential services can keep your home in perfect shape.</p>
+                        <a href="#" style="font-size: 14px; color: #007bff; text-decoration: none;">Read More</a>
+                    </div>
+                </div>
+
+    
+        </div>
+    </section>
+    
+    <!-- Customer Reviews -->
+    <section class="reviews-section" style="padding: 50px 20px; background-color: #f9f9f9;">
+        <h2 style="text-align: center; font-size: 36px; margin-bottom: 40px; color: #333;">Customer Reviews</h2>
+        <div class="reviews-container" style="display: flex; flex-wrap: wrap; justify-content: center; gap: 20px;">
+            
+            <!-- Review 1 -->
+            <div class="review-card" style="background-color: #fff; border-radius: 8px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); padding: 20px; width: 250px; text-align: center;">
+                <img src="https://r2-us-west.photoai.com/1706671661-c31d900404faabd0c6972633011a4326-1.jpg" alt="John Doe" style="border-radius: 50%; width: 100px; height: 100px; object-fit: cover; margin-bottom: 15px;">
+                <h3 style="font-size: 20px; margin-bottom: 10px;">Benjamin King</h3>
+                <p style="font-size: 16px; color: #555;">Excellent service! Highly recommended for anyone looking for reliable help.</p>
+                <div style="color: gold; font-size: 18px;">
+                    ★★★★☆
+                </div>
+            </div>
+    
+            <!-- Review 2 -->
+            <div class="review-card" style="background-color: #fff; border-radius: 8px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); padding: 20px; width: 250px; text-align: center;">
+                <img src="https://st4.depositphotos.com/13193658/22076/i/450/depositphotos_220768946-stock-photo-focused-african-american-businessman-working.jpg" alt="Jane Smith" style="border-radius: 50%; width: 100px; height: 100px; object-fit: cover; margin-bottom: 15px;">
+                <h3 style="font-size: 20px; margin-bottom: 10px;">Henry Garcia</h3>
+                <p style="font-size: 16px; color: #555;">The team was professional and efficient. Great experience!</p>
+                <div style="color: gold; font-size: 18px;">
+                    ★★★★★
+                </div>
+            </div>
+    
+            <!-- Review 3 -->
+            <div class="review-card" style="background-color: #fff; border-radius: 8px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); padding: 20px; width: 250px; text-align: center;">
+                <img src="https://media.istockphoto.com/id/1292475584/photo/headshot-portrait-of-smiling-biracial-man-posing.jpg?s=612x612&w=0&k=20&c=C0VEM0BwVlbjn-W4avWRTD6byW8oOrHcNwYTAt6ob-E=" alt="Samuel Lee" style="border-radius: 50%; width: 100px; height: 100px; object-fit: cover; margin-bottom: 15px;">
+                <h3 style="font-size: 20px; margin-bottom: 10px;">Charlotte Scott</h3>
+                <p style="font-size: 16px; color: #555;">Fast and affordable service. I'm a repeat customer.</p>
+                <div style="color: gold; font-size: 18px;">
+                    ★★★★☆
+                </div>
+            </div>
+    
+            <!-- Review 4 -->
+            <div class="review-card" style="background-color: #fff; border-radius: 8px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); padding: 20px; width: 250px; text-align: center;">
+                <img src="https://media.istockphoto.com/id/1309328823/photo/headshot-portrait-of-smiling-male-employee-in-office.jpg?s=612x612&w=0&k=20&c=kPvoBm6qCYzQXMAn9JUtqLREXe9-PlZyMl9i-ibaVuY=" alt="Alice Brown" style="border-radius: 50%; width: 100px; height: 100px; object-fit: cover; margin-bottom: 15px;">
+                <h3 style="font-size: 20px; margin-bottom: 10px;">Alice Brown</h3>
+                <p style="font-size: 16px; color: #555;">Amazing experience! Very satisfied with the service.</p>
+                <div style="color: gold; font-size: 18px;">
+                    ★★★★★
+                </div>
+            </div>
+    
+            <!-- Review 5 
+            <div class="review-card" style="background-color: #fff; border-radius: 8px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); padding: 20px; width: 250px; text-align: center;">
+                <img src="https://via.placeholder.com/100" alt="David Miller" style="border-radius: 50%; width: 100px; height: 100px; object-fit: cover; margin-bottom: 15px;">
+                <h3 style="font-size: 20px; margin-bottom: 10px;">David Miller</h3>
+                <p style="font-size: 16px; color: #555;">Great customer support and quick resolution. Highly recommend!</p>
+                <div style="color: gold; font-size: 18px;">
+                    ★★★★☆
+                </div>
+            </div>-->
+    
+        </div>
+    </section>
+    
+    <!-- Contact Us Button -->
+<button onclick="toggleContactForm()" style="position: fixed; right: 10px; bottom: 20px; background-color: #007bff; color: white; padding: 12px 20px; font-size: 16px; border: none; border-radius: 50px; cursor: pointer; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); z-index: 1000;">
+    Contact Us
+</button>
+
+<!-- Floating Contact Form (Initially Hidden) -->
+<div id="contact-form" style="display: none; position: fixed; right: 10px; bottom: 80px; width: 280px; background-color: #fff; box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); border-radius: 8px; padding: 20px; z-index: 1000; display: flex; flex-direction: column; align-items: center; transition: all 0.3s ease;">
+    <div style="font-size: 18px; color: #333; margin-bottom: 15px;">
+        <h3>Contact Us</h3>
+    </div>
+    <div style="width: 100%;">
+        <input type="text" placeholder="Your Name" style="width: 100%; padding: 10px; margin-bottom: 12px; border: 1px solid #ccc; border-radius: 4px; font-size: 14px; box-sizing: border-box;">
+        <input type="email" placeholder="Your Email" style="width: 100%; padding: 10px; margin-bottom: 12px; border: 1px solid #ccc; border-radius: 4px; font-size: 14px; box-sizing: border-box;">
+        <textarea placeholder="Your Message" style="width: 100%; padding: 10px; margin-bottom: 12px; border: 1px solid #ccc; border-radius: 4px; font-size: 14px; box-sizing: border-box;"></textarea>
+        <button style="background-color: #007bff; color: white; padding: 10px 20px; font-size: 16px; border: none; border-radius: 4px; cursor: pointer; transition: background-color 0.3s ease; width: 100%;">Submit</button>
+    </div>
+    <!-- Close Button -->
+    <div onclick="toggleContactForm()" style="content: '×'; font-size: 24px; font-weight: bold; color: #333; position: absolute; top: 10px; right: 10px; cursor: pointer;">
+        ×
+    </div>
+</div>
+
+<!-- JavaScript to Toggle Contact Form Visibility -->
+<script>
+    function toggleContactForm() {
+        var form = document.getElementById('contact-form');
+        if (form.style.display === "none" || form.style.display === "") {
+            form.style.display = "flex"; // Show the contact form
+        } else {
+            form.style.display = "none"; // Hide the contact form
+        }
+    }
+</script>
+
+    
+    <!-- Footer -->
+      <script>
+        // JavaScript for handling the search
+        function searchService() {
+            const searchQuery = document.getElementById('searchInput').value;
+            if (searchQuery.trim() === '') {
+                alert('Please enter a search term!');
+            } else {
+                alert('Searching for: ' + searchQuery);
+            }
+        }
+
+        // JavaScript for form validation
+        function validateForm() {
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const message = document.getElementById('message').value;
+
+            if (name === '' || email === '' || message === '') {
+                alert('Please fill out all fields.');
+                return false;
+            }
+            alert('Message sent successfully!');
+            return true;
+        }
+    </script>
+
+
+    <footer style="background-color: #f1f1f1; padding: 40px 0;">
+        <div style="max-width: 1200px; margin: 0 auto; padding-left: -600px;">
+            
+            <!-- Education & Training -->
+            <div style="text-align: left; margin: 10px;">
+                <p style="font-size: 16px; color: #333; font-weight: bold;">Popular Categories</p>
+                <p style="font-size: 14px; color: #555; margin-top: 10px;">Explore a wide range of educational and training options across various fields to enhance your skills and career opportunities.</p>
+                <hr style="border: 1px solid #ddd; margin-top: 20px;"/>
+            </div>
+
+    
+            <!-- Properties & Rents -->
+            <div style="text-align: left; margin: 10px;">
+                <p style="font-size: 16px; color: #333; font-weight: bold;">B2B & Business Services</p>
+                <p style="font-size: 14px; color: #555; margin-top: 10px;">Find the perfect property for sale, rent, or investment in your desired location with comprehensive listings and details.</p>
+                <hr style="border: 1px solid #ddd; margin-top: 20px;"/>
+            </div>
+    
+            <!-- Professional Services -->
+            <div style="text-align: left; margin: 10px;">
+                <p style="font-size: 16px; color: #333; font-weight: bold;">Education Training</p>
+                <p style="font-size: 14px; color: #555; margin-top: 10px;">Access top-notch professional services, including legal, financial, and consulting services, from trusted experts.</p>
+                <hr style="border: 1px solid #ddd; margin-top: 20px;"/>
+            </div>
+    
+            <!-- Travel & Transport -->
+            <div style="text-align: left; margin: 10px;">
+                <p style="font-size: 16px; color: #333; font-weight: bold;">Personal Service</p>
+                <p style="font-size: 14px; color: #555; margin-top: 10px;">Book your travel needs, including flights, cabs, and buses, with ease and at the best prices.</p>
+                <hr style="border: 1px solid #ddd; margin-top: 20px;"/>
+            </div>
+    
+            <!-- Health & Wellness -->
+            <div style="text-align: left; margin: 10px;">
+                <p style="font-size: 16px; color: #333; font-weight: bold;">Corporate</p>
+                <p style="font-size: 14px; color: #555; margin-top: 10px;">Discover health and wellness services to maintain a balanced lifestyle, including fitness classes, clinics, and more.</p>
+                <hr style="border: 1px solid #ddd; margin-top: 20px;"/>
+            </div>
+    
+            <!-- Events -->
+            <div style="text-align: left; margin: 10px;">
+                <p style="font-size: 16px; color: #333; font-weight: bold;">Top cities (India)</p>
+                <p style="font-size: 14px; color: #555; margin-top: 10px;">Stay updated with upcoming events, conferences, exhibitions, and entertainment activities near you.</p>
+                <hr style="border: 1px solid #ddd; margin-top: 20px;"/>
+            </div>
+    
+            <!-- Home & Office -->
+            <div style="text-align: left; margin: 10px;">
+                <p style="font-size: 16px; color: #333; font-weight: bold;">Top cities (US)</p>
+                <p style="font-size: 14px; color: #555; margin-top: 10px;">Explore furniture, appliances, and office supplies to furnish your home or workspace with the best products.</p>
+                <hr style="border: 1px solid #ddd; margin-top: 20px;"/>
+            </div>
+    
+            <!-- Shopping -->
+            <div style="text-align: left; margin: 10px;">
+                <p style="font-size: 16px; color: #333; font-weight: bold;">Hitaishi domains</p>
+                <p style="font-size: 14px; color: #555; margin-top: 10px;">Shop online for a variety of products including electronics, clothing, accessories, and much more.</p>
+                <hr style="border: 1px solid #ddd; margin-top: 20px;"/>
+            </div>
+    
+            <!-- Placement & Jobs -->
+            <div style="text-align: left; margin: 10px;">
+                <p style="font-size: 16px; color: #333; font-weight: bold;">Placement & Jobs</p>
+                <p style="font-size: 14px; color: #555; margin-top: 10px;">Browse job listings and placement opportunities, and connect with top employers in various industries.</p>
+                <hr style="border: 1px solid #ddd; margin-top: 20px;"/>
+            </div>
+           
+            <div style="text-align: center; margin-top: 20px;">
+                <p style="font-size: 16px; color: #333; font-weight: bold;">Follow Us</p>
+                <div style="margin-top:20px;">
+                    <a href="https://www.facebook.com" target="_blank" style="margin: 0 15px; text-decoration: none;">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" alt="Facebook" style="width: 40px; height: 40px;"/>
+                    </a>
+                    <a href="https://www.twitter.com" target="_blank" style="margin: 0 15px; text-decoration: none;">
+                        <img src="https://cdn.iconscout.com/icon/free/png-256/free-twitter-logo-icon-download-in-svg-png-gif-file-formats--social-media-pack-logos-icons-83443.png?f=webp&w=128" alt="Twitter" style="width: 40px; height: 40px;"/>
+                    </a>
+                    <a href="https://www.instagram.com" target="_blank" style="margin: 0 15px; text-decoration: none;">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram" style="width: 40px; height: 40px;"/>
+                    </a>
+                    <a href="https://www.linkedin.com" target="_blank" style="margin: 0 15px; text-decoration: none;">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/e/e6/729101_linkedin_icon.png" alt="LinkedIn" style="width: 40px; height: 40px;"/>
+                    </a>
+                </div>
+            </div>
+    
+    
+        </div><br>
+        <p style="margin: 0; color: black;">&copy; 2025 Hitaishi Web Portal. All rights reserved.</p>
+    </footer>
+    
+    
+
+</body>
+</html>

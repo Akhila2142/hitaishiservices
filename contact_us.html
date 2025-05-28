@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Hitaishi Services</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body style="margin: 0; padding: 0; font-family: 'Poppins', sans-serif; background-color: #f9f9f9; color: #333;">
+ <header style="position: sticky; top: 0; z-index: 1000; background: linear-gradient(135deg, #0066cc, #004080); padding: 15px 5%; box-shadow: 0 4px 12px rgba(0,0,0,0.1); font-family: 'Segoe UI', Roboto, sans-serif; backdrop-filter: blur(5px);">
+  <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 20px; max-width: 1400px; margin: 0 auto;">
+    
+    <!-- Logo Section -->
+    <a href="index.html" style="color: white; text-decoration: none; flex-shrink: 0; display: flex; align-items: center; gap: 10px;">
+      
+      <div style="background: #ffffff; border-radius: 10px; padding: 2px 2px; display: inline-flex; align-items: center; justify-content: center; box-shadow: 0 2px 6px rgba(0, 102, 204, 0.25);">
+        <img src="img/logo_hitaishiservices.png" alt="Hitaishi Logo" width="32" height="32" style="display: block;" />
+      </div>
+
+      <div>
+        <h1 style="margin: 0; font-size: 32px; font-weight: 800; letter-spacing: 1px; background: linear-gradient(to right, #ffffff, #e6f2ff); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">Hitaishi</h1>
+        <p style="font-size: 14px; margin: 2px 0 0 0; font-weight: 500; color: rgba(255,255,255,0.9);">Find trusted services and professionals</p>
+      </div>
+    </a>
+    
+    <!-- Search Form -->
+    <form action="search.html" method="GET" style="flex-grow: 1; max-width: 500px; min-width: 250px; display: flex; box-shadow: 0 2px 10px rgba(0,0,0,0.1); border-radius: 8px; overflow: hidden; background: rgba(255,255,255,0.9); transition: all 0.3s ease;" onfocusin="this.style.boxShadow='0 2px 15px rgba(0,80,200,0.2)'; this.style.background='white'" onfocusout="this.style.boxShadow='0 2px 10px rgba(0,0,0,0.1)'; this.style.background='rgba(255,255,255,0.9)'">
+      <input
+        type="text"
+        name="query"
+        placeholder="Search services, businesses..."
+        style="flex-grow: 1; border: none; padding: 12px 20px; font-size: 0.95rem; outline: none; color: #003366; background: transparent;"
+        required
+      />
+      <button
+        type="submit"
+        style="background: linear-gradient(to right, #0066cc, #004080); border: none; padding: 0 25px; cursor: pointer; color: white; font-weight: 600; font-size: 1rem; transition: all 0.3s ease; display: flex; align-items: center; justify-content: center;"
+        onmouseover="this.style.opacity='0.9'"
+        onmouseout="this.style.opacity='1'"
+        aria-label="Search"
+      >
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" style="margin-right: 5px;">
+          <path d="M11 19C15.4183 19 19 15.4183 19 11C19 6.58172 15.4183 3 11 3C6.58172 3 3 6.58172 3 11C3 15.4183 6.58172 19 11 19Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M21 21L16.65 16.65" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        Search
+      </button>
+    </form>
+
+    <!-- Navigation Links -->
+    <nav id="navLinks" style="display: flex; gap: 10px; flex-wrap: wrap; align-items: center; flex-shrink: 0;">
+      <a href="index.html" style="color: white; font-size: 0.95rem; padding: 8px 15px; text-decoration: none; transition: all 0.3s ease; font-weight: 500; border-radius: 6px; border: 1px solid rgba(255,255,255,0.3);" onmouseover="this.style.backgroundColor='rgba(255,255,255,0.15)'" onmouseout="this.style.backgroundColor='transparent'">Home</a>
+      <a href="Services.html" style="color: white; font-size: 0.95rem; padding: 8px 15px; text-decoration: none; transition: all 0.3s ease; font-weight: 500; border-radius: 6px; border: 1px solid rgba(255,255,255,0.3);" onmouseover="this.style.backgroundColor='rgba(255,255,255,0.15)'" onmouseout="this.style.backgroundColor='transparent'">Services</a>
+      <a href="ListBusiness.html" style="color: white; font-size: 0.95rem; padding: 8px 15px; text-decoration: none; transition: all 0.3s ease; font-weight: 500; border-radius: 6px; border: 1px solid rgba(255,255,255,0.3);" onmouseover="this.style.backgroundColor='rgba(255,255,255,0.15)'" onmouseout="this.style.backgroundColor='transparent'">List Business</a>
+      <a href="postadd.html" style="color: white; font-size: 0.95rem; padding: 8px 15px; background: rgba(255,255,255,0.2); text-decoration: none; transition: all 0.3s ease; font-weight: 600; border-radius: 6px; border: 1px solid rgba(255,255,255,0.4);" onmouseover="this.style.backgroundColor='rgba(255,255,255,0.3)'" onmouseout="this.style.backgroundColor='rgba(255,255,255,0.2)'">Post Free Ad</a>
+      <a href="SignIn.html" style="color: #0066cc; font-size: 0.95rem; padding: 8px 15px; background: white; text-decoration: none; transition: all 0.3s ease; font-weight: 600; border-radius: 6px;" onmouseover="this.style.backgroundColor='#f0f7ff'; this.style.color='#004080'" onmouseout="this.style.backgroundColor='white'; this.style.color='#0066cc'">Sign In</a>
+    </nav>
+
+    <!-- Menu Button for Mobile -->
+    <button onclick="toggleMenu()" style="display: none; background: rgba(255,255,255,0.2); border: 1px solid rgba(255,255,255,0.4); border-radius: 6px; padding: 8px 12px; font-size: 1.2rem; color: white; cursor: pointer; flex-shrink: 0;" id="menuToggle" aria-label="Toggle Menu">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M3 12H21" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M3 6H21" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M3 18H21" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+    </button>
+
+  </div>
+</header>
+
+<script>
+  function toggleMenu() {
+    var nav = document.getElementById("navLinks");
+    if (nav.style.display === "none" || nav.style.display === "") {
+      nav.style.display = "flex";
+      nav.style.flexDirection = "column";
+      nav.style.position = "absolute";
+      nav.style.top = "100%";
+      nav.style.left = "0";
+      nav.style.right = "0";
+      nav.style.background = "linear-gradient(135deg, #0066cc, #004080)";
+      nav.style.padding = "20px 5%";
+      nav.style.gap = "15px";
+      nav.style.boxShadow = "0 10px 20px rgba(0,0,0,0.1)";
+    } else {
+      nav.style.display = "none";
+    }
+  }
+
+  function handleResize() {
+    var width = window.innerWidth;
+    var menuToggle = document.getElementById("menuToggle");
+    var navLinks = document.getElementById("navLinks");
+
+    if (width <= 992) {
+      menuToggle.style.display = "flex";
+      menuToggle.style.alignItems = "center";
+      menuToggle.style.justifyContent = "center";
+      if (width > 768) {
+        navLinks.style.display = "none";
+      }
+    } else {
+      menuToggle.style.display = "none";
+      navLinks.style.display = "flex";
+      navLinks.style.flexDirection = "row";
+      navLinks.style.position = "static";
+      navLinks.style.padding = "0";
+      navLinks.style.background = "transparent";
+      navLinks.style.boxShadow = "none";
+    }
+  }
+
+  window.addEventListener("resize", handleResize);
+  window.addEventListener("load", handleResize);
+</script>
+<!-- Main Contact Section -->
+<section style="padding: 60px 20px; max-width: 1200px; margin: 0 auto;">
+    <!-- Animated Heading -->
+    <div style="text-align: center; margin-bottom: 60px; overflow: hidden;">
+        <h1 style="font-size: 2.5rem; font-weight: 700; color: #2c3e50; margin-bottom: 15px; position: relative; display: inline-block; animation: fadeInDown 1s ease;">
+            Get in Touch with <span style="color: #007BFF;">Hitaishi</span>
+        </h1>
+        <p style="font-size: 1.1rem; color: #7f8c8d; max-width: 700px; margin: 0 auto; animation: fadeIn 1.5s ease;">
+            We'd love to hear from you! Whether you have questions about our services, need a quote, or just want to say hello, our team is ready to assist you.
+        </p>
+    </div>
+
+    <div style="display: flex; flex-wrap: wrap; gap: 30px; justify-content: center;">
+        <!-- Contact Form -->
+        <div style="flex: 1; min-width: 300px; background: white; border-radius: 10px; box-shadow: 0 10px 30px rgba(0,0,0,0.1); padding: 40px; animation: slideInLeft 1s ease; transform-style: preserve-3d;">
+            <h2 style="font-size: 1.8rem; margin-bottom: 30px; color: #2c3e50; position: relative;">
+                Send Us a Message
+                <span style="content: ''; position: absolute; bottom: -10px; left: 0; width: 60px; height: 3px; background: #007BFF; border-radius: 3px;"></span>
+            </h2>
+            
+            <form id="contactForm" style="display: flex; flex-direction: column; gap: 20px;">
+                <div style="position: relative;">
+                    <input type="text" id="name" required style="width: 100%; padding: 15px 20px; border: 1px solid #ddd; border-radius: 5px; font-size: 1rem; transition: all 0.3s ease;">
+                    <label for="name" style="position: absolute; left: 20px; top: 15px; color: #999; transition: all 0.3s ease; pointer-events: none;">Your Name</label>
+                </div>
+                
+                <div style="position: relative;">
+                    <input type="email" id="email" required style="width: 100%; padding: 15px 20px; border: 1px solid #ddd; border-radius: 5px; font-size: 1rem; transition: all 0.3s ease;">
+                    <label for="email" style="position: absolute; left: 20px; top: 15px; color: #999; transition: all 0.3s ease; pointer-events: none;">Email Address</label>
+                </div>
+                
+                <div style="position: relative;">
+                    <input type="tel" id="phone" style="width: 100%; padding: 15px 20px; border: 1px solid #ddd; border-radius: 5px; font-size: 1rem; transition: all 0.3s ease;">
+                    <label for="phone" style="position: absolute; left: 20px; top: 15px; color: #999; transition: all 0.3s ease; pointer-events: none;">Phone Number (Optional)</label>
+                </div>
+                
+                <div style="position: relative;">
+                    <select id="subject" required style="width: 100%; padding: 15px 20px; border: 1px solid #ddd; border-radius: 5px; font-size: 1rem; appearance: none; background: white; transition: all 0.3s ease;">
+                        <option value="" disabled selected></option>
+                        <option value="general">General Inquiry</option>
+                        <option value="quote">Request a Quote</option>
+                        <option value="support">Customer Support</option>
+                        <option value="feedback">Feedback</option>
+                    </select>
+                    <label for="subject" style="position: absolute; left: 20px; top: -10px; background: white; padding: 0 5px; color: #999; font-size: 0.9rem; transition: all 0.3s ease; pointer-events: none;">Subject</label>
+                    <i class="fas fa-chevron-down" style="position: absolute; right: 20px; top: 18px; color: #999;"></i>
+                </div>
+                
+                <div style="position: relative;">
+                    <textarea id="message" rows="5" required style="width: 100%; padding: 15px 20px; border: 1px solid #ddd; border-radius: 5px; font-size: 1rem; resize: vertical; transition: all 0.3s ease;"></textarea>
+                    <label for="message" style="position: absolute; left: 20px; top: 15px; color: #999; transition: all 0.3s ease; pointer-events: none;">Your Message</label>
+                </div>
+                
+                <button type="submit" style="background: #007BFF; color: white; border: none; padding: 15px 30px; border-radius: 5px; font-size: 1rem; font-weight: 600; cursor: pointer; transition: all 0.3s ease; box-shadow: 0 5px 15px rgba(28, 153, 255, 0.678);">
+                    Send Message <i class="fas fa-paper-plane" style="margin-left: 10px;"></i>
+                </button>
+            </form>
+            
+            <div id="formSuccess" style="display: none; margin-top: 20px; padding: 15px; background: #2ecc71; color: white; border-radius: 5px; text-align: center; animation: fadeIn 0.5s ease;">
+                <i class="fas fa-check-circle" style="margin-right: 10px;"></i> Your message has been sent successfully!
+            </div>
+        </div>
+        
+        <!-- Contact Info -->
+        <div style="flex: 1; min-width: 300px; animation: slideInRight 1s ease;">
+            <div style="background: white; border-radius: 10px; box-shadow: 0 10px 30px rgba(0,0,0,0.1); padding: 40px; height: 90%;">
+                <h2 style="font-size: 1.8rem; margin-bottom: 30px; color: #2c3e50; position: relative;">
+                    Contact Information
+                    <span style="content: ''; position: absolute; bottom: -10px; left: 0; width: 60px; height: 3px; background: #007BFF; border-radius: 3px;"></span>
+                </h2>
+                
+                <div style="margin-bottom: 30px;">
+                    <div style="display: flex; align-items: flex-start; gap: 15px; margin-bottom: 20px; transition: all 0.3s ease; padding: 15px; border-radius: 5px; cursor: pointer;" onmouseover="this.style.transform = 'translateX(5px)'; this.style.backgroundColor = '#f8f9fa'" onmouseout="this.style.transform = 'translateX(0)'; this.style.backgroundColor = 'transparent'">
+                        <div style="background: #007BFF; width: 50px; height: 50px; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; font-size: 1.2rem; flex-shrink: 0;">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div>
+                            <h3 style="font-size: 1.2rem; margin: 0 0 5px 0; color: #2c3e50;">Our Location</h3>
+                            <p style="margin: 0; color: #7f8c8d;"> Plot 21, Flat 102, CVR Residency,<br>
+                                Pragathi Nagar, Near Canara Bank,<br>
+                                Hyderabad - 500090, Telangana, India</p>
+                        </div>
+                    </div>
+                    
+                    <div style="display: flex; align-items: flex-start; gap: 15px; margin-bottom: 20px; transition: all 0.3s ease; padding: 15px; border-radius: 5px; cursor: pointer;" onmouseover="this.style.transform = 'translateX(5px)'; this.style.backgroundColor = '#f8f9fa'" onmouseout="this.style.transform = 'translateX(0)'; this.style.backgroundColor = 'transparent'">
+                        <div style="background: #007bff; width: 50px; height: 50px; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; font-size: 1.2rem; flex-shrink: 0;">
+                            <i class="fas fa-phone-alt"></i>
+                        </div>
+                        <div>
+                            <h3 style="font-size: 1.2rem; margin: 0 0 5px 0; color: #2c3e50;">Phone Numbers</h3>
+                            <p style="margin: 0; color: #7f8c8d;">
+                                <a href="tel:+91 87901 70525" style="color: #7f8c8d; text-decoration: none; transition: color 0.3s ease;" onmouseover="this.style.color = '#007BFF'" onmouseout="this.style.color = '#7f8c8d'">+91 87901 70525</a><br>
+                                <a href="tel:+91 87901 70525" style="color: #7f8c8d; text-decoration: none; transition: color 0.3s ease;" onmouseover="this.style.color = '#007BFF'" onmouseout="this.style.color = '#7f8c8d'">+91 87901 70525</a>
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div style="display: flex; align-items: flex-start; gap: 15px; margin-bottom: 20px; transition: all 0.3s ease; padding: 15px; border-radius: 5px; cursor: pointer;" onmouseover="this.style.transform = 'translateX(5px)'; this.style.backgroundColor = '#f8f9fa'" onmouseout="this.style.transform = 'translateX(0)'; this.style.backgroundColor = 'transparent'">
+                        <div style="background: #007BFF; width: 50px; height: 50px; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; font-size: 1.2rem; flex-shrink: 0;">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div>
+                            <h3 style="font-size: 1.2rem; margin: 0 0 5px 0; color: #2c3e50;">Email Address</h3>
+                            <p style="margin: 0; color: #7f8c8d;">
+                                <a href="mailto:info@hitaishiservices.com" style="color: #7f8c8d; text-decoration: none; transition: color 0.3s ease;" onmouseover="this.style.color = '#007BFF'" onmouseout="this.style.color = '#7f8c8d'">info@hitaishiservices.com</a><br>
+                                <a href="mailto:hitaishicorp@gmail.com" style="color: #7f8c8d; text-decoration: none; transition: color 0.3s ease;" onmouseover="this.style.color = '#007BFF'" onmouseout="this.style.color = '#7f8c8d'">support@hitaishiservices.com</a>
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div style="display: flex; align-items: flex-start; gap: 15px; transition: all 0.3s ease; padding: 15px; border-radius: 5px; cursor: pointer;" onmouseover="this.style.transform = 'translateX(5px)'; this.style.backgroundColor = '#f8f9fa'" onmouseout="this.style.transform = 'translateX(0)'; this.style.backgroundColor = 'transparent'">
+                        <div style="background: #007BFF; width: 50px; height: 50px; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; font-size: 1.2rem; flex-shrink: 0;">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <div>
+                            <h3 style="font-size: 1.2rem; margin: 0 0 5px 0; color: #2c3e50;">Working Hours</h3>
+                            <p style="margin: 0; color: #7f8c8d;">
+                                Monday - Friday: 9:00 AM - 6:00 PM<br>
+                                Saturday: 10:00 AM - 4:00 PM<br>
+                                Sunday: Closed
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div style="margin-top: 40px;">
+                    <h3 style="font-size: 1.2rem; margin-bottom: 15px; color: #2c3e50;">Follow Us</h3>
+                    <div style="display: flex; gap: 15px;">
+                        <!-- Facebook -->
+                        <a href="https://www.facebook.com" target="_blank" style="display: flex; align-items: center; justify-content: center; width: 40px; height: 40px; background: #3b5998; color: white; border-radius: 50%; text-decoration: none; transition: all 0.3s ease;" onmouseover="this.style.transform = 'translateY(-5px)'" onmouseout="this.style.transform = 'translateY(0)'">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+
+                        <!-- Twitter -->
+                        <a href="https://twitter.com" target="_blank" style="display: flex; align-items: center; justify-content: center; width: 40px; height: 40px; background: #1da1f2; color: white; border-radius: 50%; text-decoration: none; transition: all 0.3s ease;" onmouseover="this.style.transform = 'translateY(-5px)'" onmouseout="this.style.transform = 'translateY(0)'">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+
+                        <!-- LinkedIn -->
+                        <a href="https://www.linkedin.com" target="_blank" style="display: flex; align-items: center; justify-content: center; width: 40px; height: 40px; background: #0077b5; color: white; border-radius: 50%; text-decoration: none; transition: all 0.3s ease;" onmouseover="this.style.transform = 'translateY(-5px)'" onmouseout="this.style.transform = 'translateY(0)'">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+
+                        <!-- Instagram -->
+                        <a href="https://www.instagram.com" target="_blank" style="display: flex; align-items: center; justify-content: center; width: 40px; height: 40px; background: #e4405f; color: white; border-radius: 50%; text-decoration: none; transition: all 0.3s ease;" onmouseover="this.style.transform = 'translateY(-5px)'" onmouseout="this.style.transform = 'translateY(0)'">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Map Section -->
+<section style="padding: 0 20px 60px 20px; max-width: 1200px; margin: 0 auto; animation: fadeInUp 1s ease;">
+  <div style="position: relative; border-radius: 10px; overflow: hidden; box-shadow: 0 10px 30px rgba(0,0,0,0.1);">
+    
+    <!-- Address Label -->
+    <!-- <div style="position: absolute; top: 15px; left: 15px; background-color: rgba(255,255,255,0.95); padding: 15px 20px; border-radius: 10px; z-index: 999; box-shadow: 0 4px 12px rgba(0,0,0,0.1); font-family: 'Segoe UI', sans-serif;">
+      <h4 style="margin: 0 0 5px; font-size: 16px; color: #222;">Hitaishi Services</h4>
+      <p style="margin: 0; font-size: 14px; color: #444; line-height: 1.4;">
+        Plot 21, Flat 102, CVR Residency,<br>
+        Pragathi Nagar, Near Canara Bank,<br>
+        Hyderabad - 500090, Telangana, India
+      </p>
+    </div> -->
+
+    <!-- Google Map -->
+    <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+      <iframe 
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15218.88724232658!2d78.38480823413151!3d17.5207882465944!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb8f6886df58ab%3A0xb997ab84116837cd!2sCVR%20Residency!5e0!3m2!1sen!2sin!4v1748250534191!5m2!1sen!2sin" 
+        width="100%" height="100%" 
+        style="position: absolute; top: 0; left: 0; border: none;" 
+        allowfullscreen="" loading="lazy">
+      </iframe>
+    </div>
+  </div>
+</section>
+
+
+
+<!-- Floating Contact Button -->
+<!-- Call Button Fixed to Bottom Right -->
+<div style="position: fixed; bottom: 30px; right: 30px; z-index: 99;">
+  <a href="tel:+91 87901 70525" 
+     style="display: flex; align-items: center; justify-content: center; width: 60px; height: 60px; background: #007BFF; color: white; border-radius: 50%; text-decoration: none; box-shadow: 0 5px 20px rgba(231, 76, 60, 0.4); transition: all 0.3s ease; animation: pulse 2s infinite;" 
+     onmouseover="this.style.transform = 'scale(1.1)'" 
+     onmouseout="this.style.transform = 'scale(1)'">
+    <i class="fas fa-headset" style="font-size: 1.5rem;"></i>
+  </a>
+</div>
+
+<!-- Font Awesome CDN (Required if not already included) -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<!-- Optional Pulse Animation -->
+<style>
+@keyframes pulse {
+  0% { box-shadow: 0 0 0 0 rgba(231, 76, 60, 0.4); }
+  70% { box-shadow: 0 0 0 10px rgba(231, 76, 60, 0); }
+  100% { box-shadow: 0 0 0 0 rgba(231, 76, 60, 0); }
+}
+</style>
+
+
+<!-- Animation Styles -->
+<style>
+    @keyframes fadeIn {
+        from { opacity: 0; }
+        to { opacity: 1; }
+    }
+    
+    @keyframes fadeInDown {
+        from { 
+            opacity: 0; 
+            transform: translateY(-20px); 
+        }
+        to { 
+            opacity: 1; 
+            transform: translateY(0); 
+        }
+    }
+    
+    @keyframes fadeInUp {
+        from { 
+            opacity: 0; 
+            transform: translateY(20px); 
+        }
+        to { 
+            opacity: 1; 
+            transform: translateY(0); 
+        }
+    }
+    
+    @keyframes slideInLeft {
+        from { 
+            opacity: 0; 
+            transform: translateX(-50px); 
+        }
+        to { 
+            opacity: 1; 
+            transform: translateX(0); 
+        }
+    }
+    
+    @keyframes slideInRight {
+        from { 
+            opacity: 0; 
+            transform: translateX(50px); 
+        }
+        to { 
+            opacity: 1; 
+            transform: translateX(0); 
+        }
+    }
+    
+    @keyframes pulse {
+        0% { box-shadow: 0 0 0 0 rgba(231, 76, 60, 0.7); }
+        70% { box-shadow: 0 0 0 15px rgba(231, 76, 60, 0); }
+        100% { box-shadow: 0 0 0 0 rgba(231, 76, 60, 0); }
+    }
+    
+    /* Form Input Focus Effects */
+    input:focus, textarea:focus, select:focus {
+        outline: none;
+        border-color: #007BFF !important;
+        box-shadow: 0 0 0 2px rgba(60, 205, 231, 0.2) !important;
+    }
+    
+    input:focus + label, 
+    textarea:focus + label,
+    input:not(:placeholder-shown) + label,
+    textarea:not(:placeholder-shown) + label {
+        top: -10px !important;
+        left: 10px !important;
+        font-size: 0.8rem !important;
+        background: white !important;
+        padding: 0 5px !important;
+        color: #007BFF !important;
+    }
+    
+    select:focus + label {
+        color: #007BFF !important;
+    }
+    
+    button:hover {
+        background: #c0392b !important;
+        transform: translateY(-3px) !important;
+        box-shadow: 0 8px 20px rgba(231, 76, 60, 0.4) !important;
+    }
+</style>
+
+<!-- JavaScript for Form Handling -->
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        // Floating label effect
+        const inputs = document.querySelectorAll('input, textarea');
+        inputs.forEach(input => {
+            input.addEventListener('focus', function() {
+                const label = this.nextElementSibling;
+                if (label && label.tagName === 'LABEL') {
+                    label.style.top = '-10px';
+                    label.style.left = '10px';
+                    label.style.fontSize = '0.8rem';
+                    label.style.background = 'white';
+                    label.style.padding = '0 5px';
+                    label.style.color = '#007BFF';
+                }
+            });
+            
+            input.addEventListener('blur', function() {
+                const label = this.nextElementSibling;
+                if (label && label.tagName === 'LABEL' && !this.value) {
+                    label.style.top = '15px';
+                    label.style.left = '20px';
+                    label.style.fontSize = '1rem';
+                    label.style.background = 'transparent';
+                    label.style.padding = '0';
+                    label.style.color = '#999';
+                }
+            });
+        });
+        
+        // Form submission
+        const contactForm = document.getElementById('contactForm');
+        const formSuccess = document.getElementById('formSuccess');
+        
+        if (contactForm) {
+            contactForm.addEventListener('submit', function(e) {
+                e.preventDefault();
+                
+                // Simulate form submission
+                setTimeout(() => {
+                    contactForm.style.display = 'none';
+                    formSuccess.style.display = 'block';
+                    
+                    // Reset form after 3 seconds
+                    setTimeout(() => {
+                        contactForm.reset();
+                        contactForm.style.display = 'flex';
+                        formSuccess.style.display = 'none';
+                        
+                        // Reset labels
+                        const labels = document.querySelectorAll('label');
+                        labels.forEach(label => {
+                            const input = label.previousElementSibling;
+                            if (input && !input.value) {
+                                label.style.top = '15px';
+                                label.style.left = '20px';
+                                label.style.fontSize = '1rem';
+                                label.style.background = 'transparent';
+                                label.style.padding = '0';
+                                label.style.color = '#999';
+                            }
+                        });
+                    }, 3000);
+                }, 1000);
+            });
+        }
+    });
+</script>
+  <footer style="background-color: #f1f1f1; padding: 40px 0;">
+    <div style="max-width: 1200px; margin: 0 auto; padding-left: -600px;">
+
+        <!-- Education & Training -->
+        <div style="text-align: left; margin: 10px;">
+            <a href="education_training.html" style="text-decoration: none;">
+                <p style="font-size: 16px; color: #333; font-weight: bold;">Education & Training</p>
+            </a>
+            <p style="font-size: 14px; color: #555; margin-top: 10px;">Explore a wide range of educational and training options across various fields to enhance your skills and career opportunities.</p>
+            <hr style="border: 1px solid #ddd; margin-top: 20px;"/>
+        </div>
+
+        <!-- Properties & Rents -->
+        <div style="text-align: left; margin: 10px;">
+            <a href="properties_rent.html" style="text-decoration: none;">
+                <p style="font-size: 16px; color: #333; font-weight: bold;">Properties & Rents</p>
+            </a>
+            <p style="font-size: 14px; color: #555; margin-top: 10px;">Find the perfect property for sale, rent, or investment in your desired location with comprehensive listings and details.</p>
+            <hr style="border: 1px solid #ddd; margin-top: 20px;"/>
+        </div>
+
+        <!-- Professional Services -->
+        <div style="text-align: left; margin: 10px;">
+            <a href="proffessional_services.html" style="text-decoration: none;">
+                <p style="font-size: 16px; color: #333; font-weight: bold;">Professional Services</p>
+            </a>
+            <p style="font-size: 14px; color: #555; margin-top: 10px;">Access top-notch professional services, including legal, financial, and consulting services, from trusted experts.</p>
+            <hr style="border: 1px solid #ddd; margin-top: 20px;"/>
+        </div>
+
+        <!-- Travel & Transport -->
+        <div style="text-align: left; margin: 10px;">
+            <a href="travel_transport.html" style="text-decoration: none;">
+                <p style="font-size: 16px; color: #333; font-weight: bold;">Travel & Transport</p>
+            </a>
+            <p style="font-size: 14px; color: #555; margin-top: 10px;">Book your travel needs, including flights, cabs, and buses, with ease and at the best prices.</p>
+            <hr style="border: 1px solid #ddd; margin-top: 20px;"/>
+        </div>
+
+        <!-- Health & Wellness -->
+        <div style="text-align: left; margin: 10px;">
+            <a href="health_wellness.html" style="text-decoration: none;">
+                <p style="font-size: 16px; color: #333; font-weight: bold;">Health & Wellness</p>
+            </a>
+            <p style="font-size: 14px; color: #555; margin-top: 10px;">Discover health and wellness services to maintain a balanced lifestyle, including fitness classes, clinics, and more.</p>
+            <hr style="border: 1px solid #ddd; margin-top: 20px;"/>
+        </div>
+
+        <!-- Events -->
+        <div style="text-align: left; margin: 10px;">
+            <a href="events.html" style="text-decoration: none;">
+                <p style="font-size: 16px; color: #333; font-weight: bold;">Events</p>
+            </a>
+            <p style="font-size: 14px; color: #555; margin-top: 10px;">Stay updated with upcoming events, conferences, exhibitions, and entertainment activities near you.</p>
+            <hr style="border: 1px solid #ddd; margin-top: 20px;"/>
+        </div>
+
+        <!-- Home & Office -->
+        <div style="text-align: left; margin: 10px;">
+            <a href="home_office.html" style="text-decoration: none;">
+                <p style="font-size: 16px; color: #333; font-weight: bold;">Home & Office</p>
+            </a>
+            <p style="font-size: 14px; color: #555; margin-top: 10px;">Explore furniture, appliances, and office supplies to furnish your home or workspace with the best products.</p>
+            <hr style="border: 1px solid #ddd; margin-top: 20px;"/>
+        </div>
+
+        <!-- Shopping -->
+        <div style="text-align: left; margin: 10px;">
+            <a href="shopping.html" style="text-decoration: none;">
+                <p style="font-size: 16px; color: #333; font-weight: bold;">Shopping</p>
+            </a>
+            <p style="font-size: 14px; color: #555; margin-top: 10px;">Shop online for a variety of products including electronics, clothing, accessories, and much more.</p>
+            <hr style="border: 1px solid #ddd; margin-top: 20px;"/>
+        </div>
+
+        <!-- Placement & Jobs -->
+        <div style="text-align: left; margin: 10px;">
+            <a href="placements_jobs.html" style="text-decoration: none;">
+                <p style="font-size: 16px; color: #333; font-weight: bold;">Placement & Jobs</p>
+            </a>
+            <p style="font-size: 14px; color: #555; margin-top: 10px;">Browse job listings and placement opportunities, and connect with top employers in various industries.</p>
+            <hr style="border: 1px solid #ddd; margin-top: 20px;"/>
+        </div>
+
+        <!-- Social Media Icons -->
+        <div style="text-align: center; margin-top: 20px;">
+            <p style="font-size: 16px; color: #333; font-weight: bold;">Follow Us</p>
+            <div style="margin-top:20px;">
+                <a href="https://www.facebook.com" target="_blank" style="margin: 0 15px; text-decoration: none;">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" alt="Facebook" style="width: 40px; height: 40px;"/>
+                </a>
+                <a href="https://www.twitter.com" target="_blank" style="margin: 0 15px; text-decoration: none;">
+                    <img src="https://cdn.iconscout.com/icon/free/png-256/free-twitter-logo-icon-download-in-svg-png-gif-file-formats--social-media-pack-logos-icons-83443.png?f=webp&w=128" alt="Twitter" style="width: 40px; height: 40px;"/>
+                </a>
+                <a href="https://www.instagram.com" target="_blank" style="margin: 0 15px; text-decoration: none;">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram" style="width: 40px; height: 40px;"/>
+                </a>
+                <a href="https://www.linkedin.com" target="_blank" style="margin: 0 15px; text-decoration: none;">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/e/e6/729101_linkedin_icon.png" alt="LinkedIn" style="width: 40px; height: 40px;"/>
+                </a>
+            </div>
+            <br>
+            <p style="margin: 0; color: black;">&copy; 2025 Hitaishi Web Portal. All rights reserved.</p>
+        </div>
+    </div>
+    
+</footer>
+</body>
+</html>

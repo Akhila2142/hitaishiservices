@@ -1,0 +1,843 @@
+<!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Meta Title and Description for Professional Services Page -->
+<title>Professional Services | Hithaishi Services</title>
+<meta name="description" content="Access expert professional services at Hithaishi Services. We provide reliable, efficient, and tailored solutions for individuals and businesses.">
+<meta name="keywords" content="professional services, business solutions, expert services, consultancy, Hithaishi Services, service providers, tailored solutions">
+<meta name="robots" content="index, follow">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+  @media (max-width: 768px) {
+    .announcements h4 {
+      font-size: 28px !important;
+    }
+    .announcement-box {
+      padding: 15px 20px !important;
+    }
+    .announcement-box h3, .announcement-box h4 {
+      font-size: 1.2rem !important;
+    }
+    .announcement-box p {
+      font-size: 1rem !important;
+    }
+  }
+</style>
+
+</head>  
+<body style="margin: 0;padding: 0;font-family: Arial, Helvetica, sans-serif;">
+ <header style="position: sticky; top: 0; z-index: 1000; background: linear-gradient(135deg, #0066cc, #004080); padding: 15px 5%; box-shadow: 0 4px 12px rgba(0,0,0,0.1); font-family: 'Segoe UI', Roboto, sans-serif; backdrop-filter: blur(5px);">
+  <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 20px; max-width: 1400px; margin: 0 auto;">
+    
+    <!-- Logo Section -->
+    <a href="index.html" style="color: white; text-decoration: none; flex-shrink: 0; display: flex; align-items: center; gap: 10px;">
+      
+      <div style="background: #ffffff; border-radius: 10px; padding: 2px 2px; display: inline-flex; align-items: center; justify-content: center; box-shadow: 0 2px 6px rgba(0, 102, 204, 0.25);">
+        <img src="img/logo_hitaishiservices.png" alt="Hitaishi Logo" width="32" height="32" style="display: block;" />
+      </div>
+
+      <div>
+        <h1 style="margin: 0; font-size: 32px; font-weight: 800; letter-spacing: 1px; background: linear-gradient(to right, #ffffff, #e6f2ff); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">Hitaishi</h1>
+        <p style="font-size: 14px; margin: 2px 0 0 0; font-weight: 500; color: rgba(255,255,255,0.9);">Find trusted services and professionals</p>
+      </div>
+    </a>
+    
+    <!-- Search Form -->
+    <form action="search.html" method="GET" style="flex-grow: 1; max-width: 500px; min-width: 250px; display: flex; box-shadow: 0 2px 10px rgba(0,0,0,0.1); border-radius: 8px; overflow: hidden; background: rgba(255,255,255,0.9); transition: all 0.3s ease;" onfocusin="this.style.boxShadow='0 2px 15px rgba(0,80,200,0.2)'; this.style.background='white'" onfocusout="this.style.boxShadow='0 2px 10px rgba(0,0,0,0.1)'; this.style.background='rgba(255,255,255,0.9)'">
+      <input
+        type="text"
+        name="query"
+        placeholder="Search services, businesses..."
+        style="flex-grow: 1; border: none; padding: 12px 20px; font-size: 0.95rem; outline: none; color: #003366; background: transparent;"
+        required
+      />
+      <button
+        type="submit"
+        style="background: linear-gradient(to right, #0066cc, #004080); border: none; padding: 0 25px; cursor: pointer; color: white; font-weight: 600; font-size: 1rem; transition: all 0.3s ease; display: flex; align-items: center; justify-content: center;"
+        onmouseover="this.style.opacity='0.9'"
+        onmouseout="this.style.opacity='1'"
+        aria-label="Search"
+      >
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" style="margin-right: 5px;">
+          <path d="M11 19C15.4183 19 19 15.4183 19 11C19 6.58172 15.4183 3 11 3C6.58172 3 3 6.58172 3 11C3 15.4183 6.58172 19 11 19Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M21 21L16.65 16.65" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        Search
+      </button>
+    </form>
+
+    <!-- Navigation Links -->
+    <nav id="navLinks" style="display: flex; gap: 10px; flex-wrap: wrap; align-items: center; flex-shrink: 0;">
+      <a href="index.html" style="color: white; font-size: 0.95rem; padding: 8px 15px; text-decoration: none; transition: all 0.3s ease; font-weight: 500; border-radius: 6px; border: 1px solid rgba(255,255,255,0.3);" onmouseover="this.style.backgroundColor='rgba(255,255,255,0.15)'" onmouseout="this.style.backgroundColor='transparent'">Home</a>
+      <a href="Services.html" style="color: white; font-size: 0.95rem; padding: 8px 15px; text-decoration: none; transition: all 0.3s ease; font-weight: 500; border-radius: 6px; border: 1px solid rgba(255,255,255,0.3);" onmouseover="this.style.backgroundColor='rgba(255,255,255,0.15)'" onmouseout="this.style.backgroundColor='transparent'">Services</a>
+      <a href="ListBusiness.html" style="color: white; font-size: 0.95rem; padding: 8px 15px; text-decoration: none; transition: all 0.3s ease; font-weight: 500; border-radius: 6px; border: 1px solid rgba(255,255,255,0.3);" onmouseover="this.style.backgroundColor='rgba(255,255,255,0.15)'" onmouseout="this.style.backgroundColor='transparent'">List Business</a>
+      <a href="postadd.html" style="color: white; font-size: 0.95rem; padding: 8px 15px; background: rgba(255,255,255,0.2); text-decoration: none; transition: all 0.3s ease; font-weight: 600; border-radius: 6px; border: 1px solid rgba(255,255,255,0.4);" onmouseover="this.style.backgroundColor='rgba(255,255,255,0.3)'" onmouseout="this.style.backgroundColor='rgba(255,255,255,0.2)'">Post Free Ad</a>
+      <a href="SignIn.html" style="color: #0066cc; font-size: 0.95rem; padding: 8px 15px; background: white; text-decoration: none; transition: all 0.3s ease; font-weight: 600; border-radius: 6px;" onmouseover="this.style.backgroundColor='#f0f7ff'; this.style.color='#004080'" onmouseout="this.style.backgroundColor='white'; this.style.color='#0066cc'">Sign In</a>
+    </nav>
+
+    <!-- Menu Button for Mobile -->
+    <button onclick="toggleMenu()" style="display: none; background: rgba(255,255,255,0.2); border: 1px solid rgba(255,255,255,0.4); border-radius: 6px; padding: 8px 12px; font-size: 1.2rem; color: white; cursor: pointer; flex-shrink: 0;" id="menuToggle" aria-label="Toggle Menu">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M3 12H21" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M3 6H21" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M3 18H21" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+    </button>
+
+  </div>
+</header>
+
+<script>
+  function toggleMenu() {
+    var nav = document.getElementById("navLinks");
+    if (nav.style.display === "none" || nav.style.display === "") {
+      nav.style.display = "flex";
+      nav.style.flexDirection = "column";
+      nav.style.position = "absolute";
+      nav.style.top = "100%";
+      nav.style.left = "0";
+      nav.style.right = "0";
+      nav.style.background = "linear-gradient(135deg, #0066cc, #004080)";
+      nav.style.padding = "20px 5%";
+      nav.style.gap = "15px";
+      nav.style.boxShadow = "0 10px 20px rgba(0,0,0,0.1)";
+    } else {
+      nav.style.display = "none";
+    }
+  }
+
+  function handleResize() {
+    var width = window.innerWidth;
+    var menuToggle = document.getElementById("menuToggle");
+    var navLinks = document.getElementById("navLinks");
+
+    if (width <= 992) {
+      menuToggle.style.display = "flex";
+      menuToggle.style.alignItems = "center";
+      menuToggle.style.justifyContent = "center";
+      if (width > 768) {
+        navLinks.style.display = "none";
+      }
+    } else {
+      menuToggle.style.display = "none";
+      navLinks.style.display = "flex";
+      navLinks.style.flexDirection = "row";
+      navLinks.style.position = "static";
+      navLinks.style.padding = "0";
+      navLinks.style.background = "transparent";
+      navLinks.style.boxShadow = "none";
+    }
+  }
+
+  window.addEventListener("resize", handleResize);
+  window.addEventListener("load", handleResize);
+</script>
+  <section style="padding: 4rem 1rem; background: url('https://images.stockcake.com/public/0/a/6/0a63a798-ce02-4d75-9ffb-dc425e73f58c/focused-remote-professional-stockcake.jpg') center center / cover no-repeat; font-family: sans-serif; color: white; position: relative; overflow: hidden;">
+    <div style="background-color: rgba(0, 0, 0, 0.6); padding: 4rem 1rem; border-radius: 1rem; max-width: 1200px; margin: 0 auto; text-align: center; position: relative; animation: moveText 5s linear infinite alternate;">
+      <h2 style="font-size: 2.5rem; font-weight: 800; margin-bottom: 1rem;">Professional Services</h2>
+      <p style="font-size: 1.2rem; max-width: 700px; margin: 0 auto 2rem;">
+        We deliver expert-driven professional services tailored to meet the dynamic needs of businesses today.
+      </p>
+      <a href="SignIn.html" style="display: inline-block; padding: 0.75rem 1.5rem; background-color: #3b82f6; color: white; font-size: 1rem; font-weight: 600; border-radius: 0.5rem; text-decoration: none;">
+        Get Started
+      </a>
+    </div>
+    <div style="display:none;">
+      <style>
+        @keyframes moveText {
+          0% { transform: translateX(0); }
+          100% { transform: translateX(50px); }
+        }
+      </style>
+    </div>
+  </section>
+  
+  
+ <!-- <section style="padding: 5rem 1rem; background: linear-gradient(135deg, #e2e4e7, #e0f2fe); font-family: 'Segoe UI', sans-serif;">
+  <div style="max-width: 1200px; margin: 0 auto;">
+    <h3 style="font-size: 2.75rem; font-weight: 800; color: #0f172a; text-align: center; margin-bottom: 1rem;">✨ Our Services</h3>
+    <p style="font-size: 1.125rem; color: #334155; text-align: center; margin-bottom: 3rem; max-width: 700px; margin-left: auto; margin-right: auto;">
+      Explore powerful digital solutions to elevate your online presence and grow your business.
+    </p>
+
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2rem;">
+      
+      <a href="#" style="text-decoration: none;">
+        <div style="background: #ffffff; border-radius: 1.25rem; padding: 2rem; box-shadow: 0 8px 24px rgba(0, 0, 0, 0.05); text-align: center; transition: transform 0.3s ease, box-shadow 0.3s ease;" onmouseover="this.style.transform='translateY(-10px)'; this.style.boxShadow='0 12px 28px rgba(0, 0, 0, 0.1)'" onmouseout="this.style.transform='none'; this.style.boxShadow='0 8px 24px rgba(0, 0, 0, 0.05)'">
+          <img src="https://cdn-icons-png.flaticon.com/512/2721/2721291.png" loading="lazy" alt="Web Design Icon" style="width: 64px; margin-bottom: 1rem;">
+          <h3 style="font-size: 1.4rem; font-weight: 700; color: #1e293b; margin-bottom: 0.75rem;">Website Design</h3>
+          <p style="font-size: 1rem; color: #64748b;">Modern, responsive, and user-friendly websites tailored to represent your brand perfectly.</p>
+        </div>
+      </a>
+
+      <a href="#" style="text-decoration: none;">
+        <div style="background: #ffffff; border-radius: 1.25rem; padding: 2rem; box-shadow: 0 8px 24px rgba(0, 0, 0, 0.05); text-align: center; transition: transform 0.3s ease, box-shadow 0.3s ease;" onmouseover="this.style.transform='translateY(-10px)'; this.style.boxShadow='0 12px 28px rgba(0, 0, 0, 0.1)'" onmouseout="this.style.transform='none'; this.style.boxShadow='0 8px 24px rgba(0, 0, 0, 0.05)'">
+          <img src="https://cdn-icons-png.flaticon.com/512/4149/4149641.png" loading="lazy" alt="SEO Icon" style="width: 64px; margin-bottom: 1rem;">
+          <h3 style="font-size: 1.4rem; font-weight: 700; color: #1e293b; margin-bottom: 0.75rem;">SEO Optimization</h3>
+          <p style="font-size: 1rem; color: #64748b;">Boost your rankings and get discovered with cutting-edge SEO strategies tailored for success.</p>
+        </div>
+      </a>
+
+      <a href="#" style="text-decoration: none;">
+        <div style="background: #ffffff; border-radius: 1.25rem; padding: 2rem; box-shadow: 0 8px 24px rgba(0, 0, 0, 0.05); text-align: center; transition: transform 0.3s ease, box-shadow 0.3s ease;" onmouseover="this.style.transform='translateY(-10px)'; this.style.boxShadow='0 12px 28px rgba(0, 0, 0, 0.1)'" onmouseout="this.style.transform='none'; this.style.boxShadow='0 8px 24px rgba(0, 0, 0, 0.05)'">
+          <img src="https://cdn-icons-png.flaticon.com/512/2989/2989988.png" loading="lazy" alt="Digital Marketing Icon" style="width: 64px; margin-bottom: 1rem;">
+          <h3 style="font-size: 1.4rem; font-weight: 700; color: #1e293b; margin-bottom: 0.75rem;">Digital Marketing</h3>
+          <p style="font-size: 1rem; color: #64748b;">Run impactful campaigns across platforms to attract, engage, and convert your ideal audience.</p>
+        </div>
+      </a>
+
+    </div>
+  </div>
+</section> -->
+
+  <section id="services" style="background-color:#f0f8ff;padding:80px 20px;">
+    <div style="max-width:1000px;margin:0 auto;">
+        <h2 style="text-align:center;color:#0056b3;font-size:2.8rem;margin-bottom:20px;font-weight:bold;">Our Professional Services</h2>
+        <p style="font-size:1.15rem;color:#555;text-align:center;max-width:800px;margin:0 auto 60px;line-height:1.7;">
+            Discover the specialized services Hitaishi offers to empower your business and achieve your goals.
+        </p>
+
+        <div id="services-container" style="display:flex;flex-direction:row;overflow-x:scroll;scroll-snap-type:x mandatory;scroll-behavior:smooth;padding-bottom:20px;gap:30px;">
+            <style>
+                #services-container::-webkit-scrollbar {
+                    display: none;
+                }
+                /* Hide scrollbar for Firefox */
+                #services-container {
+                    scrollbar-width: none;
+                    -ms-overflow-style: none; /* IE and Edge */
+                }
+            </style>
+
+            <div style="flex-shrink:0;width:320px;scroll-snap-align:start;background-color:white;border-radius:12px;padding:30px;box-shadow:0 5px 15px rgba(0,0,0,0.05);transition:transform 0.3s ease,box-shadow 0.3s ease;"
+                 onmouseover="this.style.transform='translateY(-10px)';this.style.boxShadow='0 15px 35px rgba(0,0,0,0.15)'"
+                 onmouseout="this.style.transform='translateY(0)';this.style.boxShadow='0 5px 15px rgba(0,0,0,0.05)'">
+                <div style="flex-shrink:0;width:70px;height:70px;background-color:#e3f2fd;border-radius:50%;display:flex;align-items:center;justify-content:center;margin:0 auto 25px;box-shadow:0 4px 10px rgba(0,132,255,0.1);">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#0084ff" width="40px" height="40px"><path d="M0 0h24v24H0z" fill="none"/><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"/></svg>
+                </div>
+                <h3 style="font-size:1.6rem;color:#2c3e50;margin-bottom:8px;font-weight:bold;">Legal Advisory</h3>
+                <p style="font-size:1rem;color:#666;line-height:1.6;margin-bottom:15px;">
+                    Expert legal guidance for your business operations and compliance.
+                </p>
+                <a href="contact_us.html" style="text-decoration:none;display:inline-block;padding:10px 25px;background-color:#0084ff;color:white;border-radius:50px;font-weight:bold;font-size:0.95rem;transition:background-color 0.3s ease;" onmouseover="this.style.backgroundColor='#0066cc'" onmouseout="this.style.backgroundColor='#0084ff'">
+                    Learn More
+                </a>
+            </div>
+
+            <div style="flex-shrink:0;width:320px;scroll-snap-align:start;background-color:white;border-radius:12px;padding:30px;box-shadow:0 5px 15px rgba(0,0,0,0.05);transition:transform 0.3s ease,box-shadow 0.3s ease;"
+                 onmouseover="this.style.transform='translateY(-10px)';this.style.boxShadow='0 15px 35px rgba(0,0,0,0.15)'"
+                 onmouseout="this.style.transform='translateY(0)';this.style.boxShadow='0 5px 15px rgba(0,0,0,0.05)'">
+                <div style="flex-shrink:0;width:70px;height:70px;background-color:#e8f5e9;border-radius:50%;display:flex;align-items:center;justify-content:center;margin:0 auto 25px;box-shadow:0 4px 10px rgba(76,175,80,0.1);">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#4CAF50" width="40px" height="40px"><path d="M0 0h24v24H0z" fill="none"/><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm-1 6h2v2h-2zm0 4h2v6h-2z"/></svg>
+                </div>
+                <h3 style="font-size:1.6rem;color:#2c3e50;margin-bottom:8px;font-weight:bold;">Financial Consulting</h3>
+                <p style="font-size:1rem;color:#666;line-height:1.6;margin-bottom:15px;">
+                    Strategic financial planning, auditing, and tax advisory services.
+                </p>
+                <a href="contact_us.html" style="text-decoration:none;display:inline-block;padding:10px 25px;background-color:#4CAF50;color:white;border-radius:50px;font-weight:bold;font-size:0.95rem;transition:background-color 0.3s ease;" onmouseover="this.style.backgroundColor='#388E3C'" onmouseout="this.style.backgroundColor='#4CAF50'">
+                    Learn More
+                </a>
+            </div>
+
+            <div style="flex-shrink:0;width:320px;scroll-snap-align:start;background-color:white;border-radius:12px;padding:30px;box-shadow:0 5px 15px rgba(0,0,0,0.05);transition:transform 0.3s ease,box-shadow 0.3s ease;"
+                 onmouseover="this.style.transform='translateY(-10px)';this.style.boxShadow='0 15px 35px rgba(0,0,0,0.15)'"
+                 onmouseout="this.style.transform='translateY(0)';this.style.boxShadow='0 5px 15px rgba(0,0,0,0.05)'">
+                <div style="flex-shrink:0;width:70px;height:70px;background-color:#fbe9e7;border-radius:50%;display:flex;align-items:center;justify-content:center;margin:0 auto 25px;box-shadow:0 4px 10px rgba(255,87,34,0.1);">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#FF5722" width="40px" height="40px"><path d="M0 0h24v24H0z" fill="none"/><path d="M20 18c1.1 0 1.99-.9 1.99-2L22 6c0-1.1-.9-2-2-2H4c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2H0v2h24v-2h-4zM4 6h16v10H4V6z"/></svg>
+                </div>
+                <h3 style="font-size:1.6rem;color:#2c3e50;margin-bottom:8px;font-weight:bold;">IT Solutions</h3>
+                <p style="font-size:1rem;color:#666;line-height:1.6;margin-bottom:15px;">
+                    Comprehensive IT infrastructure, software development, and cybersecurity services.
+                </p>
+                <a href="contact_us.html" style="text-decoration:none;display:inline-block;padding:10px 25px;background-color:#FF5722;color:white;border-radius:50px;font-weight:bold;font-size:0.95rem;transition:background-color 0.3s ease;" onmouseover="this.style.backgroundColor='#E64A19'" onmouseout="this.style.backgroundColor='#FF5722'">
+                        Explore Services
+                    </a>
+                </div>
+
+            <div style="flex-shrink:0;width:320px;scroll-snap-align:start;background-color:white;border-radius:12px;padding:30px;box-shadow:0 5px 15px rgba(0,0,0,0.05);transition:transform 0.3s ease,box-shadow 0.3s ease;"
+                 onmouseover="this.style.transform='translateY(-10px)';this.style.boxShadow='0 15px 35px rgba(0,0,0,0.15)'"
+                 onmouseout="this.style.transform='translateY(0)';this.style.boxShadow='0 5px 15px rgba(0,0,0,0.05)'">
+                <div style="flex-shrink:0;width:70px;height:70px;background-color:#fffde7;border-radius:50%;display:flex;align-items:center;justify-content:center;margin:0 auto 25px;box-shadow:0 4px 10px rgba(255,193,7,0.1);">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#FFC107" width="40px" height="40px"><path d="M0 0h24v24H0z" fill="none"/><path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/></svg>
+                </div>
+                <h3 style="font-size:1.6rem;color:#2c3e50;margin-bottom:8px;font-weight:bold;">HR & Recruitment</h3>
+                <p style="font-size:1rem;color:#666;line-height:1.6;margin-bottom:15px;">
+                    Talent acquisition, HR consulting, and workforce management solutions.
+                </p>
+                <a href="contact_us.html" style="text-decoration:none;display:inline-block;padding:10px 25px;background-color:#FFC107;color:white;border-radius:50px;font-weight:bold;font-size:0.95rem;transition:background-color 0.3s ease;" onmouseover="this.style.backgroundColor='#FFB300'" onmouseout="this.style.backgroundColor='#FFC107'">
+                        Learn More
+                    </a>
+                </div>
+
+            <div style="flex-shrink:0;width:320px;scroll-snap-align:start;background-color:white;border-radius:12px;padding:30px;box-shadow:0 5px 15px rgba(0,0,0,0.05);transition:transform 0.3s ease,box-shadow 0.3s ease;"
+                 onmouseover="this.style.transform='translateY(-10px)';this.style.boxShadow='0 15px 35px rgba(0,0,0,0.15)'"
+                 onmouseout="this.style.transform='translateY(0)';this.style.boxShadow='0 5px 15px rgba(0,0,0,0.05)'">
+                <div style="flex-shrink:0;width:70px;height:70px;background-color:#e1f5fe;border-radius:50%;display:flex;align-items:center;justify-content:center;margin:0 auto 25px;box-shadow:0 4px 10px rgba(3,169,244,0.1);">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#03A9F4" width="40px" height="40px"><path d="M0 0h24v24H0z" fill="none"/><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2h1.93l-.93 1.93zM18.3 14.1c.45-.9.7-1.9.7-3c0-3.95-3.05-7.18-7-7.93V4h-2v1.07c-3.95.49-7 3.85-7 7.93 0 1.1.25 2.1.7 3.01L15 9V8c0-1.1-.9-2-2-2H10.07l-.93-1.93C11.55 3.06 14.47 2 18 2h.3c1.39 0 2.65.5 3.65 1.34l-.99.99C18.86 4.9 17.65 4 16 4.01V6c0 1.1.9 2 2 2h2.93l-.93-1.93c.45-.9.7-1.9.7-3z"/></svg>
+                </div>
+                <h3 style="font-size:1.6rem;color:#2c3e50;margin-bottom:8px;font-weight:bold;">Marketing & Branding</h3>
+                <p style="font-size:1rem;color:#666;line-height:1.6;margin-bottom:15px;">
+                    Comprehensive digital marketing, brand development, and PR strategies.
+                </p>
+                <a href="contact_us.html" style="text-decoration:none;display:inline-block;padding:10px 25px;background-color:#03A9F4;color:white;border-radius:50px;font-weight:bold;font-size:0.95rem;transition:background-color 0.3s ease;" onmouseover="this.style.backgroundColor='#0288D1'" onmouseout="this.style.backgroundColor='#03A9F4'">
+                        Learn More
+                    </a>
+                </div>
+
+            <div style="flex-shrink:0;width:320px;scroll-snap-align:start;background-color:white;border-radius:12px;padding:30px;box-shadow:0 5px 15px rgba(0,0,0,0.05);transition:transform 0.3s ease,box-shadow 0.3s ease;"
+                 onmouseover="this.style.transform='translateY(-10px)';this.style.boxShadow='0 15px 35px rgba(0,0,0,0.15)'"
+                 onmouseout="this.style.transform='translateY(0)';this.style.boxShadow='0 5px 15px rgba(0,0,0,0.05)'">
+                <div style="flex-shrink:0;width:70px;height:70px;background-color:#fce4ec;border-radius:50%;display:flex;align-items:center;justify-content:center;margin:0 auto 25px;box-shadow:0 4px 10px rgba(233,30,99,0.1);">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#E91E63" width="40px" height="40px"><path d="M0 0h24v24H0z" fill="none"/><path d="M12 2c-5.52 0-10 4.48-10 10s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm-1-13h2v6h-2zm0 8h2v2h-2z"/></svg>
+                </div>
+                <h3 style="font-size:1.6rem;color:#2c3e50;margin-bottom:8px;font-weight:bold;">Business Strategy</h3>
+                <p style="font-size:1rem;color:#666;line-height:1.6;margin-bottom:15px;">
+                    Develop effective strategies for growth, operations, and market entry.
+                </p>
+                <a href="contact_us.html" style="text-decoration:none;display:inline-block;padding:10px 25px;background-color:#E91E63;color:white;border-radius:50px;font-weight:bold;font-size:0.95rem;transition:background-color 0.3s ease;" onmouseover="this.style.backgroundColor='#C2185B'" onmouseout="this.style.backgroundColor='#E91E63'">
+                        Learn More
+                    </a>
+                </div>
+
+            <div style="flex-shrink:0;width:320px;scroll-snap-align:start;background-color:white;border-radius:12px;padding:30px;box-shadow:0 5px 15px rgba(0,0,0,0.05);transition:transform 0.3s ease,box-shadow 0.3s ease;"
+                 onmouseover="this.style.transform='translateY(-10px)';this.style.boxShadow='0 15px 35px rgba(0,0,0,0.15)'"
+                 onmouseout="this.style.transform='translateY(0)';this.style.boxShadow='0 5px 15px rgba(0,0,0,0.05)'">
+                <div style="flex-shrink:0;width:70px;height:70px;background-color:#e0f7fa;border-radius:50%;display:flex;align-items:center;justify-content:center;margin:0 auto 25px;box-shadow:0 4px 10px rgba(0,188,212,0.1);">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#00BCD4" width="40px" height="40px"><path d="M0 0h24v24H0z" fill="none"/><path d="M11 17h2v-6h-2v6zm5-14H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 16H8V5h8v14zm-1-6h2v-2h-2z"/></svg>
+                </div>
+                <h3 style="font-size:1.6rem;color:#2c3e50;margin-bottom:8px;font-weight:bold;">Project Management</h3>
+                <p style="font-size:1rem;color:#666;line-height:1.6;margin-bottom:15px;">
+                    Efficient oversight and execution of your critical projects.
+                </p>
+                <a href="contact_us.html" style="text-decoration:none;display:inline-block;padding:10px 25px;background-color:#00BCD4;color:white;border-radius:50px;font-weight:bold;font-size:0.95rem;transition:background-color 0.3s ease;" onmouseover="this.style.backgroundColor='#0097A7'" onmouseout="this.style.backgroundColor='#00BCD4'">
+                        Learn More
+                    </a>
+                </div>
+
+            <div style="flex-shrink:0;width:320px;scroll-snap-align:start;background-color:white;border-radius:12px;padding:30px;box-shadow:0 5px 15px rgba(0,0,0,0.05);transition:transform 0.3s ease,box-shadow 0.3s ease;"
+                 onmouseover="this.style.transform='translateY(-10px)';this.style.boxShadow='0 15px 35px rgba(0,0,0,0.15)'"
+                 onmouseout="this.style.transform='translateY(0)';this.style.boxShadow='0 5px 15px rgba(0,0,0,0.05)'">
+                <div style="flex-shrink:0;width:70px;height:70px;background-color:#ede7f6;border-radius:50%;display:flex;align-items:center;justify-content:center;margin:0 auto 25px;box-shadow:0 4px 10px rgba(103,58,183,0.1);">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#673AB7" width="40px" height="40px"><path d="M0 0h24v24H0z" fill="none"/><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zM9 17H7v-7h2v7zm4 0h-2V7h2v10zm4 0h-2v-4h2v4z"/></svg>
+                </div>
+                <div style="flex-grow:1;text-align:left;">
+                    <h3 style="font-size:1.6rem;color:#2c3e50;margin-bottom:8px;font-weight:bold;">Data Analytics</h3>
+                    <p style="font-size:1rem;color:#666;line-height:1.6;margin-bottom:15px;">
+                        Transform raw data into actionable insights for informed decision-making.
+                    </p>
+                    <a href="contact_us.html" style="text-decoration:none;display:inline-block;padding:10px 25px;background-color:#673AB7;color:white;border-radius:50px;font-weight:bold;font-size:0.95rem;transition:background-color 0.3s ease;" onmouseover="this.style.backgroundColor='#512DA8'" onmouseout="this.style.backgroundColor='#673AB7'">
+                        Learn More
+                    </a>
+                </div>
+            </div>
+            <div style="flex-shrink:0;width:320px;scroll-snap-align:start;background-color:white;border-radius:12px;padding:30px;box-shadow:0 5px 15px rgba(0,0,0,0.05);transition:transform 0.3s ease,box-shadow 0.3s ease;"
+                 onmouseover="this.style.transform='translateY(-10px)';this.style.boxShadow='0 15px 35px rgba(0,0,0,0.15)'"
+                 onmouseout="this.style.transform='translateY(0)';this.style.boxShadow='0 5px 15px rgba(0,0,0,0.05)'">
+                <div style="flex-shrink:0;width:70px;height:70px;background-color:#ffe0b2;border-radius:50%;display:flex;align-items:center;justify-content:center;margin:0 auto 25px;box-shadow:0 4px 10px rgba(255,165,0,0.1);">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#FF9800" width="40px" height="40px"><path d="M0 0h24v24H0z" fill="none"/><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm-1 6h2v2h-2zm0 4h2v6h-2z"/></svg>
+                </div>
+                <div style="flex-grow:1;text-align:left;">
+                    <h3 style="font-size:1.6rem;color:#2c3e50;margin-bottom:8px;font-weight:bold;">Cybersecurity</h3>
+                    <p style="font-size:1rem;color:#666;line-height:1.6;margin-bottom:15px;">
+                        Protect your digital assets with robust security strategies and solutions.
+                    </p>
+                    <a href="contact_us.html" style="text-decoration:none;display:inline-block;padding:10px 25px;background-color:#FF9800;color:white;border-radius:50px;font-weight:bold;font-size:0.95rem;transition:background-color 0.3s ease;" onmouseover="this.style.backgroundColor='#FB8C00'" onmouseout="this.style.backgroundColor='#FF9800'">
+                        Learn More
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div id="dots-container" style="text-align:center;margin-top:40px;">
+            </div>
+    </div>
+  </section>
+  <section id="how-it-works" style="background: linear-gradient(135deg, #ffffff 0%, #ffffff 100%); padding: 20px 20px; font-family: 'Inter', system-ui, -apple-system, sans-serif;">
+  <div style="max-width:90%; margin: 0 auto; position: relative;">
+    <!-- Decorative elements -->
+    <div style="position: absolute; top: -50px; left: -50px; width: 200px; height: 200px; background: radial-gradient(circle, rgba(0,123,255,0.1) 0%, rgba(0,123,255,0) 70%); border-radius: 50%;"></div>
+    <div style="position: absolute; bottom: -30px; right: -30px; width: 150px; height: 150px; background: radial-gradient(circle, rgba(102,187,106,0.1) 0%, rgba(102,187,106,0) 70%); border-radius: 50%;"></div>
+    
+    <div style=" padding: 80px 40px;  position: relative; overflow: hidden;">
+      <div style="max-width: 700px; margin: 0 auto 60px; text-align: center;">
+        <h2 style="font-size: 2.5rem; color: #1a2b50; margin-bottom: 16px; font-weight: 800; line-height: 1.2;">How Hitaishi Services Works</h2>
+        <p style="font-size: 1.1rem; color: #4a5568; line-height: 1.7;">
+          Our streamlined process makes it effortless to find and hire top professionals for your needs.
+        </p>
+      </div>
+
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 30px; position: relative;">
+        <!-- Progress line -->
+        <div style="position: absolute; top: 40px; left: 12%; width: 76%; height: 4px; background: linear-gradient(to right, #007bff, #4fc3f7, #ff7043, #43a047); border-radius: 4px; z-index: 0;"></div>
+
+        <!-- STEP 1 -->
+        <div style="position: relative; z-index: 1; text-align: center; padding: 0 15px;">
+          <div style="background: linear-gradient(135deg, #007bff, #0066d6); color: white; width: 80px; height: 80px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 25px; font-size: 2rem; font-weight: bold; box-shadow: 0 10px 20px rgba(0,123,255,0.15); border: 5px solid #e6f0ff;">
+            1
+          </div>
+          <h3 style="font-size: 1.3rem; color: #1a2b50; margin-bottom: 12px; font-weight: 700;">Search Services</h3>
+          <p style="font-size: 1rem; color: #4a5568; line-height: 1.6; margin: 0;">Browse our extensive network of qualified service providers in your area.</p>
+        </div>
+
+        <!-- STEP 2 -->
+        <div style="position: relative; z-index: 1; text-align: center; padding: 0 15px;">
+          <div style="background: linear-gradient(135deg, #4fc3f7, #00bcd4); color: white; width: 80px; height: 80px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 25px; font-size: 2rem; font-weight: bold; box-shadow: 0 10px 20px rgba(79,195,247,0.15); border: 5px solid #e6f7ff;">
+            2
+          </div>
+          <h3 style="font-size: 1.3rem; color: #1a2b50; margin-bottom: 12px; font-weight: 700;">Compare & Choose</h3>
+          <p style="font-size: 1rem; color: #4a5568; line-height: 1.6; margin: 0;">Evaluate profiles, prices, and reviews to select your ideal professional.</p>
+        </div>
+
+        <!-- STEP 3 -->
+        <div style="position: relative; z-index: 1; text-align: center; padding: 0 15px;">
+          <div style="background: linear-gradient(135deg, #ff7043, #ff5722); color: white; width: 80px; height: 80px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 25px; font-size: 2rem; font-weight: bold; box-shadow: 0 10px 20px rgba(255,112,67,0.15); border: 5px solid #fff0eb;">
+            3
+          </div>
+          <h3 style="font-size: 1.3rem; color: #1a2b50; margin-bottom: 12px; font-weight: 700;">Contact Provider</h3>
+          <p style="font-size: 1rem; color: #4a5568; line-height: 1.6; margin: 0;">Communicate directly to discuss project details and requirements.</p>
+        </div>
+
+        <!-- STEP 4 -->
+        <div style="position: relative; z-index: 1; text-align: center; padding: 0 15px;">
+          <div style="background: linear-gradient(135deg, #43a047, #2e7d32); color: white; width: 80px; height: 80px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 25px; font-size: 2rem; font-weight: bold; box-shadow: 0 10px 20px rgba(67,160,71,0.15); border: 5px solid #e8f5e9;">
+            4
+          </div>
+          <h3 style="font-size: 1.3rem; color: #1a2b50; margin-bottom: 12px; font-weight: 700;">Get Work Done</h3>
+          <p style="font-size: 1rem; color: #4a5568; line-height: 1.6; margin: 0;">Relax while your project is completed to your satisfaction.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section style="padding: 4rem 1rem; background: linear-gradient(to right, #fbfcfc, #e5e7eb); font-family: 'Segoe UI', sans-serif;">
+  <div style="max-width: 1100px; margin: 0 auto; text-align: center;">
+    <h2 style="font-size: 2.5rem; font-weight: 800; color: #111827; margin-bottom: 1.5rem;">✨ How We Work</h2>
+    <p style="font-size: 1.125rem; color: #6b7280; margin-bottom: 3rem;">
+      A streamlined 3-step journey that ensures transparency, collaboration, and results.
+    </p>
+
+    <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 2rem;">
+
+      <!-- Step 1 -->
+      <div style="flex: 1 1 300px; background-color: #ffffff; padding: 2rem; border-radius: 1.5rem; box-shadow: 0 10px 30px rgba(0,0,0,0.05); border-left: 6px solid #3b82f6; transition: transform 0.3s ease, box-shadow 0.3s ease;" 
+        onmouseover="this.style.transform='translateY(-8px)'; this.style.boxShadow='0 16px 40px rgba(0,0,0,0.08)'"
+        onmouseout="this.style.transform='none'; this.style.boxShadow='0 10px 30px rgba(0,0,0,0.05)'">
+        <div style="font-size: 2.5rem; margin-bottom: 1rem;">🧭</div>
+        <h3 style="font-size: 1.5rem; font-weight: 700; color: #1f2937; margin-bottom: 0.75rem;">1. Discovery</h3>
+        <p style="font-size: 1rem; color: #4b5563;">
+          We begin by understanding your goals, industry, and audience to tailor a strategy that works.
+        </p>
+      </div>
+
+      <!-- Step 2 -->
+      <div style="flex: 1 1 300px; background-color: #ffffff; padding: 2rem; border-radius: 1.5rem; box-shadow: 0 10px 30px rgba(0,0,0,0.05); border-left: 6px solid #10b981; transition: transform 0.3s ease, box-shadow 0.3s ease;" 
+        onmouseover="this.style.transform='translateY(-8px)'; this.style.boxShadow='0 16px 40px rgba(0,0,0,0.08)'"
+        onmouseout="this.style.transform='none'; this.style.boxShadow='0 10px 30px rgba(0,0,0,0.05)'">
+        <div style="font-size: 2.5rem; margin-bottom: 1rem;">🛠</div>
+        <h3 style="font-size: 1.5rem; font-weight: 700; color: #1f2937; margin-bottom: 0.75rem;">2. Design & Build</h3>
+        <p style="font-size: 1rem; color: #4b5563;">
+          Our designers and developers build powerful solutions aligned with your brand and strategy.
+        </p>
+      </div>
+
+      <!-- Step 3 -->
+      <div style="flex: 1 1 300px; background-color: #ffffff; padding: 2rem; border-radius: 1.5rem; box-shadow: 0 10px 30px rgba(0,0,0,0.05); border-left: 6px solid #ef4444; transition: transform 0.3s ease, box-shadow 0.3s ease;" 
+        onmouseover="this.style.transform='translateY(-8px)'; this.style.boxShadow='0 16px 40px rgba(0,0,0,0.08)'"
+        onmouseout="this.style.transform='none'; this.style.boxShadow='0 10px 30px rgba(0,0,0,0.05)'">
+        <div style="font-size: 2.5rem; margin-bottom: 1rem;">📈</div>
+        <h3 style="font-size: 1.5rem; font-weight: 700; color: #1f2937; margin-bottom: 0.75rem;">3. Launch & Grow</h3>
+        <p style="font-size: 1rem; color: #4b5563;">
+          We launch your product and support your growth with analytics, maintenance, and scaling plans.
+        </p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+
+ <section style="padding: 4rem 1rem; background: linear-gradient(135deg, #f0f0f1, #faf5f5); font-family: 'Segoe UI', sans-serif;">
+  <div style="max-width: 1200px; margin: 0 auto; text-align: center;">
+    <h5 style="font-size: 2.5rem; font-weight: 700; color: #0a0a0a; margin-bottom: 1rem;">What We Do</h5>
+    <p style="font-size: 1.05rem; color: #0e0f10; margin-bottom: 3rem;">
+      Transforming businesses with cutting-edge design, code, and strategy.
+    </p>
+
+    <div style="display: flex; flex-wrap: wrap; gap: 2rem; justify-content: center;">
+
+      <a href="SignIn.html" style="text-decoration: none;">
+      <div style="flex: 1 1 260px; backdrop-filter: blur(10px); background: rgba(255, 255, 255, 0.05); border: 1px solid rgba(255, 255, 255, 0.1); border-radius: 1rem; padding: 2rem; box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4); transition: transform 0.3s ease;" onmouseover="this.style.transform='scale(1.04)'" onmouseout="this.style.transform='scale(1)'">
+        <div style="font-size: 2rem; background: linear-gradient(45deg, #0ea5e9, #38bdf8); -webkit-background-clip: text; color: transparent; margin-bottom: 1rem;">💻</div>
+        <h3 style="font-size: 1.25rem; font-weight: 600; color: #060606; margin-bottom: 0.5rem;">Website Development</h3>
+        <p style="font-size: 1rem; color: #070808;">
+          Sleek, fast websites built to impress and perform on every device.
+        </p>
+      </div>
+      </a>
+      <a href="SignIn.html" style="text-decoration: none;">
+      <div style="flex: 1 1 260px; backdrop-filter: blur(10px); background: rgba(255, 255, 255, 0.05); border: 1px solid rgba(255, 255, 255, 0.1); border-radius: 1rem; padding: 2rem; box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4); transition: transform 0.3s ease;" onmouseover="this.style.transform='scale(1.04)'" onmouseout="this.style.transform='scale(1)'">
+        <div style="font-size: 2rem; background: linear-gradient(45deg, #10b981, #34d399); -webkit-background-clip: text; color: transparent; margin-bottom: 1rem;">📱</div>
+        <h3 style="font-size: 1.25rem; font-weight: 600; color: #0a0a0a; margin-bottom: 0.5rem;">Mobile App Solutions</h3>
+        <p style="font-size: 1rem; color: #0f1010;">
+          Cross-platform mobile apps with intuitive UI and native performance.
+        </p>
+      </div>
+      </a>
+      <a href="SignIn.html" style="text-decoration: none;">
+      <div style="flex: 1 1 260px; backdrop-filter: blur(10px); background: rgba(255, 255, 255, 0.05); border: 1px solid rgba(255, 255, 255, 0.1); border-radius: 1rem; padding: 2rem; box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4); transition: transform 0.3s ease;" onmouseover="this.style.transform='scale(1.04)'" onmouseout="this.style.transform='scale(1)'">
+        <div style="font-size: 2rem; background: linear-gradient(45deg, #f97316, #fb923c); -webkit-background-clip: text; color: transparent; margin-bottom: 1rem;">📊</div>
+        <h3 style="font-size: 1.25rem; font-weight: 600; color: #101010; margin-bottom: 0.5rem;">Digital Marketing</h3>
+        <p style="font-size: 1rem; color: #0a0b0c;">
+          Performance-driven marketing campaigns tailored for impact.
+        </p>
+      </div>
+      </a>
+      <a href="SignIn.html" style="text-decoration: none;">
+      <div style="flex: 1 1 260px; backdrop-filter: blur(10px); background: rgba(255, 255, 255, 0.05); border: 1px solid rgba(255, 255, 255, 0.1); border-radius: 1rem; padding: 2rem; box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4); transition: transform 0.3s ease;" onmouseover="this.style.transform='scale(1.04)'" onmouseout="this.style.transform='scale(1)'">
+        <div style="font-size: 2rem; background: linear-gradient(45deg, #8b5cf6, #a78bfa); -webkit-background-clip: text; color: transparent; margin-bottom: 1rem;">🧠</div>
+        <h3 style="font-size: 1.25rem; font-weight: 600; color: #0d0f10; margin-bottom: 0.5rem;">Business Consulting</h3>
+        <p style="font-size: 1rem; color: #0d0e0e;">
+          Expert insights and roadmaps that align with your growth strategy.
+        </p>
+      </div>
+      </a>
+    </div>
+  </div>
+ </section>
+ <section style="padding: 6rem 1rem; background: linear-gradient(135deg, #f2f3f3, #f6f7f7); font-family: 'Segoe UI', sans-serif;">
+  <div style="max-width: 1100px; margin: 0 auto;">
+    <div style="text-align: center; margin-bottom: 4rem;">
+      <h6 style="font-size: 2.5rem; font-weight: 800; color: #0f172a; margin-bottom: 1rem;" class="feature-heading">✨ Features That Set Us Apart</h6>
+      <p style="font-size: 1.15rem; color: #475569; max-width: 700px; margin: 0 auto;" class="feature-subtext">
+        Discover the key pillars that define our difference — why businesses trust us to bring their vision to life with precision, speed, and creativity.
+      </p>
+    </div>
+
+    <div class="feature-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(500px, 1fr)); gap: 3rem;">
+      <!-- Feature 1 -->
+      <div style="display: flex; align-items: flex-start; gap: 1.25rem;">
+        <div style="font-size: 2rem;">🎯</div>
+        <div>
+          <h3 style="font-size: 1.3rem; font-weight: 700; color: #0f172a; margin-bottom: 0.5rem;">Strategy-First Approach</h3>
+          <p style="font-size: 1.05rem; color: #475569;">
+            We begin every project by aligning with your goals, tailoring each solution to ensure results-driven execution.
+          </p>
+        </div>
+      </div>
+
+      <!-- Feature 2 -->
+      <div style="display: flex; align-items: flex-start; gap: 1.25rem;">
+        <div style="font-size: 2rem;">⚡</div>
+        <div>
+          <h3 style="font-size: 1.3rem; font-weight: 700; color: #0f172a; margin-bottom: 0.5rem;">Agile & Transparent Process</h3>
+          <p style="font-size: 1.05rem; color: #475569;">
+            Through agile workflows, real-time updates, and open communication, you’re always in the loop from start to finish.
+          </p>
+        </div>
+      </div>
+
+      <!-- Feature 3 -->
+      <div style="display: flex; align-items: flex-start; gap: 1.25rem;">
+        <div style="font-size: 2rem;">🌐</div>
+        <div>
+          <h3 style="font-size: 1.3rem; font-weight: 700; color: #0f172a; margin-bottom: 0.5rem;">Full-Spectrum Services</h3>
+          <p style="font-size: 1.05rem; color: #475569;">
+            From branding to deployment, we handle it all in-house — giving you consistency, speed, and maximum value.
+          </p>
+        </div>
+      </div>
+
+      <!-- Feature 4 -->
+      <div style="display: flex; align-items: flex-start; gap: 1.25rem;">
+        <div style="font-size: 2rem;">💡</div>
+        <div>
+          <h3 style="font-size: 1.3rem; font-weight: 700; color: #0f172a; margin-bottom: 0.5rem;">Innovation Meets Experience</h3>
+          <p style="font-size: 1.05rem; color: #475569;">
+            Our team blends cutting-edge creativity with years of industry know-how to create smart, scalable digital solutions.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Responsive Styles -->
+  <style>
+    @media (max-width: 600px) {
+      .feature-grid {
+        grid-template-columns: 1fr !important;
+        gap: 2rem !important;
+      }
+
+      .feature-heading {
+        font-size: 1.8rem !important;
+      }
+
+      .feature-subtext {
+        font-size: 1rem !important;
+      }
+
+      h3 {
+        font-size: 1.15rem !important;
+      }
+
+      p {
+        font-size: 1rem !important;
+      }
+    }
+  </style>
+</section>
+
+
+ <section style="padding: 4rem 1rem; background-color: #fcedfa; font-family: 'Segoe UI', sans-serif;">
+  <div style="max-width: 1200px; margin: 0 auto; display: flex; flex-wrap: wrap; gap: 3rem; align-items: center;">
+
+    <!-- Left Column: Text Content -->
+    <div style="flex: 1 1 500px;">
+      <b style="font-size: 2.5rem; font-weight: 700; color: #1e293b; margin-bottom: 1rem;">Website Design & Development</b>
+      <p style="font-size: 1.05rem; color: #475569; margin-bottom: 1.5rem;">
+        We specialize in creating visually appealing, user-friendly websites that elevate your brand and drive results. Whether you're starting fresh or revamping an existing site, we've got you covered from concept to launch.
+      </p>
+
+      <ul style="list-style: none; padding: 0; margin-bottom: 2rem;">
+        <li style="margin-bottom: 1rem; font-size: 1rem; color: #334155;">
+          ✅ <strong>Complete Website Management:</strong> We handle everything — content updates, speed optimization, maintenance, and more — so you can focus on your business.
+        </li>
+        <li style="margin-bottom: 1rem; font-size: 1rem; color: #334155;">
+          ✅ <strong>Robust Security & Protection:</strong> Your site is monitored 24/7 to prevent cyber attacks and ensure your data stays safe and secure.
+        </li>
+        <li style="font-size: 1rem; color: #334155;">
+          ✅ <strong>Custom Design & Development:</strong> Tailored to your brand and goals, fully responsive, and built for performance.
+        </li>
+      </ul>
+
+      <a href="SignIn.html" style="display: inline-block; padding: 0.75rem 1.5rem; background-color: #0ea5e9; color: white; font-weight: 600; border-radius: 0.5rem; text-decoration: none; transition: background 0.3s ease;">
+        Let's Build Your Website
+      </a>
+    </div>
+
+    <!-- Right Column: Image or Illustration -->
+    <div style="flex: 1 1 500px; text-align: center;">
+      <img src="https://cdn-icons-png.flaticon.com/512/4140/4140048.png" loading="lazy" alt="Web Development Illustration" style="max-width: 100%; height: auto; border-radius: 1rem;">
+    </div>
+
+  </div>
+ </section>
+ <section style="padding: 6rem 1rem; background-color: #f8fafc; font-family: 'Segoe UI', sans-serif;">
+  <div style="max-width: 800px; margin: 0 auto;">
+    
+    <div style="text-align: center; margin-bottom: 3rem;">
+      <i style="font-size: 2.75rem; font-weight: 800; color: #0f172a; margin-bottom: 1rem;">💬 Have Questions? We Have Answers!</i>
+      <p style="font-size: 1.15rem; color: #475569;">
+        Curious how we can help your brand thrive? Explore the most common questions our clients ask and how we deliver real results.
+      </p>
+    </div>
+
+    <!-- Accordion -->
+    <div style="border-top: 1px solid #e2e8f0;">
+      <!-- FAQ 1 -->
+      <details style="padding: 1.5rem 0; border-bottom: 1px solid #e2e8f0;">
+        <summary style="font-size: 1.25rem; font-weight: 600; color: #1e293b; cursor: pointer; display: flex; justify-content: space-between; align-items: center;">
+          🛠 What Services Do You Offer?
+          <span style="font-size: 1.5rem; color: #94a3b8;">➕</span>
+        </summary>
+        <p style="margin-top: 1rem; font-size: 1.05rem; color: #334155;">
+          We offer full-stack web and mobile development, UI/UX design, digital marketing, and branding solutions to power your growth.
+        </p>
+      </details>
+
+      <!-- FAQ 2 -->
+      <details style="padding: 1.5rem 0; border-bottom: 1px solid #e2e8f0;">
+        <summary style="font-size: 1.25rem; font-weight: 600; color: #1e293b; cursor: pointer; display: flex; justify-content: space-between; align-items: center;">
+          📞 How Do We Get Started?
+          <span style="font-size: 1.5rem; color: #94a3b8;">➕</span>
+        </summary>
+        <p style="margin-top: 1rem; font-size: 1.05rem; color: #334155;">
+          Just send us a message! We’ll set up a call to learn about your vision, walk you through our process, and outline next steps.
+        </p>
+      </details>
+
+      <!-- FAQ 3 -->
+      <details style="padding: 1.5rem 0;">
+        <summary style="font-size: 1.25rem; font-weight: 600; color: #1e293b; cursor: pointer; display: flex; justify-content: space-between; align-items: center;">
+          🏆 What Makes Hitaishi Stand Out?
+          <span style="font-size: 1.5rem; color: #94a3b8;">➕</span>
+        </summary>
+        <p style="margin-top: 1rem; font-size: 1.05rem; color: #334155;">
+          We're not just developers — we're digital growth partners who deliver innovative, scalable solutions with full transparency.
+        </p>
+      </details>
+      <!-- FAQ 4 -->
+        <details style="padding: 1.5rem 0; border-bottom: 1px solid #e2e8f0;">
+          <summary style="font-size: 1.25rem; font-weight: 600; color: #1e293b; cursor: pointer; display: flex; justify-content: space-between; align-items: center;">
+            ⏱ How Long Does a Project Typically Take?
+            <span style="font-size: 1.5rem; color: #94a3b8;">➕</span>
+          </summary>
+          <p style="margin-top: 1rem; font-size: 1.05rem; color: #334155;">
+            Timelines vary by project scope, but most projects take between 2 to 8 weeks. We provide a clear timeline after understanding your requirements.
+          </p>
+        </details>
+
+        <!-- FAQ 5 -->
+        <details style="padding: 1.5rem 0; border-bottom: 1px solid #e2e8f0;">
+          <summary style="font-size: 1.25rem; font-weight: 600; color: #1e293b; cursor: pointer; display: flex; justify-content: space-between; align-items: center;">
+            💼 Do You Work With Startups or Enterprises?
+            <span style="font-size: 1.5rem; color: #94a3b8;">➕</span>
+          </summary>
+          <p style="margin-top: 1rem; font-size: 1.05rem; color: #334155;">
+            We collaborate with clients of all sizes — from solo founders and startups to large enterprises — tailoring solutions to their unique challenges.
+          </p>
+        </details>
+
+        <!-- FAQ 6 -->
+        <details style="padding: 1.5rem 0;">
+          <summary style="font-size: 1.25rem; font-weight: 600; color: #1e293b; cursor: pointer; display: flex; justify-content: space-between; align-items: center;">
+            🔐 Is My Data and Idea Safe With You?
+            <span style="font-size: 1.5rem; color: #94a3b8;">➕</span>
+          </summary>
+          <p style="margin-top: 1rem; font-size: 1.05rem; color: #334155;">
+            Absolutely. We sign NDAs upon request and follow strict confidentiality and data protection practices across every stage of the project.
+          </p>
+        </details>
+
+    </div>
+
+  </div>
+ </section>
+ <script>
+  // JavaScript for handling the search
+  function searchService() {
+      const searchQuery = document.getElementById('searchInput').value;
+      if (searchQuery.trim() === '') {
+          alert('Please enter a search term!');
+      } else {
+          alert('Searching for: ' + searchQuery);
+      }
+  }
+
+  // JavaScript for form validation
+  function validateForm() {
+      const name = document.getElementById('name').value;
+      const email = document.getElementById('email').value;
+      const message = document.getElementById('message').value;
+
+      if (name === '' || email === '' || message === '') {
+          alert('Please fill out all fields.');
+          return false;
+      }
+      alert('Message sent successfully!');
+      return true;
+  }
+</script>
+
+  <footer style="background-color: #f1f1f1; padding: 40px 0;">
+    <div style="max-width: 1200px; margin: 0 auto; padding-left: -600px;">
+
+        <!-- Education & Training -->
+        <div style="text-align: left; margin: 10px;">
+            <a href="education_training.html" style="text-decoration: none;">
+                <p style="font-size: 16px; color: #333; font-weight: bold;">Education & Training</p>
+            </a>
+            <p style="font-size: 14px; color: #555; margin-top: 10px;">Explore a wide range of educational and training options across various fields to enhance your skills and career opportunities.</p>
+            <hr style="border: 1px solid #ddd; margin-top: 20px;"/>
+        </div>
+
+        <!-- Properties & Rents -->
+        <div style="text-align: left; margin: 10px;">
+            <a href="properties_rent.html" style="text-decoration: none;">
+                <p style="font-size: 16px; color: #333; font-weight: bold;">Properties & Rents</p>
+            </a>
+            <p style="font-size: 14px; color: #555; margin-top: 10px;">Find the perfect property for sale, rent, or investment in your desired location with comprehensive listings and details.</p>
+            <hr style="border: 1px solid #ddd; margin-top: 20px;"/>
+        </div>
+
+        <!-- Professional Services -->
+        <div style="text-align: left; margin: 10px;">
+            <a href="proffessional_services.html" style="text-decoration: none;">
+                <p style="font-size: 16px; color: #333; font-weight: bold;">Professional Services</p>
+            </a>
+            <p style="font-size: 14px; color: #555; margin-top: 10px;">Access top-notch professional services, including legal, financial, and consulting services, from trusted experts.</p>
+            <hr style="border: 1px solid #ddd; margin-top: 20px;"/>
+        </div>
+
+        <!-- Travel & Transport -->
+        <div style="text-align: left; margin: 10px;">
+            <a href="travel_transport.html" style="text-decoration: none;">
+                <p style="font-size: 16px; color: #333; font-weight: bold;">Travel & Transport</p>
+            </a>
+            <p style="font-size: 14px; color: #555; margin-top: 10px;">Book your travel needs, including flights, cabs, and buses, with ease and at the best prices.</p>
+            <hr style="border: 1px solid #ddd; margin-top: 20px;"/>
+        </div>
+
+        <!-- Health & Wellness -->
+        <div style="text-align: left; margin: 10px;">
+            <a href="health_wellness.html" style="text-decoration: none;">
+                <p style="font-size: 16px; color: #333; font-weight: bold;">Health & Wellness</p>
+            </a>
+            <p style="font-size: 14px; color: #555; margin-top: 10px;">Discover health and wellness services to maintain a balanced lifestyle, including fitness classes, clinics, and more.</p>
+            <hr style="border: 1px solid #ddd; margin-top: 20px;"/>
+        </div>
+
+        <!-- Events -->
+        <div style="text-align: left; margin: 10px;">
+            <a href="events.html" style="text-decoration: none;">
+                <p style="font-size: 16px; color: #333; font-weight: bold;">Events</p>
+            </a>
+            <p style="font-size: 14px; color: #555; margin-top: 10px;">Stay updated with upcoming events, conferences, exhibitions, and entertainment activities near you.</p>
+            <hr style="border: 1px solid #ddd; margin-top: 20px;"/>
+        </div>
+
+        <!-- Home & Office -->
+        <div style="text-align: left; margin: 10px;">
+            <a href="home_office.html" style="text-decoration: none;">
+                <p style="font-size: 16px; color: #333; font-weight: bold;">Home & Office</p>
+            </a>
+            <p style="font-size: 14px; color: #555; margin-top: 10px;">Explore furniture, appliances, and office supplies to furnish your home or workspace with the best products.</p>
+            <hr style="border: 1px solid #ddd; margin-top: 20px;"/>
+        </div>
+
+        <!-- Shopping -->
+        <div style="text-align: left; margin: 10px;">
+            <a href="shopping.html" style="text-decoration: none;">
+                <p style="font-size: 16px; color: #333; font-weight: bold;">Shopping</p>
+            </a>
+            <p style="font-size: 14px; color: #555; margin-top: 10px;">Shop online for a variety of products including electronics, clothing, accessories, and much more.</p>
+            <hr style="border: 1px solid #ddd; margin-top: 20px;"/>
+        </div>
+
+        <!-- Placement & Jobs -->
+        <div style="text-align: left; margin: 10px;">
+            <a href="placements_jobs.html" style="text-decoration: none;">
+                <p style="font-size: 16px; color: #333; font-weight: bold;">Placement & Jobs</p>
+            </a>
+            <p style="font-size: 14px; color: #555; margin-top: 10px;">Browse job listings and placement opportunities, and connect with top employers in various industries.</p>
+            <hr style="border: 1px solid #ddd; margin-top: 20px;"/>
+        </div>
+
+        <!-- Social Media Icons -->
+        <div style="text-align: center; margin-top: 20px;">
+            <p style="font-size: 16px; color: #333; font-weight: bold;">Follow Us</p>
+            <div style="margin-top:20px;">
+                <a href="https://www.facebook.com" target="_blank" style="margin: 0 15px; text-decoration: none;">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" alt="Facebook" style="width: 40px; height: 40px;"/>
+                </a>
+                <a href="https://www.twitter.com" target="_blank" style="margin: 0 15px; text-decoration: none;">
+                    <img src="https://cdn.iconscout.com/icon/free/png-256/free-twitter-logo-icon-download-in-svg-png-gif-file-formats--social-media-pack-logos-icons-83443.png?f=webp&w=128" alt="Twitter" style="width: 40px; height: 40px;"/>
+                </a>
+                <a href="https://www.instagram.com" target="_blank" style="margin: 0 15px; text-decoration: none;">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram" style="width: 40px; height: 40px;"/>
+                </a>
+                <a href="https://www.linkedin.com" target="_blank" style="margin: 0 15px; text-decoration: none;">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/e/e6/729101_linkedin_icon.png" alt="LinkedIn" style="width: 40px; height: 40px;"/>
+                </a>
+            </div>
+            <br>
+            <p style="margin: 0; color: black;">&copy; 2025 Hitaishi Web Portal. All rights reserved.</p>
+        </div>
+    </div>
+    
+</footer>
+</body>
+</html>

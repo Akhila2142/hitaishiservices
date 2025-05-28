@@ -1,0 +1,1340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Health and Wellness | Hithaishi Services – Wellness Programs & Digital Solutions</title>
+  <meta name="description" content="Discover health and wellness solutions by Hithaishi Services. We blend technology and care to support healthy lifestyles and holistic wellbeing." />
+  <meta name="keywords" content="health and wellness, wellness programs, holistic health, digital wellness solutions, Hithaishi Services, lifestyle support, mental wellbeing, fitness solutions" />
+  <meta property="og:title" content="Health and Wellness | Hithaishi Services" />
+  <meta property="og:description" content="Technology-driven health and wellness services to support physical, mental, and emotional wellbeing." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://yourwebsite.com/health-and-wellness" />
+  <meta property="og:image" content="https://yourwebsite.com/images/health-wellness-banner.jpg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary: #0084ff;
+      --primary-dark: #0066cc;
+      --secondary: #00c896;
+      --dark: #1e293b;
+      --light: #f8fafc;
+      --gray: #64748b;
+      --light-gray: #e2e8f0;
+      --white: #ffffff;
+      --shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      --transition: all 0.3s ease;
+    }
+    
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    
+    body {
+      font-family: 'Poppins', sans-serif;
+      line-height: 1.6;
+      color: var(--dark);
+      background-color: var(--white);
+      overflow-x: hidden;
+    }
+    
+    h1, h2, h3, h4, h5, h6 {
+      font-family: 'Playfair Display', serif;
+      font-weight: 600;
+      line-height: 1.2;
+    }
+    
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+    
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+    
+    .container {
+      width: 100%;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+    
+    /* Header Styles */
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      background: linear-gradient(30deg, var(--primary), var(--white));
+      padding: 15px 0;
+      box-shadow: var(--shadow);
+    }
+    
+    .header-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0 20px;
+    }
+    
+    .logo {
+      color: var(--white);
+    }
+    
+    .logo h1 {
+      font-size: 2.5rem;
+      margin-bottom: 5px;
+      letter-spacing: 1px;
+    }
+    
+    .logo p {
+      font-size: 1rem;
+      margin: 0;
+      font-style: italic;
+    }
+    
+    .nav-links {
+      display: flex;
+      gap: 15px;
+    }
+    
+    .nav-link {
+      color: var(--white);
+      font-size: 1rem;
+      padding: 8px 15px;
+      background-color: rgba(0, 0, 0, 0.2);
+      border-radius: 5px;
+      transition: var(--transition);
+    }
+    
+    .nav-link:hover {
+      background-color: rgba(0, 0, 0, 0.4);
+    }
+    
+    /* Hero Section */
+    .hero {
+      position: relative;
+      width: 100%;
+      height: 60vh;
+      min-height: 400px;
+      max-height: 600px;
+      background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('https://lirp.cdn-website.com/b74c74cf/dms3rep/multi/opt/Depositphotos_33698937_XL+%282%29-640w.jpg');
+      background-size: cover;
+      background-position: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      color: var(--white);
+    }
+    
+    .hero h2 {
+      font-size: clamp(2rem, 6vw, 4rem);
+      margin-bottom: 20px;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    }
+    
+    /* Section Common Styles */
+    .section {
+      padding: 80px 0;
+    }
+    
+    .section-title {
+      text-align: center;
+      font-size: clamp(1.8rem, 4vw, 2.5rem);
+      margin-bottom: 20px;
+      color: var(--dark);
+    }
+    
+    .section-subtitle {
+      text-align: center;
+      font-size: clamp(1rem, 2vw, 1.2rem);
+      color: var(--gray);
+      max-width: 700px;
+      margin: 0 auto 40px;
+      padding: 0 20px;
+    }
+    
+    /* Wellness Cards */
+    .wellness-cards {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 30px;
+      margin-top: 40px;
+    }
+    
+    .wellness-card {
+      flex: 1 1 300px;
+      background: var(--white);
+      border-radius: 12px;
+      padding: 30px;
+      box-shadow: var(--shadow);
+      transition: var(--transition);
+      text-align: center;
+    }
+    
+    .wellness-card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+    }
+    
+    .wellness-icon {
+      font-size: 3rem;
+      margin-bottom: 20px;
+    }
+    
+    .wellness-card h3 {
+      font-size: 1.5rem;
+      margin-bottom: 15px;
+      color: var(--primary);
+    }
+    
+    /* Programs Section */
+    .programs {
+      background-color: #f9fafb;
+    }
+    
+    .program-cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 30px;
+    }
+    
+    .program-card {
+      background-color: var(--white);
+      border: 1px solid var(--light-gray);
+      border-radius: 12px;
+      padding: 30px;
+      transition: var(--transition);
+    }
+    
+    .program-card:hover {
+      background-color: #f1f5f9;
+      border-color: var(--primary);
+    }
+    
+    .program-card h3 {
+      font-size: 1.3rem;
+      margin-bottom: 15px;
+      color: var(--primary-dark);
+    }
+    
+    /* Conditions Section */
+    .conditions {
+      background-color: var(--white);
+    }
+    
+    .conditions-table {
+      width: 100%;
+      max-width: 1000px;
+      margin: 0 auto;
+      border-collapse: separate;
+      border-spacing: 0 15px;
+    }
+    
+    .conditions-table th {
+      padding: 15px 20px;
+      color: var(--primary);
+      font-size: 1.1rem;
+      text-align: left;
+    }
+    
+    .conditions-table td {
+      padding: 20px;
+      background: var(--white);
+      border-radius: 8px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    }
+    
+    .conditions-table td:first-child {
+      font-weight: 600;
+      color: var(--primary);
+    }
+    
+    /* Eat Well Section */
+    .eat-well-cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 30px;
+    }
+    
+    .eat-well-card {
+      background: linear-gradient(145deg, var(--white), #f1f1f1);
+      border-radius: 20px;
+      padding: 30px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.07);
+      text-align: center;
+      transition: var(--transition);
+    }
+    
+    .eat-well-card:hover {
+      transform: scale(1.03);
+    }
+    
+    .eat-well-icon {
+      font-size: 3rem;
+      margin-bottom: 20px;
+    }
+    
+    .eat-well-card h3 {
+      color: #1b5e20;
+      margin-bottom: 15px;
+    }
+    
+    /* Move Your Body Section */
+    .move-body {
+      background-color: #f9f9f9;
+    }
+    
+    .move-body-content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 40px;
+    }
+    
+    .move-body-img {
+      width: 100%;
+      max-width: 500px;
+      border-radius: 10px;
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    }
+    
+    .activity-table {
+      width: 100%;
+      border-collapse: collapse;
+      border-radius: 10px;
+      overflow: hidden;
+    }
+    
+    .activity-table th {
+      padding: 15px 20px;
+      color: var(--primary-dark);
+      text-align: left;
+      background-color: #e0f0ff;
+      border-bottom: 2px solid var(--primary-dark);
+    }
+    
+    .activity-table tr {
+      background-color: var(--white);
+      border-bottom: 1px solid #ddd;
+    }
+    
+    .activity-table tr:nth-child(even) {
+      background-color: #f9f9f9;
+    }
+    
+    .activity-table td {
+      padding: 15px;
+    }
+    
+    .activity-icon {
+      font-size: 2rem;
+      text-align: center;
+    }
+    
+    /* Anxiety Section */
+    .anxiety-tips {
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+    
+    .anxiety-tip {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      background-color: #f0fdf4;
+      padding: 20px;
+      border-radius: 10px;
+      transition: var(--transition);
+    }
+    
+    .anxiety-tip:hover {
+      background-color: #dcfce7;
+    }
+    
+    .anxiety-icon {
+      font-size: 2rem;
+      flex-shrink: 0;
+    }
+    
+    /* FAQ Section */
+    .faq {
+      background-color: #f9f9f9;
+    }
+    
+    .faq-item {
+      background-color: var(--white);
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      margin-bottom: 20px;
+      cursor: pointer;
+    }
+    
+    .faq-question {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 1.1rem;
+    }
+    
+    .faq-answer {
+      display: none;
+      padding-top: 15px;
+      color: var(--gray);
+    }
+    
+    /* Team Section */
+    .team {
+      background: #fff3e0;
+    }
+    
+    .team-members {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 30px;
+    }
+    
+    .team-card {
+      background: var(--white);
+      border-radius: 16px;
+      padding: 30px;
+      width: 280px;
+      text-align: center;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+      transition: var(--transition);
+    }
+    
+    .team-card:hover {
+      transform: translateY(-5px);
+    }
+    
+    .team-img {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 20px;
+      border: 3px solid #ffe0b2;
+    }
+    
+    .team-card h3 {
+      color: #e65100;
+      margin-bottom: 5px;
+    }
+    
+    .team-card p {
+      color: #777;
+    }
+    
+    /* Footer */
+    footer {
+      background-color: #f1f1f1;
+      padding: 60px 0 20px;
+    }
+    
+    .footer-content {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 30px;
+      margin-bottom: 40px;
+    }
+    
+    .footer-column {
+      padding: 0 15px;
+    }
+    
+    .footer-column h3 {
+      font-size: 1.1rem;
+      color: #333;
+      margin-bottom: 15px;
+    }
+    
+    .footer-column p {
+      font-size: 0.9rem;
+      color: #555;
+      margin-bottom: 15px;
+    }
+    
+    .footer-divider {
+      border: none;
+      height: 1px;
+      background-color: #ddd;
+      margin: 15px 0;
+    }
+    
+    .social-links {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      margin: 30px 0;
+    }
+    
+    .social-icon {
+      width: 40px;
+      height: 40px;
+      transition: var(--transition);
+    }
+    
+    .social-icon:hover {
+      transform: scale(1.1);
+    }
+    
+    .copyright {
+      text-align: center;
+      color: #333;
+      font-size: 0.9rem;
+    }
+    
+    /* Responsive Styles */
+    @media (max-width: 992px) {
+      .header-container {
+        flex-direction: column;
+        text-align: center;
+      }
+      
+      .nav-links {
+        margin-top: 20px;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+      
+      .section {
+        padding: 60px 0;
+      }
+    }
+    
+    @media (max-width: 768px) {
+      .hero {
+        height: 50vh;
+        min-height: 300px;
+      }
+      
+      .nav-link {
+        padding: 8px 12px;
+        font-size: 0.9rem;
+      }
+      
+      .conditions-table {
+        display: block;
+        overflow-x: auto;
+      }
+      
+      .move-body-content {
+        gap: 30px;
+      }
+      
+      .team-card {
+        width: 100%;
+        max-width: 320px;
+      }
+    }
+    
+    @media (max-width: 576px) {
+      .logo h1 {
+        font-size: 2rem;
+      }
+      
+      .hero {
+        height: 40vh;
+      }
+      
+      .section {
+        padding: 40px 0;
+      }
+      
+      .wellness-card, .program-card, .eat-well-card {
+        flex: 1 1 100%;
+      }
+      
+      .activity-table td:first-child {
+        width: 60px;
+      }
+    }
+  </style>
+</head>
+<body style="margin: 0;padding: 0;font-family: Arial, Helvetica, sans-serif;">
+  <!-- Header -->
+ <header style="position: sticky; top: 0; z-index: 1000; background: linear-gradient(135deg, #0066cc, #004080); padding: 15px 5%; box-shadow: 0 4px 12px rgba(0,0,0,0.1); font-family: 'Segoe UI', Roboto, sans-serif; backdrop-filter: blur(5px);">
+  <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 20px; max-width: 1400px; margin: 0 auto;">
+    
+    <!-- Logo Section -->
+    <a href="index.html" style="color: white; text-decoration: none; flex-shrink: 0; display: flex; align-items: center; gap: 10px;">
+      
+      <div style="background: #ffffff; border-radius: 10px; padding: 2px 2px; display: inline-flex; align-items: center; justify-content: center; box-shadow: 0 2px 6px rgba(0, 102, 204, 0.25);">
+        <img src="img/logo_hitaishiservices.png" alt="Hitaishi Logo" width="32" height="32" style="display: block;" />
+      </div>
+
+      <div>
+        <h1 style="margin: 0; font-size: 32px; font-weight: 800; letter-spacing: 1px; background: linear-gradient(to right, #ffffff, #e6f2ff); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">Hitaishi</h1>
+        <p style="font-size: 14px; margin: 2px 0 0 0; font-weight: 500; color: rgba(255,255,255,0.9);">Find trusted services and professionals</p>
+      </div>
+    </a>
+    
+    <!-- Search Form -->
+    <form action="search.html" method="GET" style="flex-grow: 1; max-width: 500px; min-width: 250px; display: flex; box-shadow: 0 2px 10px rgba(0,0,0,0.1); border-radius: 8px; overflow: hidden; background: rgba(255,255,255,0.9); transition: all 0.3s ease;" onfocusin="this.style.boxShadow='0 2px 15px rgba(0,80,200,0.2)'; this.style.background='white'" onfocusout="this.style.boxShadow='0 2px 10px rgba(0,0,0,0.1)'; this.style.background='rgba(255,255,255,0.9)'">
+      <input
+        type="text"
+        name="query"
+        placeholder="Search services, businesses..."
+        style="flex-grow: 1; border: none; padding: 12px 20px; font-size: 0.95rem; outline: none; color: #003366; background: transparent;"
+        required
+      />
+      <button
+        type="submit"
+        style="background: linear-gradient(to right, #0066cc, #004080); border: none; padding: 0 25px; cursor: pointer; color: white; font-weight: 600; font-size: 1rem; transition: all 0.3s ease; display: flex; align-items: center; justify-content: center;"
+        onmouseover="this.style.opacity='0.9'"
+        onmouseout="this.style.opacity='1'"
+        aria-label="Search"
+      >
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" style="margin-right: 5px;">
+          <path d="M11 19C15.4183 19 19 15.4183 19 11C19 6.58172 15.4183 3 11 3C6.58172 3 3 6.58172 3 11C3 15.4183 6.58172 19 11 19Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M21 21L16.65 16.65" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        Search
+      </button>
+    </form>
+
+    <!-- Navigation Links -->
+    <nav id="navLinks" style="display: flex; gap: 10px; flex-wrap: wrap; align-items: center; flex-shrink: 0;">
+      <a href="index.html" style="color: white; font-size: 0.95rem; padding: 8px 15px; text-decoration: none; transition: all 0.3s ease; font-weight: 500; border-radius: 6px; border: 1px solid rgba(255,255,255,0.3);" onmouseover="this.style.backgroundColor='rgba(255,255,255,0.15)'" onmouseout="this.style.backgroundColor='transparent'">Home</a>
+      <a href="Services.html" style="color: white; font-size: 0.95rem; padding: 8px 15px; text-decoration: none; transition: all 0.3s ease; font-weight: 500; border-radius: 6px; border: 1px solid rgba(255,255,255,0.3);" onmouseover="this.style.backgroundColor='rgba(255,255,255,0.15)'" onmouseout="this.style.backgroundColor='transparent'">Services</a>
+      <a href="ListBusiness.html" style="color: white; font-size: 0.95rem; padding: 8px 15px; text-decoration: none; transition: all 0.3s ease; font-weight: 500; border-radius: 6px; border: 1px solid rgba(255,255,255,0.3);" onmouseover="this.style.backgroundColor='rgba(255,255,255,0.15)'" onmouseout="this.style.backgroundColor='transparent'">List Business</a>
+      <a href="postadd.html" style="color: white; font-size: 0.95rem; padding: 8px 15px; background: rgba(255,255,255,0.2); text-decoration: none; transition: all 0.3s ease; font-weight: 600; border-radius: 6px; border: 1px solid rgba(255,255,255,0.4);" onmouseover="this.style.backgroundColor='rgba(255,255,255,0.3)'" onmouseout="this.style.backgroundColor='rgba(255,255,255,0.2)'">Post Free Ad</a>
+      <a href="SignIn.html" style="color: #0066cc; font-size: 0.95rem; padding: 8px 15px; background: white; text-decoration: none; transition: all 0.3s ease; font-weight: 600; border-radius: 6px;" onmouseover="this.style.backgroundColor='#f0f7ff'; this.style.color='#004080'" onmouseout="this.style.backgroundColor='white'; this.style.color='#0066cc'">Sign In</a>
+    </nav>
+
+    <!-- Menu Button for Mobile -->
+    <button onclick="toggleMenu()" style="display: none; background: rgba(255,255,255,0.2); border: 1px solid rgba(255,255,255,0.4); border-radius: 6px; padding: 8px 12px; font-size: 1.2rem; color: white; cursor: pointer; flex-shrink: 0;" id="menuToggle" aria-label="Toggle Menu">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M3 12H21" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M3 6H21" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M3 18H21" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+    </button>
+
+  </div>
+</header>
+
+<script>
+  function toggleMenu() {
+    var nav = document.getElementById("navLinks");
+    if (nav.style.display === "none" || nav.style.display === "") {
+      nav.style.display = "flex";
+      nav.style.flexDirection = "column";
+      nav.style.position = "absolute";
+      nav.style.top = "100%";
+      nav.style.left = "0";
+      nav.style.right = "0";
+      nav.style.background = "linear-gradient(135deg, #0066cc, #004080)";
+      nav.style.padding = "20px 5%";
+      nav.style.gap = "15px";
+      nav.style.boxShadow = "0 10px 20px rgba(0,0,0,0.1)";
+    } else {
+      nav.style.display = "none";
+    }
+  }
+
+  function handleResize() {
+    var width = window.innerWidth;
+    var menuToggle = document.getElementById("menuToggle");
+    var navLinks = document.getElementById("navLinks");
+
+    if (width <= 992) {
+      menuToggle.style.display = "flex";
+      menuToggle.style.alignItems = "center";
+      menuToggle.style.justifyContent = "center";
+      if (width > 768) {
+        navLinks.style.display = "none";
+      }
+    } else {
+      menuToggle.style.display = "none";
+      navLinks.style.display = "flex";
+      navLinks.style.flexDirection = "row";
+      navLinks.style.position = "static";
+      navLinks.style.padding = "0";
+      navLinks.style.background = "transparent";
+      navLinks.style.boxShadow = "none";
+    }
+  }
+
+  window.addEventListener("resize", handleResize);
+  window.addEventListener("load", handleResize);
+</script>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container">
+      <h2>"The greatest wealth is health."</h2>
+    </div>
+  </section>
+
+  <!-- Health & Wellness Section -->
+<section class="section" style="padding: 40px 20px; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
+  <div class="container" style="max-width:80%; margin: 0 auto;">
+    <h3 class="section-title" style="font-size: 3rem; color: #2a7a2a; margin-bottom: 10px;">🧘‍♀ Health & Wellness</h3>
+    <p class="section-subtitle" style="font-size: 1.1rem; color: #555; margin-bottom: 30px;">
+      Living healthier starts with learning about key health topics.
+    </p>
+    
+    <div class="wellness-cards" style="display: flex; gap: 20px; flex-wrap: wrap; justify-content: center;">
+      
+      <a href="contact_us.html" class="wellness-card-link" style="
+        text-decoration: none; 
+        color: inherit;
+        flex: 1 1 260px; 
+        max-width: 280px;
+      ">
+        <div class="wellness-card" style="
+          background: #eaf6ea;
+          padding: 25px;
+          border-radius: 15px;
+          box-shadow: 0 4px 12px rgba(42, 122, 42, 0.15);
+          transition: transform 0.3s ease, box-shadow 0.3s ease;
+          cursor: pointer;
+          height: 100%;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          text-align: center;
+        " 
+        onmouseover="this.style.transform='translateY(-8px)'; this.style.boxShadow='0 10px 20px rgba(42, 122, 42, 0.3)';"
+        onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 4px 12px rgba(42, 122, 42, 0.15)';"
+        >
+          <div class="wellness-icon" style="font-size: 3rem; margin-bottom: 15px;">🥗</div>
+          <h3 style="font-size: 1.5rem; margin-bottom: 15px;">Nutrition</h3>
+          <p style="font-size: 1rem; color: #3a3a3a;">Embrace a balanced diet rich in whole foods, fruits, and vegetables to support overall well-being.</p>
+        </div>
+      </a>
+      
+      <a href="contact_us.html" class="wellness-card-link" style="
+        text-decoration: none; 
+        color: inherit;
+        flex: 1 1 260px; 
+        max-width: 280px;
+      ">
+        <div class="wellness-card" style="
+          background: #e3f3fb;
+          padding: 25px;
+          border-radius: 15px;
+          box-shadow: 0 4px 12px rgba(0, 123, 255, 0.15);
+          transition: transform 0.3s ease, box-shadow 0.3s ease;
+          cursor: pointer;
+          height: 100%;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          text-align: center;
+        " 
+        onmouseover="this.style.transform='translateY(-8px)'; this.style.boxShadow='0 10px 20px rgba(0, 123, 255, 0.3)';"
+        onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 4px 12px rgba(0, 123, 255, 0.15)';"
+        >
+          <div class="wellness-icon" style="font-size: 3rem; margin-bottom: 15px;">🏃‍♂</div>
+          <h3 style="font-size: 1.5rem; margin-bottom: 15px;">Physical Activity</h3>
+          <p style="font-size: 1rem; color: #3a3a3a;">Incorporate regular movement into your daily routine to enhance cardiovascular health and energy levels.</p>
+        </div>
+      </a>
+      
+      <a href="contact_us.html" class="wellness-card-link" style="
+        text-decoration: none; 
+        color: inherit;
+        flex: 1 1 260px; 
+        max-width: 280px;
+      ">
+        <div class="wellness-card" style="
+          background: #fff0f6;
+          padding: 25px;
+          border-radius: 15px;
+          box-shadow: 0 4px 12px rgba(255, 102, 135, 0.15);
+          transition: transform 0.3s ease, box-shadow 0.3s ease;
+          cursor: pointer;
+          height: 100%;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          text-align: center;
+        " 
+        onmouseover="this.style.transform='translateY(-8px)'; this.style.boxShadow='0 10px 20px rgba(255, 102, 135, 0.3)';"
+        onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 4px 12px rgba(255, 102, 135, 0.15)';"
+        >
+          <div class="wellness-icon" style="font-size: 3rem; margin-bottom: 15px;">🧠</div>
+          <h3 style="font-size: 1.5rem; margin-bottom: 15px;">Mental Wellness</h3>
+          <p style="font-size: 1rem; color: #3a3a3a;">Prioritize mental health through mindfulness, stress management, and fostering positive relationships.</p>
+        </div>
+      </a>
+      
+    </div>
+  </div>
+</section>
+
+
+  <!-- Member Programs Section -->
+  <section class="section programs">
+   
+    <div class="container">
+      <h4 class="section-title">🔍 Find Member Programs</h4>
+      <p class="section-subtitle">Discover personalized health programs designed to help you thrive physically and mentally—no matter where you are on your wellness journey.</p>
+       <a href="contact_us.html" style="text-decoration: none;">
+      <div class="program-cards">
+        <div class="program-card">
+          <h3>💪 Fitness Coaching</h3>
+          <p>Access tailored fitness programs—virtual or in-person—to support your movement goals and build sustainable habits.</p>
+        </div>
+        
+        <div class="program-card">
+          <h3>🍎 Nutrition Planning</h3>
+          <p>Collaborate with experts or use smart tools to create a nutrition plan personalized for your wellness objectives.</p>
+        </div>
+        
+        <div class="program-card">
+          <h3>🧘 Mindfulness Programs</h3>
+          <p>Engage in guided mindfulness sessions and techniques to support calm, clarity, and mental balance every day.</p>
+        </div>
+      </div>
+    </div>
+    </a>
+  </section>
+
+  <!-- Conditions Section -->
+ <section style="background-color: #f8faf7; padding: 3rem 1rem; font-family: 'Arial', sans-serif;">
+  <div style="max-width: 1200px; margin: 0 auto;">
+    <!-- Header -->
+    <div style="text-align: center; margin-bottom: 2.5rem;">
+      <h2 style="font-size: 2rem; color: #2a5a3d; margin-bottom: 0.8rem; font-weight: 600;">Organic Living Solutions</h2>
+      <p style="color: #4a6b57; font-size: 1.1rem; max-width: 700px; margin: 0 auto; line-height: 1.6;">
+        Discover nature's remedies for holistic wellness through chemical-free living
+      </p>
+    </div>
+    
+    <!-- Conditions Grid -->
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem;">
+      <!-- Detoxification Card -->
+      <div style="background: white; border-radius: 12px; padding: 1.8rem; box-shadow: 0 5px 15px rgba(42, 90, 61, 0.08); transition: all 0.4s ease; border: 1px solid #e0e8e2; position: relative; overflow: hidden;">
+        <div style="font-size: 2.5rem; margin-bottom: 1rem;">🌿</div>
+        <h3 style="font-size: 1.4rem; color: #2a5a3d; margin-bottom: 1rem; font-weight: 600;">Natural Detoxification</h3>
+        <p style="color: #5a7264; line-height: 1.7; margin-bottom: 1.8rem;">
+          Cleanse your body with organic protocols using adaptogenic herbs, infrared therapy, and lymphatic massage techniques that work in harmony with your biology.
+        </p>
+        <a href="contact_us.html" style="color: #3a7d54; font-weight: 600; text-decoration: none; display: inline-flex; align-items: center;">
+          Explore Detox Methods 
+          <span style="margin-left: 0.5rem; transition: transform 0.3s ease;">→</span>
+        </a>
+        <div style="position: absolute; bottom: 0; left: 0; width: 100%; height: 4px; background: linear-gradient(90deg, #8bc34a, #4caf50); transform: scaleX(0); transform-origin: left; transition: transform 0.4s ease;"></div>
+      </div>
+      
+      <!-- Gut Health Card -->
+      <div style="background: white; border-radius: 12px; padding: 1.8rem; box-shadow: 0 5px 15px rgba(42, 90, 61, 0.08); transition: all 0.4s ease; border: 1px solid #e0e8e2; position: relative; overflow: hidden;">
+        <div style="font-size: 2.5rem; margin-bottom: 1rem;">🫀</div>
+        <h3 style="font-size: 1.4rem; color: #2a5a3d; margin-bottom: 1rem; font-weight: 600;">Gut Microbiome Balance</h3>
+        <p style="color: #5a7264; line-height: 1.7; margin-bottom: 1.8rem;">
+          Restore digestive wellness through fermented foods, soil-based probiotics, and elimination diets that honor your body's natural rhythms without synthetic supplements.
+        </p>
+        <a href="contact_us.html" style="color: #3a7d54; font-weight: 600; text-decoration: none; display: inline-flex; align-items: center;">
+          Heal Your Gut 
+          <span style="margin-left: 0.5rem; transition: transform 0.3s ease;">→</span>
+        </a>
+        <div style="position: absolute; bottom: 0; left: 0; width: 100%; height: 4px; background: linear-gradient(90deg, #8bc34a, #4caf50); transform: scaleX(0); transform-origin: left; transition: transform 0.4s ease;"></div>
+      </div>
+      
+      <!-- Sleep Card -->
+      <div style="background: white; border-radius: 12px; padding: 1.8rem; box-shadow: 0 5px 15px rgba(42, 90, 61, 0.08); transition: all 0.4s ease; border: 1px solid #e0e8e2; position: relative; overflow: hidden;">
+        <div style="font-size: 2.5rem; margin-bottom: 1rem;">🌙</div>
+        <h3 style="font-size: 1.4rem; color: #2a5a3d; margin-bottom: 1rem; font-weight: 600;">Circadian Rhythm Healing</h3>
+        <p style="color: #5a7264; line-height: 1.7; margin-bottom: 1.8rem;">
+          Reset your biological clock with blue light filtration, grounding techniques, and herbal sleep tonics that sync with nature's light-dark cycles.
+        </p>
+        <a href="contact_us.html" style="color: #3a7d54; font-weight: 600; text-decoration: none; display: inline-flex; align-items: center;">
+          Rest Naturally 
+          <span style="margin-left: 0.5rem; transition: transform 0.3s ease;">→</span>
+        </a>
+        <div style="position: absolute; bottom: 0; left: 0; width: 100%; height: 4px; background: linear-gradient(90deg, #8bc34a, #4caf50); transform: scaleX(0); transform-origin: left; transition: transform 0.4s ease;"></div>
+      </div>
+    </div>
+    
+    <!-- CTA -->
+    <div style="text-align: center; margin-top: 3rem;">
+      <p style="margin-bottom: 1.5rem; color: #5a7264; font-size: 1.1rem;">
+        "The doctor of the future will give no medicine, but will interest his patients in the care of the human frame, in diet, and in the cause and prevention of disease." - Thomas Edison
+      </p>
+      <a href="contact_us.html" style="background-color: #3a7d54; color: white; padding: 0.9rem 2rem; border-radius: 30px; text-decoration: none; font-weight: 600; display: inline-block; transition: all 0.3s ease; border: 2px solid #3a7d54;">
+        Begin Your Organic Journey
+      </a>
+    </div>
+  </div>
+
+  <!-- Simple Animation Script -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const cards = document.querySelectorAll('[style*="box-shadow: 0 5px 15px rgba(42, 90, 61, 0.08)"]');
+      
+      cards.forEach(card => {
+        // Hover animations
+        card.addEventListener('mouseenter', function() {
+          this.style.transform = 'translateY(-8px)';
+          this.style.boxShadow = '0 12px 20px rgba(42, 90, 61, 0.12)';
+          this.querySelector('div:last-child').style.transform = 'scaleX(1)';
+          this.querySelector('a span').style.transform = 'translateX(4px)';
+        });
+        
+        card.addEventListener('mouseleave', function() {
+          this.style.transform = '';
+          this.style.boxShadow = '0 5px 15px rgba(42, 90, 61, 0.08)';
+          this.querySelector('div:last-child').style.transform = 'scaleX(0)';
+          this.querySelector('a span').style.transform = '';
+        });
+        
+        // Click animation
+        card.addEventListener('mousedown', function() {
+          this.style.transform = 'translateY(-2px) scale(0.98)';
+        });
+        
+        card.addEventListener('mouseup', function() {
+          this.style.transform = 'translateY(-8px)';
+        });
+      });
+    });
+  </script>
+</section>
+
+  <!-- Eat Well Section -->
+  <section class="section">
+    <div class="container">
+      <h6 class="section-title">Eat Well</h6>
+      <p class="section-subtitle">Nourish your body with smart food choices. Discover essentials for a wholesome lifestyle.</p>
+      
+      <div class="eat-well-cards">
+        <div class="eat-well-card">
+          <div class="eat-well-icon">🥦</div>
+          <h3>Eat Your Greens</h3>
+          <p>Add spinach, kale, or broccoli to your plate to fuel your body with fiber and nutrients.</p>
+        </div>
+        
+        <div class="eat-well-card">
+          <div class="eat-well-icon">🍓</div>
+          <h3>Colorful Fruits</h3>
+          <p>A mix of berries, citrus, and seasonal fruit brings flavor and antioxidants to your meals.</p>
+        </div>
+        
+        <div class="eat-well-card">
+          <div class="eat-well-icon">🍠</div>
+          <h3>Smart Carbs</h3>
+          <p>Choose oats, brown rice, and sweet potatoes for longer-lasting energy throughout the day.</p>
+        </div>
+        
+        <div class="eat-well-card">
+          <div class="eat-well-icon">🥜</div>
+          <h3>Healthy Fats</h3>
+          <p>Avocados, nuts, and seeds support brain function and keep you satisfied longer.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Move Your Body Section -->
+  <section class="section move-body" style="padding: 20px 20px; background: #f3fdf6; font-family: 'Segoe UI', sans-serif;">
+  <div class="container" style="max-width: 1200px; margin: auto;">
+    <h2 class="section-title" style="font-size: 2.5rem; color: #2e7d32; text-align: center; margin-bottom: 20px;">
+      Move Your Body
+    </h2>
+    <p class="section-subtitle" style="font-size: 1.1rem; color: #444; text-align: center; max-width: 800px; margin: 0 auto 40px;">
+      <strong>Movement isn't just exercise — it's a way to reconnect with your body, shake off stress, and elevate your energy. Explore the ways you can move that feel good to you.</strong>
+    </p>
+
+    <div class="move-body-content" style="display: flex; flex-wrap: wrap; align-items: center; gap: 30px; flex-direction: row;">
+      
+      <!-- Image on the left -->
+      <div style="flex: 1 1 45%;">
+        <img src="https://st2.depositphotos.com/1004330/7936/i/450/depositphotos_79363972-stock-photo-yoga-woman-meditating-relaxing-healthy.jpg" 
+             alt="Woman doing yoga" 
+             class="move-body-img" 
+             loading="lazy" 
+             style="width: 100%; border-radius: 12px; box-shadow: 0 6px 20px rgba(0,0,0,0.1);">
+      </div>
+
+      <!-- Table on the right -->
+      <div style="flex: 1 1 50%;">
+        <table class="activity-table" style="width: 100%; border-collapse: collapse; font-size: 0.95rem;">
+          <thead>
+            <tr style="background-color: #c8e6c9; color: #1b5e20;">
+              <th style="padding: 12px; text-align: left;">Activity</th>
+              <th style="padding: 12px; text-align: left;">Description</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="activity-icon" style="padding: 10px;">🚶‍♂</td>
+              <td style="padding: 10px;">
+                <strong>Daily Walks</strong><br>
+                Walking daily improves circulation, lifts your mood, and gives your mind space to wander freely.
+              </td>
+            </tr>
+            <tr style="background-color: #f9fdf9;">
+              <td class="activity-icon" style="padding: 10px;">🧘‍♀</td>
+              <td style="padding: 10px;">
+                <strong>Stretch & Breathe</strong><br>
+                Take a few minutes to stretch and breathe deeply — it relaxes your body and sharpens your focus.
+              </td>
+            </tr>
+            <tr>
+              <td class="activity-icon" style="padding: 10px;">🏋‍♀</td>
+              <td style="padding: 10px;">
+                <strong>Strength Training</strong><br>
+                Build resilience by incorporating resistance moves into your week — even a few reps go a long way.
+              </td>
+            </tr>
+            <tr style="background-color: #f9fdf9;">
+              <td class="activity-icon" style="padding: 10px;">🚴‍♀</td>
+              <td style="padding: 10px;">
+                <strong>Cardio Fun</strong><br>
+                Get your heart pumping through dance, cycling, or your favorite movement — enjoy the rhythm of it.
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- Call to Action Button -->
+    <div style="text-align: center; margin-top: 40px;">
+      <a href="contact_us.html" style="display: inline-block; background: #43a047; color: white; padding: 12px 30px; font-size: 1rem; border-radius: 30px; text-decoration: none; transition: background 0.3s;">
+        Start Your Movement Journey
+      </a>
+    </div>
+  </div>
+</section>
+
+
+  <!-- Relieve Anxiety Section -->
+<section style="padding: 60px 20px; background: url('https://www.transparenttextures.com/patterns/green-dust-and-scratches.png') repeat; background-color: #f0fdf4; font-family: 'Segoe UI', sans-serif;">
+  <div style="display: flex; flex-wrap: wrap; gap: 40px; max-width: 1200px; margin: auto; align-items: stretch;">
+
+    <!-- Left Column: Relieve Anxiety -->
+    <div class="fade-in" style="flex: 1 1 480px; background: #ffffff; padding: 30px; border-radius: 20px; box-shadow: 0 8px 20px rgba(0,0,0,0.05); min-height: 100%;">
+      <h2 style="font-size: 2rem; color: #065f46; margin-bottom: 10px;">Relieve Anxiety</h2>
+      <p style="font-style: italic; color: #4b5563; margin-bottom: 25px;">
+        Feeling overwhelmed? Gentle practices and grounding habits can ease anxiety and help restore inner calm. Small actions can make a big difference.
+      </p>
+      <div style="display: flex; flex-direction: column; gap: 20px;">
+        <div style="display: flex; gap: 15px; align-items: start;">
+          <div style="font-size: 1.8rem;">🧘‍♂</div>
+          <div>
+            <h3 style="margin: 0; font-size: 1.2rem;">Mindful Breathing</h3>
+            <p style="margin: 5px 0 0;">Take a few slow, deep breaths. It slows your heart rate and helps you feel more present and grounded.</p>
+          </div>
+        </div>
+        <div style="display: flex; gap: 15px; align-items: start;">
+          <div style="font-size: 1.8rem;">🌿</div>
+          <div>
+            <h3 style="margin: 0; font-size: 1.2rem;">Connect with Nature</h3>
+            <p style="margin: 5px 0 0;">Step outside — even a few minutes around greenery or sunlight can calm the nervous system.</p>
+          </div>
+        </div>
+        <div style="display: flex; gap: 15px; align-items: start;">
+          <div style="font-size: 1.8rem;">📓</div>
+          <div>
+            <h3 style="margin: 0; font-size: 1.2rem;">Journaling</h3>
+            <p style="margin: 5px 0 0;">Write out your thoughts and feelings. Putting emotions into words gives clarity and reduces their weight.</p>
+          </div>
+        </div>
+        <div style="display: flex; gap: 15px; align-items: start;">
+          <div style="font-size: 1.8rem;">🎵</div>
+          <div>
+            <h3 style="margin: 0; font-size: 1.2rem;">Soothing Sounds</h3>
+            <p style="margin: 5px 0 0;">Listen to calming music, nature sounds, or white noise to relax your mind and body.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Right Column: Contact -->
+   <!-- Inside the right column (Contact section), replace with this: -->
+      <div class="fade-in" style="flex: 1 1 480px; background: #ffffff; padding: 30px; border-radius: 20px; box-shadow: 0 8px 20px rgba(0,0,0,0.05); text-align: center; min-height: 100%; display: flex; flex-direction: column; justify-content: space-between;">
+
+        <div>
+          <h2 style="font-size: 2rem; color: #2e7d32; margin-bottom: 20px;">🌿 Contact for Better Health & Wellness Naturally</h2>
+          <p style="font-size: 1.05rem; color: #444; line-height: 1.6; margin-bottom: 25px;">
+            We're here to support your journey toward a healthier, more balanced life—naturally. Whether you're interested in nutrition, stress relief, or daily wellness habits, our team of experts can guide you with personalized solutions rooted in natural approaches.
+          </p>
+          <p style="font-size: 1rem; color: #555; margin-bottom: 30px;">
+            Fill out the <a href="contact_us.html" style="color: #1b5e20; font-weight: 600; text-decoration: none;">Contact Form</a> to connect with a wellness specialist and get started today.
+          </p>
+        </div>
+
+        <!-- Filler content to match left column height -->
+        <div style="background-color: #e8f5e9; padding: 20px; border-radius: 12px; margin-top: 20px;">
+          <h4 style="color: #388e3c; font-size: 1.1rem; margin-bottom: 10px;">🌸 Daily Natural Affirmation</h4>
+          <p style="font-style: italic; color: #4b4b4b;">"I choose calm. I am grounded in the present. Nature supports my healing every step of the way."</p>
+          <a href="contact_us.html" style="display: inline-block; margin-top: 15px; background-color: #2e7d32; color: #fff; padding: 10px 18px; border-radius: 8px; text-decoration: none;">Start Your Journey</a>
+        </div>
+      </div>
+
+
+  </div>
+</section>
+
+<!-- Scroll Animation Script -->
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const fadeEls = document.querySelectorAll('.fade-in');
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.style.opacity = 1;
+          entry.target.style.transform = 'translateY(0)';
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.1 });
+
+    fadeEls.forEach(el => {
+      el.style.opacity = 0;
+      el.style.transform = 'translateY(30px)';
+      el.style.transition = 'opacity 0.8s ease-out, transform 0.8s ease-out';
+      observer.observe(el);
+    });
+  });
+</script>
+
+<section style="padding: 4rem 1rem;  font-family: 'Segoe UI', sans-serif;">
+  <div style="max-width: 90%; margin: auto; text-align: center;">
+    <h2 style="font-size: 2.5rem; font-weight: 700; color: #065f46; margin-bottom: 0.5rem;">Meet the Wellness Tribe</h2>
+    <p style="font-size: 1.1rem; color: #065f46; margin-bottom: 3rem; max-width: 700px; margin-left: auto; margin-right: auto;">
+      A collective of holistic health practitioners, eco-conscious healers, and nature-first thinkers — all committed to helping you live organically and thrive naturally.
+    </p>
+
+    <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 2rem;">
+      
+      <!-- Team Member 1 -->
+      <div style="background: #ffffff; border-radius: 1rem; box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06); max-width: 280px; padding: 2rem 1rem; text-align: center; transition: transform 0.3s;">
+        <img src="img/lailagreen.png" alt="Lila Green" style="width: 120px; height: 120px; object-fit: cover; border-radius: 50%; margin-bottom: 1rem;">
+        <h3 style="font-size: 1.25rem; font-weight: 600; color: #047857; margin-bottom: 0.25rem;">Lila Green</h3>
+        <p style="font-size: 0.95rem; color: #475569;">Founder & Holistic Wellness Coach</p>
+      </div>
+
+      <!-- Team Member 2 -->
+      <div style="background: #ffffff; border-radius: 1rem; box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06); max-width: 280px; padding: 2rem 1rem; text-align: center; transition: transform 0.3s;">
+        <img src="img/ravi_mehra.png" alt="Ravi Mehra" style="width: 120px; height: 120px; object-fit: cover; border-radius: 50%; margin-bottom: 1rem;">
+        <h3 style="font-size: 1.25rem; font-weight: 600; color: #047857; margin-bottom: 0.25rem;">Ravi Mehra</h3>
+        <p style="font-size: 0.95rem; color: #475569;">Plant-Based Nutrition Expert</p>
+      </div>
+
+      <!-- Team Member 3 -->
+      <div style="background: #ffffff; border-radius: 1rem; box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06); max-width: 280px; padding: 2rem 1rem; text-align: center; transition: transform 0.3s;">
+        <img src="img/anaya_silava.png" alt="Anaya Silva" style="width: 120px; height: 120px; object-fit: cover; border-radius: 50%; margin-bottom: 1rem;">
+        <h3 style="font-size: 1.25rem; font-weight: 600; color: #047857; margin-bottom: 0.25rem;">Anaya Silva</h3>
+        <p style="font-size: 0.95rem; color: #475569;">Mindfulness & Nature Therapy Guide</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+  <!-- FAQ Section -->
+  <section class="section faq">
+    <div class="container">
+      <h2 class="section-title">Health and Wellness FAQ</h2>
+      
+      <div class="faq-item" onclick="toggleAnswer('answer1', 'arrow1')">
+        <div class="faq-question">
+          What is the importance of regular exercise in maintaining health?
+          <span id="arrow1">&#x2193;</span>
+        </div>
+        <div id="answer1" class="faq-answer">
+          Regular exercise helps to improve cardiovascular health, enhance flexibility, build strength, and maintain a healthy weight. It also boosts mental health by reducing stress and anxiety.
+        </div>
+      </div>
+      
+      <div class="faq-item" onclick="toggleAnswer('answer2', 'arrow2')">
+        <div class="faq-question">
+          How much sleep do I need for optimal health?
+          <span id="arrow2">&#x2193;</span>
+        </div>
+        <div id="answer2" class="faq-answer">
+          Most adults need between 7-9 hours of sleep per night to maintain optimal health. Sleep is essential for physical and mental recovery, memory consolidation, and overall well-being.
+        </div>
+      </div>
+      
+      <div class="faq-item" onclick="toggleAnswer('answer3', 'arrow3')">
+        <div class="faq-question">
+          What are the benefits of a balanced diet?
+          <span id="arrow3">&#x2193;</span>
+        </div>
+        <div id="answer3" class="faq-answer">
+          A balanced diet provides essential nutrients to the body, supports immune function, helps maintain a healthy weight, and reduces the risk of chronic diseases like diabetes, heart disease, and hypertension.
+        </div>
+      </div>
+      
+      <div class="faq-item" onclick="toggleAnswer('answer4', 'arrow4')">
+        <div class="faq-question">
+          How do I manage stress effectively?
+          <span id="arrow4">&#x2193;</span>
+        </div>
+        <div id="answer4" class="faq-answer">
+          Effective stress management techniques include practicing mindfulness, deep breathing exercises, regular physical activity, getting enough sleep, and setting aside time for relaxation and hobbies.
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+   <footer style="background-color: #f1f1f1; padding: 40px 0;">
+    <div style="max-width: 1200px; margin: 0 auto; padding-left: -600px;">
+
+        <!-- Education & Training -->
+        <div style="text-align: left; margin: 10px;">
+            <a href="education_training.html" style="text-decoration: none;">
+                <p style="font-size: 16px; color: #333; font-weight: bold;">Education & Training</p>
+            </a>
+            <p style="font-size: 14px; color: #555; margin-top: 10px;">Explore a wide range of educational and training options across various fields to enhance your skills and career opportunities.</p>
+            <hr style="border: 1px solid #ddd; margin-top: 20px;"/>
+        </div>
+
+        <!-- Properties & Rents -->
+        <div style="text-align: left; margin: 10px;">
+            <a href="properties_rent.html" style="text-decoration: none;">
+                <p style="font-size: 16px; color: #333; font-weight: bold;">Properties & Rents</p>
+            </a>
+            <p style="font-size: 14px; color: #555; margin-top: 10px;">Find the perfect property for sale, rent, or investment in your desired location with comprehensive listings and details.</p>
+            <hr style="border: 1px solid #ddd; margin-top: 20px;"/>
+        </div>
+
+        <!-- Professional Services -->
+        <div style="text-align: left; margin: 10px;">
+            <a href="proffessional_services.html" style="text-decoration: none;">
+                <p style="font-size: 16px; color: #333; font-weight: bold;">Professional Services</p>
+            </a>
+            <p style="font-size: 14px; color: #555; margin-top: 10px;">Access top-notch professional services, including legal, financial, and consulting services, from trusted experts.</p>
+            <hr style="border: 1px solid #ddd; margin-top: 20px;"/>
+        </div>
+
+        <!-- Travel & Transport -->
+        <div style="text-align: left; margin: 10px;">
+            <a href="travel_transport.html" style="text-decoration: none;">
+                <p style="font-size: 16px; color: #333; font-weight: bold;">Travel & Transport</p>
+            </a>
+            <p style="font-size: 14px; color: #555; margin-top: 10px;">Book your travel needs, including flights, cabs, and buses, with ease and at the best prices.</p>
+            <hr style="border: 1px solid #ddd; margin-top: 20px;"/>
+        </div>
+
+        <!-- Health & Wellness -->
+        <div style="text-align: left; margin: 10px;">
+            <a href="health_wellness.html" style="text-decoration: none;">
+                <p style="font-size: 16px; color: #333; font-weight: bold;">Health & Wellness</p>
+            </a>
+            <p style="font-size: 14px; color: #555; margin-top: 10px;">Discover health and wellness services to maintain a balanced lifestyle, including fitness classes, clinics, and more.</p>
+            <hr style="border: 1px solid #ddd; margin-top: 20px;"/>
+        </div>
+
+        <!-- Events -->
+        <div style="text-align: left; margin: 10px;">
+            <a href="events.html" style="text-decoration: none;">
+                <p style="font-size: 16px; color: #333; font-weight: bold;">Events</p>
+            </a>
+            <p style="font-size: 14px; color: #555; margin-top: 10px;">Stay updated with upcoming events, conferences, exhibitions, and entertainment activities near you.</p>
+            <hr style="border: 1px solid #ddd; margin-top: 20px;"/>
+        </div>
+
+        <!-- Home & Office -->
+        <div style="text-align: left; margin: 10px;">
+            <a href="home_office.html" style="text-decoration: none;">
+                <p style="font-size: 16px; color: #333; font-weight: bold;">Home & Office</p>
+            </a>
+            <p style="font-size: 14px; color: #555; margin-top: 10px;">Explore furniture, appliances, and office supplies to furnish your home or workspace with the best products.</p>
+            <hr style="border: 1px solid #ddd; margin-top: 20px;"/>
+        </div>
+
+        <!-- Shopping -->
+        <div style="text-align: left; margin: 10px;">
+            <a href="shopping.html" style="text-decoration: none;">
+                <p style="font-size: 16px; color: #333; font-weight: bold;">Shopping</p>
+            </a>
+            <p style="font-size: 14px; color: #555; margin-top: 10px;">Shop online for a variety of products including electronics, clothing, accessories, and much more.</p>
+            <hr style="border: 1px solid #ddd; margin-top: 20px;"/>
+        </div>
+
+        <!-- Placement & Jobs -->
+        <div style="text-align: left; margin: 10px;">
+            <a href="placements_jobs.html" style="text-decoration: none;">
+                <p style="font-size: 16px; color: #333; font-weight: bold;">Placement & Jobs</p>
+            </a>
+            <p style="font-size: 14px; color: #555; margin-top: 10px;">Browse job listings and placement opportunities, and connect with top employers in various industries.</p>
+            <hr style="border: 1px solid #ddd; margin-top: 20px;"/>
+        </div>
+
+        <!-- Social Media Icons -->
+        <div style="text-align: center; margin-top: 20px;">
+            <p style="font-size: 16px; color: #333; font-weight: bold;">Follow Us</p>
+            <div style="margin-top:20px;">
+                <a href="https://www.facebook.com" target="_blank" style="margin: 0 15px; text-decoration: none;">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" alt="Facebook" style="width: 40px; height: 40px;"/>
+                </a>
+                <a href="https://www.twitter.com" target="_blank" style="margin: 0 15px; text-decoration: none;">
+                    <img src="https://cdn.iconscout.com/icon/free/png-256/free-twitter-logo-icon-download-in-svg-png-gif-file-formats--social-media-pack-logos-icons-83443.png?f=webp&w=128" alt="Twitter" style="width: 40px; height: 40px;"/>
+                </a>
+                <a href="https://www.instagram.com" target="_blank" style="margin: 0 15px; text-decoration: none;">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram" style="width: 40px; height: 40px;"/>
+                </a>
+                <a href="https://www.linkedin.com" target="_blank" style="margin: 0 15px; text-decoration: none;">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/e/e6/729101_linkedin_icon.png" alt="LinkedIn" style="width: 40px; height: 40px;"/>
+                </a>
+            </div>
+            <br>
+            <p style="margin: 0; color: black;">&copy; 2025 Hitaishi Web Portal. All rights reserved.</p>
+        </div>
+    </div>
+    
+</footer>
+
+  <script>
+    // Toggle FAQ answers
+    function toggleAnswer(answerId, arrowId) {
+      const answer = document.getElementById(answerId);
+      const arrow = document.getElementById(arrowId);
+      
+      if (answer.style.display === 'block') {
+        answer.style.display = 'none';
+        arrow.innerHTML = '&#x2193;';
+      } else {
+        answer.style.display = 'block';
+        arrow.innerHTML = '&#x2191;';
+      }
+    }
+    
+    // Search function
+    function searchService() {
+      const searchQuery = document.getElementById('searchInput').value;
+      if (searchQuery.trim() === '') {
+        alert('Please enter a search term!');
+      } else {
+        alert('Searching for: ' + searchQuery);
+      }
+    }
+    
+    // Form validation
+    function validateForm() {
+      const name = document.getElementById('name').value;
+      const email = document.getElementById('email').value;
+      const message = document.getElementById('message').value;
+      
+      if (name === '' || email === '' || message === '') {
+        alert('Please fill out all fields.');
+        return false;
+      }
+      alert('Message sent successfully!');
+      return true;
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <header style="position: sticky; top: 0; z-index: 1000; background: linear-gradient(30deg, #007BFF, #ffffff); padding: 5px 0; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+    <div style="display: flex; justify-content: space-between; align-items: center; padding: 0 20px; flex-wrap: wrap;">
+      
+      <!-- Logo Section -->
+      <a href="index.html" style="color: white; text-decoration: none;">
+        <h1 style="margin: 0; font-size: 42px; font-family: 'Arial', sans-serif; color: white; text-align: left; font-weight: bold; letter-spacing: 2px;">Hitaishi</h1>
+        <p style="font-size:20px; margin: 0; font-style: italic;">Find trusted services and professionals</p>
+      </a>
+
+      <!-- Menu Button for Mobile -->
+      <button onclick="toggleMenu()" style="display: none; background: none; border: none; font-size: 1.5rem; color: #fff; cursor: pointer;" id="menuToggle">☰</button>
+      
+      <!-- Navigation Links -->
+      <div id="navLinks" style="display: flex; gap: 15px; flex-wrap: wrap; align-items: center; margin-top: 10px;">
+        <a href="index.html" style="color: white; font-size: 1rem; padding: 8px 15px; background-color: rgba(0, 0, 0, 0.2); border-radius: 5px; text-decoration: none;">Home</a>
+        <a href="Services.html" style="color: white; font-size: 1rem; padding: 8px 15px; background-color: rgba(0, 0, 0, 0.2); border-radius: 5px; text-decoration: none;">Services</a>
+        <a href="ListBusiness.html" style="color: white; font-size: 1rem; padding: 8px 15px; background-color: rgba(0, 0, 0, 0.2); border-radius: 5px; text-decoration: none;">List your Business</a>
+        <a href="postadd.html" style="color: white; font-size: 1rem; padding: 8px 15px; background-color: rgba(0, 0, 0, 0.2); border-radius: 5px; text-decoration: none;">Post a free ad</a>
+        <a href="SignIn.html" style="color: white; font-size: 1rem; padding: 8px 15px; background-color: rgba(0, 0, 0, 0.2); border-radius: 5px; text-decoration: none;">Sign In</a>
+      </div>
+    </div>
+  </header>
+  <!-- Mobile responsive script -->
+   <script>
+    function toggleMenu() {
+      var nav = document.getElementById("navLinks");
+      if (nav.style.display === "none" || nav.style.display === "") {
+        nav.style.display = "flex";
+        nav.style.flexDirection = "column";
+        nav.style.width = "100%";
+        nav.style.marginTop = "10px";
+      } else {
+        nav.style.display = "none";
+      }
+    }
+
+    // Show/hide menu toggle on resize
+    function handleResize() {
+      var width = window.innerWidth;
+      var menuToggle = document.getElementById("menuToggle");
+      var navLinks = document.getElementById("navLinks");
+
+      if (width <= 768) {
+        menuToggle.style.display = "block";
+        navLinks.style.display = "none";
+      } else {
+        menuToggle.style.display = "none";
+        navLinks.style.display = "flex";
+        navLinks.style.flexDirection = "row";
+        navLinks.style.width = "auto";
+        navLinks.style.marginTop = "0";
+      }
+    }
+
+    window.addEventListener("resize", handleResize);
+    window.addEventListener("load", handleResize);
+  </script>
+    <section style="padding:60px 20px; background:#f1f5f9;">
+        <div style="max-width:700px; margin:0 auto; background:#fff; padding:40px; border-radius:12px; box-shadow:0 8px 30px rgba(0,0,0,0.07);">
+          <h2 style="text-align:center; font-size:2.2rem; color:#0f172a; font-family:'Segoe UI', sans-serif; font-weight:700; margin-bottom:30px;">
+            Service <span style="color:#06b6d4;">Inquiry Form</span>
+          </h2>
+      
+          <form method="POST" name="education-service-inquiry" netlify>
+      
+            <!-- Full Name -->
+            <div style="margin-bottom:20px;">
+              <label style="display:block; margin-bottom:6px; color:#0f172a; font-weight:500;">Full Name*</label>
+              <input type="text" required placeholder="Enter your name" 
+                style="width:100%; padding:12px; border:1px solid #cbd5e1; border-radius:8px; font-size:1rem;">
+            </div>
+      
+            <!-- Email -->
+            <div style="margin-bottom:20px;">
+              <label style="display:block; margin-bottom:6px; color:#0f172a; font-weight:500;">Email*</label>
+              <input type="email" required placeholder="Enter your email" 
+                style="width:100%; padding:12px; border:1px solid #cbd5e1; border-radius:8px; font-size:1rem;">
+            </div>
+      
+            <!-- Select Service Type -->
+            <div style="margin-bottom:20px;">
+              <label style="display:block; margin-bottom:6px; color:#0f172a; font-weight:500;">Select Service Type*</label>
+              <select required style="width:100%; padding:12px; border:1px solid #cbd5e1; border-radius:8px; font-size:1rem;">
+                <option value="" disabled selected>Select a service</option>
+                <option value="education">Education</option>
+                <option value="training">Training</option>
+                <option value="coaching">Coaching</option>
+                <option value="learning">Learning</option>
+                <option value="mentoring">Mentoring</option>
+                <option value="consulting">Consulting</option>
+              </select>
+            </div>
+      
+            <!-- Select Specific Program -->
+            <div style="margin-bottom:20px;">
+              <label style="display:block; margin-bottom:6px; color:#0f172a; font-weight:500;">Program/Area of Interest*</label>
+              <select required style="width:100%; padding:12px; border:1px solid #cbd5e1; border-radius:8px; font-size:1rem;">
+                <option value="" disabled selected>Select a program</option>
+                <option value="bachelor">Bachelor's in Education</option>
+                <option value="skill-training">Skill Development Training</option>
+                <option value="career-coaching">Career Coaching</option>
+                <option value="online-learning">Online Courses</option>
+                <option value="career-mentoring">Career Mentoring</option>
+                <option value="strategy-consulting">Strategy Consulting</option>
+              </select>
+            </div>
+      
+            <!-- Message -->
+            <div style="margin-bottom:20px;">
+              <label style="display:block; margin-bottom:6px; color:#0f172a; font-weight:500;">Additional Information</label>
+              <textarea placeholder="Describe your goals..." rows="5"
+                style="width:100%; padding:12px; border:1px solid #cbd5e1; border-radius:8px; font-size:1rem; resize:vertical;"></textarea>
+            </div>
+      
+            <!-- Submit Button -->
+            <button type="submit" 
+              style="width:100%; padding:14px; background:#06b6d4; color:#fff; font-size:1rem; font-weight:600; border:none; border-radius:30px; cursor:pointer; transition:all 0.3s ease;">
+              Submit Inquiry
+            </button>
+      
+          </form>
+        </div>
+      </section>
+         
+</body>
+</html>

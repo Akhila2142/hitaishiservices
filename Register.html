@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Page</title>
+    <style>
+        body {
+            /* background-image: url('https://images.pexels.com/photos/9669119/pexels-photo-9669119.jpeg?auto=compress&cs=tinysrgb&w=600'); */
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+            margin: 0;
+            padding: 0;
+            justify-content: center;
+            align-items: center;
+            background-color: #c2d7ee1c;
+        }
+         
+        .registration-box {
+            background-color: rgba(255, 255, 255, 0.253); 
+            backdrop-filter: blur(10px); 
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+            width: 600px; 
+            margin-top: 100px;
+            margin-bottom: 200px;
+    
+        }
+        h2 {
+            text-align: center;
+            color: #007BFF;
+            font-family: Arial, sans-serif;
+        }
+        .form-group {
+            
+            display: flex;
+            
+            gap: 10px;
+            margin-bottom: 15px;
+        }
+        .form-group input {
+            width: calc(50% - 10px); 
+            padding: 10px;
+            margin: 5px 0;
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .form-group input[type="text"],
+        .form-group input[type="email"],
+        .form-group input[type="password"],
+        .form-group input[type="number"] {
+            width:50%;
+            
+        }
+        .gender-group {
+            margin-top: 15px;
+            display: flex;
+            justify-content: space-between;
+        }
+        .gender-group label {
+            font-size: 14px;
+            color: #333;
+        }
+        .gender-group input {
+            margin-right: 10px;
+        }
+        button {
+            width: 100%;
+            padding: 10px;
+            background-color: #0084ff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #218838;
+        }
+    </style>
+</head>
+<body style="margin: 0;padding: 0;font-family: Arial, Helvetica, sans-serif;">
+ 
+   <header style="position: sticky; top: 0; z-index: 1000; background: linear-gradient(135deg, #0066cc, #004080); padding: 15px 5%; box-shadow: 0 4px 12px rgba(0,0,0,0.1); font-family: 'Segoe UI', Roboto, sans-serif; backdrop-filter: blur(5px);">
+  <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 20px; max-width: 1400px; margin: 0 auto;">
+    
+    <!-- Logo Section -->
+    <a href="index.html" style="color: white; text-decoration: none; flex-shrink: 0; display: flex; align-items: center; gap: 10px;">
+      
+      <div style="background: #ffffff; border-radius: 10px; padding: 2px 2px; display: inline-flex; align-items: center; justify-content: center; box-shadow: 0 2px 6px rgba(0, 102, 204, 0.25);">
+        <img src="img/logo_hitaishiservices.png" alt="Hitaishi Logo" width="32" height="32" style="display: block;" />
+      </div>
+
+      <div>
+        <h1 style="margin: 0; font-size: 32px; font-weight: 800; letter-spacing: 1px; background: linear-gradient(to right, #ffffff, #e6f2ff); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">Hitaishi</h1>
+        <p style="font-size: 14px; margin: 2px 0 0 0; font-weight: 500; color: rgba(255,255,255,0.9);">Find trusted services and professionals</p>
+      </div>
+    </a>
+    
+    <!-- Search Form -->
+    <form action="search.html" method="GET" style="flex-grow: 1; max-width: 500px; min-width: 250px; display: flex; box-shadow: 0 2px 10px rgba(0,0,0,0.1); border-radius: 8px; overflow: hidden; background: rgba(255,255,255,0.9); transition: all 0.3s ease;" onfocusin="this.style.boxShadow='0 2px 15px rgba(0,80,200,0.2)'; this.style.background='white'" onfocusout="this.style.boxShadow='0 2px 10px rgba(0,0,0,0.1)'; this.style.background='rgba(255,255,255,0.9)'">
+      <input
+        type="text"
+        name="query"
+        placeholder="Search services, businesses..."
+        style="flex-grow: 1; border: none; padding: 12px 20px; font-size: 0.95rem; outline: none; color: #003366; background: transparent;"
+        required
+      />
+      <button
+        type="submit"
+        style="background: linear-gradient(to right, #0066cc, #004080); border: none; padding: 0 25px; cursor: pointer; color: white; font-weight: 600; font-size: 1rem; transition: all 0.3s ease; display: flex; align-items: center; justify-content: center;"
+        onmouseover="this.style.opacity='0.9'"
+        onmouseout="this.style.opacity='1'"
+        aria-label="Search"
+      >
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" style="margin-right: 5px;">
+          <path d="M11 19C15.4183 19 19 15.4183 19 11C19 6.58172 15.4183 3 11 3C6.58172 3 3 6.58172 3 11C3 15.4183 6.58172 19 11 19Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M21 21L16.65 16.65" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        Search
+      </button>
+    </form>
+
+    <!-- Navigation Links -->
+    <nav id="navLinks" style="display: flex; gap: 10px; flex-wrap: wrap; align-items: center; flex-shrink: 0;">
+      <a href="index.html" style="color: white; font-size: 0.95rem; padding: 8px 15px; text-decoration: none; transition: all 0.3s ease; font-weight: 500; border-radius: 6px; border: 1px solid rgba(255,255,255,0.3);" onmouseover="this.style.backgroundColor='rgba(255,255,255,0.15)'" onmouseout="this.style.backgroundColor='transparent'">Home</a>
+      <a href="Services.html" style="color: white; font-size: 0.95rem; padding: 8px 15px; text-decoration: none; transition: all 0.3s ease; font-weight: 500; border-radius: 6px; border: 1px solid rgba(255,255,255,0.3);" onmouseover="this.style.backgroundColor='rgba(255,255,255,0.15)'" onmouseout="this.style.backgroundColor='transparent'">Services</a>
+      <a href="ListBusiness.html" style="color: white; font-size: 0.95rem; padding: 8px 15px; text-decoration: none; transition: all 0.3s ease; font-weight: 500; border-radius: 6px; border: 1px solid rgba(255,255,255,0.3);" onmouseover="this.style.backgroundColor='rgba(255,255,255,0.15)'" onmouseout="this.style.backgroundColor='transparent'">List Business</a>
+      <a href="postadd.html" style="color: white; font-size: 0.95rem; padding: 8px 15px; background: rgba(255,255,255,0.2); text-decoration: none; transition: all 0.3s ease; font-weight: 600; border-radius: 6px; border: 1px solid rgba(255,255,255,0.4);" onmouseover="this.style.backgroundColor='rgba(255,255,255,0.3)'" onmouseout="this.style.backgroundColor='rgba(255,255,255,0.2)'">Post Free Ad</a>
+      <a href="SignIn.html" style="color: #0066cc; font-size: 0.95rem; padding: 8px 15px; background: white; text-decoration: none; transition: all 0.3s ease; font-weight: 600; border-radius: 6px;" onmouseover="this.style.backgroundColor='#f0f7ff'; this.style.color='#004080'" onmouseout="this.style.backgroundColor='white'; this.style.color='#0066cc'">Sign In</a>
+    </nav>
+
+    <!-- Menu Button for Mobile -->
+    <button onclick="toggleMenu()" style="display: none; background: rgba(255,255,255,0.2); border: 1px solid rgba(255,255,255,0.4); border-radius: 6px; padding: 8px 12px; font-size: 1.2rem; color: white; cursor: pointer; flex-shrink: 0;" id="menuToggle" aria-label="Toggle Menu">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M3 12H21" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M3 6H21" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M3 18H21" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+    </button>
+
+  </div>
+</header>
+
+<script>
+  function toggleMenu() {
+    var nav = document.getElementById("navLinks");
+    if (nav.style.display === "none" || nav.style.display === "") {
+      nav.style.display = "flex";
+      nav.style.flexDirection = "column";
+      nav.style.position = "absolute";
+      nav.style.top = "100%";
+      nav.style.left = "0";
+      nav.style.right = "0";
+      nav.style.background = "linear-gradient(135deg, #0066cc, #004080)";
+      nav.style.padding = "20px 5%";
+      nav.style.gap = "15px";
+      nav.style.boxShadow = "0 10px 20px rgba(0,0,0,0.1)";
+    } else {
+      nav.style.display = "none";
+    }
+  }
+
+  function handleResize() {
+    var width = window.innerWidth;
+    var menuToggle = document.getElementById("menuToggle");
+    var navLinks = document.getElementById("navLinks");
+
+    if (width <= 992) {
+      menuToggle.style.display = "flex";
+      menuToggle.style.alignItems = "center";
+      menuToggle.style.justifyContent = "center";
+      if (width > 768) {
+        navLinks.style.display = "none";
+      }
+    } else {
+      menuToggle.style.display = "none";
+      navLinks.style.display = "flex";
+      navLinks.style.flexDirection = "row";
+      navLinks.style.position = "static";
+      navLinks.style.padding = "0";
+      navLinks.style.background = "transparent";
+      navLinks.style.boxShadow = "none";
+    }
+  }
+
+  window.addEventListener("resize", handleResize);
+  window.addEventListener("load", handleResize);
+</script>
+
+    <div class="hitaishi-registration-container" style="font-family: 'Segoe UI', Roboto, sans-serif; max-width: 1200px; margin: 40px auto; display: flex; gap: 40px; flex-wrap: wrap; justify-content: center; align-items: flex-start;">
+    
+    <!-- Benefits Section -->
+    <div class="hitaishi-benefits" style="flex: 1; min-width: 300px; background: linear-gradient(135deg, #f8faff, #e6f0ff); border-radius: 12px; padding: 30px; box-shadow: 0 4px 20px rgba(0, 80, 200, 0.08);">
+        <div style="display: flex; align-items: center; gap: 15px; margin-bottom: 25px;">
+            <div style="background: #ffffff; border-radius: 10px; padding: 8px; box-shadow: 0 2px 6px rgba(0, 102, 204, 0.15);">
+                <svg width="36" height="36" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12 2L3 7L12 12L21 7L12 2Z" fill="#0066cc" stroke="#0066cc" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M3 12L12 17L21 12" stroke="#0066cc" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M3 17L12 22L21 17" stroke="#0066cc" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </div>
+            <h2 style="margin: 0; color: #003366; font-size: 24px; font-weight: 700;">Why Join Hitaishi?</h2>
+        </div>
+        
+        <div style="display: flex; flex-direction: column; gap: 20px;">
+            <div style="display: flex; gap: 15px;">
+                <div style="min-width: 36px; height: 36px; background: rgba(0, 102, 204, 0.1); border-radius: 8px; display: flex; align-items: center; justify-content: center;">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M22 11.08V12C21.9988 14.1564 21.3005 16.2547 20.0093 17.9818C18.7182 19.7089 16.9033 20.9725 14.8354 21.5839C12.7674 22.1953 10.5573 22.1219 8.53447 21.3746C6.51168 20.6273 4.78465 19.2461 3.61096 17.4371C2.43727 15.628 1.87979 13.4881 2.02168 11.3363C2.16356 9.18455 2.99721 7.13631 4.39828 5.49706C5.79935 3.85781 7.69279 2.71537 9.79619 2.24013C11.8996 1.7649 14.1003 1.98232 16.07 2.86" stroke="#0066cc" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M22 4L12 14.01L9 11.01" stroke="#0066cc" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </div>
+                <div>
+                    <h3 style="margin: 0 0 5px 0; color: #003366; font-size: 18px; font-weight: 600;">Access Trusted Professionals</h3>
+                    <p style="margin: 0; color: #4a5a72; font-size: 15px; line-height: 1.5;">Connect with verified service providers for home services, repairs, wellness, and more.</p>
+                </div>
+            </div>
+            
+            <div style="display: flex; gap: 15px;">
+                <div style="min-width: 36px; height: 36px; background: rgba(0, 102, 204, 0.1); border-radius: 8px; display: flex; align-items: center; justify-content: center;">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" stroke="#0066cc" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M12 8V12L15 15" stroke="#0066cc" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </div>
+                <div>
+                    <h3 style="margin: 0 0 5px 0; color: #003366; font-size: 18px; font-weight: 600;">Quick Service Booking</h3>
+                    <p style="margin: 0; color: #4a5a72; font-size: 15px; line-height: 1.5;">Book services in minutes with our easy-to-use platform and real-time availability.</p>
+                </div>
+            </div>
+            
+            <div style="display: flex; gap: 15px;">
+                <div style="min-width: 36px; height: 36px; background: rgba(0, 102, 204, 0.1); border-radius: 8px; display: flex; align-items: center; justify-content: center;">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M8 3V5M16 3V5M3 9H21M5 7H19C20.1046 7 21 7.89543 21 9V19C21 20.1046 20.1046 21 19 21H5C3.89543 21 3 20.1046 3 19V9C3 7.89543 3.89543 7 5 7Z" stroke="#0066cc" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </div>
+                <div>
+                    <h3 style="margin: 0 0 5px 0; color: #003366; font-size: 18px; font-weight: 600;">Exclusive Member Offers</h3>
+                    <p style="margin: 0; color: #4a5a72; font-size: 15px; line-height: 1.5;">Get special discounts and early access to new services as a registered member.</p>
+                </div>
+            </div>
+            
+            <div style="display: flex; gap: 15px;">
+                <div style="min-width: 36px; height: 36px; background: rgba(0, 102, 204, 0.1); border-radius: 8px; display: flex; align-items: center; justify-content: center;">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12 12C14.2091 12 16 10.2091 16 8C16 5.79086 14.2091 4 12 4C9.79086 4 8 5.79086 8 8C8 10.2091 9.79086 12 12 12Z" stroke="#0066cc" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M6 20C6 17.7909 7.79086 16 10 16H14C16.2091 16 18 17.7909 18 20" stroke="#0066cc" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </div>
+                <div>
+                    <h3 style="margin: 0 0 5px 0; color: #003366; font-size: 18px; font-weight: 600;">Personalized Experience</h3>
+                    <p style="margin: 0; color: #4a5a72; font-size: 15px; line-height: 1.5;">Receive tailored recommendations based on your location and service history.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Registration Form -->
+    <div class="hitaishi-registration-box" style="flex: 1; min-width: 300px; background: white; border-radius: 12px; padding: 30px; box-shadow: 0 4px 20px rgba(0, 80, 200, 0.08);">
+        <div style="text-align: center; margin-bottom: 25px;">
+            <h2 style="margin: 0 0 5px 0; color: #003366; font-size: 28px; font-weight: 700;">Create Your Account</h2>
+            <p style="margin: 0; color: #6b7c93; font-size: 15px;">Join thousands who trust Hitaishi for their service needs</p>
+        </div>
+        
+        <form action="/register" method="POST" id="signup-form" style="display: flex; flex-direction: column; gap: 18px;">
+            <div style="display: flex; gap: 35px; flex-wrap: wrap;">
+                <div style="flex: 1; min-width: 200px;">
+                    <label style="display: block; margin-bottom: 6px; color: #4a5a72; font-size: 14px; font-weight: 500;">Full Name</label>
+                    <input type="text" placeholder="John Doe" name="full_name" required style="width: 100%; padding: 12px 15px; border: 1px solid #d8e0f0; border-radius: 8px; font-size: 15px; color: #003366; transition: all 0.3s ease;" onfocus="this.style.borderColor='#0066cc'; this.style.boxShadow='0 0 0 3px rgba(0, 102, 204, 0.1)'" onblur="this.style.borderColor='#d8e0f0'; this.style.boxShadow='none'">
+                </div>
+                <div style="flex: 1; min-width: 200px;">
+                    <label style="display: block; margin-bottom: 6px; color: #4a5a72; font-size: 14px; font-weight: 500;">Username</label>
+                    <input type="text" placeholder="johndoe123" name="username" required style="width: 100%; padding: 12px 15px; border: 1px solid #d8e0f0; border-radius: 8px; font-size: 15px; color: #003366; transition: all 0.3s ease;" onfocus="this.style.borderColor='#0066cc'; this.style.boxShadow='0 0 0 3px rgba(0, 102, 204, 0.1)'" onblur="this.style.borderColor='#d8e0f0'; this.style.boxShadow='none'">
+                </div>
+            </div>
+            
+            <div style="display: flex; gap: 35px; flex-wrap: wrap;">
+                <div style="flex: 1; min-width: 200px;">
+                    <label style="display: block; margin-bottom: 6px; color: #4a5a72; font-size: 14px; font-weight: 500;">Email Address</label>
+                    <input type="email" placeholder="john@example.com" name="email" required style="width: 100%; padding: 12px 15px; border: 1px solid #d8e0f0; border-radius: 8px; font-size: 15px; color: #003366; transition: all 0.3s ease;" onfocus="this.style.borderColor='#0066cc'; this.style.boxShadow='0 0 0 3px rgba(0, 102, 204, 0.1)'" onblur="this.style.borderColor='#d8e0f0'; this.style.boxShadow='none'">
+                </div>
+                <div style="flex: 1; min-width: 200px;">
+                    <label style="display: block; margin-bottom: 6px; color: #4a5a72; font-size: 14px; font-weight: 500;">Phone Number</label>
+                    <input type="tel" placeholder="+91 9876543210" name="phone" required style="width: 100%; padding: 12px 15px; border: 1px solid #d8e0f0; border-radius: 8px; font-size: 15px; color: #003366; transition: all 0.3s ease;" onfocus="this.style.borderColor='#0066cc'; this.style.boxShadow='0 0 0 3px rgba(0, 102, 204, 0.1)'" onblur="this.style.borderColor='#d8e0f0'; this.style.boxShadow='none'">
+                </div>
+            </div>
+            
+            <div style="display: flex; gap: 35px; flex-wrap: wrap;">
+                <div style="flex: 1; min-width: 200px;">
+                    <label style="display: block; margin-bottom: 6px; color: #4a5a72; font-size: 14px; font-weight: 500;">Password</label>
+                    <input type="password" placeholder="••••••••" name="password" required style="width: 100%; padding: 12px 15px; border: 1px solid #d8e0f0; border-radius: 8px; font-size: 15px; color: #003366; transition: all 0.3s ease;" onfocus="this.style.borderColor='#0066cc'; this.style.boxShadow='0 0 0 3px rgba(0, 102, 204, 0.1)'" onblur="this.style.borderColor='#d8e0f0'; this.style.boxShadow='none'">
+                </div>
+                <div style="flex: 1; min-width: 200px;">
+                    <label style="display: block; margin-bottom: 6px; color: #4a5a72; font-size: 14px; font-weight: 500;">Confirm Password</label>
+                    <input type="password" placeholder="••••••••" name="confirm_password" required style="width: 100%; padding: 12px 15px; border: 1px solid #d8e0f0; border-radius: 8px; font-size: 15px; color: #003366; transition: all 0.3s ease;" onfocus="this.style.borderColor='#0066cc'; this.style.boxShadow='0 0 0 3px rgba(0, 102, 204, 0.1)'" onblur="this.style.borderColor='#d8e0f0'; this.style.boxShadow='none'">
+                </div>
+            </div>
+            
+            <div style="display: flex; gap: 35px; flex-wrap: wrap;">
+                <div style="flex: 1; min-width: 200px;">
+                    <label style="display: block; margin-bottom: 6px; color: #4a5a72; font-size: 14px; font-weight: 500;">Address</label>
+                    <input type="text" placeholder="123 Main Street" name="address" required style="width: 100%; padding: 12px 15px; border: 1px solid #d8e0f0; border-radius: 8px; font-size: 15px; color: #003366; transition: all 0.3s ease;" onfocus="this.style.borderColor='#0066cc'; this.style.boxShadow='0 0 0 3px rgba(0, 102, 204, 0.1)'" onblur="this.style.borderColor='#d8e0f0'; this.style.boxShadow='none'">
+                </div>
+                <div style="flex: 1; min-width: 200px;">
+                    <label style="display: block; margin-bottom: 6px; color: #4a5a72; font-size: 14px; font-weight: 500;">Pincode</label>
+                    <input type="text" placeholder="400001" name="pincode" required style="width: 100%; padding: 12px 15px; border: 1px solid #d8e0f0; border-radius: 8px; font-size: 15px; color: #003366; transition: all 0.3s ease;" onfocus="this.style.borderColor='#0066cc'; this.style.boxShadow='0 0 0 3px rgba(0, 102, 204, 0.1)'" onblur="this.style.borderColor='#d8e0f0'; this.style.boxShadow='none'">
+                </div>
+            </div>
+            
+            <div style="margin-top: 10px;">
+                <label style="display: block; margin-bottom: 8px; color: #4a5a72; font-size: 14px; font-weight: 500;">Gender</label>
+                <div style="display: flex; gap: 20px;">
+                    <label style="display: flex; align-items: center; gap: 8px; cursor: pointer;">
+                        <input type="radio" name="gender" value="male" style="accent-color: #0066cc; width: 16px; height: 16px; cursor: pointer;">
+                        <span style="color: #4a5a72; font-size: 15px;">Male</span>
+                    </label>
+                    <label style="display: flex; align-items: center; gap: 8px; cursor: pointer;">
+                        <input type="radio" name="gender" value="female" style="accent-color: #0066cc; width: 16px; height: 16px; cursor: pointer;">
+                        <span style="color: #4a5a72; font-size: 15px;">Female</span>
+                    </label>
+                    <label style="display: flex; align-items: center; gap: 8px; cursor: pointer;">
+                        <input type="radio" name="gender" value="other" style="accent-color: #0066cc; width: 16px; height: 16px; cursor: pointer;">
+                        <span style="color: #4a5a72; font-size: 15px;">Other</span>
+                    </label>
+                </div>
+            </div>
+            
+            <button type="submit" style="margin-top: 15px; background: linear-gradient(to right, #0066cc, #004080); color: white; border: none; padding: 14px; border-radius: 8px; font-size: 16px; font-weight: 600; cursor: pointer; transition: all 0.3s ease; box-shadow: 0 4px 12px rgba(0, 102, 204, 0.2);" onmouseover="this.style.opacity='0.9'; this.style.boxShadow='0 6px 16px rgba(0, 102, 204, 0.25)'" onmouseout="this.style.opacity='1'; this.style.boxShadow='0 4px 12px rgba(0, 102, 204, 0.2)'">
+                Create Account
+            </button>
+            
+            <p style="text-align: center; margin: 15px 0 0 0; color: #6b7c93; font-size: 14px;">
+                Already have an account? <a href="SignIn.html" style="color: #0066cc; text-decoration: none; font-weight: 500;">Sign in</a>
+            </p>
+        </form>
+    </div>
+    </div>
+    
+   
+    <footer style="background-color: #f1f1f1; padding: 40px 0;">
+      <div style="max-width: 1200px; margin: 0 auto; padding-left: -600px;">
+
+        <!-- Education & Training -->
+        <div style="text-align: left; margin: 10px;">
+            <a href="education_training.html" style="text-decoration: none;">
+                <p style="font-size: 16px; color: #333; font-weight: bold;">Education & Training</p>
+            </a>
+            <p style="font-size: 14px; color: #555; margin-top: 10px;">Explore a wide range of educational and training options across various fields to enhance your skills and career opportunities.</p>
+            <hr style="border: 1px solid #ddd; margin-top: 20px;"/>
+        </div>
+
+        <!-- Properties & Rents -->
+        <div style="text-align: left; margin: 10px;">
+            <a href="properties_rent.html" style="text-decoration: none;">
+                <p style="font-size: 16px; color: #333; font-weight: bold;">Properties & Rents</p>
+            </a>
+            <p style="font-size: 14px; color: #555; margin-top: 10px;">Find the perfect property for sale, rent, or investment in your desired location with comprehensive listings and details.</p>
+            <hr style="border: 1px solid #ddd; margin-top: 20px;"/>
+        </div>
+
+        <!-- Professional Services -->
+        <div style="text-align: left; margin: 10px;">
+            <a href="proffessional_services.html" style="text-decoration: none;">
+                <p style="font-size: 16px; color: #333; font-weight: bold;">Professional Services</p>
+            </a>
+            <p style="font-size: 14px; color: #555; margin-top: 10px;">Access top-notch professional services, including legal, financial, and consulting services, from trusted experts.</p>
+            <hr style="border: 1px solid #ddd; margin-top: 20px;"/>
+        </div>
+
+        <!-- Travel & Transport -->
+        <div style="text-align: left; margin: 10px;">
+            <a href="travel_transport.html" style="text-decoration: none;">
+                <p style="font-size: 16px; color: #333; font-weight: bold;">Travel & Transport</p>
+            </a>
+            <p style="font-size: 14px; color: #555; margin-top: 10px;">Book your travel needs, including flights, cabs, and buses, with ease and at the best prices.</p>
+            <hr style="border: 1px solid #ddd; margin-top: 20px;"/>
+        </div>
+
+        <!-- Health & Wellness -->
+        <div style="text-align: left; margin: 10px;">
+            <a href="health_wellness.html" style="text-decoration: none;">
+                <p style="font-size: 16px; color: #333; font-weight: bold;">Health & Wellness</p>
+            </a>
+            <p style="font-size: 14px; color: #555; margin-top: 10px;">Discover health and wellness services to maintain a balanced lifestyle, including fitness classes, clinics, and more.</p>
+            <hr style="border: 1px solid #ddd; margin-top: 20px;"/>
+        </div>
+
+        <!-- Events -->
+        <div style="text-align: left; margin: 10px;">
+            <a href="events.html" style="text-decoration: none;">
+                <p style="font-size: 16px; color: #333; font-weight: bold;">Events</p>
+            </a>
+            <p style="font-size: 14px; color: #555; margin-top: 10px;">Stay updated with upcoming events, conferences, exhibitions, and entertainment activities near you.</p>
+            <hr style="border: 1px solid #ddd; margin-top: 20px;"/>
+        </div>
+
+        <!-- Home & Office -->
+        <div style="text-align: left; margin: 10px;">
+            <a href="home_office.html" style="text-decoration: none;">
+                <p style="font-size: 16px; color: #333; font-weight: bold;">Home & Office</p>
+            </a>
+            <p style="font-size: 14px; color: #555; margin-top: 10px;">Explore furniture, appliances, and office supplies to furnish your home or workspace with the best products.</p>
+            <hr style="border: 1px solid #ddd; margin-top: 20px;"/>
+        </div>
+
+        <!-- Shopping -->
+        <div style="text-align: left; margin: 10px;">
+            <a href="shopping.html" style="text-decoration: none;">
+                <p style="font-size: 16px; color: #333; font-weight: bold;">Shopping</p>
+            </a>
+            <p style="font-size: 14px; color: #555; margin-top: 10px;">Shop online for a variety of products including electronics, clothing, accessories, and much more.</p>
+            <hr style="border: 1px solid #ddd; margin-top: 20px;"/>
+        </div>
+
+        <!-- Placement & Jobs -->
+        <div style="text-align: left; margin: 10px;">
+            <a href="placements_jobs.html" style="text-decoration: none;">
+                <p style="font-size: 16px; color: #333; font-weight: bold;">Placement & Jobs</p>
+            </a>
+            <p style="font-size: 14px; color: #555; margin-top: 10px;">Browse job listings and placement opportunities, and connect with top employers in various industries.</p>
+            <hr style="border: 1px solid #ddd; margin-top: 20px;"/>
+        </div>
+
+        <!-- Social Media Icons -->
+        <div style="text-align: center; margin-top: 20px;">
+            <p style="font-size: 16px; color: #333; font-weight: bold;">Follow Us</p>
+            <div style="margin-top:20px;">
+                <a href="https://www.facebook.com" target="_blank" style="margin: 0 15px; text-decoration: none;">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" alt="Facebook" style="width: 40px; height: 40px;"/>
+                </a>
+                <a href="https://www.twitter.com" target="_blank" style="margin: 0 15px; text-decoration: none;">
+                    <img src="https://cdn.iconscout.com/icon/free/png-256/free-twitter-logo-icon-download-in-svg-png-gif-file-formats--social-media-pack-logos-icons-83443.png?f=webp&w=128" alt="Twitter" style="width: 40px; height: 40px;"/>
+                </a>
+                <a href="https://www.instagram.com" target="_blank" style="margin: 0 15px; text-decoration: none;">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram" style="width: 40px; height: 40px;"/>
+                </a>
+                <a href="https://www.linkedin.com" target="_blank" style="margin: 0 15px; text-decoration: none;">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/e/e6/729101_linkedin_icon.png" alt="LinkedIn" style="width: 40px; height: 40px;"/>
+                </a>
+            </div>
+             <br>
+                <p style="margin: 0; color: black;">&copy; 2025 Hitaishi Web Portal. All rights reserved.</p>
+        </div>
+    </div>
+</footer>
+</body>
+</html>
